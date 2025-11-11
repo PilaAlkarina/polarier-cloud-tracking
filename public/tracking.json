@@ -1,0 +1,1271 @@
+[
+    {
+        "id": 1,
+        "nombre": "Login",
+        "modulo": "PÁGINAS PÚBLICAS (Sin autenticación)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 2,
+        "nombre": "Redirect",
+        "modulo": "PÁGINAS PÚBLICAS (Sin autenticación)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 3,
+        "nombre": "ForgotPassword",
+        "modulo": "PÁGINAS PÚBLICAS (Sin autenticación)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 4,
+        "nombre": "RecoveryPassword",
+        "modulo": "PÁGINAS PÚBLICAS (Sin autenticación)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 5,
+        "nombre": "Dashboard Ejecutivo",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 6,
+        "nombre": "Dashboard Operativo",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 7,
+        "nombre": "Dashboard Financiero",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 8,
+        "nombre": "Dashboard Mantenimiento",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 9,
+        "nombre": "Dashboard EnergyHub",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 10,
+        "nombre": "LaundryDashboard",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 11,
+        "nombre": "Control de Uso",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 12,
+        "nombre": "Ingresos y Costes",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 13,
+        "nombre": "Producción Lavadoras",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 14,
+        "nombre": "Control de Envíos",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 15,
+        "nombre": "SmartView",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 16,
+        "nombre": "Visor de Rutas",
+        "modulo": "DASHBOARD - Cuadros de Mando (Críticos)",
+        "prioridad": "Crítico",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 17,
+        "nombre": "Home de Informes",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 18,
+        "nombre": "Informe Operativo",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 19,
+        "nombre": "Informe Operativo (Nueva versión)",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 20,
+        "nombre": "Informe Lencería",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 21,
+        "nombre": "Informe Auditorías",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 22,
+        "nombre": "Informe Inventarios",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 23,
+        "nombre": "Informe Gestión Mantenimiento",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 24,
+        "nombre": "Informe Producción",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 25,
+        "nombre": "Informe Reposiciones General",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 26,
+        "nombre": "Informe Reposiciones Office",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 27,
+        "nombre": "Informe Logística",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 28,
+        "nombre": "Informe Balance Pedidos/Repartos",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 29,
+        "nombre": "Informe Facturación Cliente",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 30,
+        "nombre": "Informe Partes de Trabajo",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 31,
+        "nombre": "Informe RRHH",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 32,
+        "nombre": "Informe Preventivo SAT",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 33,
+        "nombre": "Informe Rutas Expedición",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 34,
+        "nombre": "Informe Pedidos Huésped",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 35,
+        "nombre": "Informe Comparativa Proc/Entreg",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 36,
+        "nombre": "Informe Kg Lavados",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 37,
+        "nombre": "Informe Facturación Uniformidad",
+        "modulo": "INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 38,
+        "nombre": "Personal General",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 39,
+        "nombre": "Personal",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 40,
+        "nombre": "Cuadrante Personal",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 41,
+        "nombre": "Gestión Nóminas",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 42,
+        "nombre": "Validación Nómina",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 43,
+        "nombre": "Jornada Persona",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 44,
+        "nombre": "Informe Eventos Persona",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 45,
+        "nombre": "Calendario Laboral",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 46,
+        "nombre": "Calendario Laboral RRHH",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 47,
+        "nombre": "Calendario Lavandería",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 48,
+        "nombre": "Festivos y Cierres",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 49,
+        "nombre": "Categorías Laborales",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 50,
+        "nombre": "Notificaciones",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 51,
+        "nombre": "Solicitudes de Alta",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 52,
+        "nombre": "Gestión Finiquitos",
+        "modulo": "RRHH - Recursos Humanos (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 53,
+        "nombre": "Producción",
+        "modulo": "PRODUCCIÓN (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 54,
+        "nombre": "Kg Lavados",
+        "modulo": "PRODUCCIÓN (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 55,
+        "nombre": "Lectura de Recursos",
+        "modulo": "PRODUCCIÓN (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 56,
+        "nombre": "Estancias",
+        "modulo": "PRODUCCIÓN (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 57,
+        "nombre": "Pedidos",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 58,
+        "nombre": "Repartos",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 59,
+        "nombre": "Repartos Office",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 60,
+        "nombre": "Validar Repartos",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 61,
+        "nombre": "Partes de Transporte",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 62,
+        "nombre": "Abonos",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 63,
+        "nombre": "Solicitud de Abono",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 64,
+        "nombre": "Revisiones",
+        "modulo": "LOGÍSTICA (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 65,
+        "nombre": "Dashboard Financiero",
+        "modulo": "FINANZAS (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 66,
+        "nombre": "Datos Financieros",
+        "modulo": "FINANZAS (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 67,
+        "nombre": "Control Presupuestario",
+        "modulo": "FINANZAS (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 68,
+        "nombre": "Control Presupuestario V2",
+        "modulo": "FINANZAS (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 69,
+        "nombre": "Cierre de Datos",
+        "modulo": "FINANZAS (Importancia Alta)",
+        "prioridad": "Alto",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 70,
+        "nombre": "Kg Presupuestados",
+        "modulo": "CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 71,
+        "nombre": "Agrupación PEP",
+        "modulo": "CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 72,
+        "nombre": "Distribución Kg",
+        "modulo": "CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 73,
+        "nombre": "Asignación CeCo",
+        "modulo": "CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 74,
+        "nombre": "Distribución CeCo",
+        "modulo": "CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 75,
+        "nombre": "Rentabilidad Centro",
+        "modulo": "CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 76,
+        "nombre": "Informes Coste Estructura",
+        "modulo": "CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 77,
+        "nombre": "Pedido Cliente",
+        "modulo": "ADMINISTRACIÓN - VENTAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 78,
+        "nombre": "Albarán Venta",
+        "modulo": "ADMINISTRACIÓN - VENTAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 79,
+        "nombre": "Presupuesto Venta",
+        "modulo": "ADMINISTRACIÓN - VENTAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 80,
+        "nombre": "Factura Venta",
+        "modulo": "ADMINISTRACIÓN - VENTAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 81,
+        "nombre": "Pedido Proveedor",
+        "modulo": "ADMINISTRACIÓN - COMPRAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 82,
+        "nombre": "Albarán Compra",
+        "modulo": "ADMINISTRACIÓN - COMPRAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 83,
+        "nombre": "Factura Compra",
+        "modulo": "ADMINISTRACIÓN - COMPRAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 84,
+        "nombre": "Validación Factura",
+        "modulo": "ADMINISTRACIÓN - COMPRAS (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 85,
+        "nombre": "Artículos",
+        "modulo": "ADMINISTRACIÓN - PARAMETRIZACIÓN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 86,
+        "nombre": "Clientes",
+        "modulo": "ADMINISTRACIÓN - PARAMETRIZACIÓN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 87,
+        "nombre": "Proveedores",
+        "modulo": "ADMINISTRACIÓN - PARAMETRIZACIÓN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 88,
+        "nombre": "Monitor SAT",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 89,
+        "nombre": "Órdenes de Trabajo",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 90,
+        "nombre": "Maquinaria",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 91,
+        "nombre": "Grupos de Máquinas",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 92,
+        "nombre": "Categorías Máquinas",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 93,
+        "nombre": "Mantenimiento Preventivo",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 94,
+        "nombre": "Plantilla Mantenimiento Preventivo",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 95,
+        "nombre": "Gestión Almacenes",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 96,
+        "nombre": "Recambios",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 97,
+        "nombre": "Almacenes",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 98,
+        "nombre": "Informe Recambios",
+        "modulo": "ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 99,
+        "nombre": "Entradas",
+        "modulo": "ASSISTANT - MOVIMIENTOS DE ALMACÉN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 100,
+        "nombre": "Traspasos",
+        "modulo": "ASSISTANT - MOVIMIENTOS DE ALMACÉN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 101,
+        "nombre": "Salidas",
+        "modulo": "ASSISTANT - MOVIMIENTOS DE ALMACÉN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 102,
+        "nombre": "Abonos (Assistant)",
+        "modulo": "ASSISTANT - MOVIMIENTOS DE ALMACÉN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 103,
+        "nombre": "Inventarios (Assistant)",
+        "modulo": "ASSISTANT - MOVIMIENTOS DE ALMACÉN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 104,
+        "nombre": "Regularizaciones",
+        "modulo": "ASSISTANT - MOVIMIENTOS DE ALMACÉN (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 105,
+        "nombre": "Auditorías",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 106,
+        "nombre": "No Conformidades",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 107,
+        "nombre": "Incidencias",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 108,
+        "nombre": "Reuniones Comerciales",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 109,
+        "nombre": "Informe Clasificación Sucio",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 110,
+        "nombre": "Informe Cumplimiento Horario",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 111,
+        "nombre": "Informe Rechazo Cliente",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 112,
+        "nombre": "Informe Cumplimiento Pedidos",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 113,
+        "nombre": "Informe Control Almacén Cliente",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 114,
+        "nombre": "Informe Encuestas",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 115,
+        "nombre": "Config Auditoría",
+        "modulo": "CONTROL DE CALIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 116,
+        "nombre": "Inventarios",
+        "modulo": "INVENTARIOS (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 117,
+        "nombre": "Movimientos",
+        "modulo": "INVENTARIOS (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 118,
+        "nombre": "Prendas Huésped",
+        "modulo": "VALET - Servicio Huéspedes (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 119,
+        "nombre": "Pedidos Huésped",
+        "modulo": "VALET - Servicio Huéspedes (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 120,
+        "nombre": "Repartos Huésped",
+        "modulo": "VALET - Servicio Huéspedes (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 121,
+        "nombre": "Config Uniformidad",
+        "modulo": "VALET - Servicio Huéspedes (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 122,
+        "nombre": "Movimientos Uniformidad",
+        "modulo": "VALET - Servicio Huéspedes (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 123,
+        "nombre": "Estructura Organizativa",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 124,
+        "nombre": "Lavandería",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 125,
+        "nombre": "Previsión Ingresos/Costes",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 126,
+        "nombre": "Recursos Energéticos",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 127,
+        "nombre": "Rutas Expedición",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 128,
+        "nombre": "Rutas Revisión",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 129,
+        "nombre": "Vehículos",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 130,
+        "nombre": "Turno",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 131,
+        "nombre": "Estructura Operativa",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 132,
+        "nombre": "Parametrización Prendas",
+        "modulo": "PARÁMETROS GENERALES - Configuración (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 133,
+        "nombre": "Asientos Nóminas",
+        "modulo": "CONTABILIDAD (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 134,
+        "nombre": "Solicitudes de Alta (Gestoría)",
+        "modulo": "GESTORÍA (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 135,
+        "nombre": "Gestión Finiquitos (Gestoría)",
+        "modulo": "GESTORÍA (Importancia Media)",
+        "prioridad": "Medio",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 136,
+        "nombre": "Usuarios",
+        "modulo": "GESTIÓN INTERNA (Importancia Baja - Administración del Sistema)",
+        "prioridad": "Bajo",
+        "importada": true,
+        "verificada": false,
+        "estado": "✓ Por Verificar"
+    },
+    {
+        "id": 137,
+        "nombre": "Mi Cuenta",
+        "modulo": "GESTIÓN INTERNA (Importancia Baja - Administración del Sistema)",
+        "prioridad": "Bajo",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 138,
+        "nombre": "Informe Control Horas TI",
+        "modulo": "GESTIÓN INTERNA (Importancia Baja - Administración del Sistema)",
+        "prioridad": "Bajo",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 139,
+        "nombre": "Distribución Recursos TI",
+        "modulo": "GESTIÓN INTERNA (Importancia Baja - Administración del Sistema)",
+        "prioridad": "Bajo",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 140,
+        "nombre": "Home/Main (Página principal)",
+        "modulo": "PÁGINAS ESPECIALES/AUXILIARES",
+        "prioridad": "Alto",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    },
+    {
+        "id": 141,
+        "nombre": "Not Found (404)",
+        "modulo": "PÁGINAS ESPECIALES/AUXILIARES",
+        "prioridad": "Bajo",
+        "importada": false,
+        "verificada": false,
+        "estado": "⏳ Pendiente"
+    }
+]

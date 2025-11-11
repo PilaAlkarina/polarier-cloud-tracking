@@ -1,0 +1,1172 @@
+[
+    {
+        "denominacion": "Dashboard operativo",
+        "consultas": 53351,
+        "porcentaje": 13,
+        "prioridad": 1,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Pedidos",
+        "consultas": 40542,
+        "porcentaje": 10,
+        "prioridad": 2,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Repartos office",
+        "consultas": 33319,
+        "porcentaje": 8,
+        "prioridad": 3,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Repartos",
+        "consultas": 28638,
+        "porcentaje": 7,
+        "prioridad": 4,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Informe operativo",
+        "consultas": 20422,
+        "porcentaje": 5,
+        "prioridad": 5,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Entrada / Salida personal",
+        "consultas": 19646,
+        "porcentaje": 5,
+        "prioridad": 6,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Producción",
+        "consultas": 18175,
+        "porcentaje": 4,
+        "prioridad": 7,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Cuadrante personal",
+        "consultas": 15197,
+        "porcentaje": 4,
+        "prioridad": 8,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Facturación por cliente",
+        "consultas": 14971,
+        "porcentaje": 4,
+        "prioridad": 9,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Personal general",
+        "consultas": 13700,
+        "porcentaje": 3,
+        "prioridad": 10,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Calendario laboral",
+        "consultas": 10034,
+        "porcentaje": 2,
+        "prioridad": 11,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Control de kilos lavados",
+        "consultas": 9409,
+        "porcentaje": 2,
+        "prioridad": 12,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Lectura de recursos",
+        "consultas": 8642,
+        "porcentaje": 2,
+        "prioridad": 13,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Validar repartos",
+        "consultas": 6326,
+        "porcentaje": 1,
+        "prioridad": 14,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Consumos de lencería",
+        "consultas": 6247,
+        "porcentaje": 1,
+        "prioridad": 15,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Gestión de almacenes",
+        "consultas": 5780,
+        "porcentaje": 1,
+        "prioridad": 16,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Comparativa procesados - entregados",
+        "consultas": 5583,
+        "porcentaje": 1,
+        "prioridad": 17,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Smart View",
+        "consultas": 5319,
+        "porcentaje": 1,
+        "prioridad": 18,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Presupuesto venta",
+        "consultas": 5267,
+        "porcentaje": 1,
+        "prioridad": 19,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-12"
+    },
+    {
+        "denominacion": "Estructura organizativa",
+        "consultas": 4833,
+        "porcentaje": 1,
+        "prioridad": 20,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Factura venta",
+        "consultas": 4251,
+        "porcentaje": 1,
+        "prioridad": 21,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Dashboard ejecutivo",
+        "consultas": 4176,
+        "porcentaje": 1,
+        "prioridad": 22,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Incidencias",
+        "consultas": 4138,
+        "porcentaje": 1,
+        "prioridad": 23,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Calendario laboral RRHH",
+        "consultas": 3868,
+        "porcentaje": 1,
+        "prioridad": 24,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Reposiciones general",
+        "consultas": 3665,
+        "porcentaje": 1,
+        "prioridad": 25,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Personal",
+        "consultas": 3134,
+        "porcentaje": 1,
+        "prioridad": 26,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Monitor SAT",
+        "consultas": 3100,
+        "porcentaje": 1,
+        "prioridad": 27,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Repartos",
+        "consultas": 2877,
+        "porcentaje": 1,
+        "prioridad": 28,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Pedido proveedor",
+        "consultas": 2538,
+        "porcentaje": 1,
+        "prioridad": 29,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Reposiciones office",
+        "consultas": 2519,
+        "porcentaje": 1,
+        "prioridad": 30,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Notificaciones",
+        "consultas": 2514,
+        "porcentaje": 1,
+        "prioridad": 31,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Control presupuestario v2",
+        "consultas": 2248,
+        "porcentaje": 1,
+        "prioridad": 32,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Gestión de nóminas",
+        "consultas": 2203,
+        "porcentaje": 1,
+        "prioridad": 33,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Estancias",
+        "consultas": 2202,
+        "porcentaje": 1,
+        "prioridad": 34,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Config. uniformidad",
+        "consultas": 2174,
+        "porcentaje": 1,
+        "prioridad": 35,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Partes de transporte",
+        "consultas": 1983,
+        "porcentaje": 0,
+        "prioridad": 36,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Solicitudes de alta",
+        "consultas": 1933,
+        "porcentaje": 0,
+        "prioridad": 37,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Informe de eventos persona",
+        "consultas": 1918,
+        "porcentaje": 0,
+        "prioridad": 38,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-13"
+    },
+    {
+        "denominacion": "Prev. ingresos y costes",
+        "consultas": 1793,
+        "porcentaje": 0,
+        "prioridad": 39,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Inventarios",
+        "consultas": 1706,
+        "porcentaje": 0,
+        "prioridad": 40,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Asientos de nóminas",
+        "consultas": 1667,
+        "porcentaje": 0,
+        "prioridad": 41,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Recambios",
+        "consultas": 1662,
+        "porcentaje": 0,
+        "prioridad": 42,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Abonos",
+        "consultas": 1661,
+        "porcentaje": 0,
+        "prioridad": 43,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Informe de recursos humanos",
+        "consultas": 1622,
+        "porcentaje": 0,
+        "prioridad": 44,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Solicitudes de abono",
+        "consultas": 1607,
+        "porcentaje": 0,
+        "prioridad": 45,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Rutas de expedición",
+        "consultas": 1587,
+        "porcentaje": 0,
+        "prioridad": 46,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Movimientos uniformidad",
+        "consultas": 1560,
+        "porcentaje": 0,
+        "prioridad": 47,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Informe de inventarios",
+        "consultas": 1548,
+        "porcentaje": 0,
+        "prioridad": 48,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Entradas",
+        "consultas": 1499,
+        "porcentaje": 0,
+        "prioridad": 49,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Movimientos",
+        "consultas": 1492,
+        "porcentaje": 0,
+        "prioridad": 50,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Gestión de finiquitos",
+        "consultas": 1367,
+        "porcentaje": 0,
+        "prioridad": 51,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Gestión de usuarios",
+        "consultas": 1355,
+        "porcentaje": 0,
+        "prioridad": 52,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Gestión de finiquitos",
+        "consultas": 1254,
+        "porcentaje": 0,
+        "prioridad": 53,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Maquinaria",
+        "consultas": 1136,
+        "porcentaje": 0,
+        "prioridad": 54,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Traspasos",
+        "consultas": 1131,
+        "porcentaje": 0,
+        "prioridad": 55,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Facturación uniformidad",
+        "consultas": 1060,
+        "porcentaje": 0,
+        "prioridad": 56,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Control de envíos",
+        "consultas": 1054,
+        "porcentaje": 0,
+        "prioridad": 57,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-14"
+    },
+    {
+        "denominacion": "Albarán compra",
+        "consultas": 930,
+        "porcentaje": 0,
+        "prioridad": 58,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Mantenimiento preventivo",
+        "consultas": 873,
+        "porcentaje": 0,
+        "prioridad": 59,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Solicitudes de alta",
+        "consultas": 871,
+        "porcentaje": 0,
+        "prioridad": 60,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Informe cumplimiento pedidos",
+        "consultas": 800,
+        "porcentaje": 0,
+        "prioridad": 61,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Pedidos huésped",
+        "consultas": 629,
+        "porcentaje": 0,
+        "prioridad": 62,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Artículos",
+        "consultas": 599,
+        "porcentaje": 0,
+        "prioridad": 63,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Órdenes de trabajo (MBC)",
+        "consultas": 588,
+        "porcentaje": 0,
+        "prioridad": 64,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Salidas",
+        "consultas": 588,
+        "porcentaje": 0,
+        "prioridad": 65,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Cierre de datos",
+        "consultas": 507,
+        "porcentaje": 0,
+        "prioridad": 66,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Parametrización de prendas",
+        "consultas": 495,
+        "porcentaje": 0,
+        "prioridad": 67,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Informe de pedidos huésped",
+        "consultas": 476,
+        "porcentaje": 0,
+        "prioridad": 68,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Clientes",
+        "consultas": 412,
+        "porcentaje": 0,
+        "prioridad": 69,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Informe de auditorías",
+        "consultas": 408,
+        "porcentaje": 0,
+        "prioridad": 70,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Lavandería",
+        "consultas": 402,
+        "porcentaje": 0,
+        "prioridad": 71,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Categorías laborales",
+        "consultas": 389,
+        "porcentaje": 0,
+        "prioridad": 72,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Laundry dashboard",
+        "consultas": 365,
+        "porcentaje": 0,
+        "prioridad": 73,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Recursos energéticos",
+        "consultas": 364,
+        "porcentaje": 0,
+        "prioridad": 74,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Definición de prendas",
+        "consultas": 328,
+        "porcentaje": 0,
+        "prioridad": 75,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Factura compra",
+        "consultas": 320,
+        "porcentaje": 0,
+        "prioridad": 76,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-17"
+    },
+    {
+        "denominacion": "Informe encuestas",
+        "consultas": 318,
+        "porcentaje": 0,
+        "prioridad": 77,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Turnos",
+        "consultas": 314,
+        "porcentaje": 0,
+        "prioridad": 78,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Almacenes",
+        "consultas": 306,
+        "porcentaje": 0,
+        "prioridad": 79,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Informe rechazo cliente",
+        "consultas": 294,
+        "porcentaje": 0,
+        "prioridad": 80,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Festivos y cierres",
+        "consultas": 292,
+        "porcentaje": 0,
+        "prioridad": 81,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Albarán venta",
+        "consultas": 290,
+        "porcentaje": 0,
+        "prioridad": 82,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Categorías de máquinas",
+        "consultas": 268,
+        "porcentaje": 0,
+        "prioridad": 83,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Informe control almacén cliente",
+        "consultas": 264,
+        "porcentaje": 0,
+        "prioridad": 84,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Kg. Presupuestados",
+        "consultas": 251,
+        "porcentaje": 0,
+        "prioridad": 85,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Gestión de mantenimiento",
+        "consultas": 249,
+        "porcentaje": 0,
+        "prioridad": 86,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "No conformidades",
+        "consultas": 248,
+        "porcentaje": 0,
+        "prioridad": 87,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Prev. Ingresos y costes",
+        "consultas": 242,
+        "porcentaje": 0,
+        "prioridad": 88,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Informe clasificación sucio",
+        "consultas": 221,
+        "porcentaje": 0,
+        "prioridad": 89,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Dashboard mantenimiento",
+        "consultas": 214,
+        "porcentaje": 0,
+        "prioridad": 90,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Auditorías",
+        "consultas": 196,
+        "porcentaje": 0,
+        "prioridad": 91,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Partes de trabajo",
+        "consultas": 185,
+        "porcentaje": 0,
+        "prioridad": 92,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Cumplimiento de preventivo",
+        "consultas": 182,
+        "porcentaje": 0,
+        "prioridad": 93,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Estructura operativa",
+        "consultas": 167,
+        "porcentaje": 0,
+        "prioridad": 94,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Regularizaciones",
+        "consultas": 153,
+        "porcentaje": 0,
+        "prioridad": 95,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-18"
+    },
+    {
+        "denominacion": "Rentabilidad por centro",
+        "consultas": 147,
+        "porcentaje": 0,
+        "prioridad": 96,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Balance pedidos / repartos",
+        "consultas": 144,
+        "porcentaje": 0,
+        "prioridad": 97,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Revisiones",
+        "consultas": 144,
+        "porcentaje": 0,
+        "prioridad": 98,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Distribución CeCo",
+        "consultas": 142,
+        "porcentaje": 0,
+        "prioridad": 99,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Proveedores",
+        "consultas": 137,
+        "porcentaje": 0,
+        "prioridad": 100,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Inventarios",
+        "consultas": 136,
+        "porcentaje": 0,
+        "prioridad": 101,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Plantilla mantenimiento prev.",
+        "consultas": 129,
+        "porcentaje": 0,
+        "prioridad": 102,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Calendario nóminas",
+        "consultas": 111,
+        "porcentaje": 0,
+        "prioridad": 103,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Control presupuestario",
+        "consultas": 102,
+        "porcentaje": 0,
+        "prioridad": 104,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Rutas de revisión",
+        "consultas": 101,
+        "porcentaje": 0,
+        "prioridad": 105,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Visor de rutas",
+        "consultas": 100,
+        "porcentaje": 0,
+        "prioridad": 106,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Reuniones comerciales",
+        "consultas": 99,
+        "porcentaje": 0,
+        "prioridad": 107,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Vehículos",
+        "consultas": 97,
+        "porcentaje": 0,
+        "prioridad": 108,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Informes costes estructura",
+        "consultas": 96,
+        "porcentaje": 0,
+        "prioridad": 109,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Pedido cliente",
+        "consultas": 88,
+        "porcentaje": 0,
+        "prioridad": 110,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Informe cumplimiento horario",
+        "consultas": 84,
+        "porcentaje": 0,
+        "prioridad": 111,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Control de uso",
+        "consultas": 82,
+        "porcentaje": 0,
+        "prioridad": 112,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Logística",
+        "consultas": 82,
+        "porcentaje": 0,
+        "prioridad": 113,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Rutas de expedición",
+        "consultas": 75,
+        "porcentaje": 0,
+        "prioridad": 114,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-19"
+    },
+    {
+        "denominacion": "Asignación CeCo",
+        "consultas": 61,
+        "porcentaje": 0,
+        "prioridad": 115,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Abonos",
+        "consultas": 58,
+        "porcentaje": 0,
+        "prioridad": 116,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Proveedores",
+        "consultas": 58,
+        "porcentaje": 0,
+        "prioridad": 117,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Producción por máquina",
+        "consultas": 54,
+        "porcentaje": 0,
+        "prioridad": 118,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Distribución Kg",
+        "consultas": 50,
+        "porcentaje": 0,
+        "prioridad": 119,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Producción de lavadoras",
+        "consultas": 48,
+        "porcentaje": 0,
+        "prioridad": 120,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Agrupación PEP",
+        "consultas": 46,
+        "porcentaje": 0,
+        "prioridad": 121,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Dashboard financiero",
+        "consultas": 40,
+        "porcentaje": 0,
+        "prioridad": 122,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Kg. Lavados",
+        "consultas": 31,
+        "porcentaje": 0,
+        "prioridad": 123,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Validación factura",
+        "consultas": 30,
+        "porcentaje": 0,
+        "prioridad": 124,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Datos financieros",
+        "consultas": 23,
+        "porcentaje": 0,
+        "prioridad": 125,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Validación nómina",
+        "consultas": 18,
+        "porcentaje": 0,
+        "prioridad": 126,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "ISAAC",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Informe control de horas TI",
+        "consultas": 17,
+        "porcentaje": 0,
+        "prioridad": 127,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "CARRASCOSA",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Config. Auditorias",
+        "consultas": 11,
+        "porcentaje": 0,
+        "prioridad": 128,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "CARPIO",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Distribución de recursos TI",
+        "consultas": 6,
+        "porcentaje": 0,
+        "prioridad": 129,
+        "estado": "PENDIENTE",
+        "usuario_prepara": "LUCIANO",
+        "fechaLimite": "2025-11-20"
+    },
+    {
+        "denominacion": "Informe repartos huésped",
+        "consultas": 2,
+        "porcentaje": 0,
+        "prioridad": 130,
+        "estado": "IMPORTADO",
+        "usuario_prepara": "JOAN",
+        "fechaLimite": "2025-11-20"
+    }
+]

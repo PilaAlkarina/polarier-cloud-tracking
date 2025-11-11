@@ -1,0 +1,311 @@
+================================================================
+        LISTADO DE FORMULARIOS/PÁGINAS - MyPolarier
+        ESTADO INICIAL DE MIGRACIÓN
+================================================================
+Fecha de generación: 11 de noviembre de 2025
+Total de formularios: 141
+
+LEYENDA:
+✓     = Importada (código migrado, sin verificar)
+--    = Pendiente de importar
+[ ]   = Implementación verificada (NINGUNA ACTUALMENTE)
+
+
+================================================================
+PÁGINAS PÚBLICAS (Sin autenticación)
+================================================================
+1.  Login                              --  [ ]
+2.  Redirect                           --  [ ]
+3.  ForgotPassword                     --  [ ]
+4.  RecoveryPassword                   --  [ ]
+
+
+================================================================
+DASHBOARD - Cuadros de Mando (Críticos)
+================================================================
+5.  Dashboard Ejecutivo                --  [ ]
+6.  Dashboard Operativo                ✓   [ ]
+7.  Dashboard Financiero               ✓   [ ]
+8.  Dashboard Mantenimiento            --  [ ]
+9.  Dashboard EnergyHub                --  [ ]
+10. LaundryDashboard                   ✓   [ ]
+11. Control de Uso                     --  [ ]
+12. Ingresos y Costes                  --  [ ]
+13. Producción Lavadoras               --  [ ]
+14. Control de Envíos                  ✓   [ ]
+15. SmartView                          ✓   [ ]
+16. Visor de Rutas                     --  [ ]
+
+
+================================================================
+INFORMES - Informes Ejecutivos y Operacionales (Muy Importantes)
+================================================================
+17. Home de Informes                   --  [ ]
+
+--- Informes Ejecutivos ---
+18. Informe Operativo                  ✓   [ ]
+19. Informe Operativo (Nueva versión)  --  [ ]
+20. Informe Lencería                   --  [ ]
+21. Informe Auditorías                 --  [ ]
+22. Informe Inventarios                --  [ ]
+23. Informe Gestión Mantenimiento      --  [ ]
+
+--- Informes Operacionales ---
+24. Informe Producción                 --  [ ]
+25. Informe Reposiciones General       ✓   [ ]
+26. Informe Reposiciones Office        ✓   [ ]
+27. Informe Logística                  --  [ ]
+28. Informe Balance Pedidos/Repartos   --  [ ]
+29. Informe Facturación Cliente        ✓   [ ]
+30. Informe Partes de Trabajo          --  [ ]
+31. Informe RRHH                       --  [ ]
+32. Informe Preventivo SAT             --  [ ]
+33. Informe Rutas Expedición           --  [ ]
+34. Informe Pedidos Huésped            --  [ ]
+35. Informe Comparativa Proc/Entreg    --  [ ]
+36. Informe Kg Lavados                 --  [ ]
+37. Informe Facturación Uniformidad    ✓   [ ]
+
+
+================================================================
+RRHH - Recursos Humanos (Importancia Alta)
+================================================================
+38. Personal General                   --  [ ]
+39. Personal                           ✓   [ ]
+40. Cuadrante Personal                 ✓   [ ]
+41. Gestión Nóminas                    ✓   [ ]
+42. Validación Nómina                  --  [ ]
+43. Jornada Persona                    --  [ ]
+44. Informe Eventos Persona            --  [ ]
+45. Calendario Laboral                 ✓   [ ]
+46. Calendario Laboral RRHH            --  [ ]
+47. Calendario Lavandería              --  [ ]
+48. Festivos y Cierres                 ✓   [ ]
+49. Categorías Laborales               ✓   [ ]
+50. Notificaciones                     ✓   [ ]
+51. Solicitudes de Alta                ✓   [ ]
+52. Gestión Finiquitos                 ✓   [ ]
+
+
+================================================================
+PRODUCCIÓN (Importancia Alta)
+================================================================
+53. Producción                         ✓   [ ]
+54. Kg Lavados                         ✓   [ ]
+55. Lectura de Recursos                ✓   [ ]
+56. Estancias                          ✓   [ ]
+
+
+================================================================
+LOGÍSTICA (Importancia Alta)
+================================================================
+57. Pedidos                            ✓   [ ]
+58. Repartos                           ✓   [ ]
+59. Repartos Office                    ✓   [ ]
+60. Validar Repartos                   ✓   [ ]
+61. Partes de Transporte               --  [ ]
+62. Abonos                             ✓   [ ]
+63. Solicitud de Abono                 --  [ ]
+64. Revisiones                         ✓   [ ]
+
+
+================================================================
+FINANZAS (Importancia Alta)
+================================================================
+65. Dashboard Financiero               ✓   [ ]
+66. Datos Financieros                  ✓   [ ]
+67. Control Presupuestario             ✓   [ ]
+68. Control Presupuestario V2          --  [ ]
+69. Cierre de Datos                    ✓   [ ]
+
+
+================================================================
+CONTROL PRESUPUESTARIO / PARAMETRIZACIÓN (Importancia Media-Alta)
+================================================================
+70. Kg Presupuestados                  --  [ ]
+71. Agrupación PEP                     --  [ ]
+72. Distribución Kg                    --  [ ]
+73. Asignación CeCo                    --  [ ]
+74. Distribución CeCo                  --  [ ]
+75. Rentabilidad Centro                --  [ ]
+76. Informes Coste Estructura          --  [ ]
+
+
+================================================================
+ADMINISTRACIÓN - VENTAS (Importancia Media-Alta)
+================================================================
+77. Pedido Cliente                     ✓   [ ]
+78. Albarán Venta                      ✓   [ ]
+79. Presupuesto Venta                  ✓   [ ]
+80. Factura Venta                      ✓   [ ]
+
+
+================================================================
+ADMINISTRACIÓN - COMPRAS (Importancia Media-Alta)
+================================================================
+81. Pedido Proveedor                   --  [ ]
+82. Albarán Compra                     --  [ ]
+83. Factura Compra                     --  [ ]
+84. Validación Factura                 --  [ ]
+
+
+================================================================
+ADMINISTRACIÓN - PARAMETRIZACIÓN (Importancia Media)
+================================================================
+85. Artículos                          ✓   [ ]
+86. Clientes                           ✓   [ ]
+87. Proveedores                        ✓   [ ]
+
+
+================================================================
+ASSISTANT - SAT/Mantenimiento (Importancia Media-Alta)
+================================================================
+88. Monitor SAT                        ✓   [ ]
+89. Órdenes de Trabajo                 ✓   [ ]
+90. Maquinaria                         ✓   [ ]
+91. Grupos de Máquinas                 --  [ ]
+92. Categorías Máquinas                ✓   [ ]
+93. Mantenimiento Preventivo           ✓   [ ]
+94. Plantilla Mantenimiento Preventivo ✓   [ ]
+95. Gestión Almacenes                  ✓   [ ]
+96. Recambios                          --  [ ]
+97. Almacenes                          ✓   [ ]
+98. Informe Recambios                  ✓   [ ]
+
+
+================================================================
+ASSISTANT - MOVIMIENTOS DE ALMACÉN (Importancia Media)
+================================================================
+99.  Entradas                          ✓   [ ]
+100. Traspasos                         ✓   [ ]
+101. Salidas                           ✓   [ ]
+102. Abonos (Assistant)                ✓   [ ]
+103. Inventarios (Assistant)           ✓   [ ]
+104. Regularizaciones                  ✓   [ ]
+
+
+================================================================
+CONTROL DE CALIDAD (Importancia Media)
+================================================================
+105. Auditorías                        ✓   [ ]
+106. No Conformidades                  ✓   [ ]
+107. Incidencias                       ✓   [ ]
+108. Reuniones Comerciales             ✓   [ ]
+109. Informe Clasificación Sucio       --  [ ]
+110. Informe Cumplimiento Horario      --  [ ]
+111. Informe Rechazo Cliente           --  [ ]
+112. Informe Cumplimiento Pedidos      --  [ ]
+113. Informe Control Almacén Cliente   --  [ ]
+114. Informe Encuestas                 --  [ ]
+115. Config Auditoría                  ✓   [ ]
+
+
+================================================================
+INVENTARIOS (Importancia Media)
+================================================================
+116. Inventarios                       ✓   [ ]
+117. Movimientos                       ✓   [ ]
+
+
+================================================================
+VALET - Servicio Huéspedes (Importancia Media)
+================================================================
+118. Prendas Huésped                   ✓   [ ]
+119. Pedidos Huésped                   --  [ ]
+120. Repartos Huésped                  ✓   [ ]
+121. Config Uniformidad                ✓   [ ]
+122. Movimientos Uniformidad           ✓   [ ]
+
+
+================================================================
+PARÁMETROS GENERALES - Configuración (Importancia Media)
+================================================================
+123. Estructura Organizativa           --  [ ]
+124. Lavandería                        ✓   [ ]
+125. Previsión Ingresos/Costes         ✓   [ ]
+126. Recursos Energéticos              ✓   [ ]
+127. Rutas Expedición                  ✓   [ ]
+128. Rutas Revisión                    ✓   [ ]
+129. Vehículos                         ✓   [ ]
+130. Turno                             ✓   [ ]
+131. Estructura Operativa              ✓   [ ]
+132. Parametrización Prendas           ✓   [ ]
+
+
+================================================================
+CONTABILIDAD (Importancia Media)
+================================================================
+133. Asientos Nóminas                  ✓   [ ]
+
+
+================================================================
+GESTORÍA (Importancia Media)
+================================================================
+134. Solicitudes de Alta (Gestoría)    --  [ ]
+135. Gestión Finiquitos (Gestoría)     --  [ ]
+
+
+================================================================
+GESTIÓN INTERNA (Importancia Baja - Administración del Sistema)
+================================================================
+136. Usuarios                          ✓   [ ]
+137. Mi Cuenta                         --  [ ]
+138. Informe Control Horas TI          --  [ ]
+139. Distribución Recursos TI          --  [ ]
+
+
+================================================================
+PÁGINAS ESPECIALES/AUXILIARES
+================================================================
+140. Home/Main (Página principal)      --  [ ]
+141. Not Found (404)                   --  [ ]
+
+
+================================================================
+COMPONENTES COMPARTIDOS
+================================================================
+- SelectorDiasLibres                   ✓   [ ]
+- VisualizadorDocumento                ✓   [ ]
+- NoDataPopup                          ✓   [ ]
+- DocumentosAdjuntos                   ✓   [ ]
+- ButtonGroup                          ✓   [ ]
+- ActionToast                          ✓   [ ]
+- PopupIdentificacion                  ✓   [ ]
+- DropDownBox_filtroCategoriasInternas ✓   [ ]
+- SummaryCard                          ✓   [ ]
+
+
+================================================================
+RESUMEN DE ESTADO ACTUAL
+================================================================
+Total páginas:                         141
+
+✓ Importadas (código migrado):         ~87 (62%)
+-- Pendientes de importar:             ~54 (38%)
+[ ] Verificadas (funcionando):         0 (0%)
+
+================================================================
+TRABAJO PENDIENTE POR MÓDULO
+================================================================
+
+🔴 CRÍTICOS - 0% IMPORTADOS:
+   ├─ Páginas Públicas (0/4)
+   ├─ Control Presupuestario (0/8)
+   ├─ Administración Compras (0/4)
+   └─ Gestoría (0/2)
+
+🟡 CRÍTICOS - PARCIALMENTE IMPORTADOS:
+   ├─ Dashboards (5/12 = 42%)
+   └─ Informes (5/21 = 24%)
+
+🟢 ALTA PRIORIDAD - BIEN IMPORTADOS:
+   ├─ RRHH (9/15 = 60%)
+   ├─ Producción (4/4 = 100%)
+   ├─ Logística (6/8 = 75%)
+   └─ Finanzas (4/5 = 80%)
+
+✅ COMPLETAMENTE IMPORTADOS:
+   ├─ Movimientos Almacén (6/6 = 100%)
+   ├─ Inventarios (2/2 = 100%)
+   └─ Admin Parametrización (3/3 = 100%)
+
