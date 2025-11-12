@@ -8,10 +8,11 @@ import StatsCards from "@/components/StatsCards";
 import ProgressChart from "@/components/ProgressChart";
 import CountdownTimer from "@/components/CountdownTimer";
 import TasksLists from "./TasksLists";
-import StatusLegend from "./StatusLegend";
+import CompactStatusLegend from "./CompactStatusLegend";
+import ResetCountdown from "./ResetCountdown";
 
 export default function Dashboard() {
-	const { pantallas, isLoading, error, resetData } = useTrackingData();
+	const { pantallas, isLoading, error, resetData, nextResetTime } = useTrackingData();
 	const statsGlobales = useMemo(() => calcularEstadisticasGlobales(pantallas), [pantallas]);
 
 	// Log para debug
@@ -73,37 +74,38 @@ export default function Dashboard() {
 							</div>
 							<CountdownTimer deadline={FECHA_DEADLINE} />
 						</div>
-						<div className="flex flex-wrap gap-2 justify-center sm:justify-end">
-							<button
-								onClick={() => {
-									if (
-										confirm(
-											"¿Seguro que quieres resetear todos los datos? Esta acción no se puede deshacer."
-										)
-									) {
-										resetData();
-									}
-								}}
-								className="px-4 py-2 rounded-lg font-medium transition-colors bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm border border-white/30 text-sm shadow-lg"
-								title="Resetear datos al estado original"
-							>
-								🔄 Reset
-							</button>
+						<div className="flex flex-col gap-2 items-end">
+							<div className="flex items-center gap-3">
+								<button
+									onClick={() => {
+										if (
+											confirm(
+												"¿Seguro que quieres resetear todos los datos? Esta acción no se puede deshacer."
+											)
+										) {
+											resetData();
+										}
+									}}
+									className="px-4 py-2 rounded-lg font-medium transition-colors bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm border border-white/30 text-sm shadow-lg"
+									title="Resetear datos al estado original"
+								>
+									🔄 Reset
+								</button>
+								<CompactStatusLegend />
+							</div>
+							<ResetCountdown nextResetTime={nextResetTime} />
 						</div>
 					</div>
 				</div>
 			</header>
-
 			{/* Main Content */}
 			<main className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-4">
 				<div className="space-y-4">
 					<StatsCards stats={statsGlobales} pantallas={pantallas} />
-					<StatusLegend />
 					<ProgressChart pantallas={pantallas} />
 					<TasksLists pantallas={pantallas} />
 				</div>
-			</main>
-
+			</main>{" "}
 			{/* Footer */}
 			<footer className="bg-white border-t border-gray-200 mt-6">
 				<div className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-3">
