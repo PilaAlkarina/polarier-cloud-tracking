@@ -75,12 +75,12 @@ export function useTrackingData() {
     }, []);
 
     const updatePantalla = (id: number, updates: Partial<Pantalla>) => {
-        setPantallas((prev) => prev.map((p) => (p.id === id ? { ...p, ...updates } : p)));
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, ...updates } : p)));
     };
 
     const toggleImportada = (id: number) => {
-        setPantallas((prev) =>
-            prev.map((p) => {
+        setPantallas((prev: Pantalla[]) =>
+            prev.map((p: Pantalla) => {
                 if (p.id === id) {
                     const newImportada = !p.importada;
                     const newEstado = newImportada ? ("✓ Por Verificar" as const) : ("⏳ Pendiente" as const);
@@ -92,8 +92,8 @@ export function useTrackingData() {
     };
 
     const toggleVerificada = (id: number) => {
-        setPantallas((prev) =>
-            prev.map((p) => {
+        setPantallas((prev: Pantalla[]) =>
+            prev.map((p: Pantalla) => {
                 if (p.id === id) {
                     const newVerificada = !p.verificada;
                     const newEstado = newVerificada ? ("✅ Completada" as const) : ("✓ Por Verificar" as const);

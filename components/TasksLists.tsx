@@ -77,6 +77,54 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
 
     return (
         <div className="space-y-3">
+            {/* Tareas de Hoy */}
+            <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-blue-500">
+                <div className="flex items-center justify-between mb-2">
+                    <h3 className="text-sm font-bold text-blue-700 flex items-center gap-1">📋 Hoy</h3>
+                    <span className="text-xl font-black text-blue-600">{tareasDeHoy.length}</span>
+                </div>
+
+                {tareasDeHoy.length === 0 ? (
+                    <div className="text-center py-4 text-gray-400">
+                        <div className="text-2xl mb-1">🎉</div>
+                        <p className="text-xs font-medium">Sin tareas</p>
+                    </div>
+                ) : (
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+                        {usuariosHoy.map((usuario, index) => (
+                            <div key={usuario} className="space-y-1">
+                                {/* Header del usuario compacto */}
+                                <div
+                                    className={`flex items-center justify-between px-2 py-1 rounded border ${getColorUsuario(
+                                        index
+                                    )}`}
+                                >
+                                    <span className="text-xs font-bold truncate">{usuario}</span>
+                                    <span className="text-sm font-black ml-2">{hoyPorUsuario[usuario].length}</span>
+                                </div>
+                                {/* Todas las tareas */}
+                                <div className="space-y-0.5">
+                                    {hoyPorUsuario[usuario].map((pantalla) => (
+                                        <div
+                                            key={pantalla.id}
+                                            className="text-xs bg-blue-50 rounded px-2 py-0.5 flex items-center justify-between"
+                                        >
+                                            <span className="truncate flex-1 text-gray-700">{pantalla.nombre}</span>
+                                            <span
+                                                className={`text-xs font-semibold ml-1 flex-shrink-0 ${
+                                                    pantalla.importada ? "text-purple-600" : "text-orange-600"
+                                                }`}
+                                            >
+                                                {pantalla.importada ? "Verif." : "Imp."}
+                                            </span>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
             {/* Tareas Atrasadas */}
             <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-red-500">
                 <div className="flex items-center justify-between mb-2">
@@ -119,55 +167,6 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
                                                           month: "2-digit",
                                                       })
                                                     : ""}
-                                            </span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                )}
-            </div>
-
-            {/* Tareas de Hoy */}
-            <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-blue-500">
-                <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-sm font-bold text-blue-700 flex items-center gap-1">📋 Hoy</h3>
-                    <span className="text-xl font-black text-blue-600">{tareasDeHoy.length}</span>
-                </div>
-
-                {tareasDeHoy.length === 0 ? (
-                    <div className="text-center py-4 text-gray-400">
-                        <div className="text-2xl mb-1">🎉</div>
-                        <p className="text-xs font-medium">Sin tareas</p>
-                    </div>
-                ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-                        {usuariosHoy.map((usuario, index) => (
-                            <div key={usuario} className="space-y-1">
-                                {/* Header del usuario compacto */}
-                                <div
-                                    className={`flex items-center justify-between px-2 py-1 rounded border ${getColorUsuario(
-                                        index
-                                    )}`}
-                                >
-                                    <span className="text-xs font-bold truncate">{usuario}</span>
-                                    <span className="text-sm font-black ml-2">{hoyPorUsuario[usuario].length}</span>
-                                </div>
-                                {/* Todas las tareas */}
-                                <div className="space-y-0.5">
-                                    {hoyPorUsuario[usuario].map((pantalla) => (
-                                        <div
-                                            key={pantalla.id}
-                                            className="text-xs bg-blue-50 rounded px-2 py-0.5 flex items-center justify-between"
-                                        >
-                                            <span className="truncate flex-1 text-gray-700">{pantalla.nombre}</span>
-                                            <span
-                                                className={`text-xs font-semibold ml-1 flex-shrink-0 ${
-                                                    pantalla.importada ? "text-purple-600" : "text-orange-600"
-                                                }`}
-                                            >
-                                                {pantalla.importada ? "Verif." : "Imp."}
                                             </span>
                                         </div>
                                     ))}

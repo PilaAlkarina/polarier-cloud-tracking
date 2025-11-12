@@ -3,20 +3,19 @@
 import { useMemo } from "react";
 import { useTrackingData } from "@/hooks/useTrackingData";
 import { calcularEstadisticasGlobales } from "@/lib/data";
-import { getDiasRestantes } from "@/lib/planDeTrabajo";
+import { FECHA_DEADLINE } from "@/lib/planDeTrabajo";
 import StatsCards from "@/components/StatsCards";
 import ProgressChart from "@/components/ProgressChart";
+import CountdownTimer from "@/components/CountdownTimer";
 import TasksLists from "./TasksLists";
 
 export default function Dashboard() {
     const { pantallas, isLoading, error, resetData } = useTrackingData();
     const statsGlobales = useMemo(() => calcularEstadisticasGlobales(pantallas), [pantallas]);
-    const diasRestantes = getDiasRestantes();
 
     // Log para debug
     console.log("🎯 Dashboard - Pantallas:", pantallas.length);
     console.log("📊 Dashboard - Stats:", statsGlobales);
-    console.log("📅 Dashboard - Días restantes:", diasRestantes);
 
     // Mostrar pantalla de carga
     if (isLoading) {
@@ -60,20 +59,15 @@ export default function Dashboard() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-            {/* Header */}
-            <header className="bg-white border-b border-gray-200 shadow-sm">
+            {/* Header con Cuenta Atrás */}
+            <header className="bg-gradient-to-r from-red-600 via-orange-600 to-red-700 border-b border-red-800 shadow-lg">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                        <div>
-                            <h1 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
-                                🚀 MyPolarier Migration
-                            </h1>
-                            <p className="text-xs text-gray-600">
-                                Deadline: <span className="font-semibold text-red-600">20 Nov 2025</span> •
-                                <span className="ml-2 font-semibold text-blue-600">{diasRestantes} días</span>
-                            </p>
+                        <div className="flex-1 text-center sm:text-left">
+                            <div className="text-white/80 text-xs font-medium mb-2">📅 Deadline: 20 Nov 2025</div>
+                            <CountdownTimer deadline={FECHA_DEADLINE} />
                         </div>
-                        <div className="flex flex-wrap gap-2">
+                        <div className="flex flex-wrap gap-2 justify-center sm:justify-end">
                             <button
                                 onClick={() => {
                                     if (
@@ -84,7 +78,7 @@ export default function Dashboard() {
                                         resetData();
                                     }
                                 }}
-                                className="px-3 py-1.5 rounded-lg font-medium transition-colors bg-red-600 text-white hover:bg-red-700 text-xs shadow-sm"
+                                className="px-4 py-2 rounded-lg font-medium transition-colors bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm border border-white/30 text-sm shadow-lg"
                                 title="Resetear datos al estado original"
                             >
                                 🔄 Reset
