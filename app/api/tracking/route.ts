@@ -58,6 +58,8 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
 			fechaLimite: item.fechaLimite,
 			consultas: item.consultas,
 			porcentaje: item.porcentaje,
+			conErrores: item.conErrores,
+			enDesarrollo: item.enDesarrollo,
 		};
 	});
 }

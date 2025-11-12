@@ -162,7 +162,7 @@
 		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-12",
 		"conErrores": false,
-		"enDesarrollo": false
+		"enDesarrollo": true
 	},
 	{
 		"denominacion": "Gestión de almacenes",
