@@ -60,11 +60,16 @@ export default function Dashboard() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
             {/* Header con Cuenta Atrás */}
-            <header className="bg-gradient-to-r from-red-600 via-orange-600 to-red-700 border-b border-red-800 shadow-lg">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <header className="bg-[#0E4174] border-b border-[#0a2f52] shadow-lg">
+                <div className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-                        <div className="flex-1 text-center sm:text-left">
-                            <div className="text-white/80 text-xs font-medium mb-2">📅 Deadline: 20 Nov 2025</div>
+                        <div className="flex-1 flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+                            <div className="text-center sm:text-left">
+                                <h1 className="text-2xl sm:text-3xl font-bold text-[#F1BE48] whitespace-nowrap">
+                                    POLARIER CLOUD
+                                </h1>
+                                <div className="text-white/80 text-xs font-medium mt-1">📅 Deadline: 20 Nov 2025</div>
+                            </div>
                             <CountdownTimer deadline={FECHA_DEADLINE} />
                         </div>
                         <div className="flex flex-wrap gap-2 justify-center sm:justify-end">
@@ -89,7 +94,7 @@ export default function Dashboard() {
             </header>
 
             {/* Main Content */}
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <main className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div className="space-y-4">
                     <StatsCards stats={statsGlobales} pantallas={pantallas} />
                     <ProgressChart pantallas={pantallas} />
@@ -99,7 +104,7 @@ export default function Dashboard() {
 
             {/* Footer */}
             <footer className="bg-white border-t border-gray-200 mt-6">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+                <div className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="text-center text-xs text-gray-500">
                         <p>📦 MyPolarier Migration Sprint • 141 pantallas • Generado: 11 Nov 2025</p>
                     </div>
