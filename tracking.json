@@ -455,7 +455,7 @@
 		"porcentaje": 0,
 		"prioridad": 51,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-14"
 	},
 	{
@@ -545,7 +545,7 @@
 		"porcentaje": 0,
 		"prioridad": 61,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-17"
 	},
 	{
@@ -554,7 +554,7 @@
 		"porcentaje": 0,
 		"prioridad": 62,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-17"
 	},
 	{
@@ -725,7 +725,7 @@
 		"porcentaje": 0,
 		"prioridad": 81,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-18"
 	},
 	{
@@ -945,15 +945,6 @@
 		"fechaLimite": "2025-11-19"
 	},
 	{
-		"denominacion": "Visor de rutas",
-		"consultas": 100,
-		"porcentaje": 0,
-		"prioridad": 106,
-		"estado": "PENDIENTE",
-		"usuario_prepara": "ISAAC",
-		"fechaLimite": "2025-11-19"
-	},
-	{
 		"denominacion": "Reuniones comerciales",
 		"consultas": 99,
 		"porcentaje": 0,
@@ -1004,7 +995,7 @@
 		"porcentaje": 0,
 		"prioridad": 112,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-19"
 	},
 	{
@@ -1044,12 +1035,12 @@
 		"fechaLimite": "2025-11-20"
 	},
 	{
-		"denominacion": "Proveedores",
+		"denominacion": "Proveedores (Recambios)",
 		"consultas": 58,
 		"porcentaje": 0,
 		"prioridad": 117,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-20"
 	},
 	{
@@ -1130,7 +1121,7 @@
 		"porcentaje": 0,
 		"prioridad": 126,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-20"
 	},
 	{
