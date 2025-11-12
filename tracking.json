@@ -40,7 +40,7 @@
         "consultas": 20422,
         "porcentaje": 5,
         "prioridad": 5,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-12"
     },
@@ -59,7 +59,7 @@
         "porcentaje": 4,
         "prioridad": 7,
         "estado": "IMPORTADO",
-        "usuario_prepara": "CARRASCOSA",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-12"
     },
     {
@@ -85,8 +85,8 @@
         "consultas": 13700,
         "porcentaje": 3,
         "prioridad": 10,
-        "estado": "IMPORTADO",
-        "usuario_prepara": "JOAN",
+        "estado": "REVISADO",
+        "usuario_prepara": "LUCIANO",
         "fechaLimite": "2025-11-12"
     },
     {
@@ -104,7 +104,7 @@
         "porcentaje": 2,
         "prioridad": 12,
         "estado": "PENDIENTE",
-        "usuario_prepara": "CARRASCOSA",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-12"
     },
     {
