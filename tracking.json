@@ -14,7 +14,7 @@
 		"porcentaje": 10,
 		"prioridad": 2,
 		"estado": "REVISADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-12"
 	},
 	{
@@ -194,7 +194,7 @@
 		"porcentaje": 1,
 		"prioridad": 22,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-13"
 	},
 	{
@@ -239,7 +239,7 @@
 		"porcentaje": 1,
 		"prioridad": 27,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-13"
 	},
 	{
@@ -329,7 +329,7 @@
 		"porcentaje": 0,
 		"prioridad": 37,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-13"
 	},
 	{
@@ -374,7 +374,7 @@
 		"porcentaje": 0,
 		"prioridad": 42,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-14"
 	},
 	{
@@ -419,7 +419,7 @@
 		"porcentaje": 0,
 		"prioridad": 47,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-14"
 	},
 	{
@@ -509,7 +509,7 @@
 		"porcentaje": 0,
 		"prioridad": 57,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-14"
 	},
 	{
@@ -554,7 +554,7 @@
 		"porcentaje": 0,
 		"prioridad": 62,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-17"
 	},
 	{
@@ -599,7 +599,7 @@
 		"porcentaje": 0,
 		"prioridad": 67,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-17"
 	},
 	{
@@ -644,7 +644,7 @@
 		"porcentaje": 0,
 		"prioridad": 72,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-17"
 	},
 	{
@@ -689,7 +689,7 @@
 		"porcentaje": 0,
 		"prioridad": 77,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-18"
 	},
 	{
@@ -779,7 +779,7 @@
 		"porcentaje": 0,
 		"prioridad": 87,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-18"
 	},
 	{
@@ -824,7 +824,7 @@
 		"porcentaje": 0,
 		"prioridad": 92,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-18"
 	},
 	{
