@@ -17,7 +17,7 @@ interface TimeRemaining {
 const TimeUnit = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center">
         <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/20 min-w-[60px]">
-            <div className="text-3xl sm:text-4xl font-bold text-white tabular-nums">
+            <div className="text-3xl sm:text-4xl font-bold text-[#F1BE48] tabular-nums">
                 {value.toString().padStart(2, "0")}
             </div>
         </div>
