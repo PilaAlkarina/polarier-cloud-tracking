@@ -914,7 +914,7 @@
 		"porcentaje": 0,
 		"prioridad": 102,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-19"
 	},
 	{
@@ -1085,7 +1085,7 @@
 		"porcentaje": 0,
 		"prioridad": 122,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-20"
 	},
 	{
@@ -1130,7 +1130,7 @@
 		"porcentaje": 0,
 		"prioridad": 127,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-20"
 	},
 	{
