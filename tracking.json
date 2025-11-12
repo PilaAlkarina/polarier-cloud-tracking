@@ -148,7 +148,7 @@
         "consultas": 5583,
         "porcentaje": 1,
         "prioridad": 17,
-        "estado": "PENDIENTE",
+        "estado": "IMPORTADO",
         "usuario_prepara": "CARRASCOSA",
         "fechaLimite": "2025-11-12"
     },
