@@ -825,12 +825,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Almacenes",
+		"denominacion": "Almacenes Recambios",
 		"consultas": 306,
 		"porcentaje": 0,
 		"prioridad": 79,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -841,7 +841,7 @@
 		"porcentaje": 0,
 		"prioridad": 80,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -852,7 +852,7 @@
 		"porcentaje": 0,
 		"prioridad": 81,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -874,7 +874,7 @@
 		"porcentaje": 0,
 		"prioridad": 83,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -924,12 +924,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Prev. Ingresos y costes",
+		"denominacion": "Prev. Ingresos y costes (Informe)",
 		"consultas": 242,
 		"porcentaje": 0,
 		"prioridad": 88,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -951,7 +951,7 @@
 		"porcentaje": 0,
 		"prioridad": 90,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -984,7 +984,7 @@
 		"porcentaje": 0,
 		"prioridad": 93,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1001,12 +1001,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Regularizaciones",
+		"denominacion": "Regularizaciones Recambios",
 		"consultas": 153,
 		"porcentaje": 0,
 		"prioridad": 95,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-18",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1028,7 +1028,7 @@
 		"porcentaje": 0,
 		"prioridad": 97,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1038,8 +1038,8 @@
 		"consultas": 144,
 		"porcentaje": 0,
 		"prioridad": 98,
-		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"estado": "REVISADO",
+		"usuario_prepara": "CARRASCOSA",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1050,7 +1050,7 @@
 		"porcentaje": 0,
 		"prioridad": 99,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1067,12 +1067,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Inventarios",
+		"denominacion": "Inventarios Recambios",
 		"consultas": 136,
 		"porcentaje": 0,
 		"prioridad": 101,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1083,7 +1083,7 @@
 		"porcentaje": 0,
 		"prioridad": 102,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1105,7 +1105,7 @@
 		"porcentaje": 0,
 		"prioridad": 104,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "JOAN",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1116,7 +1116,7 @@
 		"porcentaje": 0,
 		"prioridad": 105,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1127,7 +1127,7 @@
 		"porcentaje": 0,
 		"prioridad": 107,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARRASCOSA",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1137,8 +1137,8 @@
 		"consultas": 97,
 		"porcentaje": 0,
 		"prioridad": 108,
-		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"estado": "REVISADO",
+		"usuario_prepara": "CARRASCOSA",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1149,7 +1149,7 @@
 		"porcentaje": 0,
 		"prioridad": 109,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "JOAN",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1171,7 +1171,7 @@
 		"porcentaje": 0,
 		"prioridad": 111,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -1182,13 +1182,13 @@
 		"porcentaje": 0,
 		"prioridad": 112,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Logística",
+		"denominacion": "INF Logística",
 		"consultas": 82,
 		"porcentaje": 0,
 		"prioridad": 113,
@@ -1204,7 +1204,7 @@
 		"porcentaje": 0,
 		"prioridad": 114,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-19",
 		"conErrores": false,
 		"enDesarrollo": false
