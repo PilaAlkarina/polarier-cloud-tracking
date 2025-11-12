@@ -58,7 +58,7 @@
         "consultas": 18175,
         "porcentaje": 4,
         "prioridad": 7,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-12"
     },
@@ -103,7 +103,7 @@
         "consultas": 9409,
         "porcentaje": 2,
         "prioridad": 12,
-        "estado": "PENDIENTE",
+        "estado": "REVISADO",
         "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-12"
     },
@@ -131,7 +131,7 @@
         "porcentaje": 1,
         "prioridad": 15,
         "estado": "IMPORTADO",
-        "usuario_prepara": "JOAN",
+        "usuario_prepara": "CARPIO",
         "fechaLimite": "2025-11-12"
     },
     {
