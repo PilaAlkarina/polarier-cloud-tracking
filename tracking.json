@@ -76,7 +76,7 @@
         "consultas": 14971,
         "porcentaje": 4,
         "prioridad": 9,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "LUCIANO",
         "fechaLimite": "2025-11-12"
     },
@@ -211,7 +211,7 @@
         "consultas": 3868,
         "porcentaje": 1,
         "prioridad": 24,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "LUCIANO",
         "fechaLimite": "2025-11-13"
     },
