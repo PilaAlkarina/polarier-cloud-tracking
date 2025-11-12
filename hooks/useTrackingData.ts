@@ -64,6 +64,16 @@ export function useTrackingData() {
         }
     }, [pantallas]);
 
+    // Auto-reset cada 5 minutos
+    useEffect(() => {
+        const interval = setInterval(() => {
+            console.log("⏰ Auto-reset programado ejecutándose...");
+            resetData();
+        }, 5 * 60 * 1000); // 5 minutos en milisegundos
+
+        return () => clearInterval(interval);
+    }, []);
+
     const updatePantalla = (id: number, updates: Partial<Pantalla>) => {
         setPantallas((prev) => prev.map((p) => (p.id === id ? { ...p, ...updates } : p)));
     };
