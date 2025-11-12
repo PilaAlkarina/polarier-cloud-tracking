@@ -82,7 +82,7 @@
 		"porcentaje": 4,
 		"prioridad": 8,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-12",
 		"conErrores": true,
 		"enDesarrollo": false
@@ -181,7 +181,7 @@
 		"porcentaje": 1,
 		"prioridad": 17,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-12",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -192,7 +192,7 @@
 		"porcentaje": 1,
 		"prioridad": 18,
 		"estado": "REVISADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-12",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -247,7 +247,7 @@
 		"porcentaje": 1,
 		"prioridad": 23,
 		"estado": "REVISADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -269,18 +269,18 @@
 		"porcentaje": 1,
 		"prioridad": 25,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Personal",
+		"denominacion": "Personal (Caribe)",
 		"consultas": 3134,
 		"porcentaje": 1,
 		"prioridad": 26,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -291,7 +291,7 @@
 		"porcentaje": 1,
 		"prioridad": 27,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -302,7 +302,7 @@
 		"porcentaje": 1,
 		"prioridad": 28,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -324,7 +324,7 @@
 		"porcentaje": 1,
 		"prioridad": 30,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -385,23 +385,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Partes de transporte",
-		"consultas": 1983,
-		"porcentaje": 0,
-		"prioridad": 36,
-		"estado": "PENDIENTE",
-		"usuario_prepara": "ISAAC",
-		"fechaLimite": "2025-11-13",
-		"conErrores": false,
-		"enDesarrollo": false
-	},
-	{
 		"denominacion": "Solicitudes de alta",
 		"consultas": 1933,
 		"porcentaje": 0,
 		"prioridad": 37,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "JOAN",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -412,7 +401,7 @@
 		"porcentaje": 0,
 		"prioridad": 38,
 		"estado": "PENDIENTE",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "JOAN",
 		"fechaLimite": "2025-11-13",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -429,7 +418,7 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Inventarios",
+		"denominacion": "Inventarios de lencería",
 		"consultas": 1706,
 		"porcentaje": 0,
 		"prioridad": 40,
@@ -445,7 +434,7 @@
 		"porcentaje": 0,
 		"prioridad": 41,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-14",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -467,7 +456,7 @@
 		"porcentaje": 0,
 		"prioridad": 43,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-14",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -521,6 +510,17 @@
 		"consultas": 1548,
 		"porcentaje": 0,
 		"prioridad": 48,
+		"estado": "PENDIENTE",
+		"usuario_prepara": "ISAAC",
+		"fechaLimite": "2025-11-14",
+		"conErrores": false,
+		"enDesarrollo": false
+	},
+	{
+		"denominacion": "Entradas Recambios",
+		"consultas": 1499,
+		"porcentaje": 0,
+		"prioridad": 49,
 		"estado": "IMPORTADO",
 		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-14",
@@ -528,23 +528,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Entradas",
-		"consultas": 1499,
-		"porcentaje": 0,
-		"prioridad": 49,
-		"estado": "IMPORTADO",
-		"usuario_prepara": "LUCIANO",
-		"fechaLimite": "2025-11-14",
-		"conErrores": false,
-		"enDesarrollo": false
-	},
-	{
-		"denominacion": "Movimientos",
+		"denominacion": "Movimientos Recambios",
 		"consultas": 1492,
 		"porcentaje": 0,
 		"prioridad": 50,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-14",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -572,17 +561,6 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Gestión de finiquitos",
-		"consultas": 1254,
-		"porcentaje": 0,
-		"prioridad": 53,
-		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
-		"fechaLimite": "2025-11-14",
-		"conErrores": false,
-		"enDesarrollo": false
-	},
-	{
 		"denominacion": "Maquinaria",
 		"consultas": 1136,
 		"porcentaje": 0,
@@ -594,12 +572,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Traspasos",
+		"denominacion": "Traspasos Recambios",
 		"consultas": 1131,
 		"porcentaje": 0,
 		"prioridad": 55,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-14",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -610,7 +588,7 @@
 		"porcentaje": 0,
 		"prioridad": 56,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "ISAAC",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-14",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -649,23 +627,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Solicitudes de alta",
-		"consultas": 871,
-		"porcentaje": 0,
-		"prioridad": 60,
-		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
-		"fechaLimite": "2025-11-17",
-		"conErrores": false,
-		"enDesarrollo": false
-	},
-	{
 		"denominacion": "Informe cumplimiento pedidos",
 		"consultas": 800,
 		"porcentaje": 0,
 		"prioridad": 61,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-17",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -676,7 +643,7 @@
 		"porcentaje": 0,
 		"prioridad": 62,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-17",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -704,12 +671,12 @@
 		"enDesarrollo": false
 	},
 	{
-		"denominacion": "Salidas",
+		"denominacion": "Salidas Recambios",
 		"consultas": 588,
 		"porcentaje": 0,
 		"prioridad": 65,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "CARPIO",
 		"fechaLimite": "2025-11-17",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -742,7 +709,7 @@
 		"porcentaje": 0,
 		"prioridad": 68,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-17",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -764,7 +731,7 @@
 		"porcentaje": 0,
 		"prioridad": 70,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "JOAN",
+		"usuario_prepara": "LUCIANO",
 		"fechaLimite": "2025-11-17",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -797,7 +764,7 @@
 		"porcentaje": 0,
 		"prioridad": 73,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "CARPIO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-17",
 		"conErrores": false,
 		"enDesarrollo": false
@@ -808,7 +775,7 @@
 		"porcentaje": 0,
 		"prioridad": 74,
 		"estado": "IMPORTADO",
-		"usuario_prepara": "LUCIANO",
+		"usuario_prepara": "ISAAC",
 		"fechaLimite": "2025-11-17",
 		"conErrores": false,
 		"enDesarrollo": false
