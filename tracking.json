@@ -167,7 +167,7 @@
         "porcentaje": 1,
         "prioridad": 19,
         "estado": "IMPORTADO",
-        "usuario_prepara": "LUCIANO",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-12"
     },
     {
@@ -185,7 +185,7 @@
         "porcentaje": 1,
         "prioridad": 21,
         "estado": "PENDIENTE",
-        "usuario_prepara": "ISAAC",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-13"
     },
     {
@@ -257,7 +257,7 @@
         "porcentaje": 1,
         "prioridad": 29,
         "estado": "PENDIENTE",
-        "usuario_prepara": "LUCIANO",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-13"
     },
     {
@@ -301,7 +301,7 @@
         "consultas": 2202,
         "porcentaje": 1,
         "prioridad": 34,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "LUCIANO",
         "fechaLimite": "2025-11-13"
     },
@@ -346,7 +346,7 @@
         "consultas": 1793,
         "porcentaje": 0,
         "prioridad": 39,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "LUCIANO",
         "fechaLimite": "2025-11-14"
     },
@@ -365,7 +365,7 @@
         "porcentaje": 0,
         "prioridad": 41,
         "estado": "IMPORTADO",
-        "usuario_prepara": "ISAAC",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-14"
     },
     {
@@ -518,7 +518,7 @@
         "porcentaje": 0,
         "prioridad": 58,
         "estado": "PENDIENTE",
-        "usuario_prepara": "CARPIO",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-17"
     },
     {
@@ -563,7 +563,7 @@
         "porcentaje": 0,
         "prioridad": 63,
         "estado": "IMPORTADO",
-        "usuario_prepara": "CARPIO",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-17"
     },
     {
@@ -617,7 +617,7 @@
         "porcentaje": 0,
         "prioridad": 69,
         "estado": "IMPORTADO",
-        "usuario_prepara": "LUCIANO",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-17"
     },
     {
@@ -680,7 +680,7 @@
         "porcentaje": 0,
         "prioridad": 76,
         "estado": "PENDIENTE",
-        "usuario_prepara": "ISAAC",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-17"
     },
     {
@@ -734,7 +734,7 @@
         "porcentaje": 0,
         "prioridad": 82,
         "estado": "IMPORTADO",
-        "usuario_prepara": "CARRASCOSA",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-18"
     },
     {
@@ -1112,7 +1112,7 @@
         "porcentaje": 0,
         "prioridad": 124,
         "estado": "PENDIENTE",
-        "usuario_prepara": "LUCIANO",
+        "usuario_prepara": "JOAN",
         "fechaLimite": "2025-11-20"
     },
     {
