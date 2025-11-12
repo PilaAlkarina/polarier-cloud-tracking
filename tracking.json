@@ -4,7 +4,7 @@
         "consultas": 53351,
         "porcentaje": 13,
         "prioridad": 1,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "ISAAC",
         "fechaLimite": "2025-11-12"
     },
@@ -13,7 +13,7 @@
         "consultas": 40542,
         "porcentaje": 10,
         "prioridad": 2,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "CARRASCOSA",
         "fechaLimite": "2025-11-12"
     },
@@ -22,7 +22,7 @@
         "consultas": 33319,
         "porcentaje": 8,
         "prioridad": 3,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "CARPIO",
         "fechaLimite": "2025-11-12"
     },
@@ -112,7 +112,7 @@
         "consultas": 8642,
         "porcentaje": 2,
         "prioridad": 13,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "CARPIO",
         "fechaLimite": "2025-11-12"
     },
@@ -157,7 +157,7 @@
         "consultas": 5319,
         "porcentaje": 1,
         "prioridad": 18,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "CARPIO",
         "fechaLimite": "2025-11-12"
     },
@@ -202,7 +202,7 @@
         "consultas": 4138,
         "porcentaje": 1,
         "prioridad": 23,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "CARPIO",
         "fechaLimite": "2025-11-13"
     },
@@ -841,7 +841,7 @@
         "consultas": 167,
         "porcentaje": 0,
         "prioridad": 94,
-        "estado": "IMPORTADO",
+        "estado": "REVISADO",
         "usuario_prepara": "LUCIANO",
         "fechaLimite": "2025-11-18"
     },
