@@ -173,7 +173,7 @@
     "consultas": 5780,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Comparativa procesados - entregados",
@@ -349,7 +349,7 @@
     "consultas": 2203,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Estancias",
