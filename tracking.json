@@ -279,7 +279,7 @@
     "consultas": 3134,
     "porcentaje": 1,
     "prioridad": 26,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "conErrores": false,
