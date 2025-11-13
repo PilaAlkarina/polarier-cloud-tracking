@@ -22,6 +22,9 @@ export default function Dashboard() {
         updateFechaLimite,
         updateResponsable,
         reorderPantallas,
+        updateEstado,
+        updateConErrores,
+        updateEnDesarrollo,
         isSaving,
         saveStatus,
         nextResetTime,
@@ -157,6 +160,9 @@ export default function Dashboard() {
                         onUpdateResponsable={updateResponsable}
                         onDelete={deletePantalla}
                         onReorder={reorderPantallas}
+                        onUpdateEstado={updateEstado}
+                        onUpdateConErrores={updateConErrores}
+                        onUpdateEnDesarrollo={updateEnDesarrollo}
                     />
                 </div>
             </main>{" "}

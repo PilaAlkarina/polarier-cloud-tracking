@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Pantalla } from "@/types";
+import { Pantalla, Estado } from "@/types";
 
 const STORAGE_KEY = "mypolarier_tracking_data";
 
@@ -234,6 +234,28 @@ export function useTrackingData() {
         });
     };
 
+    const updateEstado = (id: number, nuevoEstado: Estado) => {
+        setPantallas((prev: Pantalla[]) =>
+            prev.map((p: Pantalla) => {
+                if (p.id === id) {
+                    // Actualizar también importada y verificada según el estado
+                    const importada = nuevoEstado !== "⏳ Pendiente";
+                    const verificada = nuevoEstado === "✅ Completada";
+                    return { ...p, estado: nuevoEstado, importada, verificada };
+                }
+                return p;
+            })
+        );
+    };
+
+    const updateConErrores = (id: number, conErrores: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, conErrores } : p)));
+    };
+
+    const updateEnDesarrollo = (id: number, enDesarrollo: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, enDesarrollo } : p)));
+    };
+
     return {
         pantallas,
         isLoading,
@@ -248,6 +270,9 @@ export function useTrackingData() {
         updateFechaLimite,
         updateResponsable,
         reorderPantallas,
+        updateEstado,
+        updateConErrores,
+        updateEnDesarrollo,
         isSaving,
         saveStatus,
         nextResetTime,

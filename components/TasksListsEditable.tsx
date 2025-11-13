@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Pantalla } from "@/types";
+import { Pantalla, Estado } from "@/types";
 import {
     DndContext,
     closestCenter,
@@ -23,6 +23,9 @@ interface TasksListsEditableProps {
     onUpdateResponsable: (id: number, responsable: string) => void;
     onDelete: (id: number) => void;
     onReorder: (startIndex: number, endIndex: number) => void;
+    onUpdateEstado: (id: number, estado: Estado) => void;
+    onUpdateConErrores: (id: number, conErrores: boolean) => void;
+    onUpdateEnDesarrollo: (id: number, enDesarrollo: boolean) => void;
 }
 
 interface TareasPorUsuario {
@@ -34,9 +37,10 @@ interface SortableTaskItemProps {
     onUpdateFecha: (id: number, fecha: string) => void;
     onDelete: (id: number) => void;
     color: string;
+    onOpenModal: (pantalla: Pantalla) => void;
 }
 
-function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color }: SortableTaskItemProps) {
+function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color, onOpenModal }: SortableTaskItemProps) {
     const [isEditingDate, setIsEditingDate] = useState(false);
     const [tempDate, setTempDate] = useState(pantalla.fechaLimite || "");
 
@@ -48,6 +52,10 @@ function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color }: Sortable
         transform: CSS.Transform.toString(transform),
         transition,
         opacity: isDragging ? 0.5 : 1,
+    };
+
+    const handleDoubleClick = () => {
+        onOpenModal(pantalla);
     };
 
     const handleDateSave = () => {
@@ -80,7 +88,11 @@ function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color }: Sortable
                 </div>
 
                 {/* Task info */}
-                <div className="flex items-center gap-1 truncate flex-1 min-w-0">
+                <div
+                    className="flex items-center gap-1 truncate flex-1 min-w-0 cursor-pointer"
+                    onDoubleClick={handleDoubleClick}
+                    title="Doble click para editar estado"
+                >
                     {pantalla.prioridadNum && (
                         <span className="text-[10px] font-bold text-gray-500 shrink-0 w-5">
                             #{pantalla.prioridadNum}
@@ -88,7 +100,9 @@ function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color }: Sortable
                     )}
                     {pantalla.conErrores && <span className="text-red-600 shrink-0">⚠️</span>}
                     {pantalla.enDesarrollo && <span className="text-amber-600 shrink-0">🚧</span>}
-                    <span className="truncate text-gray-700">{pantalla.nombre}</span>
+                    <span className="truncate text-gray-700" title={pantalla.nombre}>
+                        {pantalla.nombre}
+                    </span>
                 </div>
 
                 {/* Date editor */}
@@ -148,8 +162,35 @@ export default function TasksListsEditable({
     onUpdateResponsable,
     onDelete,
     onReorder,
+    onUpdateEstado,
+    onUpdateConErrores,
+    onUpdateEnDesarrollo,
 }: TasksListsEditableProps) {
     const [activeId, setActiveId] = useState<string | null>(null);
+    const [modalPantalla, setModalPantalla] = useState<Pantalla | null>(null);
+    const [modalEstado, setModalEstado] = useState<Estado>("⏳ Pendiente");
+    const [modalConErrores, setModalConErrores] = useState(false);
+    const [modalEnDesarrollo, setModalEnDesarrollo] = useState(false);
+
+    const openModal = (pantalla: Pantalla) => {
+        setModalPantalla(pantalla);
+        setModalEstado(pantalla.estado);
+        setModalConErrores(pantalla.conErrores || false);
+        setModalEnDesarrollo(pantalla.enDesarrollo || false);
+    };
+
+    const closeModal = () => {
+        setModalPantalla(null);
+    };
+
+    const saveModal = () => {
+        if (modalPantalla) {
+            onUpdateEstado(modalPantalla.id, modalEstado);
+            onUpdateConErrores(modalPantalla.id, modalConErrores);
+            onUpdateEnDesarrollo(modalPantalla.id, modalEnDesarrollo);
+            closeModal();
+        }
+    };
 
     const sensors = useSensors(
         useSensor(PointerSensor, {
@@ -205,28 +246,30 @@ export default function TasksListsEditable({
     const futurasPorUsuario = agruparPorUsuario(tareasFuturas);
     const completadasPorUsuario = agruparPorUsuario(tareasCompletadas);
 
-    // Ordenar usuarios por cantidad
-    const usuariosAtrasadas = Object.keys(atrasadasPorUsuario).sort(
-        (a, b) => atrasadasPorUsuario[b].length - atrasadasPorUsuario[a].length
-    );
-    const usuariosHoy = Object.keys(hoyPorUsuario).sort((a, b) => hoyPorUsuario[b].length - hoyPorUsuario[a].length);
-    const usuariosFuturas = Object.keys(futurasPorUsuario).sort(
-        (a, b) => futurasPorUsuario[b].length - futurasPorUsuario[a].length
-    );
-    const usuariosCompletadas = Object.keys(completadasPorUsuario).sort(
-        (a, b) => completadasPorUsuario[b].length - completadasPorUsuario[a].length
-    );
+    // Orden fijo de usuarios
+    const ordenUsuarios = ["ISAAC", "LUCIANO", "CARPIO", "JOAN", "CARRASCOSA", "DAVID", "Sin asignar"];
+    
+    const ordenarUsuarios = (usuariosObj: TareasPorUsuario): string[] => {
+        const usuariosPresentes = Object.keys(usuariosObj);
+        return ordenUsuarios.filter(usuario => usuariosPresentes.includes(usuario));
+    };
 
-    const getColorUsuario = (index: number) => {
-        const colores = [
-            "bg-purple-100 border-purple-300 text-purple-700",
-            "bg-blue-100 border-blue-300 text-blue-700",
-            "bg-green-100 border-green-300 text-green-700",
-            "bg-yellow-100 border-yellow-300 text-yellow-700",
-            "bg-pink-100 border-pink-300 text-pink-700",
-            "bg-indigo-100 border-indigo-300 text-indigo-700",
-        ];
-        return colores[index % colores.length];
+    const usuariosAtrasadas = ordenarUsuarios(atrasadasPorUsuario);
+    const usuariosHoy = ordenarUsuarios(hoyPorUsuario);
+    const usuariosFuturas = ordenarUsuarios(futurasPorUsuario);
+    const usuariosCompletadas = ordenarUsuarios(completadasPorUsuario);
+
+    const getColorUsuario = (usuario: string) => {
+        const coloresPorUsuario: { [key: string]: string } = {
+            ISAAC: "bg-purple-100 border-purple-300 text-purple-700",
+            LUCIANO: "bg-blue-100 border-blue-300 text-blue-700",
+            CARPIO: "bg-green-100 border-green-300 text-green-700",
+            JOAN: "bg-yellow-100 border-yellow-300 text-yellow-700",
+            CARRASCOSA: "bg-pink-100 border-pink-300 text-pink-700",
+            DAVID: "bg-indigo-100 border-indigo-300 text-indigo-700",
+            "Sin asignar": "bg-gray-100 border-gray-300 text-gray-700",
+        };
+        return coloresPorUsuario[usuario] || "bg-gray-100 border-gray-300 text-gray-700";
     };
 
     const handleDragStart = (event: DragStartEvent) => {
@@ -296,7 +339,7 @@ export default function TasksListsEditable({
                     onDragOver={handleDragOver}
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2">
-                        {usuariosPorOrden.map((usuario, index) => {
+                        {usuariosPorOrden.map((usuario) => {
                             const tareasUsuario = tareasPorUsuario[usuario];
                             const itemIds = tareasUsuario.map((p) => p.id.toString());
 
@@ -306,7 +349,7 @@ export default function TasksListsEditable({
                                     <div
                                         id={`user-${usuario}`}
                                         className={`flex items-center justify-between px-2 py-1 rounded border ${getColorUsuario(
-                                            index
+                                            usuario
                                         )}`}
                                     >
                                         <span className="text-xs font-bold truncate">{usuario}</span>
@@ -323,6 +366,7 @@ export default function TasksListsEditable({
                                                     onUpdateFecha={onUpdateFecha}
                                                     onDelete={onDelete}
                                                     color={borderColor}
+                                                    onOpenModal={openModal}
                                                 />
                                             ))}
                                         </div>
@@ -347,35 +391,122 @@ export default function TasksListsEditable({
     );
 
     return (
-        <div className="space-y-3">
-            {renderSection("Hoy", "📋", tareasDeHoy, usuariosHoy, hoyPorUsuario, "border-blue-500", "text-blue-700")}
-            {renderSection(
-                "Atrasadas",
-                "🔥",
-                tareasAtrasadas,
-                usuariosAtrasadas,
-                atrasadasPorUsuario,
-                "border-red-500",
-                "text-red-700"
+        <>
+            <div className="space-y-3">
+                {renderSection(
+                    "Hoy",
+                    "📋",
+                    tareasDeHoy,
+                    usuariosHoy,
+                    hoyPorUsuario,
+                    "border-blue-500",
+                    "text-blue-700"
+                )}
+                {renderSection(
+                    "Atrasadas",
+                    "🔥",
+                    tareasAtrasadas,
+                    usuariosAtrasadas,
+                    atrasadasPorUsuario,
+                    "border-red-500",
+                    "text-red-700"
+                )}
+                {renderSection(
+                    "Próximas",
+                    "📅",
+                    tareasFuturas,
+                    usuariosFuturas,
+                    futurasPorUsuario,
+                    "border-green-500",
+                    "text-green-700"
+                )}
+                {renderSection(
+                    "Completadas",
+                    "✅",
+                    tareasCompletadas,
+                    usuariosCompletadas,
+                    completadasPorUsuario,
+                    "border-emerald-500",
+                    "text-emerald-700"
+                )}
+            </div>
+
+            {/* Modal de edición */}
+            {modalPantalla && (
+                <div
+                    className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+                    onClick={closeModal}
+                >
+                    <div
+                        className="bg-white rounded-lg shadow-xl max-w-md w-full p-6"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <h2 className="text-xl font-bold text-gray-800 mb-4">Editar Tarea</h2>
+
+                        <div className="mb-4">
+                            <p className="text-sm font-medium text-gray-600 mb-2">Tarea:</p>
+                            <p className="text-base text-gray-800">{modalPantalla.nombre}</p>
+                        </div>
+
+                        <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-2">Estado</label>
+                            <select
+                                value={modalEstado}
+                                onChange={(e) => setModalEstado(e.target.value as Estado)}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            >
+                                <option value="⏳ Pendiente">⏳ Pendiente</option>
+                                <option value="✓ Por Verificar">✓ Por Verificar</option>
+                                <option value="✅ Completada">✅ Completada</option>
+                                <option value="🚨 Bloqueada">🚨 Bloqueada</option>
+                            </select>
+                        </div>
+
+                        <div className="mb-4 space-y-3">
+                            <label className="flex items-center gap-3 cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={modalConErrores}
+                                    onChange={(e) => setModalConErrores(e.target.checked)}
+                                    className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500"
+                                />
+                                <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                    <span className="text-lg">⚠️</span>
+                                    Con Errores
+                                </span>
+                            </label>
+
+                            <label className="flex items-center gap-3 cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={modalEnDesarrollo}
+                                    onChange={(e) => setModalEnDesarrollo(e.target.checked)}
+                                    className="w-5 h-5 rounded border-gray-300 text-amber-600 focus:ring-amber-500"
+                                />
+                                <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                    <span className="text-lg">🚧</span>
+                                    En Desarrollo
+                                </span>
+                            </label>
+                        </div>
+
+                        <div className="flex gap-3 mt-6">
+                            <button
+                                onClick={closeModal}
+                                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors"
+                            >
+                                Cancelar
+                            </button>
+                            <button
+                                onClick={saveModal}
+                                className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                            >
+                                Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
             )}
-            {renderSection(
-                "Próximas",
-                "📅",
-                tareasFuturas,
-                usuariosFuturas,
-                futurasPorUsuario,
-                "border-green-500",
-                "text-green-700"
-            )}
-            {renderSection(
-                "Completadas",
-                "✅",
-                tareasCompletadas,
-                usuariosCompletadas,
-                completadasPorUsuario,
-                "border-emerald-500",
-                "text-emerald-700"
-            )}
-        </div>
+        </>
     );
 }
