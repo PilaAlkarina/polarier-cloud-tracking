@@ -1,10 +1,14 @@
 import { NextResponse } from "next/server";
 import type { Pantalla, Prioridad, Estado, TrackingItemRaw } from "@/types";
 
+const GITHUB_API_URL = "https://api.github.com/repos/PilaAlkarina/polarier-cloud-tracking/contents/tracking.json";
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
+
 export async function GET() {
     try {
         // Leer el archivo tracking.json desde GitHub
-        const api = "https://api.github.com/repos/PilaAlkarina/polarier-cloud-tracking/contents/tracking.json?ref=main";
+        const api = `${GITHUB_API_URL}?ref=${GITHUB_BRANCH}`;
         const response = await fetch(api, {
             headers: { Accept: "application/vnd.github.raw" }, // te devuelve el JSON directo
             cache: "no-store",
@@ -34,6 +38,80 @@ export async function GET() {
             {
                 success: false,
                 error: "Error al obtener el archivo de tracking desde GitHub",
+            },
+            { status: 500 }
+        );
+    }
+}
+
+export async function PUT(request: Request) {
+    try {
+        if (!GITHUB_TOKEN) {
+            throw new Error("GITHUB_TOKEN no configurado en variables de entorno");
+        }
+
+        const { pantallas } = await request.json();
+
+        if (!pantallas || !Array.isArray(pantallas)) {
+            return NextResponse.json({ success: false, error: "Datos inválidos" }, { status: 400 });
+        }
+
+        // 1. Obtener el SHA actual del archivo
+        const getResponse = await fetch(`${GITHUB_API_URL}?ref=${GITHUB_BRANCH}`, {
+            headers: {
+                Authorization: `token ${GITHUB_TOKEN}`,
+                Accept: "application/vnd.github.v3+json",
+            },
+        });
+
+        if (!getResponse.ok) {
+            throw new Error(`Error al obtener SHA: ${getResponse.status}`);
+        }
+
+        const fileData = await getResponse.json();
+        const currentSha = fileData.sha;
+
+        // 2. Transformar Pantalla[] de vuelta a TrackingItemRaw[]
+        const trackingData = transformPantallasToRaw(pantallas);
+
+        // 3. Convertir a base64
+        const content = Buffer.from(JSON.stringify(trackingData, null, 2)).toString("base64");
+
+        // 4. Actualizar el archivo en GitHub
+        const updateResponse = await fetch(GITHUB_API_URL, {
+            method: "PUT",
+            headers: {
+                Authorization: `token ${GITHUB_TOKEN}`,
+                Accept: "application/vnd.github.v3+json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                message: `📊 Actualizar tracking - ${new Date().toISOString()}`,
+                content,
+                sha: currentSha,
+                branch: GITHUB_BRANCH,
+            }),
+        });
+
+        if (!updateResponse.ok) {
+            const errorData = await updateResponse.json();
+            throw new Error(`Error al actualizar: ${JSON.stringify(errorData)}`);
+        }
+
+        const result = await updateResponse.json();
+
+        return NextResponse.json({
+            success: true,
+            message: "Datos guardados exitosamente en GitHub",
+            commit: result.commit,
+            timestamp: new Date().toISOString(),
+        });
+    } catch (error) {
+        console.error("❌ Error guardando en GitHub:", error);
+        return NextResponse.json(
+            {
+                success: false,
+                error: error instanceof Error ? error.message : "Error desconocido",
             },
             { status: 500 }
         );
@@ -138,4 +216,29 @@ function calcularEstado(importada: boolean, verificada: boolean): Estado {
     if (verificada) return "✅ Completada";
     if (importada) return "✓ Por Verificar";
     return "⏳ Pendiente";
+}
+
+// Función inversa: transformar Pantalla[] de vuelta a TrackingItemRaw[]
+function transformPantallasToRaw(pantallas: Pantalla[]): TrackingItemRaw[] {
+    return pantallas.map((pantalla) => {
+        let estado: "PENDIENTE" | "IMPORTADO" | "REVISADO" = "PENDIENTE";
+
+        if (pantalla.verificada) {
+            estado = "REVISADO";
+        } else if (pantalla.importada) {
+            estado = "IMPORTADO";
+        }
+
+        return {
+            denominacion: pantalla.nombre,
+            prioridad: pantalla.prioridadNum || 0,
+            estado,
+            usuario_prepara: pantalla.responsable || "",
+            fechaLimite: pantalla.fechaLimite || "",
+            consultas: pantalla.consultas || 0,
+            porcentaje: pantalla.porcentaje || 0,
+            conErrores: pantalla.conErrores || false,
+            enDesarrollo: pantalla.enDesarrollo || false,
+        };
+    });
 }
