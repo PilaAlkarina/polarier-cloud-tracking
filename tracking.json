@@ -433,11 +433,11 @@
     "prioridad": 40,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-14",
     "consultas": 1667,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Recambios",
