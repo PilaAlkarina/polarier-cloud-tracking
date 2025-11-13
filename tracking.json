@@ -158,10 +158,10 @@
     "consultas": 6247,
     "porcentaje": 1,
     "prioridad": 15,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-12",
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": true
   },
   {
@@ -360,7 +360,7 @@
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-17",
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Estancias",
