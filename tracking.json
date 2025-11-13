@@ -292,9 +292,9 @@
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "consultas": 2877,
-    "porcentaje": 1,
+    "porcentaje": 99.99,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Pedido proveedor",
@@ -377,12 +377,12 @@
     "denominacion": "Config. uniformidad",
     "prioridad": 35,
     "estado": "IMPORTADO",
-    "usuario_prepara": "ISAAC",
+    "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "consultas": 2174,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Solicitudes de alta",
