@@ -321,7 +321,7 @@
   {
     "denominacion": "Notificaciones",
     "prioridad": 30,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-13",
     "consultas": 2514,
