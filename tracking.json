@@ -267,12 +267,12 @@
     "denominacion": "Personal (Caribe)",
     "prioridad": 25,
     "estado": "IMPORTADO",
-    "usuario_prepara": "CARPIO",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-13",
     "consultas": 3134,
-    "porcentaje": 1,
+    "porcentaje": 100,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Monitor SAT",
@@ -289,12 +289,12 @@
     "denominacion": "Repartos",
     "prioridad": 27,
     "estado": "IMPORTADO",
-    "usuario_prepara": "ISAAC",
+    "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "consultas": 2877,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Pedido proveedor",
