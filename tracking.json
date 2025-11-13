@@ -173,7 +173,7 @@
     "consultas": 5780,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Comparativa procesados - entregados",
@@ -380,9 +380,9 @@
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "consultas": 2174,
-    "porcentaje": 1,
+    "porcentaje": 100,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Solicitudes de alta",
@@ -433,11 +433,11 @@
     "prioridad": 40,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-13",
     "consultas": 1667,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Recambios",
