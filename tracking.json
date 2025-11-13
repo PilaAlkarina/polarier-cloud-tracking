@@ -255,7 +255,7 @@
   {
     "denominacion": "Reposiciones general",
     "prioridad": 24,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-13",
     "consultas": 3665,
@@ -310,7 +310,7 @@
   {
     "denominacion": "Reposiciones office",
     "prioridad": 29,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-13",
     "consultas": 2519,
@@ -497,7 +497,7 @@
   {
     "denominacion": "Movimientos uniformidad",
     "prioridad": 46,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 1560,
@@ -563,7 +563,7 @@
   {
     "denominacion": "Maquinaria",
     "prioridad": 52,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 1136,
@@ -585,7 +585,7 @@
   {
     "denominacion": "Facturación uniformidad",
     "prioridad": 54,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 1060,
@@ -596,7 +596,7 @@
   {
     "denominacion": "Control de envíos",
     "prioridad": 55,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 1054,
