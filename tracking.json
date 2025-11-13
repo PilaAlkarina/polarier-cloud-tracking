@@ -363,23 +363,23 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Config. uniformidad",
+    "denominacion": "Dashboard ejecutivo",
     "prioridad": 34,
-    "estado": "IMPORTADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-13",
-    "consultas": 2174,
+    "consultas": 4176,
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false
   },
   {
-    "denominacion": "Dashboard ejecutivo",
+    "denominacion": "Config. uniformidad",
     "prioridad": 35,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-13",
-    "consultas": 4176,
+    "consultas": 2174,
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false
