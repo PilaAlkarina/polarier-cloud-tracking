@@ -98,6 +98,18 @@ function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color, onOpenModa
                             #{pantalla.prioridadNum}
                         </span>
                     )}
+                    {/* Estado actual */}
+                    <span className="shrink-0 text-xs" title={`Estado: ${pantalla.estado}`}>
+                        {pantalla.estado === "⏳ Pendiente"
+                            ? "⭕"
+                            : pantalla.estado === "✓ Por Verificar"
+                            ? "🔍"
+                            : pantalla.estado === "✅ Completada"
+                            ? "✅"
+                            : pantalla.estado === "🚨 Bloqueada"
+                            ? "🚨"
+                            : "⭕"}
+                    </span>
                     {pantalla.conErrores && <span className="text-red-600 shrink-0">⚠️</span>}
                     {pantalla.enDesarrollo && <span className="text-amber-600 shrink-0">🚧</span>}
                     <span className="truncate text-gray-700" title={pantalla.nombre}>
@@ -248,10 +260,10 @@ export default function TasksListsEditable({
 
     // Orden fijo de usuarios
     const ordenUsuarios = ["ISAAC", "LUCIANO", "CARPIO", "JOAN", "CARRASCOSA", "DAVID", "Sin asignar"];
-    
+
     const ordenarUsuarios = (usuariosObj: TareasPorUsuario): string[] => {
         const usuariosPresentes = Object.keys(usuariosObj);
-        return ordenUsuarios.filter(usuario => usuariosPresentes.includes(usuario));
+        return ordenUsuarios.filter((usuario) => usuariosPresentes.includes(usuario));
     };
 
     const usuariosAtrasadas = ordenarUsuarios(atrasadasPorUsuario);
