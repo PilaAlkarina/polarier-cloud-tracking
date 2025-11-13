@@ -211,12 +211,12 @@
   {
     "denominacion": "Estructura organizativa",
     "prioridad": 20,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-13",
     "consultas": 4833,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": true
   },
   {
