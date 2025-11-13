@@ -266,7 +266,7 @@
   {
     "denominacion": "Personal (Caribe)",
     "prioridad": 25,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-13",
     "consultas": 3134,
