@@ -237,7 +237,7 @@
     "prioridad": 22,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -259,7 +259,7 @@
     "prioridad": 24,
     "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -270,7 +270,7 @@
     "prioridad": 25,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -279,7 +279,7 @@
     "consultas": 3134,
     "porcentaje": 1,
     "prioridad": 26,
-    "estado": "REVISADO",
+    "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "conErrores": false,
@@ -292,7 +292,7 @@
     "prioridad": 27,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -303,7 +303,7 @@
     "prioridad": 28,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -314,7 +314,7 @@
     "prioridad": 29,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -325,7 +325,7 @@
     "prioridad": 30,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -336,7 +336,7 @@
     "prioridad": 31,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -369,7 +369,7 @@
     "prioridad": 34,
     "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -380,7 +380,7 @@
     "prioridad": 35,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -391,7 +391,7 @@
     "prioridad": 37,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -402,7 +402,7 @@
     "prioridad": 38,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-13",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -413,7 +413,7 @@
     "prioridad": 39,
     "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -424,7 +424,7 @@
     "prioridad": 40,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -435,7 +435,7 @@
     "prioridad": 41,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -446,7 +446,7 @@
     "prioridad": 42,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -457,7 +457,7 @@
     "prioridad": 43,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -468,7 +468,7 @@
     "prioridad": 44,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -490,7 +490,7 @@
     "prioridad": 46,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -512,7 +512,7 @@
     "prioridad": 48,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -523,7 +523,7 @@
     "prioridad": 49,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -534,7 +534,7 @@
     "prioridad": 50,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -567,7 +567,7 @@
     "prioridad": 54,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -578,7 +578,7 @@
     "prioridad": 55,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -589,7 +589,7 @@
     "prioridad": 56,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -600,7 +600,7 @@
     "prioridad": 57,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-14",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -611,7 +611,7 @@
     "prioridad": 58,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -622,7 +622,7 @@
     "prioridad": 59,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -633,7 +633,7 @@
     "prioridad": 61,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -644,7 +644,7 @@
     "prioridad": 62,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -655,7 +655,7 @@
     "prioridad": 63,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -666,7 +666,7 @@
     "prioridad": 64,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -677,7 +677,7 @@
     "prioridad": 65,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -688,7 +688,7 @@
     "prioridad": 66,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -699,7 +699,7 @@
     "prioridad": 67,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -721,7 +721,7 @@
     "prioridad": 69,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -732,7 +732,7 @@
     "prioridad": 70,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -743,7 +743,7 @@
     "prioridad": 71,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -765,7 +765,7 @@
     "prioridad": 73,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -776,7 +776,7 @@
     "prioridad": 74,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -787,7 +787,7 @@
     "prioridad": 75,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-17",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -809,7 +809,7 @@
     "prioridad": 77,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -820,7 +820,7 @@
     "prioridad": 78,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -831,7 +831,7 @@
     "prioridad": 79,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -853,7 +853,7 @@
     "prioridad": 81,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -875,7 +875,7 @@
     "prioridad": 83,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -886,7 +886,7 @@
     "prioridad": 84,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -897,7 +897,7 @@
     "prioridad": 85,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -908,7 +908,7 @@
     "prioridad": 86,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -919,7 +919,7 @@
     "prioridad": 87,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -930,7 +930,7 @@
     "prioridad": 88,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -941,7 +941,7 @@
     "prioridad": 89,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -974,7 +974,7 @@
     "prioridad": 92,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -985,7 +985,7 @@
     "prioridad": 93,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -996,7 +996,7 @@
     "prioridad": 94,
     "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-18",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1007,7 +1007,7 @@
     "prioridad": 95,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1029,7 +1029,7 @@
     "prioridad": 97,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1040,7 +1040,7 @@
     "prioridad": 98,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1051,7 +1051,7 @@
     "prioridad": 99,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1062,7 +1062,7 @@
     "prioridad": 100,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-20",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1073,7 +1073,7 @@
     "prioridad": 101,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1084,7 +1084,7 @@
     "prioridad": 102,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1095,7 +1095,7 @@
     "prioridad": 103,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1106,7 +1106,7 @@
     "prioridad": 104,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1117,7 +1117,7 @@
     "prioridad": 105,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1128,7 +1128,7 @@
     "prioridad": 107,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1139,7 +1139,7 @@
     "prioridad": 108,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1150,7 +1150,7 @@
     "prioridad": 109,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1161,7 +1161,7 @@
     "prioridad": 110,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1172,7 +1172,7 @@
     "prioridad": 111,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1183,7 +1183,7 @@
     "prioridad": 112,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-19",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1194,7 +1194,7 @@
     "prioridad": 113,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1205,7 +1205,7 @@
     "prioridad": 114,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1216,7 +1216,7 @@
     "prioridad": 115,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1238,7 +1238,7 @@
     "prioridad": 117,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1249,7 +1249,7 @@
     "prioridad": 119,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1271,7 +1271,7 @@
     "prioridad": 121,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1282,7 +1282,7 @@
     "prioridad": 122,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1293,7 +1293,7 @@
     "prioridad": 123,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-18",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1304,7 +1304,7 @@
     "prioridad": 124,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1326,7 +1326,7 @@
     "prioridad": 126,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1337,7 +1337,7 @@
     "prioridad": 127,
     "estado": "PENDIENTE",
     "usuario_prepara": "DAVID",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1348,7 +1348,7 @@
     "prioridad": 128,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1359,7 +1359,7 @@
     "prioridad": 129,
     "estado": "PENDIENTE",
     "usuario_prepara": "DAVID",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   },
@@ -1370,7 +1370,7 @@
     "prioridad": 130,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "conErrores": false,
     "enDesarrollo": false
   }
