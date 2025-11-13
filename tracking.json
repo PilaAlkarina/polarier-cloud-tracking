@@ -293,7 +293,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2877,
     "porcentaje": 99.99,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false
   },
   {
