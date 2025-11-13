@@ -79,12 +79,12 @@
   {
     "denominacion": "Cuadrante personal",
     "prioridad": 8,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-12",
     "consultas": 15197,
     "porcentaje": 4,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false
   },
   {
