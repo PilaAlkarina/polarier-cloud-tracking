@@ -173,7 +173,7 @@
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-12",
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Comparativa procesados - entregados",
@@ -360,7 +360,7 @@
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Estancias",
