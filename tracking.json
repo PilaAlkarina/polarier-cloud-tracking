@@ -147,7 +147,7 @@
     "prioridad": 14,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-12",
+    "fechaLimite": "2025-11-13",
     "consultas": 6326,
     "porcentaje": 1,
     "conErrores": false,
@@ -173,7 +173,7 @@
     "consultas": 5780,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Comparativa procesados - entregados",
@@ -349,7 +349,7 @@
     "consultas": 2203,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Estancias",
