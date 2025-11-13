@@ -272,7 +272,7 @@
     "consultas": 3134,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Monitor SAT",
@@ -348,7 +348,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2203,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false
   },
   {
