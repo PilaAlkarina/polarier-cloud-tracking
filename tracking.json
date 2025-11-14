@@ -418,8 +418,19 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Inventarios de lencería",
+    "denominacion": "Solicitudes de abono",
     "prioridad": 39,
+    "estado": "PENDIENTE",
+    "usuario_prepara": "ISAAC",
+    "fechaLimite": "2025-11-14",
+    "consultas": 1607,
+    "porcentaje": 0,
+    "conErrores": false,
+    "enDesarrollo": true
+  },
+  {
+    "denominacion": "Inventarios de lencería",
+    "prioridad": 40,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-14",
@@ -430,7 +441,7 @@
   },
   {
     "denominacion": "Asientos de nóminas",
-    "prioridad": 40,
+    "prioridad": 41,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-14",
@@ -441,7 +452,7 @@
   },
   {
     "denominacion": "Recambios",
-    "prioridad": 41,
+    "prioridad": 42,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-14",
@@ -452,7 +463,7 @@
   },
   {
     "denominacion": "Abonos",
-    "prioridad": 42,
+    "prioridad": 43,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-14",
@@ -463,7 +474,7 @@
   },
   {
     "denominacion": "Informe de recursos humanos",
-    "prioridad": 43,
+    "prioridad": 44,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
@@ -471,17 +482,6 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false
-  },
-  {
-    "denominacion": "Solicitudes de abono",
-    "prioridad": 44,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-14",
-    "consultas": 1607,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": true
   },
   {
     "denominacion": "Rutas de expedición",
