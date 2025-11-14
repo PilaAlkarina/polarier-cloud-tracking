@@ -525,7 +525,7 @@
     "consultas": 1499,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Movimientos Recambios",
@@ -547,7 +547,7 @@
     "consultas": 1367,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Gestión de usuarios",
