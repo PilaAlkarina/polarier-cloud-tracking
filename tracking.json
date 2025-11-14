@@ -618,7 +618,7 @@
   {
     "denominacion": "Mantenimiento preventivo",
     "prioridad": 57,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 873,
