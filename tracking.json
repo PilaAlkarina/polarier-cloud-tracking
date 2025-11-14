@@ -453,7 +453,7 @@
   {
     "denominacion": "Abonos",
     "prioridad": 42,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-14",
     "consultas": 1661,
