@@ -163,6 +163,7 @@ export default function Dashboard() {
                         onUpdateEstado={updateEstado}
                         onUpdateConErrores={updateConErrores}
                         onUpdateEnDesarrollo={updateEnDesarrollo}
+                        onUpdateUsuarioPrepara={updateResponsable}
                     />
                 </div>
             </main>{" "}

@@ -26,6 +26,7 @@ interface TasksListsEditableProps {
     onUpdateEstado: (id: number, estado: Estado) => void;
     onUpdateConErrores: (id: number, conErrores: boolean) => void;
     onUpdateEnDesarrollo: (id: number, enDesarrollo: boolean) => void;
+    onUpdateUsuarioPrepara?: (id: number, usuario: string) => void;
 }
 
 interface TareasPorUsuario {
@@ -177,18 +178,21 @@ export default function TasksListsEditable({
     onUpdateEstado,
     onUpdateConErrores,
     onUpdateEnDesarrollo,
+    onUpdateUsuarioPrepara,
 }: TasksListsEditableProps) {
     const [activeId, setActiveId] = useState<string | null>(null);
     const [modalPantalla, setModalPantalla] = useState<Pantalla | null>(null);
     const [modalEstado, setModalEstado] = useState<Estado>("⏳ Pendiente");
     const [modalConErrores, setModalConErrores] = useState(false);
     const [modalEnDesarrollo, setModalEnDesarrollo] = useState(false);
+    const [modalUsuarioPrepara, setModalUsuarioPrepara] = useState("");
 
     const openModal = (pantalla: Pantalla) => {
         setModalPantalla(pantalla);
         setModalEstado(pantalla.estado);
         setModalConErrores(pantalla.conErrores || false);
         setModalEnDesarrollo(pantalla.enDesarrollo || false);
+        setModalUsuarioPrepara(pantalla.responsable || "");
     };
 
     const closeModal = () => {
@@ -200,6 +204,9 @@ export default function TasksListsEditable({
             onUpdateEstado(modalPantalla.id, modalEstado);
             onUpdateConErrores(modalPantalla.id, modalConErrores);
             onUpdateEnDesarrollo(modalPantalla.id, modalEnDesarrollo);
+            if (onUpdateUsuarioPrepara && modalUsuarioPrepara !== modalPantalla.responsable) {
+                onUpdateUsuarioPrepara(modalPantalla.id, modalUsuarioPrepara);
+            }
             closeModal();
         }
     };
@@ -471,6 +478,23 @@ export default function TasksListsEditable({
                                 <option value="✓ Por Verificar">✓ Por Verificar</option>
                                 <option value="✅ Completada">✅ Completada</option>
                                 <option value="🚨 Bloqueada">🚨 Bloqueada</option>
+                            </select>
+                        </div>
+
+                        <div className="mb-4">
+                            <label className="block text-sm font-medium text-gray-700 mb-2">Usuario Prepara</label>
+                            <select
+                                value={modalUsuarioPrepara}
+                                onChange={(e) => setModalUsuarioPrepara(e.target.value)}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            >
+                                <option value="">Sin asignar</option>
+                                <option value="ISAAC">ISAAC</option>
+                                <option value="LUCIANO">LUCIANO</option>
+                                <option value="CARPIO">CARPIO</option>
+                                <option value="JOAN">JOAN</option>
+                                <option value="CARRASCOSA">CARRASCOSA</option>
+                                <option value="DAVID">DAVID</option>
                             </select>
                         </div>
 
