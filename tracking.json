@@ -420,13 +420,13 @@
   {
     "denominacion": "Solicitudes de abono",
     "prioridad": 39,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-14",
     "consultas": 1607,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Inventarios de lencería",
