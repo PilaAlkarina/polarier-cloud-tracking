@@ -860,7 +860,7 @@
   {
     "denominacion": "Albarán venta",
     "prioridad": 80,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
     "consultas": 290,
@@ -1146,7 +1146,7 @@
   {
     "denominacion": "Pedido cliente",
     "prioridad": 106,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-20",
     "consultas": 88,
