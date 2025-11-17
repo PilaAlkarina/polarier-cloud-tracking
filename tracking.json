@@ -816,8 +816,8 @@
   {
     "denominacion": "Turnos",
     "prioridad": 75,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "CARPIO",
+    "estado": "REVISADO",
+    "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
     "consultas": 314,
     "porcentaje": 0,
