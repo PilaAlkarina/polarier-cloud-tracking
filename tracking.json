@@ -378,7 +378,7 @@
     "prioridad": 35,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-13",
+    "fechaLimite": "2025-11-17",
     "consultas": 4176,
     "porcentaje": 1,
     "conErrores": false,
@@ -949,12 +949,12 @@
     "denominacion": "Dashboard mantenimiento",
     "prioridad": 88,
     "estado": "PENDIENTE",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-18",
+    "usuario_prepara": "ISAAC",
+    "fechaLimite": "2025-11-17",
     "consultas": 214,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Auditorías",
