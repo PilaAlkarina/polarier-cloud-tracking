@@ -660,17 +660,6 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Pedidos huésped",
-    "prioridad": 61,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-17",
-    "consultas": 629,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
-  },
-  {
     "denominacion": "Artículos",
     "prioridad": 62,
     "estado": "IMPORTADO",
