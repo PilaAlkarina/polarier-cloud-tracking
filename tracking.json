@@ -638,8 +638,19 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Informe cumplimiento pedidos",
+    "denominacion": "Informe encuestas",
     "prioridad": 59,
+    "estado": "IMPORTADO",
+    "usuario_prepara": "LUCIANO",
+    "fechaLimite": "2025-11-17",
+    "consultas": 318,
+    "porcentaje": 0,
+    "conErrores": false,
+    "enDesarrollo": false
+  },
+  {
+    "denominacion": "Informe cumplimiento pedidos",
+    "prioridad": 60,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -650,7 +661,7 @@
   },
   {
     "denominacion": "Categorías laborales",
-    "prioridad": 60,
+    "prioridad": 61,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -661,22 +672,11 @@
   },
   {
     "denominacion": "Artículos",
-    "prioridad": 61,
+    "prioridad": 62,
     "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
     "consultas": 599,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
-  },
-  {
-    "denominacion": "Informe encuestas",
-    "prioridad": 62,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
-    "consultas": 318,
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false
