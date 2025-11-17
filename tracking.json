@@ -1311,7 +1311,7 @@
   {
     "denominacion": "Validación nómina",
     "prioridad": 121,
-    "estado": "REVISADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-20",
     "consultas": 18,
