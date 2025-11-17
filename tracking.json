@@ -772,7 +772,7 @@
   {
     "denominacion": "Laundry dashboard",
     "prioridad": 71,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 365,
