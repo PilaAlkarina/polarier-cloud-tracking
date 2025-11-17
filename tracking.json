@@ -1212,8 +1212,8 @@
   {
     "denominacion": "Asignación CeCo",
     "prioridad": 111,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "JOAN",
+    "estado": "REVISADO",
+    "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-20",
     "consultas": 61,
     "porcentaje": 0,
