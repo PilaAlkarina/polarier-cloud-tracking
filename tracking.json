@@ -638,8 +638,19 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Categorías laborales",
+    "denominacion": "Informe cumplimiento pedidos",
     "prioridad": 59,
+    "estado": "IMPORTADO",
+    "usuario_prepara": "LUCIANO",
+    "fechaLimite": "2025-11-17",
+    "consultas": 800,
+    "porcentaje": 0,
+    "conErrores": false,
+    "enDesarrollo": false
+  },
+  {
+    "denominacion": "Categorías laborales",
+    "prioridad": 60,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -650,7 +661,7 @@
   },
   {
     "denominacion": "Artículos",
-    "prioridad": 60,
+    "prioridad": 61,
     "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
@@ -660,8 +671,19 @@
     "enDesarrollo": false
   },
   {
+    "denominacion": "Informe encuestas",
+    "prioridad": 62,
+    "estado": "IMPORTADO",
+    "usuario_prepara": "LUCIANO",
+    "fechaLimite": "2025-11-17",
+    "consultas": 318,
+    "porcentaje": 0,
+    "conErrores": false,
+    "enDesarrollo": false
+  },
+  {
     "denominacion": "Órdenes de trabajo (MBC)",
-    "prioridad": 61,
+    "prioridad": 63,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -671,19 +693,8 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Informe cumplimiento pedidos",
-    "prioridad": 62,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
-    "consultas": 800,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
-  },
-  {
     "denominacion": "Salidas Recambios",
-    "prioridad": 63,
+    "prioridad": 64,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-14",
@@ -694,7 +705,7 @@
   },
   {
     "denominacion": "Cierre de datos",
-    "prioridad": 64,
+    "prioridad": 65,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
@@ -705,7 +716,7 @@
   },
   {
     "denominacion": "Parametrización de prendas",
-    "prioridad": 65,
+    "prioridad": 66,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
@@ -716,7 +727,7 @@
   },
   {
     "denominacion": "Informe de pedidos huésped",
-    "prioridad": 66,
+    "prioridad": 67,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -727,7 +738,7 @@
   },
   {
     "denominacion": "Clientes",
-    "prioridad": 67,
+    "prioridad": 68,
     "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
@@ -738,7 +749,7 @@
   },
   {
     "denominacion": "Informe de auditorías",
-    "prioridad": 68,
+    "prioridad": 69,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -749,7 +760,7 @@
   },
   {
     "denominacion": "Lavandería",
-    "prioridad": 69,
+    "prioridad": 70,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
@@ -760,7 +771,7 @@
   },
   {
     "denominacion": "Laundry dashboard",
-    "prioridad": 70,
+    "prioridad": 71,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -771,7 +782,7 @@
   },
   {
     "denominacion": "Recursos energéticos",
-    "prioridad": 71,
+    "prioridad": 72,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -782,7 +793,7 @@
   },
   {
     "denominacion": "Definición de prendas",
-    "prioridad": 72,
+    "prioridad": 73,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
@@ -793,22 +804,11 @@
   },
   {
     "denominacion": "Factura compra",
-    "prioridad": 73,
+    "prioridad": 74,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
     "consultas": 320,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
-  },
-  {
-    "denominacion": "Informe encuestas",
-    "prioridad": 74,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
-    "consultas": 318,
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false
