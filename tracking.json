@@ -695,13 +695,13 @@
   {
     "denominacion": "Parametrización de prendas",
     "prioridad": 64,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
     "consultas": 495,
     "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": true
+    "conErrores": true,
+    "enDesarrollo": false
   },
   {
     "denominacion": "Informe de pedidos huésped",
