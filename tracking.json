@@ -453,7 +453,7 @@
   {
     "denominacion": "Asientos de nóminas",
     "prioridad": 42,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 1667,
