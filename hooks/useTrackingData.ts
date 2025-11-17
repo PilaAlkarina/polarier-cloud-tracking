@@ -9,7 +9,7 @@ export function useTrackingData() {
     const [pantallas, setPantallas] = useState<Pantalla[]>([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const [nextResetTime, setNextResetTime] = useState<number>(60 * 1000); // 1 minuto en ms
+    const [nextResetTime, setNextResetTime] = useState<number>(5000); // 5 segundos en ms
     const [isSaving, setIsSaving] = useState(false);
     const [saveStatus, setSaveStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -67,9 +67,9 @@ export function useTrackingData() {
         }
     }, [pantallas]);
 
-    // Auto-reset cada 1 minuto
+    // Auto-reset cada 5 segundos
     useEffect(() => {
-        const RESET_INTERVAL = 60 * 1000; // 1 minuto
+        const RESET_INTERVAL = 5000; // 5 segundos
         let lastResetTime = Date.now();
 
         // Actualizar el contador cada segundo
@@ -79,7 +79,7 @@ export function useTrackingData() {
             setNextResetTime(Math.max(0, remaining));
         }, 1000);
 
-        // Ejecutar el reset cada minuto
+        // Ejecutar el reset cada 5 segundos
         const resetInterval = setInterval(() => {
             console.log("⏰ Auto-reset programado ejecutándose...");
             resetData();
