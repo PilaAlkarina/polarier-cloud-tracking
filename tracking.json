@@ -871,8 +871,8 @@
   {
     "denominacion": "Categorías de máquinas",
     "prioridad": 81,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
+    "estado": "REVISADO",
+    "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-18",
     "consultas": 268,
     "porcentaje": 0,
@@ -948,7 +948,7 @@
   {
     "denominacion": "Dashboard mantenimiento",
     "prioridad": 88,
-    "estado": "REVISADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 214,
