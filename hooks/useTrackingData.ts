@@ -221,6 +221,7 @@ export function useTrackingData() {
                 console.log(`📊 Commit: ${result.commit?.sha?.substring(0, 7) || "N/A"}`);
 
                 setSaveStatus("success");
+                setIsSaving(false);
 
                 // Limpiar el mensaje de éxito después de 3 segundos
                 setTimeout(() => {
@@ -237,6 +238,7 @@ export function useTrackingData() {
                     const errorMessage = err instanceof Error ? err.message : "Error desconocido al guardar";
                     setError(`Error después de ${maxRetries} intentos: ${errorMessage}`);
                     setSaveStatus("error");
+                    setIsSaving(false);
 
                     // Limpiar el mensaje de error después de 5 segundos
                     setTimeout(() => {
