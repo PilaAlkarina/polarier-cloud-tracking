@@ -662,7 +662,7 @@
   {
     "denominacion": "Artículos",
     "prioridad": 62,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
     "consultas": 599,
@@ -695,12 +695,12 @@
   {
     "denominacion": "Cierre de datos",
     "prioridad": 65,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
     "consultas": 507,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false
   },
   {
@@ -728,7 +728,7 @@
   {
     "denominacion": "Clientes",
     "prioridad": 68,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
     "consultas": 412,
