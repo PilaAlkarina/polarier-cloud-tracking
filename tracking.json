@@ -211,7 +211,7 @@
   {
     "denominacion": "Estructura organizativa",
     "prioridad": 20,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-13",
     "consultas": 4833,
@@ -378,7 +378,7 @@
     "prioridad": 35,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-13",
     "consultas": 4176,
     "porcentaje": 1,
     "conErrores": false,
@@ -552,8 +552,8 @@
   {
     "denominacion": "Gestión de finiquitos",
     "prioridad": 51,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "CARPIO",
+    "estado": "REVISADO",
+    "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-14",
     "consultas": 1367,
     "porcentaje": 0,
@@ -563,12 +563,12 @@
   {
     "denominacion": "Gestión de usuarios",
     "prioridad": 52,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-14",
     "consultas": 1355,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": true
   },
   {
@@ -949,8 +949,8 @@
     "denominacion": "Dashboard mantenimiento",
     "prioridad": 88,
     "estado": "PENDIENTE",
-    "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-17",
+    "usuario_prepara": "LUCIANO",
+    "fechaLimite": "2025-11-18",
     "consultas": 214,
     "porcentaje": 0,
     "conErrores": false,
@@ -1245,7 +1245,7 @@
   {
     "denominacion": "Producción de lavadoras",
     "prioridad": 115,
-    "estado": "REVISADO",
+    "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-20",
     "consultas": 48,
@@ -1278,7 +1278,7 @@
   {
     "denominacion": "Kg. Lavados",
     "prioridad": 118,
-    "estado": "REVISADO",
+    "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-20",
     "consultas": 31,
