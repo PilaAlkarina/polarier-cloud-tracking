@@ -849,7 +849,7 @@
   {
     "denominacion": "Festivos y cierres",
     "prioridad": 78,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
     "consultas": 292,
