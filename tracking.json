@@ -638,19 +638,8 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Informe cumplimiento pedidos",
-    "prioridad": 59,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
-    "consultas": 800,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
-  },
-  {
     "denominacion": "Categorías laborales",
-    "prioridad": 60,
+    "prioridad": 59,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -661,7 +650,7 @@
   },
   {
     "denominacion": "Artículos",
-    "prioridad": 62,
+    "prioridad": 60,
     "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
@@ -672,7 +661,7 @@
   },
   {
     "denominacion": "Órdenes de trabajo (MBC)",
-    "prioridad": 63,
+    "prioridad": 61,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -682,8 +671,19 @@
     "enDesarrollo": false
   },
   {
+    "denominacion": "Informe cumplimiento pedidos",
+    "prioridad": 62,
+    "estado": "IMPORTADO",
+    "usuario_prepara": "LUCIANO",
+    "fechaLimite": "2025-11-17",
+    "consultas": 800,
+    "porcentaje": 0,
+    "conErrores": false,
+    "enDesarrollo": false
+  },
+  {
     "denominacion": "Salidas Recambios",
-    "prioridad": 64,
+    "prioridad": 63,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-14",
@@ -694,7 +694,7 @@
   },
   {
     "denominacion": "Cierre de datos",
-    "prioridad": 65,
+    "prioridad": 64,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
@@ -705,7 +705,7 @@
   },
   {
     "denominacion": "Parametrización de prendas",
-    "prioridad": 66,
+    "prioridad": 65,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
@@ -716,7 +716,7 @@
   },
   {
     "denominacion": "Informe de pedidos huésped",
-    "prioridad": 67,
+    "prioridad": 66,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -727,7 +727,7 @@
   },
   {
     "denominacion": "Clientes",
-    "prioridad": 68,
+    "prioridad": 67,
     "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
@@ -738,7 +738,7 @@
   },
   {
     "denominacion": "Informe de auditorías",
-    "prioridad": 69,
+    "prioridad": 68,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -749,7 +749,7 @@
   },
   {
     "denominacion": "Lavandería",
-    "prioridad": 70,
+    "prioridad": 69,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
@@ -760,7 +760,7 @@
   },
   {
     "denominacion": "Laundry dashboard",
-    "prioridad": 71,
+    "prioridad": 70,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -771,7 +771,7 @@
   },
   {
     "denominacion": "Recursos energéticos",
-    "prioridad": 72,
+    "prioridad": 71,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -782,7 +782,7 @@
   },
   {
     "denominacion": "Definición de prendas",
-    "prioridad": 73,
+    "prioridad": 72,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
@@ -793,7 +793,7 @@
   },
   {
     "denominacion": "Factura compra",
-    "prioridad": 74,
+    "prioridad": 73,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-17",
@@ -804,7 +804,7 @@
   },
   {
     "denominacion": "Informe encuestas",
-    "prioridad": 75,
+    "prioridad": 74,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
@@ -815,7 +815,7 @@
   },
   {
     "denominacion": "Turnos",
-    "prioridad": 76,
+    "prioridad": 75,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
@@ -826,7 +826,7 @@
   },
   {
     "denominacion": "Almacenes Recambios",
-    "prioridad": 77,
+    "prioridad": 76,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-18",
@@ -837,7 +837,7 @@
   },
   {
     "denominacion": "Informe rechazo cliente",
-    "prioridad": 78,
+    "prioridad": 77,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
@@ -848,7 +848,7 @@
   },
   {
     "denominacion": "Festivos y cierres",
-    "prioridad": 79,
+    "prioridad": 78,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
@@ -859,7 +859,7 @@
   },
   {
     "denominacion": "Albarán venta",
-    "prioridad": 80,
+    "prioridad": 79,
     "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
@@ -870,7 +870,7 @@
   },
   {
     "denominacion": "Categorías de máquinas",
-    "prioridad": 81,
+    "prioridad": 80,
     "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-18",
@@ -881,7 +881,7 @@
   },
   {
     "denominacion": "Informe control almacén cliente",
-    "prioridad": 82,
+    "prioridad": 81,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
@@ -892,7 +892,7 @@
   },
   {
     "denominacion": "Kg. Presupuestados",
-    "prioridad": 83,
+    "prioridad": 82,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
@@ -903,7 +903,7 @@
   },
   {
     "denominacion": "Gestión de mantenimiento",
-    "prioridad": 84,
+    "prioridad": 83,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
@@ -914,7 +914,7 @@
   },
   {
     "denominacion": "No conformidades",
-    "prioridad": 85,
+    "prioridad": 84,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
@@ -925,7 +925,7 @@
   },
   {
     "denominacion": "Prev. Ingresos y costes (Informe)",
-    "prioridad": 86,
+    "prioridad": 85,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
@@ -936,7 +936,7 @@
   },
   {
     "denominacion": "Informe clasificación sucio",
-    "prioridad": 87,
+    "prioridad": 86,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
@@ -947,7 +947,7 @@
   },
   {
     "denominacion": "Dashboard mantenimiento",
-    "prioridad": 88,
+    "prioridad": 87,
     "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
@@ -958,7 +958,7 @@
   },
   {
     "denominacion": "Auditorías",
-    "prioridad": 89,
+    "prioridad": 88,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
@@ -969,7 +969,7 @@
   },
   {
     "denominacion": "Partes de trabajo",
-    "prioridad": 90,
+    "prioridad": 89,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
@@ -980,7 +980,7 @@
   },
   {
     "denominacion": "Cumplimiento de preventivo",
-    "prioridad": 91,
+    "prioridad": 90,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
@@ -991,7 +991,7 @@
   },
   {
     "denominacion": "Estructura operativa",
-    "prioridad": 92,
+    "prioridad": 91,
     "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
@@ -1002,7 +1002,7 @@
   },
   {
     "denominacion": "Regularizaciones Recambios",
-    "prioridad": 93,
+    "prioridad": 92,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-19",
@@ -1013,7 +1013,7 @@
   },
   {
     "denominacion": "Rentabilidad por centro",
-    "prioridad": 94,
+    "prioridad": 93,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-19",
@@ -1024,7 +1024,7 @@
   },
   {
     "denominacion": "Balance pedidos / repartos",
-    "prioridad": 95,
+    "prioridad": 94,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
@@ -1035,7 +1035,7 @@
   },
   {
     "denominacion": "Revisiones",
-    "prioridad": 96,
+    "prioridad": 95,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-19",
@@ -1046,7 +1046,7 @@
   },
   {
     "denominacion": "Distribución CeCo",
-    "prioridad": 97,
+    "prioridad": 96,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-19",
@@ -1057,7 +1057,7 @@
   },
   {
     "denominacion": "Proveedores",
-    "prioridad": 98,
+    "prioridad": 97,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-19",
@@ -1068,7 +1068,7 @@
   },
   {
     "denominacion": "Inventarios Recambios",
-    "prioridad": 99,
+    "prioridad": 98,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-19",
@@ -1079,7 +1079,7 @@
   },
   {
     "denominacion": "Plantilla mantenimiento prev.",
-    "prioridad": 100,
+    "prioridad": 99,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
@@ -1090,7 +1090,7 @@
   },
   {
     "denominacion": "Control presupuestario",
-    "prioridad": 101,
+    "prioridad": 100,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-19",
@@ -1101,7 +1101,7 @@
   },
   {
     "denominacion": "Rutas de revisión",
-    "prioridad": 102,
+    "prioridad": 101,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-19",
@@ -1112,7 +1112,7 @@
   },
   {
     "denominacion": "Reuniones comerciales",
-    "prioridad": 103,
+    "prioridad": 102,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-19",
@@ -1123,7 +1123,7 @@
   },
   {
     "denominacion": "Vehículos",
-    "prioridad": 104,
+    "prioridad": 103,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-19",
@@ -1134,7 +1134,7 @@
   },
   {
     "denominacion": "Informes costes estructura",
-    "prioridad": 105,
+    "prioridad": 104,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
@@ -1145,7 +1145,7 @@
   },
   {
     "denominacion": "Pedido cliente",
-    "prioridad": 106,
+    "prioridad": 105,
     "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-20",
@@ -1156,7 +1156,7 @@
   },
   {
     "denominacion": "Informe cumplimiento horario",
-    "prioridad": 107,
+    "prioridad": 106,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
@@ -1167,7 +1167,7 @@
   },
   {
     "denominacion": "Control de uso",
-    "prioridad": 108,
+    "prioridad": 107,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-19",
@@ -1178,7 +1178,7 @@
   },
   {
     "denominacion": "INF Logística",
-    "prioridad": 109,
+    "prioridad": 108,
     "estado": "PENDIENTE",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-20",
@@ -1189,7 +1189,7 @@
   },
   {
     "denominacion": "Rutas de expedición",
-    "prioridad": 110,
+    "prioridad": 109,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-20",
@@ -1200,7 +1200,7 @@
   },
   {
     "denominacion": "Asignación CeCo",
-    "prioridad": 111,
+    "prioridad": 110,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-20",
@@ -1211,7 +1211,7 @@
   },
   {
     "denominacion": "Abonos Recambio",
-    "prioridad": 112,
+    "prioridad": 111,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
@@ -1222,7 +1222,7 @@
   },
   {
     "denominacion": "Proveedores (Recambios)",
-    "prioridad": 113,
+    "prioridad": 112,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
@@ -1233,7 +1233,7 @@
   },
   {
     "denominacion": "Distribución Kg",
-    "prioridad": 114,
+    "prioridad": 113,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-20",
@@ -1244,7 +1244,7 @@
   },
   {
     "denominacion": "Producción de lavadoras",
-    "prioridad": 115,
+    "prioridad": 114,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-20",
@@ -1255,7 +1255,7 @@
   },
   {
     "denominacion": "Agrupación PEP",
-    "prioridad": 116,
+    "prioridad": 115,
     "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-20",
@@ -1266,7 +1266,7 @@
   },
   {
     "denominacion": "Dashboard financiero",
-    "prioridad": 117,
+    "prioridad": 116,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-20",
@@ -1277,7 +1277,7 @@
   },
   {
     "denominacion": "Kg. Lavados",
-    "prioridad": 118,
+    "prioridad": 117,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-20",
@@ -1288,7 +1288,7 @@
   },
   {
     "denominacion": "Validación factura",
-    "prioridad": 119,
+    "prioridad": 118,
     "estado": "PENDIENTE",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
@@ -1299,7 +1299,7 @@
   },
   {
     "denominacion": "Datos financieros",
-    "prioridad": 120,
+    "prioridad": 119,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-20",
@@ -1310,7 +1310,7 @@
   },
   {
     "denominacion": "Validación nómina",
-    "prioridad": 121,
+    "prioridad": 120,
     "estado": "PENDIENTE",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-20",
@@ -1321,7 +1321,7 @@
   },
   {
     "denominacion": "Informe control de horas TI",
-    "prioridad": 122,
+    "prioridad": 121,
     "estado": "PENDIENTE",
     "usuario_prepara": "DAVID",
     "fechaLimite": "2025-11-20",
@@ -1332,7 +1332,7 @@
   },
   {
     "denominacion": "Config. Auditorias",
-    "prioridad": 123,
+    "prioridad": 122,
     "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-20",
@@ -1343,7 +1343,7 @@
   },
   {
     "denominacion": "Distribución de recursos TI",
-    "prioridad": 124,
+    "prioridad": 123,
     "estado": "PENDIENTE",
     "usuario_prepara": "DAVID",
     "fechaLimite": "2025-11-20",
@@ -1354,7 +1354,7 @@
   },
   {
     "denominacion": "Informe repartos huésped",
-    "prioridad": 125,
+    "prioridad": 124,
     "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-20",
