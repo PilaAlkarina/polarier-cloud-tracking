@@ -76,7 +76,21 @@ export default function Dashboard() {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative">
+            {/* Overlay de bloqueo durante guardado */}
+            {isSaving && (
+                <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center">
+                    <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-4">
+                        <div className="flex flex-col items-center gap-4">
+                            <div className="animate-spin rounded-full h-16 w-16 border-4 border-blue-200 border-t-blue-600"></div>
+                            <div className="text-center">
+                                <h3 className="text-xl font-bold text-gray-800 mb-2">Guardando cambios</h3>
+                                <p className="text-gray-600">Por favor espera mientras se actualiza GitHub...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
             {/* Header con Cuenta Atrás */}
             <header className="bg-[#0E4174] border-b border-[#0a2f52] shadow-lg">
                 <div className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-3">
