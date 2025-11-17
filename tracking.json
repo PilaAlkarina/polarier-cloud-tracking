@@ -343,13 +343,13 @@
   {
     "denominacion": "Calendario nóminas",
     "prioridad": 32,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 111,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Gestión de nóminas",
