@@ -816,8 +816,8 @@
   {
     "denominacion": "Turnos",
     "prioridad": 75,
-    "estado": "REVISADO",
-    "usuario_prepara": "ISAAC",
+    "estado": "IMPORTADO",
+    "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-18",
     "consultas": 314,
     "porcentaje": 0,
@@ -1092,12 +1092,12 @@
     "denominacion": "Calendario nóminas",
     "prioridad": 100,
     "estado": "IMPORTADO",
-    "usuario_prepara": "CARPIO",
+    "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-19",
     "consultas": 111,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Control presupuestario",
