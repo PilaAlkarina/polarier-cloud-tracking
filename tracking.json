@@ -382,7 +382,7 @@
     "consultas": 4176,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Config. uniformidad",
