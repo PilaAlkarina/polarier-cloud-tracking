@@ -1267,8 +1267,8 @@
   {
     "denominacion": "Agrupación PEP",
     "prioridad": 116,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "JOAN",
+    "estado": "REVISADO",
+    "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-20",
     "consultas": 46,
     "porcentaje": 0,
