@@ -618,13 +618,13 @@
   {
     "denominacion": "Albarán compra",
     "prioridad": 57,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "JOAN",
+    "estado": "IMPORTADO",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 930,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Mantenimiento preventivo",
