@@ -1278,7 +1278,7 @@
   {
     "denominacion": "Kg. Lavados",
     "prioridad": 118,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-20",
     "consultas": 31,
