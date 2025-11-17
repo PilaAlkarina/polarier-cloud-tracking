@@ -18,6 +18,18 @@ export async function GET() {
             throw new Error(`Error al obtener el archivo: ${response.status} ${response.statusText}`);
         }
 
+        // Obtener también el SHA para detección de conflictos
+        const shaResponse = await fetch(`${GITHUB_API_URL}?ref=${GITHUB_BRANCH}`, {
+            headers: { Accept: "application/vnd.github.v3+json" },
+            cache: "no-store",
+        });
+
+        let sha = null;
+        if (shaResponse.ok) {
+            const shaData = await shaResponse.json();
+            sha = shaData.sha;
+        }
+
         const jsonContent = await response.text();
         const trackingData: TrackingItemRaw[] = JSON.parse(jsonContent);
         console.log(trackingData.find((item) => item.denominacion === "Comparativa procesados - entregados"));
@@ -28,6 +40,7 @@ export async function GET() {
         return NextResponse.json({
             success: true,
             data: pantallas,
+            sha, // Devolver SHA para detección de conflictos
             timestamp: new Date().toISOString(),
             source: "GitHub - tracking.json",
             totalItems: trackingData.length,
@@ -50,13 +63,13 @@ export async function PUT(request: Request) {
             throw new Error("GITHUB_TOKEN no configurado en variables de entorno");
         }
 
-        const { pantallas } = await request.json();
+        const { pantallas, originalSha } = await request.json();
 
         if (!pantallas || !Array.isArray(pantallas)) {
             return NextResponse.json({ success: false, error: "Datos inválidos" }, { status: 400 });
         }
 
-        // 1. Obtener el SHA actual del archivo
+        // 1. Obtener el SHA y datos actuales del archivo
         const getResponse = await fetch(`${GITHUB_API_URL}?ref=${GITHUB_BRANCH}`, {
             headers: {
                 Authorization: `token ${GITHUB_TOKEN}`,
@@ -71,13 +84,87 @@ export async function PUT(request: Request) {
         const fileData = await getResponse.json();
         const currentSha = fileData.sha;
 
-        // 2. Transformar Pantalla[] de vuelta a TrackingItemRaw[]
+        // 2. DETECCIÓN DE CONFLICTOS: Verificar si el archivo cambió desde que el usuario lo cargó
+        if (originalSha && originalSha !== currentSha) {
+            console.log("⚠️ Conflicto detectado: archivo modificado por otro usuario");
+
+            // Obtener datos actuales de GitHub
+            const currentDataResponse = await fetch(`${GITHUB_API_URL}?ref=${GITHUB_BRANCH}`, {
+                headers: { Accept: "application/vnd.github.raw" },
+                cache: "no-store",
+            });
+
+            if (!currentDataResponse.ok) {
+                throw new Error("Error al obtener datos actuales para merge");
+            }
+
+            const currentJsonContent = await currentDataResponse.text();
+            const currentTrackingData: TrackingItemRaw[] = JSON.parse(currentJsonContent);
+            const currentPantallas = transformTrackingData(currentTrackingData);
+
+            // MERGE INTELIGENTE: Combinar cambios
+            const mergeResult = mergeChanges(pantallas, currentPantallas);
+
+            if (mergeResult.conflicts.length > 0) {
+                // Hay conflictos reales (misma tarea modificada por ambos)
+                return NextResponse.json(
+                    {
+                        success: false,
+                        error: "conflict",
+                        message: "Conflicto: otro usuario modificó las mismas tareas",
+                        conflicts: mergeResult.conflicts,
+                        currentData: currentPantallas,
+                        mergedData: mergeResult.merged,
+                    },
+                    { status: 409 }
+                ); // 409 Conflict
+            }
+
+            // Merge exitoso: usar datos combinados
+            console.log("✅ Merge automático exitoso");
+            const trackingData = transformPantallasToRaw(mergeResult.merged);
+            const content = Buffer.from(JSON.stringify(trackingData, null, 2)).toString("base64");
+
+            // Actualizar con datos mergeados
+            const updateResponse = await fetch(GITHUB_API_URL, {
+                method: "PUT",
+                headers: {
+                    Authorization: `token ${GITHUB_TOKEN}`,
+                    Accept: "application/vnd.github.v3+json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    message: `📊 Actualizar tracking (merge automático) - ${new Date().toISOString()}`,
+                    content,
+                    sha: currentSha,
+                    branch: GITHUB_BRANCH,
+                }),
+            });
+
+            if (!updateResponse.ok) {
+                const errorData = await updateResponse.json();
+                throw new Error(`Error al actualizar: ${JSON.stringify(errorData)}`);
+            }
+
+            const result = await updateResponse.json();
+
+            return NextResponse.json({
+                success: true,
+                message: "Datos guardados con merge automático",
+                merged: true,
+                commit: result.commit,
+                newSha: result.content?.sha || result.commit?.sha, // SHA del archivo actualizado
+                timestamp: new Date().toISOString(),
+            });
+        }
+
+        // 3. No hay conflictos: guardado normal
         const trackingData = transformPantallasToRaw(pantallas);
 
-        // 3. Convertir a base64
+        // 4. Convertir a base64
         const content = Buffer.from(JSON.stringify(trackingData, null, 2)).toString("base64");
 
-        // 4. Actualizar el archivo en GitHub
+        // 5. Actualizar el archivo en GitHub
         const updateResponse = await fetch(GITHUB_API_URL, {
             method: "PUT",
             headers: {
@@ -104,6 +191,7 @@ export async function PUT(request: Request) {
             success: true,
             message: "Datos guardados exitosamente en GitHub",
             commit: result.commit,
+            newSha: result.content?.sha || result.commit?.sha, // SHA del archivo actualizado
             timestamp: new Date().toISOString(),
         });
     } catch (error) {
@@ -116,6 +204,77 @@ export async function PUT(request: Request) {
             { status: 500 }
         );
     }
+}
+
+// Función para hacer merge inteligente de cambios
+function mergeChanges(
+    localPantallas: Pantalla[],
+    remotePantallas: Pantalla[]
+): { merged: Pantalla[]; conflicts: { id: number; denominacion: string }[] } {
+    const conflicts: { id: number; denominacion: string }[] = [];
+    const merged: Pantalla[] = [];
+
+    // Crear un mapa de pantallas remotas por denominación (identificador único)
+    const remoteMap = new Map<string, Pantalla>();
+    remotePantallas.forEach((p) => {
+        remoteMap.set(p.nombre, p);
+    });
+
+    // Crear un mapa de pantallas locales por denominación
+    const localMap = new Map<string, Pantalla>();
+    localPantallas.forEach((p) => {
+        localMap.set(p.nombre, p);
+    });
+
+    // Iterar sobre todas las pantallas únicas
+    const allNames = new Set([...Array.from(localMap.keys()), ...Array.from(remoteMap.keys())]);
+
+    allNames.forEach((nombre) => {
+        const local = localMap.get(nombre);
+        const remote = remoteMap.get(nombre);
+
+        if (!local && remote) {
+            // Solo existe en remoto (nueva tarea agregada por otro usuario)
+            merged.push(remote);
+        } else if (local && !remote) {
+            // Solo existe en local (nueva tarea agregada por este usuario)
+            merged.push(local);
+        } else if (local && remote) {
+            // Existe en ambos: verificar si hay cambios
+            const localChanged = hasChanges(local, remote);
+
+            if (localChanged) {
+                // Ambos usuarios modificaron la misma tarea → CONFLICTO
+                conflicts.push({ id: local.id, denominacion: nombre });
+                // Por ahora, usar la versión local (se puede cambiar la estrategia)
+                merged.push(local);
+            } else {
+                // No hay cambios, usar cualquiera (son iguales)
+                merged.push(remote);
+            }
+        }
+    });
+
+    // Ordenar por prioridadNum
+    merged.sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0));
+
+    return { merged, conflicts };
+}
+
+// Función para detectar si una pantalla fue modificada
+function hasChanges(local: Pantalla, remote: Pantalla): boolean {
+    // Comparar campos relevantes (excluir id que puede cambiar)
+    return (
+        local.estado !== remote.estado ||
+        local.importada !== remote.importada ||
+        local.verificada !== remote.verificada ||
+        local.responsable !== remote.responsable ||
+        local.fechaLimite !== remote.fechaLimite ||
+        local.conErrores !== remote.conErrores ||
+        local.enDesarrollo !== remote.enDesarrollo ||
+        local.prioridadNum !== remote.prioridadNum ||
+        local.porcentaje !== remote.porcentaje
+    );
 }
 
 // Función para transformar los datos del tracking.json al formato de Pantalla[]

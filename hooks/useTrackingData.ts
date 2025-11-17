@@ -9,9 +9,12 @@ export function useTrackingData() {
     const [pantallas, setPantallas] = useState<Pantalla[]>([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
-    const [nextResetTime, setNextResetTime] = useState<number>(5000); // 5 segundos en ms
     const [isSaving, setIsSaving] = useState(false);
-    const [saveStatus, setSaveStatus] = useState<"idle" | "success" | "error">("idle");
+    const [saveStatus, setSaveStatus] = useState<"idle" | "success" | "error" | "auto-saving">("idle");
+    const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+    const [lastSavedData, setLastSavedData] = useState<string>("");
+    const [lastAutoSaveTime, setLastAutoSaveTime] = useState<number>(() => Date.now());
+    const [originalSha, setOriginalSha] = useState<string | null>(null);
 
     useEffect(() => {
         async function loadData() {
@@ -25,6 +28,16 @@ export function useTrackingData() {
                     if (parsed && Array.isArray(parsed) && parsed.length > 0) {
                         console.log("📦 Cargando desde localStorage:", parsed.length, "pantallas");
                         setPantallas(parsed);
+                        setLastSavedData(storedData); // Inicializar con datos de localStorage
+                        setLastAutoSaveTime(Date.now()); // Inicializar tiempo
+
+                        // Cargar SHA guardado
+                        const savedSha = localStorage.getItem("mypolarier_original_sha");
+                        if (savedSha) {
+                            setOriginalSha(savedSha);
+                            console.log("🔑 SHA recuperado desde localStorage:", savedSha.substring(0, 7));
+                        }
+
                         setIsLoading(false);
                         return;
                     } else {
@@ -45,7 +58,16 @@ export function useTrackingData() {
                 if (result.success && result.data) {
                     console.log("📊 Datos recibidos:", result.data.length, "pantallas");
                     setPantallas(result.data);
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(result.data));
+                    const dataString = JSON.stringify(result.data);
+                    localStorage.setItem(STORAGE_KEY, dataString);
+                    setLastSavedData(dataString); // Guardar snapshot inicial
+                    setLastAutoSaveTime(Date.now()); // Inicializar tiempo de carga
+
+                    // Guardar SHA original para detección de conflictos
+                    if (result.sha) {
+                        setOriginalSha(result.sha);
+                        localStorage.setItem("mypolarier_original_sha", result.sha);
+                    }
                 } else {
                     throw new Error(result.error || "Error al procesar los datos");
                 }
@@ -60,38 +82,31 @@ export function useTrackingData() {
         loadData();
     }, []);
 
+    // Detectar cambios sin guardar
     useEffect(() => {
-        // Guardar en localStorage cuando cambian los datos
-        if (pantallas.length > 0) {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(pantallas));
-        }
-    }, [pantallas]);
+        if (pantallas.length === 0) return;
 
-    // Auto-reset cada 5 segundos
+        const currentData = JSON.stringify(pantallas);
+        const hasChanges = currentData !== lastSavedData;
+        setHasUnsavedChanges(hasChanges);
+
+        // Guardar en localStorage inmediatamente (copia local)
+        localStorage.setItem(STORAGE_KEY, currentData);
+    }, [pantallas, lastSavedData]);
+
+    // Protección contra pérdida de datos al cerrar
     useEffect(() => {
-        const RESET_INTERVAL = 5000; // 5 segundos
-        let lastResetTime = Date.now();
-
-        // Actualizar el contador cada segundo
-        const countdownInterval = setInterval(() => {
-            const elapsed = Date.now() - lastResetTime;
-            const remaining = RESET_INTERVAL - elapsed;
-            setNextResetTime(Math.max(0, remaining));
-        }, 1000);
-
-        // Ejecutar el reset cada 5 segundos
-        const resetInterval = setInterval(() => {
-            console.log("⏰ Auto-reset programado ejecutándose...");
-            resetData();
-            lastResetTime = Date.now();
-            setNextResetTime(RESET_INTERVAL);
-        }, RESET_INTERVAL);
-
-        return () => {
-            clearInterval(countdownInterval);
-            clearInterval(resetInterval);
+        const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+            if (hasUnsavedChanges) {
+                e.preventDefault();
+                e.returnValue = "Tienes cambios sin guardar. ¿Seguro que quieres salir?";
+                return e.returnValue;
+            }
         };
-    }, []);
+
+        window.addEventListener("beforeunload", handleBeforeUnload);
+        return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+    }, [hasUnsavedChanges]);
 
     const updatePantalla = (id: number, updates: Partial<Pantalla>) => {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, ...updates } : p)));
@@ -123,14 +138,155 @@ export function useTrackingData() {
         );
     };
 
-    const resetData = async () => {
+    // Crear backup antes de guardar
+    const createBackup = () => {
         try {
-            // Limpiar localStorage primero
+            const backup = {
+                timestamp: Date.now(),
+                date: new Date().toISOString(),
+                data: pantallas,
+            };
+
+            const backups = JSON.parse(localStorage.getItem("mypolarier_backups") || "[]");
+            backups.push(backup);
+
+            // Mantener solo las últimas 10 versiones
+            if (backups.length > 10) {
+                backups.shift();
+            }
+
+            localStorage.setItem("mypolarier_backups", JSON.stringify(backups));
+            console.log("📦 Backup creado:", new Date(backup.timestamp).toLocaleString());
+        } catch (err) {
+            console.error("❌ Error creando backup:", err);
+        }
+    };
+
+    // Auto-guardado (sin confirmación del usuario)
+    const autoSave = async () => {
+        if (isSaving) {
+            console.log("⏳ Guardado en progreso, saltando auto-save...");
+            return;
+        }
+
+        setIsSaving(true);
+        setSaveStatus("auto-saving");
+
+        try {
+            // Crear backup antes de guardar
+            createBackup();
+
+            console.log("💾 Auto-guardando en GitHub...", pantallas.length, "pantallas");
+
+            const response = await fetch("/api/tracking", {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    pantallas,
+                    originalSha, // Enviar SHA para detección de conflictos
+                }),
+            });
+
+            const result = await response.json();
+
+            if (!response.ok) {
+                if (response.status === 409) {
+                    // Conflicto detectado
+                    console.error("⚠️ Conflicto: otro usuario modificó las mismas tareas");
+                    setSaveStatus("error");
+                    setError(`Conflicto: ${result.conflicts?.length || 0} tareas modificadas por otro usuario`);
+                    // Notificar al usuario para que recargue
+                    setTimeout(() => {
+                        if (
+                            confirm(
+                                `⚠️ CONFLICTO DETECTADO\n\n` +
+                                    `Otro usuario modificó ${
+                                        result.conflicts?.length || 0
+                                    } tareas que tú también modificaste.\n\n` +
+                                    `¿Quieres recargar los datos desde GitHub?\n` +
+                                    `(Tus cambios se guardarán como backup antes de recargar)`
+                            )
+                        ) {
+                            createBackup();
+                            window.location.reload();
+                        }
+                    }, 500);
+                    return;
+                }
+                throw new Error(result.error || "Error al auto-guardar");
+            }
+
+            console.log("✅ Auto-guardado exitoso", result.merged ? "(con merge)" : "");
+            const currentData = JSON.stringify(pantallas);
+            setLastSavedData(currentData);
+            setHasUnsavedChanges(false);
+            setLastAutoSaveTime(Date.now());
+            setSaveStatus("success");
+
+            // Actualizar SHA después de guardado exitoso
+            if (result.newSha) {
+                setOriginalSha(result.newSha);
+                localStorage.setItem("mypolarier_original_sha", result.newSha);
+            }
+
+            // Limpiar estado después de 3 segundos
+            setTimeout(() => {
+                setSaveStatus("idle");
+            }, 3000);
+        } catch (err) {
+            console.error("❌ Error en auto-guardado:", err);
+            // En auto-guardado, no mostramos error al usuario, solo lo registramos
+            setSaveStatus("idle");
+        } finally {
+            setIsSaving(false);
+        }
+    };
+
+    // Auto-guardado inteligente cada 30 segundos si hay cambios
+    useEffect(() => {
+        const AUTO_SAVE_INTERVAL = 30000; // 30 segundos
+
+        const autoSaveTimer = setInterval(() => {
+            if (hasUnsavedChanges && !isSaving) {
+                console.log("💾 Auto-guardado activado - detectados cambios sin guardar");
+                autoSave();
+            } else if (!hasUnsavedChanges) {
+                console.log("✅ No hay cambios para auto-guardar");
+            }
+        }, AUTO_SAVE_INTERVAL);
+
+        return () => clearInterval(autoSaveTimer);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [hasUnsavedChanges, isSaving]);
+
+    const resetData = async () => {
+        // Advertir si hay cambios sin guardar
+        if (hasUnsavedChanges) {
+            const confirmar = confirm(
+                "⚠️ Tienes cambios sin guardar.\n\n" +
+                    "Se creará un backup automático antes de resetear.\n\n" +
+                    "¿Continuar con el reset?"
+            );
+            if (!confirmar) return;
+        }
+
+        try {
+            // Crear backup antes de resetear
+            createBackup();
+
+            // Limpiar localStorage
             localStorage.removeItem(STORAGE_KEY);
 
             // Recargar desde el archivo original
             console.log("🔄 Reseteando datos...");
-            const response = await fetch("/api/tracking");
+            const response = await fetch("/api/tracking", {
+                cache: "no-store",
+                headers: {
+                    "Cache-Control": "no-cache",
+                },
+            });
             if (!response.ok) {
                 throw new Error("Error al cargar los datos");
             }
@@ -140,7 +296,16 @@ export function useTrackingData() {
             if (result.success && result.data) {
                 console.log("📊 Nuevos datos:", result.data.length, "pantallas");
                 setPantallas(result.data);
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(result.data));
+                const dataString = JSON.stringify(result.data);
+                localStorage.setItem(STORAGE_KEY, dataString);
+                setLastSavedData(dataString);
+                setHasUnsavedChanges(false);
+
+                // Actualizar SHA original
+                if (result.sha) {
+                    setOriginalSha(result.sha);
+                    localStorage.setItem("mypolarier_original_sha", result.sha);
+                }
             }
         } catch (err) {
             console.error("❌ Error reseteando datos:", err);
@@ -166,6 +331,7 @@ export function useTrackingData() {
 
         const maxRetries = 3;
         let attempt = 0;
+        let forceSave = false; // Flag para forzar guardado sin verificación de SHA
 
         while (attempt < maxRetries) {
             try {
@@ -182,16 +348,51 @@ export function useTrackingData() {
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify({ pantallas }),
+                    body: JSON.stringify({
+                        pantallas,
+                        originalSha: forceSave ? null : originalSha, // Si forceSave, no enviar SHA
+                    }),
                 });
 
                 const result = await response.json();
 
-                if (!response.ok || !result.success) {
+                if (!response.ok) {
+                    if (response.status === 409) {
+                        // Conflicto detectado
+                        console.error("⚠️ Conflicto detectado");
+                        const confirmar = confirm(
+                            `⚠️ CONFLICTO DETECTADO\n\n` +
+                                `Otro usuario modificó ${
+                                    result.conflicts?.length || 0
+                                } tareas que tú también modificaste:\n\n` +
+                                (result.conflicts
+                                    ?.map((c: { denominacion: string }) => `- ${c.denominacion}`)
+                                    .join("\n") || "") +
+                                `\n\n¿Quieres forzar el guardado? (sobrescribirá los cambios del otro usuario)\n\n` +
+                                `O cancela y recarga para ver los cambios remotos.`
+                        );
+
+                        if (!confirmar) {
+                            setSaveStatus("error");
+                            setIsSaving(false);
+
+                            if (confirm("¿Quieres recargar la página para ver los cambios de GitHub?")) {
+                                createBackup();
+                                window.location.reload();
+                            }
+                            return;
+                        }
+
+                        // Forzar guardado sin SHA (sobrescribir)
+                        console.log("🔄 Forzando guardado (sobrescribir cambios remotos)...");
+                        forceSave = true; // Activar flag para forzar
+                        continue; // Reintentar sin SHA
+                    }
+
                     throw new Error(result.error || "Error al guardar los datos");
                 }
 
-                console.log("✅ Datos guardados, verificando...");
+                console.log("✅ Datos guardados", result.merged ? "(con merge automático)" : "", "verificando...");
 
                 // 2. Verificar que se guardó correctamente (esperar 2 segundos)
                 await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -220,8 +421,19 @@ export function useTrackingData() {
                 console.log("✅ Verificación exitosa: datos guardados correctamente en GitHub");
                 console.log(`📊 Commit: ${result.commit?.sha?.substring(0, 7) || "N/A"}`);
 
+                // Actualizar estado de guardado
+                const currentData = JSON.stringify(pantallas);
+                setLastSavedData(currentData);
+                setHasUnsavedChanges(false);
+                setLastAutoSaveTime(Date.now());
                 setSaveStatus("success");
                 setIsSaving(false);
+
+                // Actualizar SHA después de guardado exitoso
+                if (result.newSha) {
+                    setOriginalSha(result.newSha);
+                    localStorage.setItem("mypolarier_original_sha", result.newSha);
+                }
 
                 // Limpiar el mensaje de éxito después de 3 segundos
                 setTimeout(() => {
@@ -308,6 +520,48 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, enDesarrollo } : p)));
     };
 
+    // Restaurar desde backup
+    const restoreFromBackup = (timestamp: number) => {
+        try {
+            const backups = JSON.parse(localStorage.getItem("mypolarier_backups") || "[]");
+            const backup = backups.find((b: { timestamp: number }) => b.timestamp === timestamp);
+
+            if (!backup) {
+                alert("No se encontró el backup seleccionado");
+                return;
+            }
+
+            if (hasUnsavedChanges) {
+                const confirmar = confirm(
+                    "⚠️ Tienes cambios sin guardar.\n\n" +
+                        "¿Quieres restaurar el backup? Los cambios actuales se perderán."
+                );
+                if (!confirmar) return;
+            }
+
+            setPantallas(backup.data);
+            const dataString = JSON.stringify(backup.data);
+            localStorage.setItem(STORAGE_KEY, dataString);
+            setLastSavedData(dataString); // Actualizar lastSavedData
+            setHasUnsavedChanges(false); // Marcar como guardado
+            console.log("✅ Backup restaurado:", new Date(backup.timestamp).toLocaleString());
+        } catch (err) {
+            console.error("❌ Error restaurando backup:", err);
+            alert("Error al restaurar el backup");
+        }
+    };
+
+    // Obtener lista de backups
+    const getBackups = () => {
+        try {
+            const backups = JSON.parse(localStorage.getItem("mypolarier_backups") || "[]");
+            return backups;
+        } catch (err) {
+            console.error("❌ Error obteniendo backups:", err);
+            return [];
+        }
+    };
+
     return {
         pantallas,
         isLoading,
@@ -327,6 +581,9 @@ export function useTrackingData() {
         updateEnDesarrollo,
         isSaving,
         saveStatus,
-        nextResetTime,
+        hasUnsavedChanges,
+        lastAutoSaveTime,
+        restoreFromBackup,
+        getBackups,
     };
 }

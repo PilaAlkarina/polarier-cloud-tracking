@@ -9,7 +9,8 @@ import ProgressChart from "@/components/ProgressChart";
 import CountdownTimer from "@/components/CountdownTimer";
 import TasksListsEditable from "./TasksListsEditable";
 import CompactStatusLegend from "./CompactStatusLegend";
-import ResetCountdown from "./ResetCountdown";
+import AutoSaveIndicator from "./AutoSaveIndicator";
+import BackupManager from "./BackupManager";
 
 export default function Dashboard() {
     const {
@@ -27,7 +28,10 @@ export default function Dashboard() {
         updateEnDesarrollo,
         isSaving,
         saveStatus,
-        nextResetTime,
+        hasUnsavedChanges,
+        lastAutoSaveTime,
+        restoreFromBackup,
+        getBackups,
     } = useTrackingData();
     const statsGlobales = useMemo(() => calcularEstadisticasGlobales(pantallas), [pantallas]);
 
@@ -124,9 +128,13 @@ export default function Dashboard() {
                                             ? "bg-green-500 text-white hover:bg-green-600"
                                             : saveStatus === "error"
                                             ? "bg-red-500 text-white hover:bg-red-600"
+                                            : saveStatus === "auto-saving"
+                                            ? "bg-blue-500 text-white"
+                                            : hasUnsavedChanges
+                                            ? "bg-orange-500 text-white hover:bg-orange-600 animate-pulse"
                                             : "bg-[#F1BE48] text-[#0E4174] hover:bg-[#f1c95e] border border-[#0E4174]/20"
                                     }`}
-                                    title="Guardar cambios en GitHub"
+                                    title={hasUnsavedChanges ? "Hay cambios sin guardar" : "Guardar cambios en GitHub"}
                                 >
                                     {isSaving ? (
                                         <>
@@ -137,6 +145,10 @@ export default function Dashboard() {
                                         <>✅ Guardado</>
                                     ) : saveStatus === "error" ? (
                                         <>❌ Error</>
+                                    ) : saveStatus === "auto-saving" ? (
+                                        <>💾 Auto-guardando...</>
+                                    ) : hasUnsavedChanges ? (
+                                        <>💾 Guardar *</>
                                     ) : (
                                         <>💾 Guardar</>
                                     )}
@@ -156,9 +168,14 @@ export default function Dashboard() {
                                 >
                                     🔄 Reset
                                 </button>
+                                <BackupManager getBackups={getBackups} restoreFromBackup={restoreFromBackup} />
                                 <CompactStatusLegend />
                             </div>
-                            <ResetCountdown nextResetTime={nextResetTime} />
+                            <AutoSaveIndicator
+                                hasUnsavedChanges={hasUnsavedChanges}
+                                saveStatus={saveStatus}
+                                lastAutoSaveTime={lastAutoSaveTime}
+                            />
                         </div>
                     </div>
                 </div>
