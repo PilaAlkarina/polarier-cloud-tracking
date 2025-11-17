@@ -739,8 +739,8 @@
   {
     "denominacion": "Lavandería",
     "prioridad": 68,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "ISAAC",
+    "estado": "REVISADO",
+    "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
     "consultas": 402,
     "porcentaje": 0,
