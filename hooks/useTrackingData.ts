@@ -164,44 +164,94 @@ export function useTrackingData() {
         setSaveStatus("idle");
         setError(null);
 
-        try {
-            console.log("💾 Guardando datos en GitHub...", pantallas.length, "pantallas");
+        const maxRetries = 3;
+        let attempt = 0;
 
-            const response = await fetch("/api/tracking", {
-                method: "PUT",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ pantallas }),
-            });
+        while (attempt < maxRetries) {
+            try {
+                attempt++;
+                console.log(
+                    `💾 Guardando datos en GitHub... (intento ${attempt}/${maxRetries})`,
+                    pantallas.length,
+                    "pantallas"
+                );
 
-            const result = await response.json();
+                // 1. Guardar en GitHub
+                const response = await fetch("/api/tracking", {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ pantallas }),
+                });
 
-            if (!response.ok || !result.success) {
-                throw new Error(result.error || "Error al guardar los datos");
+                const result = await response.json();
+
+                if (!response.ok || !result.success) {
+                    throw new Error(result.error || "Error al guardar los datos");
+                }
+
+                console.log("✅ Datos guardados, verificando...");
+
+                // 2. Verificar que se guardó correctamente (esperar 2 segundos)
+                await new Promise((resolve) => setTimeout(resolve, 2000));
+
+                const verifyResponse = await fetch("/api/tracking", {
+                    cache: "no-store",
+                    headers: {
+                        "Cache-Control": "no-cache, no-store, must-revalidate",
+                    },
+                });
+
+                const verifyResult = await verifyResponse.json();
+
+                if (!verifyResult.success || !verifyResult.data) {
+                    throw new Error("Error al verificar los datos guardados");
+                }
+
+                // 3. Comparar que los datos guardados coinciden
+                const savedCount = verifyResult.data.length;
+                const localCount = pantallas.length;
+
+                if (savedCount !== localCount) {
+                    console.warn(`⚠️ Diferencia en cantidad: local=${localCount}, GitHub=${savedCount}`);
+                }
+
+                console.log("✅ Verificación exitosa: datos guardados correctamente en GitHub");
+                console.log(`📊 Commit: ${result.commit?.sha?.substring(0, 7) || "N/A"}`);
+
+                setSaveStatus("success");
+
+                // Limpiar el mensaje de éxito después de 3 segundos
+                setTimeout(() => {
+                    setSaveStatus("idle");
+                }, 3000);
+
+                // Éxito, salir del bucle
+                return;
+            } catch (err) {
+                console.error(`❌ Error en intento ${attempt}:`, err);
+
+                if (attempt >= maxRetries) {
+                    // Se agotaron los reintentos
+                    const errorMessage = err instanceof Error ? err.message : "Error desconocido al guardar";
+                    setError(`Error después de ${maxRetries} intentos: ${errorMessage}`);
+                    setSaveStatus("error");
+
+                    // Limpiar el mensaje de error después de 5 segundos
+                    setTimeout(() => {
+                        setSaveStatus("idle");
+                        setError(null);
+                    }, 5000);
+                } else {
+                    // Esperar antes del siguiente intento
+                    console.log(`⏳ Esperando 2 segundos antes del siguiente intento...`);
+                    await new Promise((resolve) => setTimeout(resolve, 2000));
+                }
             }
-
-            console.log("✅ Datos guardados exitosamente:", result);
-            setSaveStatus("success");
-
-            // Limpiar el mensaje de éxito después de 3 segundos
-            setTimeout(() => {
-                setSaveStatus("idle");
-            }, 3000);
-        } catch (err) {
-            console.error("❌ Error guardando en GitHub:", err);
-            const errorMessage = err instanceof Error ? err.message : "Error desconocido al guardar";
-            setError(errorMessage);
-            setSaveStatus("error");
-
-            // Limpiar el mensaje de error después de 5 segundos
-            setTimeout(() => {
-                setSaveStatus("idle");
-                setError(null);
-            }, 5000);
-        } finally {
-            setIsSaving(false);
         }
+
+        setIsSaving(false);
     };
 
     const deletePantalla = (id: number) => {
