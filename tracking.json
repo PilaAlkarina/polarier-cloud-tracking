@@ -354,12 +354,12 @@
   {
     "denominacion": "Gestión de nóminas",
     "prioridad": 33,
-    "estado": "REVISADO",
+    "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 2203,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false
   },
   {
@@ -569,7 +569,7 @@
     "consultas": 1355,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Maquinaria",
@@ -651,7 +651,7 @@
   {
     "denominacion": "Categorías laborales",
     "prioridad": 60,
-    "estado": "REVISADO",
+    "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 389,
@@ -717,7 +717,7 @@
   {
     "denominacion": "Parametrización de prendas",
     "prioridad": 66,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-17",
     "consultas": 495,
