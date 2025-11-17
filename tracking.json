@@ -200,7 +200,7 @@
   {
     "denominacion": "Presupuesto venta",
     "prioridad": 19,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-12",
     "consultas": 5267,
@@ -222,7 +222,7 @@
   {
     "denominacion": "Factura venta",
     "prioridad": 21,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-14",
     "consultas": 4251,
