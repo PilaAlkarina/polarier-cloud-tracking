@@ -299,13 +299,13 @@
   {
     "denominacion": "Pedido proveedor",
     "prioridad": 28,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "JOAN",
+    "estado": "REVISADO",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 2538,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Reposiciones office",
