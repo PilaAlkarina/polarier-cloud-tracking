@@ -376,12 +376,12 @@
   {
     "denominacion": "Dashboard ejecutivo",
     "prioridad": 35,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 4176,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": true
   },
   {
