@@ -178,7 +178,7 @@
   {
     "denominacion": "Comparativa procesados - entregados",
     "prioridad": 17,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 5583,
