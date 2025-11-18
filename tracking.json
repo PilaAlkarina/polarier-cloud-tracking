@@ -1157,7 +1157,7 @@
   {
     "denominacion": "Informe cumplimiento horario",
     "prioridad": 106,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
     "consultas": 84,
