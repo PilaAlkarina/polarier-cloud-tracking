@@ -1166,17 +1166,6 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "INF Logística",
-    "prioridad": 108,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-20",
-    "consultas": 82,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
-  },
-  {
     "denominacion": "Rutas de expedición",
     "prioridad": 109,
     "estado": "IMPORTADO",
