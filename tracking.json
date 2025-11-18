@@ -915,7 +915,7 @@
   {
     "denominacion": "No conformidades",
     "prioridad": 84,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 248,
