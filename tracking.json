@@ -332,8 +332,8 @@
   {
     "denominacion": "Control presupuestario v2",
     "prioridad": 31,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "CARRASCOSA",
+    "estado": "REVISADO",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-13",
     "consultas": 2248,
     "porcentaje": 1,
