@@ -411,11 +411,11 @@
     "prioridad": 38,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-14",
+    "fechaLimite": "2025-11-18",
     "consultas": 1918,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Prev. ingresos y costes",
