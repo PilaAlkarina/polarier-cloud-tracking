@@ -979,17 +979,6 @@
     "enDesarrollo": true
   },
   {
-    "denominacion": "Cumplimiento de preventivo",
-    "prioridad": 90,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-18",
-    "consultas": 182,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": true
-  },
-  {
     "denominacion": "Estructura operativa",
     "prioridad": 91,
     "estado": "REVISADO",
