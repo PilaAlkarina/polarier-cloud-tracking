@@ -893,7 +893,7 @@
   {
     "denominacion": "Kg. Presupuestados",
     "prioridad": 82,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 251,
@@ -970,7 +970,7 @@
   {
     "denominacion": "Partes de trabajo",
     "prioridad": 89,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
     "consultas": 185,
