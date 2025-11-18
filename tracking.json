@@ -376,13 +376,13 @@
   {
     "denominacion": "Dashboard ejecutivo",
     "prioridad": 35,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 4176,
     "porcentaje": 1,
     "conErrores": true,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Config. uniformidad",
