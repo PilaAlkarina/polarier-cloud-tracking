@@ -976,7 +976,7 @@
     "consultas": 185,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Estructura operativa",
