@@ -796,11 +796,11 @@
     "prioridad": 73,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-17",
+    "fechaLimite": "2025-11-18",
     "consultas": 328,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Factura compra",
