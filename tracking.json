@@ -1168,7 +1168,7 @@
   {
     "denominacion": "Rutas de expedición",
     "prioridad": 109,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-20",
     "consultas": 75,
