@@ -1059,12 +1059,12 @@
     "denominacion": "Plantilla mantenimiento prev.",
     "prioridad": 99,
     "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-19",
+    "usuario_prepara": "ISAAC",
+    "fechaLimite": "2025-11-18",
     "consultas": 129,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Control presupuestario",
