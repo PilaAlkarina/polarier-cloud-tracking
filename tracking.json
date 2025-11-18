@@ -794,13 +794,13 @@
   {
     "denominacion": "Definición de prendas",
     "prioridad": 73,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
     "consultas": 328,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Factura compra",
@@ -1053,7 +1053,7 @@
     "consultas": 137,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Inventarios Recambios",
