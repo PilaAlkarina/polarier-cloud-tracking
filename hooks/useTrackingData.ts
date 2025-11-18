@@ -138,30 +138,6 @@ export function useTrackingData() {
         );
     };
 
-    // Crear backup antes de guardar
-    const createBackup = () => {
-        try {
-            const backup = {
-                timestamp: Date.now(),
-                date: new Date().toISOString(),
-                data: pantallas,
-            };
-
-            const backups = JSON.parse(localStorage.getItem("mypolarier_backups") || "[]");
-            backups.push(backup);
-
-            // Mantener solo las últimas 10 versiones
-            if (backups.length > 10) {
-                backups.shift();
-            }
-
-            localStorage.setItem("mypolarier_backups", JSON.stringify(backups));
-            console.log("📦 Backup creado:", new Date(backup.timestamp).toLocaleString());
-        } catch (err) {
-            console.error("❌ Error creando backup:", err);
-        }
-    };
-
     // Auto-guardado (sin confirmación del usuario)
     const autoSave = async () => {
         if (isSaving) {
@@ -173,9 +149,8 @@ export function useTrackingData() {
         setSaveStatus("auto-saving");
 
         try {
-            // Crear backup antes de guardar
-            createBackup();
-
+            // NO crear backup en auto-save para evitar saturación
+            // Los backups se crean solo en operaciones críticas (reset, guardado manual)
             console.log("💾 Auto-guardando en GitHub...", pantallas.length, "pantallas");
 
             const response = await fetch("/api/tracking", {
@@ -197,22 +172,31 @@ export function useTrackingData() {
                     console.error("⚠️ Conflicto: otro usuario modificó las mismas tareas");
                     setSaveStatus("error");
                     setError(`Conflicto: ${result.conflicts?.length || 0} tareas modificadas por otro usuario`);
-                    // Notificar al usuario para que recargue
-                    setTimeout(() => {
-                        if (
-                            confirm(
-                                `⚠️ CONFLICTO DETECTADO\n\n` +
-                                    `Otro usuario modificó ${
-                                        result.conflicts?.length || 0
-                                    } tareas que tú también modificaste.\n\n` +
-                                    `¿Quieres recargar los datos desde GitHub?\n` +
-                                    `(Tus cambios se guardarán como backup antes de recargar)`
-                            )
-                        ) {
-                            createBackup();
-                            window.location.reload();
-                        }
-                    }, 500);
+                    
+                    // Mostrar detalles del conflicto
+                    const conflictDetails = result.conflicts
+                        ?.map((c: { denominacion: string }) => `  • ${c.denominacion}`)
+                        .join('\n') || '';
+                    
+                    // Dar opciones al usuario
+                    const userChoice = confirm(
+                        `⚠️ CONFLICTO DETECTADO\n\n` +
+                        `Otro usuario modificó ${result.conflicts?.length || 0} tareas mientras trabajabas:\n\n` +
+                        conflictDetails + `\n\n` +
+                        `Opciones:\n` +
+                        `• OK: Recargar datos de GitHub (perderás tus cambios locales)\n` +
+                        `• Cancelar: Continuar editando (puedes guardar más tarde)\n\n` +
+                        `¿Recargar desde GitHub?`
+                    );
+
+                    if (userChoice) {
+                        // Recargar desde GitHub
+                        window.location.reload();
+                    } else {
+                        // Continuar editando
+                        setSaveStatus("idle");
+                        setError(null);
+                    }
                     return;
                 }
                 throw new Error(result.error || "Error al auto-guardar");
@@ -266,16 +250,12 @@ export function useTrackingData() {
         if (hasUnsavedChanges) {
             const confirmar = confirm(
                 "⚠️ Tienes cambios sin guardar.\n\n" +
-                    "Se creará un backup automático antes de resetear.\n\n" +
-                    "¿Continuar con el reset?"
+                    "¿Continuar con el reset? Los cambios se perderán."
             );
             if (!confirmar) return;
         }
 
         try {
-            // Crear backup antes de resetear
-            createBackup();
-
             // Limpiar localStorage
             localStorage.removeItem(STORAGE_KEY);
 
@@ -357,39 +337,47 @@ export function useTrackingData() {
                 const result = await response.json();
 
                 if (!response.ok) {
-                    if (response.status === 409) {
-                        // Conflicto detectado
-                        console.error("⚠️ Conflicto detectado");
-                        const confirmar = confirm(
-                            `⚠️ CONFLICTO DETECTADO\n\n` +
-                                `Otro usuario modificó ${
-                                    result.conflicts?.length || 0
-                                } tareas que tú también modificaste:\n\n` +
-                                (result.conflicts
-                                    ?.map((c: { denominacion: string }) => `- ${c.denominacion}`)
-                                    .join("\n") || "") +
-                                `\n\n¿Quieres forzar el guardado? (sobrescribirá los cambios del otro usuario)\n\n` +
-                                `O cancela y recarga para ver los cambios remotos.`
+                if (response.status === 409) {
+                    // Conflicto detectado
+                    console.error("⚠️ Conflicto detectado");
+                    
+                    const conflictList = result.conflicts
+                        ?.map((c: { denominacion: string }) => `  • ${c.denominacion}`)
+                        .join("\n") || "";
+                    
+                    const confirmar = confirm(
+                        `⚠️ CONFLICTO DETECTADO\n\n` +
+                        `Otro usuario modificó ${result.conflicts?.length || 0} tareas mientras trabajabas:\n\n` +
+                        conflictList + `\n\n` +
+                        `Opciones:\n` +
+                        `• OK: Forzar guardado de TUS cambios (sobrescribirá cambios remotos)\n` +
+                        `• Cancelar: Ver opciones para recargar\n\n` +
+                        `¿Forzar guardado de tus cambios?`
+                    );
+
+                    if (!confirmar) {
+                        // Usuario cancela forzar guardado
+                        const recargar = confirm(
+                            `¿Quieres recargar la página para ver los cambios de GitHub?\n\n` +
+                            `⚠️ Tus cambios locales se perderán.`
                         );
-
-                        if (!confirmar) {
-                            setSaveStatus("error");
-                            setIsSaving(false);
-
-                            if (confirm("¿Quieres recargar la página para ver los cambios de GitHub?")) {
-                                createBackup();
-                                window.location.reload();
-                            }
-                            return;
+                        
+                        if (recargar) {
+                            window.location.reload();
+                        } else {
+                            // Usuario decide no hacer nada - desbloquear interfaz
+                            setSaveStatus("idle");
+                            setError("Guardado cancelado por conflicto. Puedes seguir editando.");
                         }
-
-                        // Forzar guardado sin SHA (sobrescribir)
-                        console.log("🔄 Forzando guardado (sobrescribir cambios remotos)...");
-                        forceSave = true; // Activar flag para forzar
-                        continue; // Reintentar sin SHA
+                        setIsSaving(false);
+                        return;
                     }
 
-                    throw new Error(result.error || "Error al guardar los datos");
+                    // Forzar guardado sin SHA (sobrescribir)
+                    console.log("🔄 Forzando guardado (sobrescribir cambios remotos)...");
+                    forceSave = true; // Activar flag para forzar
+                    continue; // Reintentar sin SHA
+                }                    throw new Error(result.error || "Error al guardar los datos");
                 }
 
                 console.log("✅ Datos guardados", result.merged ? "(con merge automático)" : "", "verificando...");
@@ -520,48 +508,6 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, enDesarrollo } : p)));
     };
 
-    // Restaurar desde backup
-    const restoreFromBackup = (timestamp: number) => {
-        try {
-            const backups = JSON.parse(localStorage.getItem("mypolarier_backups") || "[]");
-            const backup = backups.find((b: { timestamp: number }) => b.timestamp === timestamp);
-
-            if (!backup) {
-                alert("No se encontró el backup seleccionado");
-                return;
-            }
-
-            if (hasUnsavedChanges) {
-                const confirmar = confirm(
-                    "⚠️ Tienes cambios sin guardar.\n\n" +
-                        "¿Quieres restaurar el backup? Los cambios actuales se perderán."
-                );
-                if (!confirmar) return;
-            }
-
-            setPantallas(backup.data);
-            const dataString = JSON.stringify(backup.data);
-            localStorage.setItem(STORAGE_KEY, dataString);
-            setLastSavedData(dataString); // Actualizar lastSavedData
-            setHasUnsavedChanges(false); // Marcar como guardado
-            console.log("✅ Backup restaurado:", new Date(backup.timestamp).toLocaleString());
-        } catch (err) {
-            console.error("❌ Error restaurando backup:", err);
-            alert("Error al restaurar el backup");
-        }
-    };
-
-    // Obtener lista de backups
-    const getBackups = () => {
-        try {
-            const backups = JSON.parse(localStorage.getItem("mypolarier_backups") || "[]");
-            return backups;
-        } catch (err) {
-            console.error("❌ Error obteniendo backups:", err);
-            return [];
-        }
-    };
-
     return {
         pantallas,
         isLoading,
@@ -583,7 +529,5 @@ export function useTrackingData() {
         saveStatus,
         hasUnsavedChanges,
         lastAutoSaveTime,
-        restoreFromBackup,
-        getBackups,
     };
 }

@@ -175,11 +175,17 @@ export default function BackupManager({ getBackups, restoreFromBackup }: BackupM
 
                 {/* Footer */}
                 <div className="px-6 py-4 border-t border-gray-200 bg-gray-50">
-                    <div className="flex items-center justify-between text-xs text-gray-600">
-                        <span>💡 Se mantienen las últimas 10 versiones</span>
+                    <div className="flex items-start justify-between text-xs text-gray-600">
+                        <div className="space-y-1">
+                            <div>💡 Se mantienen las últimas 10 versiones</div>
+                            <div className="text-gray-500">
+                                ✓ Los backups se crean antes de guardar manualmente o resetear
+                            </div>
+                            <div className="text-gray-500">✓ NO se crean en auto-guardado para evitar saturación</div>
+                        </div>
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors font-medium"
+                            className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg transition-colors font-medium ml-4"
                         >
                             Cerrar
                         </button>
