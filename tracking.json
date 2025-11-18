@@ -894,12 +894,12 @@
     "denominacion": "Kg. Presupuestados",
     "prioridad": 82,
     "estado": "PENDIENTE",
-    "usuario_prepara": "JOAN",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 251,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Gestión de mantenimiento",
