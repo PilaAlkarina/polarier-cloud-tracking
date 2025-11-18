@@ -715,17 +715,6 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Informe de pedidos huésped",
-    "prioridad": 67,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-17",
-    "consultas": 476,
-    "porcentaje": 0,
-    "conErrores": true,
-    "enDesarrollo": true
-  },
-  {
     "denominacion": "Clientes",
     "prioridad": 68,
     "estado": "REVISADO",
