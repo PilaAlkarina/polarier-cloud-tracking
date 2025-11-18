@@ -678,8 +678,8 @@
     "fechaLimite": "2025-11-17",
     "consultas": 588,
     "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
+    "conErrores": true,
+    "enDesarrollo": true
   },
   {
     "denominacion": "Salidas Recambios",
@@ -723,7 +723,7 @@
     "consultas": 476,
     "porcentaje": 0,
     "conErrores": true,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Clientes",
