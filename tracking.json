@@ -1322,12 +1322,12 @@
   {
     "denominacion": "Distribución de recursos TI",
     "prioridad": 123,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 6,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false
   },
   {
