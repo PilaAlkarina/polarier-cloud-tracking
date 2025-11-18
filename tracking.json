@@ -1102,7 +1102,7 @@
   {
     "denominacion": "Rutas de revisión",
     "prioridad": 101,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-19",
     "consultas": 101,
