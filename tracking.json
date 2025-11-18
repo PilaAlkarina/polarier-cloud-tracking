@@ -1322,13 +1322,13 @@
   {
     "denominacion": "Distribución de recursos TI",
     "prioridad": 123,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 6,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Informe repartos huésped",
