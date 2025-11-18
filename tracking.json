@@ -1311,12 +1311,12 @@
   {
     "denominacion": "Validación nómina",
     "prioridad": 120,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-20",
     "consultas": 18,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false
   },
   {
