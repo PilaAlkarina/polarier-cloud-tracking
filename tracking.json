@@ -1047,13 +1047,13 @@
   {
     "denominacion": "Proveedores",
     "prioridad": 97,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
     "consultas": 137,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Inventarios Recambios",
@@ -1086,7 +1086,7 @@
     "consultas": 102,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Rutas de revisión",
