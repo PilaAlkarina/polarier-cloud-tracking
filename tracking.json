@@ -971,12 +971,12 @@
     "denominacion": "Partes de trabajo",
     "prioridad": 89,
     "estado": "PENDIENTE",
-    "usuario_prepara": "LUCIANO",
+    "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
     "consultas": 185,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Cumplimiento de preventivo",
@@ -987,7 +987,7 @@
     "consultas": 182,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Estructura operativa",
@@ -1135,7 +1135,7 @@
   {
     "denominacion": "Informes costes estructura",
     "prioridad": 104,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
     "consultas": 96,
