@@ -1268,12 +1268,12 @@
     "denominacion": "Validación factura",
     "prioridad": 118,
     "estado": "PENDIENTE",
-    "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-20",
+    "usuario_prepara": "LUCIANO",
+    "fechaLimite": "2025-11-18",
     "consultas": 30,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Datos financieros",
