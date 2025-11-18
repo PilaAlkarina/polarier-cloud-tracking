@@ -409,7 +409,7 @@
   {
     "denominacion": "Informe de eventos persona",
     "prioridad": 38,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-14",
     "consultas": 1918,
