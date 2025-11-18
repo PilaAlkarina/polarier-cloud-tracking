@@ -838,7 +838,7 @@
   {
     "denominacion": "Informe rechazo cliente",
     "prioridad": 77,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 294,
