@@ -821,8 +821,8 @@
     "fechaLimite": "2025-11-18",
     "consultas": 306,
     "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
+    "conErrores": true,
+    "enDesarrollo": true
   },
   {
     "denominacion": "Informe rechazo cliente",
@@ -1004,12 +1004,12 @@
     "denominacion": "Balance pedidos / repartos",
     "prioridad": 94,
     "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
+    "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-19",
     "consultas": 144,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Revisiones",
