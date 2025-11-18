@@ -332,8 +332,8 @@
   {
     "denominacion": "Control presupuestario v2",
     "prioridad": 31,
-    "estado": "REVISADO",
-    "usuario_prepara": "LUCIANO",
+    "estado": "IMPORTADO",
+    "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-13",
     "consultas": 2248,
     "porcentaje": 1,
@@ -651,7 +651,7 @@
   {
     "denominacion": "Informe cumplimiento pedidos",
     "prioridad": 60,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-17",
     "consultas": 800,
