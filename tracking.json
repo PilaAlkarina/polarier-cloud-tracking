@@ -299,13 +299,13 @@
   {
     "denominacion": "Pedido proveedor",
     "prioridad": 28,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-14",
     "consultas": 2538,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Reposiciones office",
@@ -618,13 +618,13 @@
   {
     "denominacion": "Albarán compra",
     "prioridad": 57,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-14",
     "consultas": 930,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Mantenimiento preventivo",
@@ -805,7 +805,7 @@
   {
     "denominacion": "Factura compra",
     "prioridad": 74,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
     "consultas": 320,
@@ -1214,11 +1214,11 @@
     "prioridad": 113,
     "estado": "PENDIENTE",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-01-20",
+    "fechaLimite": "2025-11-18",
     "consultas": 50,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false
+    "enDesarrollo": true
   },
   {
     "denominacion": "Producción de lavadoras",
