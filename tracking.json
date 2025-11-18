@@ -1212,7 +1212,7 @@
   {
     "denominacion": "Distribución Kg",
     "prioridad": 113,
-    "estado": "PENDIENTE",
+    "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
     "consultas": 50,
