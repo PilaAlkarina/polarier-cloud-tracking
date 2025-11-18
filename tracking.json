@@ -409,13 +409,13 @@
   {
     "denominacion": "Informe de eventos persona",
     "prioridad": 38,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
     "consultas": 1918,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Prev. ingresos y costes",
