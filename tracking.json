@@ -893,13 +893,13 @@
   {
     "denominacion": "Kg. Presupuestados",
     "prioridad": 82,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 251,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Gestión de mantenimiento",
