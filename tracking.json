@@ -1058,7 +1058,7 @@
   {
     "denominacion": "Inventarios Recambios",
     "prioridad": 98,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-19",
     "consultas": 136,
