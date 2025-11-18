@@ -750,7 +750,7 @@
   {
     "denominacion": "Informe de auditorías",
     "prioridad": 69,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
     "consultas": 408,
