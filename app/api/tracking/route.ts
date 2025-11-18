@@ -107,14 +107,12 @@ export async function PUT(request: Request) {
 
             if (mergeResult.conflicts.length > 0) {
                 // Hay conflictos reales (misma tarea modificada por ambos)
-                console.log(`⚠️ ${mergeResult.conflicts.length} conflictos detectados:`, mergeResult.conflicts);
                 return NextResponse.json(
                     {
                         success: false,
                         error: "conflict",
-                        message: `Conflicto: ${mergeResult.conflicts.length} tareas modificadas simultáneamente`,
+                        message: "Conflicto: otro usuario modificó las mismas tareas",
                         conflicts: mergeResult.conflicts,
-                        conflictCount: mergeResult.conflicts.length,
                         currentData: currentPantallas,
                         mergedData: mergeResult.merged,
                     },
