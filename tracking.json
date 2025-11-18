@@ -882,7 +882,7 @@
   {
     "denominacion": "Informe control almacén cliente",
     "prioridad": 81,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 264,
@@ -937,7 +937,7 @@
   {
     "denominacion": "Informe clasificación sucio",
     "prioridad": 86,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-14",
     "consultas": 221,
