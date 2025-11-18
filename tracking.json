@@ -1210,17 +1210,6 @@
     "enDesarrollo": false
   },
   {
-    "denominacion": "Producción de lavadoras",
-    "prioridad": 114,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-18",
-    "consultas": 48,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false
-  },
-  {
     "denominacion": "Agrupación PEP",
     "prioridad": 115,
     "estado": "REVISADO",
