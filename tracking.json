@@ -277,12 +277,12 @@
   {
     "denominacion": "Monitor SAT",
     "prioridad": 26,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-13",
     "consultas": 3100,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false
   },
   {
