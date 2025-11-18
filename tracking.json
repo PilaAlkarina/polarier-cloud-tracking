@@ -1102,7 +1102,7 @@
   {
     "denominacion": "Reuniones comerciales",
     "prioridad": 102,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-19",
     "consultas": 99,
