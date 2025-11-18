@@ -1157,8 +1157,8 @@
   {
     "denominacion": "Control de uso",
     "prioridad": 107,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "ISAAC",
+    "estado": "REVISADO",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
     "consultas": 82,
     "porcentaje": 0,
