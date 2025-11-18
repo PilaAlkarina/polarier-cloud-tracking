@@ -1003,7 +1003,7 @@
   {
     "denominacion": "Rentabilidad por centro",
     "prioridad": 93,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 147,
@@ -1036,7 +1036,7 @@
   {
     "denominacion": "Distribución CeCo",
     "prioridad": 96,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 142,
