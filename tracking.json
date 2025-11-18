@@ -904,7 +904,7 @@
   {
     "denominacion": "Gestión de mantenimiento",
     "prioridad": 83,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "ISAAC",
     "fechaLimite": "2025-11-18",
     "consultas": 249,
