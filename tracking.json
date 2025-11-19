@@ -129,7 +129,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Control de kilos lavados",
@@ -273,7 +273,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Reposiciones general",
