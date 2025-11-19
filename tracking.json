@@ -1223,13 +1223,13 @@
   {
     "denominacion": "Kg. Lavados",
     "prioridad": 117,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
     "consultas": 31,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Validación factura",
