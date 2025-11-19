@@ -13,6 +13,7 @@ export interface TrackingItemRaw {
     fechaLimite: string;
     conErrores: boolean;
     enDesarrollo: boolean;
+    segundaRevision?: boolean;
 }
 
 export interface Pantalla {
@@ -33,6 +34,7 @@ export interface Pantalla {
     porcentaje?: number;
     conErrores?: boolean;
     enDesarrollo?: boolean;
+    segundaRevision?: boolean;
 }
 
 export interface TareaDiaria {
@@ -52,6 +54,8 @@ export interface EstadisticasGlobales {
     porcentajeImportadas: number;
     porcentajeVerificadas: number;
     porcentajePendientes: number;
+    segundasRevisiones: number;
+    porcentajeSegundaRevision: number;
 }
 
 export interface EstadisticasPorPrioridad {

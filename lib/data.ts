@@ -24,6 +24,7 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
     const importadas = pantallas.filter((p) => p.importada).length;
     const verificadas = pantallas.filter((p) => p.verificada).length;
     const pendientes = pantallas.filter((p) => !p.importada).length;
+    const segundasRevisiones = pantallas.filter((p) => p.segundaRevision).length;
 
     return {
         totalPantallas,
@@ -33,6 +34,8 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
         porcentajeImportadas: totalPantallas > 0 ? Math.round((importadas / totalPantallas) * 100) : 0,
         porcentajeVerificadas: totalPantallas > 0 ? Math.round((verificadas / totalPantallas) * 100) : 0,
         porcentajePendientes: totalPantallas > 0 ? Math.round((pendientes / totalPantallas) * 100) : 0,
+        segundasRevisiones,
+        porcentajeSegundaRevision: totalPantallas > 0 ? Math.round((segundasRevisiones / totalPantallas) * 100) : 0,
     };
 }
 

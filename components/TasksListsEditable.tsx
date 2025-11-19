@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Pantalla, Estado } from "@/types";
 import {
     DndContext,
@@ -27,6 +27,7 @@ interface TasksListsEditableProps {
     onUpdateConErrores: (id: number, conErrores: boolean) => void;
     onUpdateEnDesarrollo: (id: number, enDesarrollo: boolean) => void;
     onUpdateUsuarioPrepara?: (id: number, usuario: string) => void;
+    onUpdateSegundaRevision: (id: number, segundaRevision: boolean) => void;
 }
 
 interface TareasPorUsuario {
@@ -179,6 +180,7 @@ export default function TasksListsEditable({
     onUpdateConErrores,
     onUpdateEnDesarrollo,
     onUpdateUsuarioPrepara,
+    onUpdateSegundaRevision,
 }: TasksListsEditableProps) {
     const [activeId, setActiveId] = useState<string | null>(null);
     const [modalPantalla, setModalPantalla] = useState<Pantalla | null>(null);
@@ -186,6 +188,8 @@ export default function TasksListsEditable({
     const [modalConErrores, setModalConErrores] = useState(false);
     const [modalEnDesarrollo, setModalEnDesarrollo] = useState(false);
     const [modalUsuarioPrepara, setModalUsuarioPrepara] = useState("");
+    const [modalSegundaRevision, setModalSegundaRevision] = useState(false);
+    const [showTransition, setShowTransition] = useState(false);
 
     const openModal = (pantalla: Pantalla) => {
         setModalPantalla(pantalla);
@@ -193,6 +197,7 @@ export default function TasksListsEditable({
         setModalConErrores(pantalla.conErrores || false);
         setModalEnDesarrollo(pantalla.enDesarrollo || false);
         setModalUsuarioPrepara(pantalla.responsable || "");
+        setModalSegundaRevision(pantalla.segundaRevision || false);
     };
 
     const closeModal = () => {
@@ -204,6 +209,7 @@ export default function TasksListsEditable({
             onUpdateEstado(modalPantalla.id, modalEstado);
             onUpdateConErrores(modalPantalla.id, modalConErrores);
             onUpdateEnDesarrollo(modalPantalla.id, modalEnDesarrollo);
+            onUpdateSegundaRevision(modalPantalla.id, modalSegundaRevision);
             if (onUpdateUsuarioPrepara && modalUsuarioPrepara !== modalPantalla.responsable) {
                 onUpdateUsuarioPrepara(modalPantalla.id, modalUsuarioPrepara);
             }
@@ -225,24 +231,74 @@ export default function TasksListsEditable({
     const hoy = new Date();
     hoy.setHours(0, 0, 0, 0);
 
+    // Calcular porcentajes para lógica condicional
+    const totalPantallas = pantallas.length;
+    const importadas = pantallas.filter((p) => p.importada).length;
+    const verificadas = pantallas.filter((p) => p.verificada).length;
+    const porcentajeImportadas = totalPantallas > 0 ? Math.round((importadas / totalPantallas) * 100) : 0;
+    const porcentajeVerificadas = totalPantallas > 0 ? Math.round((verificadas / totalPantallas) * 100) : 0;
+
+    // useEffect para mostrar overlay de transición
+    useEffect(() => {
+        if (
+            porcentajeImportadas === 100 &&
+            porcentajeVerificadas === 100 &&
+            !localStorage.getItem("segunda_revision_shown")
+        ) {
+            setShowTransition(true);
+            setTimeout(() => {
+                setShowTransition(false);
+                localStorage.setItem("segunda_revision_shown", "true");
+            }, 5000);
+        }
+    }, [porcentajeImportadas, porcentajeVerificadas]);
+
     // Calcular tareas por categoría
     const tareasAtrasadas: Pantalla[] = [];
     const tareasDeHoy: Pantalla[] = [];
     const tareasFuturas: Pantalla[] = [];
     const tareasCompletadas: Pantalla[] = [];
 
+    // Determinar si estamos en modo "Segunda Revisión"
+    const modoSegundaRevision = porcentajeImportadas === 100 && porcentajeVerificadas === 100;
+
     pantallas.forEach((pantalla) => {
-        if (pantalla.verificada) {
-            tareasCompletadas.push(pantalla);
-        } else if (pantalla.fechaLimite) {
-            const fechaLimite = new Date(pantalla.fechaLimite);
-            fechaLimite.setHours(0, 0, 0, 0);
-            if (fechaLimite < hoy) {
-                tareasAtrasadas.push(pantalla);
-            } else if (fechaLimite.getTime() === hoy.getTime()) {
-                tareasDeHoy.push(pantalla);
+        // En modo Segunda Revisión: completadas = segundaRevision
+        // En modo normal: completadas = verificadas
+        if (modoSegundaRevision) {
+            if (pantalla.segundaRevision) {
+                tareasCompletadas.push(pantalla);
+            } else if (pantalla.verificada) {
+                // Verificadas sin segunda revisión se muestran en contenedor "Segunda Revisión"
+            } else if (pantalla.fechaLimite) {
+                const fechaLimite = new Date(pantalla.fechaLimite);
+                fechaLimite.setHours(0, 0, 0, 0);
+                if (fechaLimite < hoy) {
+                    tareasAtrasadas.push(pantalla);
+                } else if (fechaLimite.getTime() === hoy.getTime()) {
+                    tareasDeHoy.push(pantalla);
+                } else {
+                    tareasFuturas.push(pantalla);
+                }
             } else {
-                tareasFuturas.push(pantalla);
+                tareasAtrasadas.push(pantalla);
+            }
+        } else {
+            // Modo normal: completadas son las verificadas
+            if (pantalla.verificada) {
+                tareasCompletadas.push(pantalla);
+            } else if (pantalla.fechaLimite) {
+                const fechaLimite = new Date(pantalla.fechaLimite);
+                fechaLimite.setHours(0, 0, 0, 0);
+                if (fechaLimite < hoy) {
+                    tareasAtrasadas.push(pantalla);
+                } else if (fechaLimite.getTime() === hoy.getTime()) {
+                    tareasDeHoy.push(pantalla);
+                } else {
+                    tareasFuturas.push(pantalla);
+                }
+            } else {
+                tareasAtrasadas.push(pantalla);
             }
         }
     });
@@ -265,6 +321,10 @@ export default function TasksListsEditable({
     const futurasPorUsuario = agruparPorUsuario(tareasFuturas);
     const completadasPorUsuario = agruparPorUsuario(tareasCompletadas);
 
+    // Tareas para Segunda Revisión
+    const tareasSegundaRevision = pantallas.filter((p) => p.verificada && !p.segundaRevision);
+    const segundaRevisionPorUsuario = agruparPorUsuario(tareasSegundaRevision);
+
     // Orden fijo de usuarios
     const ordenUsuarios = ["ISAAC", "LUCIANO", "CARPIO", "JOAN", "CARRASCOSA", "DAVID", "Sin asignar"];
 
@@ -277,6 +337,7 @@ export default function TasksListsEditable({
     const usuariosHoy = ordenarUsuarios(hoyPorUsuario);
     const usuariosFuturas = ordenarUsuarios(futurasPorUsuario);
     const usuariosCompletadas = ordenarUsuarios(completadasPorUsuario);
+    const usuariosSegundaRevision = ordenarUsuarios(segundaRevisionPorUsuario);
 
     const getColorUsuario = (usuario: string) => {
         const coloresPorUsuario: { [key: string]: string } = {
@@ -378,16 +439,18 @@ export default function TasksListsEditable({
                                     {/* Tareas */}
                                     <SortableContext items={itemIds} strategy={verticalListSortingStrategy}>
                                         <div className="space-y-0.5">
-                                            {tareasUsuario.map((pantalla) => (
-                                                <SortableTaskItem
-                                                    key={pantalla.id}
-                                                    pantalla={pantalla}
-                                                    onUpdateFecha={onUpdateFecha}
-                                                    onDelete={onDelete}
-                                                    color={borderColor}
-                                                    onOpenModal={openModal}
-                                                />
-                                            ))}
+                                            {tareasUsuario
+                                                .sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0))
+                                                .map((pantalla) => (
+                                                    <SortableTaskItem
+                                                        key={pantalla.id}
+                                                        pantalla={pantalla}
+                                                        onUpdateFecha={onUpdateFecha}
+                                                        onDelete={onDelete}
+                                                        color={borderColor}
+                                                        onOpenModal={openModal}
+                                                    />
+                                                ))}
                                         </div>
                                     </SortableContext>
                                 </div>
@@ -412,32 +475,49 @@ export default function TasksListsEditable({
     return (
         <>
             <div className="space-y-3">
-                {renderSection(
-                    "Hoy",
-                    "📋",
-                    tareasDeHoy,
-                    usuariosHoy,
-                    hoyPorUsuario,
-                    "border-blue-500",
-                    "text-blue-700"
+                {!(porcentajeImportadas === 100 && porcentajeVerificadas === 100) && (
+                    <>
+                        {renderSection(
+                            "Hoy",
+                            "📋",
+                            tareasDeHoy,
+                            usuariosHoy,
+                            hoyPorUsuario,
+                            "border-blue-500",
+                            "text-blue-700"
+                        )}
+                        {renderSection(
+                            "Atrasadas",
+                            "🔥",
+                            tareasAtrasadas,
+                            usuariosAtrasadas,
+                            atrasadasPorUsuario,
+                            "border-red-500",
+                            "text-red-700"
+                        )}
+                        {renderSection(
+                            "Próximas",
+                            "📅",
+                            tareasFuturas,
+                            usuariosFuturas,
+                            futurasPorUsuario,
+                            "border-green-500",
+                            "text-green-700"
+                        )}
+                    </>
                 )}
-                {renderSection(
-                    "Atrasadas",
-                    "🔥",
-                    tareasAtrasadas,
-                    usuariosAtrasadas,
-                    atrasadasPorUsuario,
-                    "border-red-500",
-                    "text-red-700"
-                )}
-                {renderSection(
-                    "Próximas",
-                    "📅",
-                    tareasFuturas,
-                    usuariosFuturas,
-                    futurasPorUsuario,
-                    "border-green-500",
-                    "text-green-700"
+                {porcentajeImportadas === 100 && porcentajeVerificadas === 100 && (
+                    <>
+                        {renderSection(
+                            "Segunda Revisión",
+                            "🔍",
+                            tareasSegundaRevision,
+                            usuariosSegundaRevision,
+                            segundaRevisionPorUsuario,
+                            "border-purple-500",
+                            "text-purple-700"
+                        )}
+                    </>
                 )}
                 {renderSection(
                     "Completadas",
@@ -449,6 +529,18 @@ export default function TasksListsEditable({
                     "text-emerald-700"
                 )}
             </div>
+
+            {/* Overlay de transición */}
+            {showTransition && (
+                <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center">
+                    <div className="bg-white rounded-xl shadow-2xl p-8 max-w-md animate-pulse">
+                        <div className="text-6xl mb-4 text-center">🎉</div>
+                        <p className="text-2xl font-bold text-center text-gray-800">
+                            ¡Buen trabajo! A por el último empujón
+                        </p>
+                    </div>
+                </div>
+            )}
 
             {/* Modal de edición */}
             {modalPantalla && (
@@ -522,6 +614,20 @@ export default function TasksListsEditable({
                                 <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
                                     <span className="text-lg">🚧</span>
                                     En Desarrollo
+                                </span>
+                            </label>
+
+                            <label className="flex items-center gap-3 cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={modalSegundaRevision}
+                                    onChange={(e) => setModalSegundaRevision(e.target.checked)}
+                                    disabled={!modalPantalla.verificada}
+                                    className="w-5 h-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                                />
+                                <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                    <span className="text-lg">🔍</span>
+                                    Segunda Revisión
                                 </span>
                             </label>
                         </div>

@@ -139,6 +139,7 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
             porcentaje: item.porcentaje,
             conErrores: item.conErrores,
             enDesarrollo: item.enDesarrollo,
+            segundaRevision: item.segundaRevision || false,
         };
     });
 }
@@ -239,6 +240,7 @@ function transformPantallasToRaw(pantallas: Pantalla[]): TrackingItemRaw[] {
             porcentaje: pantalla.porcentaje || 0,
             conErrores: pantalla.conErrores || false,
             enDesarrollo: pantalla.enDesarrollo || false,
+            segundaRevision: pantalla.segundaRevision || false,
         };
     });
 }

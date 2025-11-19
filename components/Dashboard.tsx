@@ -25,6 +25,7 @@ export default function Dashboard() {
         updateEstado,
         updateConErrores,
         updateEnDesarrollo,
+        updateSegundaRevision,
         isSaving,
         saveStatus,
         nextResetTime,
@@ -178,6 +179,7 @@ export default function Dashboard() {
                         onUpdateConErrores={updateConErrores}
                         onUpdateEnDesarrollo={updateEnDesarrollo}
                         onUpdateUsuarioPrepara={updateResponsable}
+                        onUpdateSegundaRevision={updateSegundaRevision}
                     />
                 </div>
             </main>{" "}

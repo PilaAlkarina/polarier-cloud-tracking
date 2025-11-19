@@ -308,6 +308,10 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, enDesarrollo } : p)));
     };
 
+    const updateSegundaRevision = (id: number, segundaRevision: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, segundaRevision } : p)));
+    };
+
     return {
         pantallas,
         isLoading,
@@ -325,6 +329,7 @@ export function useTrackingData() {
         updateEstado,
         updateConErrores,
         updateEnDesarrollo,
+        updateSegundaRevision,
         isSaving,
         saveStatus,
         nextResetTime,

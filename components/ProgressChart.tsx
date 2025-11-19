@@ -8,18 +8,11 @@ export default function ProgressChart({ pantallas }: ProgressChartProps) {
     const totalPantallas = pantallas.length;
     const importadas = pantallas.filter((p) => p.importada).length;
     const verificadas = pantallas.filter((p) => p.verificada).length;
-
-    // Calcular días restantes
-    const hoy = new Date();
-    const deadline = new Date("2025-11-20");
-    const diasRestantes = Math.ceil((deadline.getTime() - hoy.getTime()) / (1000 * 60 * 60 * 24));
-
-    // Calcular velocidad necesaria
-    const tareasRestantes = totalPantallas - importadas + (importadas - verificadas);
-    const velocidadRequerida = diasRestantes > 0 ? Math.ceil(tareasRestantes / diasRestantes) : tareasRestantes;
+    const segundasRevisiones = pantallas.filter((p) => p.segundaRevision).length;
 
     const porcentajeImportado = Math.round((importadas / totalPantallas) * 100);
     const porcentajeVerificado = Math.round((verificadas / totalPantallas) * 100);
+    const porcentajeSegundaRevision = Math.round((segundasRevisiones / totalPantallas) * 100);
 
     return (
         <div className="bg-white rounded-xl shadow-md p-4">
@@ -58,33 +51,20 @@ export default function ProgressChart({ pantallas }: ProgressChartProps) {
                     </p>
                 </div>
 
-                {/* Velocidad Requerida */}
-                <div
-                    className={`rounded-lg p-3 border-l-4 ${
-                        velocidadRequerida > 25
-                            ? "bg-red-50 border-red-500"
-                            : velocidadRequerida > 20
-                            ? "bg-orange-50 border-orange-500"
-                            : "bg-purple-50 border-purple-500"
-                    }`}
-                >
+                {/* Progreso de Segunda Revisión */}
+                <div className="bg-purple-50 rounded-lg p-3 border-l-4 border-purple-500">
                     <div className="flex items-center justify-between mb-1.5">
-                        <span className="text-xs font-bold text-gray-900">⚡ Velocidad</span>
-                        <span
-                            className={`text-xl font-black ${
-                                velocidadRequerida > 25
-                                    ? "text-red-700"
-                                    : velocidadRequerida > 20
-                                    ? "text-orange-700"
-                                    : "text-purple-700"
-                            }`}
-                        >
-                            {velocidadRequerida}
-                        </span>
+                        <span className="text-xs font-bold text-purple-900">🔍 Segunda Revisión</span>
+                        <span className="text-xl font-black text-purple-700">{porcentajeSegundaRevision}%</span>
                     </div>
-                    <p className="text-xs font-medium text-gray-700">tareas/día requeridas</p>
-                    <p className="text-xs text-gray-600 mt-0.5">
-                        {diasRestantes} días restantes • {tareasRestantes} tareas
+                    <div className="bg-purple-200 rounded-full h-2 overflow-hidden">
+                        <div
+                            className="bg-purple-600 h-2 rounded-full transition-all duration-500"
+                            style={{ width: `${porcentajeSegundaRevision}%` }}
+                        />
+                    </div>
+                    <p className="text-xs text-purple-700 font-medium mt-1.5">
+                        {segundasRevisiones}/{totalPantallas} completadas
                     </p>
                 </div>
             </div>
