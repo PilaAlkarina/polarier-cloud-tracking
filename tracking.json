@@ -1023,13 +1023,13 @@
     "denominacion": "Auditorías",
     "prioridad": 88,
     "estado": "REVISADO",
-    "usuario_prepara": "ISAAC",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-18",
     "consultas": 196,
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Partes de trabajo",
