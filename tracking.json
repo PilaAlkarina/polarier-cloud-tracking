@@ -9,7 +9,7 @@
     "porcentaje": 13,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Pedidos",
