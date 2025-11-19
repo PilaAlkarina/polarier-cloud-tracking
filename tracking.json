@@ -609,7 +609,7 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": true,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Maquinaria",
