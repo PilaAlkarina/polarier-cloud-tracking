@@ -525,7 +525,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Informe de recursos humanos",
