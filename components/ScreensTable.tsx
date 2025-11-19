@@ -132,6 +132,9 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
                             <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Desarrollo
                             </th>
+                            <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Segunda Rev.
+                            </th>
                             <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Notas
                             </th>
@@ -225,6 +228,18 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
                                             title="En desarrollo"
                                         >
                                             🚧
+                                        </span>
+                                    ) : (
+                                        <span className="text-gray-300">—</span>
+                                    )}
+                                </td>
+                                <td className="px-4 py-3 whitespace-nowrap text-center">
+                                    {pantalla.segundaRevision ? (
+                                        <span
+                                            className="inline-flex items-center justify-center w-8 h-8 bg-purple-100 border-2 border-purple-300 rounded-full text-purple-600"
+                                            title="Segunda revisión completada"
+                                        >
+                                            🎖️
                                         </span>
                                     ) : (
                                         <span className="text-gray-300">—</span>

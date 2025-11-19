@@ -288,6 +288,14 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
                                                 )}
                                                 {pantalla.conErrores && <span className="text-red-700">⚠️</span>}
                                                 {pantalla.enDesarrollo && <span className="text-amber-600">🚧</span>}
+                                                {pantalla.segundaRevision && (
+                                                    <span
+                                                        className="inline-flex items-center justify-center text-purple-600 font-bold"
+                                                        title="Segunda revisión completada"
+                                                    >
+                                                        ✓✓
+                                                    </span>
+                                                )}
                                                 <span className="truncate text-gray-700">{pantalla.nombre}</span>
                                             </div>
                                             <span className="text-red-600 font-semibold text-xs ml-1 shrink-0">
@@ -353,6 +361,14 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
                                                 )}
                                                 {pantalla.conErrores && <span className="text-red-600">⚠️</span>}
                                                 {pantalla.enDesarrollo && <span className="text-amber-600">🚧</span>}
+                                                {pantalla.segundaRevision && (
+                                                    <span
+                                                        className="inline-flex items-center justify-center text-purple-600 font-bold"
+                                                        title="Segunda revisión completada"
+                                                    >
+                                                        ✓✓
+                                                    </span>
+                                                )}
                                                 <span className="truncate text-gray-700">{pantalla.nombre}</span>
                                             </div>
                                             <span className="text-green-600 font-semibold text-xs ml-1 shrink-0">
@@ -420,6 +436,14 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
                                                 )}
                                                 {pantalla.conErrores && <span className="text-red-600">⚠️</span>}
                                                 {pantalla.enDesarrollo && <span className="text-amber-600">🚧</span>}
+                                                {pantalla.segundaRevision && (
+                                                    <span
+                                                        className="inline-flex items-center justify-center text-purple-600 font-bold"
+                                                        title="Segunda revisión completada"
+                                                    >
+                                                        ✓✓
+                                                    </span>
+                                                )}
                                                 <span className="truncate text-gray-700">{pantalla.nombre}</span>
                                             </div>
                                             <span className="text-emerald-600 font-semibold text-xs ml-1 shrink-0">

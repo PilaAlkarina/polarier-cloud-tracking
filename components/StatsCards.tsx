@@ -5,7 +5,9 @@ interface StatsCardsProps {
     pantallas: Pantalla[];
 }
 
-export default function StatsCards({ stats }: StatsCardsProps) {
+export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
+    // Calcular tareas con segunda revisión
+    const tareasSegundaRevision = pantallas.filter((p) => p.segundaRevision).length;
     // Determinar estado del proyecto
     const getEstadoProyecto = () => {
         if (stats.porcentajeVerificadas >= 80)
@@ -70,6 +72,10 @@ export default function StatsCards({ stats }: StatsCardsProps) {
                     <div>
                         <span className="font-bold text-orange-600">{stats.pendientes}</span>
                         <span className="text-gray-500 ml-1">Pendientes</span>
+                    </div>
+                    <div>
+                        <span className="font-bold text-purple-600">{tareasSegundaRevision}</span>
+                        <span className="text-gray-500 ml-1">✓✓ 2ª Rev.</span>
                     </div>
                 </div>
                 <div className="text-gray-400 font-medium">

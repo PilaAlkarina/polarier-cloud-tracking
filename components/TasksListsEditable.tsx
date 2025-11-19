@@ -71,7 +71,9 @@ function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color, onOpenModa
         <div ref={setNodeRef} style={style} className="group relative">
             <div
                 className={`text-xs rounded px-2 py-1 flex items-center justify-between gap-1 ${
-                    pantalla.conErrores
+                    pantalla.segundaRevision
+                        ? "bg-purple-100 border border-purple-300"
+                        : pantalla.conErrores
                         ? "bg-red-100 border border-red-300"
                         : pantalla.enDesarrollo
                         ? "bg-amber-100 border border-amber-300"
@@ -114,12 +116,20 @@ function SortableTaskItem({ pantalla, onUpdateFecha, onDelete, color, onOpenModa
                     </span>
                     {pantalla.conErrores && <span className="text-red-600 shrink-0">⚠️</span>}
                     {pantalla.enDesarrollo && <span className="text-amber-600 shrink-0">🚧</span>}
+                    {pantalla.segundaRevision && (
+                        <span
+                            className="inline-flex items-center justify-center text-purple-600 shrink-0"
+                            title="Segunda revisión completada"
+                        >
+                            🥈
+                        </span>
+                    )}
                     <span className="truncate text-gray-700" title={pantalla.nombre}>
                         {pantalla.nombre}
                     </span>
                 </div>
 
-                {/* Date editor */}
+                {/* Fecha límite editable */}
                 {isEditingDate ? (
                     <div className="flex items-center gap-1 shrink-0">
                         <input
