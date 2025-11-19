@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Pantalla, Estado } from "@/types";
-import confetti from "canvas-confetti";
 import {
     DndContext,
     closestCenter,
@@ -192,46 +191,6 @@ export default function TasksListsEditable({
     const [modalSegundaRevision, setModalSegundaRevision] = useState(false);
     const [showTransition, setShowTransition] = useState(false);
 
-    const lanzarConfeti = () => {
-        setShowTransition(true);
-
-        // Lanzar confeti
-        const duration = 5 * 1000;
-        const animationEnd = Date.now() + duration;
-        const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 1000 };
-
-        function randomInRange(min: number, max: number) {
-            return Math.random() * (max - min) + min;
-        }
-
-        const interval: NodeJS.Timeout = setInterval(function () {
-            const timeLeft = animationEnd - Date.now();
-
-            if (timeLeft <= 0) {
-                return clearInterval(interval);
-            }
-
-            const particleCount = 50 * (timeLeft / duration);
-
-            confetti({
-                ...defaults,
-                particleCount,
-                origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
-            });
-
-            confetti({
-                ...defaults,
-                particleCount,
-                origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
-            });
-        }, 250);
-
-        setTimeout(() => {
-            setShowTransition(false);
-            clearInterval(interval);
-        }, 5000);
-    };
-
     const openModal = (pantalla: Pantalla) => {
         setModalPantalla(pantalla);
         setModalEstado(pantalla.estado);
@@ -286,8 +245,9 @@ export default function TasksListsEditable({
             porcentajeVerificadas === 100 &&
             !localStorage.getItem("segunda_revision_shown")
         ) {
-            lanzarConfeti();
+            setShowTransition(true);
             setTimeout(() => {
+                setShowTransition(false);
                 localStorage.setItem("segunda_revision_shown", "true");
             }, 5000);
         }
