@@ -117,7 +117,7 @@
     "porcentaje": 3,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Calendario laboral",
@@ -297,7 +297,7 @@
     "porcentaje": 100,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Monitor SAT",
