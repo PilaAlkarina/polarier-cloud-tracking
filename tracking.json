@@ -578,13 +578,13 @@
   {
     "denominacion": "Entradas Recambios",
     "prioridad": 49,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-19",
     "consultas": 1499,
     "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": true,
+    "conErrores": true,
+    "enDesarrollo": false,
     "segundaRevision": false
   },
   {
