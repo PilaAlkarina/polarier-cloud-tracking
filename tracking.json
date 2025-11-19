@@ -333,7 +333,7 @@
     "denominacion": "Control presupuestario v2",
     "prioridad": 31,
     "estado": "REVISADO",
-    "usuario_prepara": "LUCIANO",
+    "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-13",
     "consultas": 2248,
     "porcentaje": 1,
@@ -1058,13 +1058,13 @@
   {
     "denominacion": "Control presupuestario",
     "prioridad": 100,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "JOAN",
     "fechaLimite": "2025-11-18",
     "consultas": 102,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true
+    "enDesarrollo": false
   },
   {
     "denominacion": "Rutas de revisión",
