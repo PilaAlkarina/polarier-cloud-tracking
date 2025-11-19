@@ -1414,17 +1414,5 @@
     "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false
-  },
-  {
-    "denominacion": "Informe repartos huésped",
-    "prioridad": 124,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-19",
-    "consultas": 2,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": true,
-    "segundaRevision": false
   }
 ]
