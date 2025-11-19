@@ -56,6 +56,7 @@ export interface EstadisticasGlobales {
     porcentajePendientes: number;
     segundasRevisiones: number;
     porcentajeSegundaRevision: number;
+    porcentajeProgreso: number; // Progreso ponderado: importación (33%) + verificación (66%) + 2ª revisión (100%)
 }
 
 export interface EstadisticasPorPrioridad {

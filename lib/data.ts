@@ -26,6 +26,21 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
     const pendientes = pantallas.filter((p) => !p.importada).length;
     const segundasRevisiones = pantallas.filter((p) => p.segundaRevision).length;
 
+    // Cálculo de progreso ponderado: Importada = 33.33%, Verificada = 66.67%, Segunda Revisión = 100%
+    let progresoTotal = 0;
+    pantallas.forEach((p) => {
+        if (p.segundaRevision) {
+            progresoTotal += 100; // 100% completo
+        } else if (p.verificada) {
+            progresoTotal += 66.67; // 66.67% completo
+        } else if (p.importada) {
+            progresoTotal += 33.33; // 33.33% completo
+        }
+        // Si no está importada = 0%
+    });
+
+    const porcentajeProgreso = totalPantallas > 0 ? Math.round(progresoTotal / totalPantallas) : 0;
+
     return {
         totalPantallas,
         importadas,
@@ -36,6 +51,7 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
         porcentajePendientes: totalPantallas > 0 ? Math.round((pendientes / totalPantallas) * 100) : 0,
         segundasRevisiones,
         porcentajeSegundaRevision: totalPantallas > 0 ? Math.round((segundasRevisiones / totalPantallas) * 100) : 0,
+        porcentajeProgreso,
     };
 }
 
