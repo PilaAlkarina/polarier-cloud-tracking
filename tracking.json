@@ -9,7 +9,7 @@
     "porcentaje": 13,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Pedidos",
@@ -21,7 +21,7 @@
     "porcentaje": 10,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Repartos office",
@@ -45,7 +45,7 @@
     "porcentaje": 7,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Informe operativo",
@@ -117,7 +117,7 @@
     "porcentaje": 3,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Calendario laboral",
@@ -129,7 +129,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Control de kilos lavados",
@@ -165,7 +165,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Consumos de lencería",
@@ -213,7 +213,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Presupuesto venta",
@@ -261,7 +261,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Calendario laboral RRHH",
@@ -273,7 +273,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Reposiciones general",
@@ -297,7 +297,7 @@
     "porcentaje": 100,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Monitor SAT",
@@ -477,7 +477,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Inventarios de lencería",
@@ -525,7 +525,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Informe de recursos humanos",
@@ -693,7 +693,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Informe cumplimiento pedidos",
@@ -825,7 +825,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Recursos energéticos",
@@ -1173,7 +1173,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Reuniones comerciales",
@@ -1185,7 +1185,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Vehículos",
