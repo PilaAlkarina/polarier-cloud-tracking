@@ -182,8 +182,8 @@
   {
     "denominacion": "Gestión de almacenes",
     "prioridad": 16,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "JOAN",
+    "estado": "REVISADO",
+    "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
     "consultas": 5780,
     "porcentaje": 1,
