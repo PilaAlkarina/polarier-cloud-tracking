@@ -548,7 +548,7 @@
   {
     "denominacion": "Recambios",
     "prioridad": 43,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
     "consultas": 1662,
@@ -678,7 +678,7 @@
   {
     "denominacion": "Traspasos Recambios",
     "prioridad": 54,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
     "consultas": 1131,
@@ -951,7 +951,7 @@
   {
     "denominacion": "Almacenes Recambios",
     "prioridad": 76,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
     "consultas": 306,
@@ -1224,7 +1224,7 @@
   {
     "denominacion": "Inventarios Recambios",
     "prioridad": 98,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "CARPIO",
     "fechaLimite": "2025-11-20",
     "consultas": 136,
