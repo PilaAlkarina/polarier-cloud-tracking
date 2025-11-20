@@ -482,9 +482,25 @@ export default function TasksListsEditable({
         </div>
     );
 
+    // Nuevas agrupaciones basadas en segundaRevision
+    const tareasPteRevision = pantallas.filter((p) => !p.segundaRevision);
+    const tareasRevisadas = pantallas.filter((p) => p.segundaRevision);
+
+    // Tareas pendientes de primera revisión (no verificadas)
+    const tareasPtePrimeraRevision = pantallas.filter((p) => !p.verificada);
+
+    const pteRevisionPorUsuario = agruparPorUsuario(tareasPteRevision);
+    const revisadasPorUsuario = agruparPorUsuario(tareasRevisadas);
+    const ptePrimeraRevisionPorUsuario = agruparPorUsuario(tareasPtePrimeraRevision);
+
+    const usuariosPteRevision = ordenarUsuarios(pteRevisionPorUsuario);
+    const usuariosRevisadas = ordenarUsuarios(revisadasPorUsuario);
+    const usuariosPtePrimeraRevision = ordenarUsuarios(ptePrimeraRevisionPorUsuario);
+
     return (
         <>
-            <div className="space-y-3">
+            {/* SECCIONES ANTIGUAS - COMENTADAS */}
+            {/* <div className="space-y-3">
                 {!(porcentajeImportadas === 100 && porcentajeVerificadas === 100) && (
                     <>
                         {renderSection(
@@ -538,6 +554,246 @@ export default function TasksListsEditable({
                     "border-emerald-500",
                     "text-emerald-700"
                 )}
+            </div> */}
+
+            {/* NUEVAS SECCIONES HORIZONTALES */}
+            <div className="flex flex-row gap-4">
+                {/* Pte. Revisión */}
+                <div className="flex-1">
+                    <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-orange-500 h-[600px] overflow-y-auto">
+                        <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
+                            <h3 className="text-sm font-bold text-orange-700 flex items-center gap-1">
+                                📋 Pte. Revisión
+                            </h3>
+                            <span className="text-xl font-black text-orange-700">{tareasPteRevision.length}</span>
+                        </div>
+
+                        {tareasPteRevision.length === 0 ? (
+                            <div className="text-center py-8 text-gray-400">
+                                <div className="text-3xl mb-2">🎉</div>
+                                <p className="text-xs font-medium">¡Todas revisadas!</p>
+                            </div>
+                        ) : (
+                            <DndContext
+                                sensors={sensors}
+                                collisionDetection={closestCenter}
+                                onDragStart={handleDragStart}
+                                onDragEnd={handleDragEnd}
+                                onDragOver={handleDragOver}
+                            >
+                                <div className="space-y-2">
+                                    {usuariosPteRevision.map((usuario) => {
+                                        const tareasUsuario = pteRevisionPorUsuario[usuario];
+                                        const itemIds = tareasUsuario.map((p) => p.id.toString());
+
+                                        return (
+                                            <div key={usuario} className="space-y-1">
+                                                {/* Header del usuario */}
+                                                <div
+                                                    id={`user-${usuario}`}
+                                                    className={`flex items-center justify-between px-2 py-1 rounded border ${getColorUsuario(
+                                                        usuario
+                                                    )}`}
+                                                >
+                                                    <span className="text-xs font-bold truncate">{usuario}</span>
+                                                    <span className="text-sm font-black ml-2">
+                                                        {tareasUsuario.length}
+                                                    </span>
+                                                </div>
+
+                                                {/* Tareas */}
+                                                <SortableContext items={itemIds} strategy={verticalListSortingStrategy}>
+                                                    <div className="space-y-0.5">
+                                                        {tareasUsuario
+                                                            .sort(
+                                                                (a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0)
+                                                            )
+                                                            .map((pantalla) => (
+                                                                <SortableTaskItem
+                                                                    key={pantalla.id}
+                                                                    pantalla={pantalla}
+                                                                    onUpdateFecha={onUpdateFecha}
+                                                                    onDelete={onDelete}
+                                                                    color="border-orange-500"
+                                                                    onOpenModal={openModal}
+                                                                />
+                                                            ))}
+                                                    </div>
+                                                </SortableContext>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                                <DragOverlay>
+                                    {activeId ? (
+                                        <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
+                                            <span className="text-xs font-medium">
+                                                {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
+                                            </span>
+                                        </div>
+                                    ) : null}
+                                </DragOverlay>
+                            </DndContext>
+                        )}
+                    </div>
+                </div>
+
+                {/* Revisados */}
+                <div className="flex-1">
+                    <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-green-500 h-[600px] overflow-y-auto">
+                        <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
+                            <h3 className="text-sm font-bold text-green-700 flex items-center gap-1">✅ Revisados</h3>
+                            <span className="text-xl font-black text-green-700">{tareasRevisadas.length}</span>
+                        </div>
+
+                        {tareasRevisadas.length === 0 ? (
+                            <div className="text-center py-8 text-gray-400">
+                                <div className="text-3xl mb-2">📋</div>
+                                <p className="text-xs font-medium">Sin revisiones completadas</p>
+                            </div>
+                        ) : (
+                            <DndContext
+                                sensors={sensors}
+                                collisionDetection={closestCenter}
+                                onDragStart={handleDragStart}
+                                onDragEnd={handleDragEnd}
+                                onDragOver={handleDragOver}
+                            >
+                                <div className="space-y-2">
+                                    {usuariosRevisadas.map((usuario) => {
+                                        const tareasUsuario = revisadasPorUsuario[usuario];
+                                        const itemIds = tareasUsuario.map((p) => p.id.toString());
+
+                                        return (
+                                            <div key={usuario} className="space-y-1">
+                                                {/* Header del usuario */}
+                                                <div
+                                                    id={`user-${usuario}`}
+                                                    className={`flex items-center justify-between px-2 py-1 rounded border ${getColorUsuario(
+                                                        usuario
+                                                    )}`}
+                                                >
+                                                    <span className="text-xs font-bold truncate">{usuario}</span>
+                                                    <span className="text-sm font-black ml-2">
+                                                        {tareasUsuario.length}
+                                                    </span>
+                                                </div>
+
+                                                {/* Tareas */}
+                                                <SortableContext items={itemIds} strategy={verticalListSortingStrategy}>
+                                                    <div className="space-y-0.5">
+                                                        {tareasUsuario
+                                                            .sort(
+                                                                (a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0)
+                                                            )
+                                                            .map((pantalla) => (
+                                                                <SortableTaskItem
+                                                                    key={pantalla.id}
+                                                                    pantalla={pantalla}
+                                                                    onUpdateFecha={onUpdateFecha}
+                                                                    onDelete={onDelete}
+                                                                    color="border-green-500"
+                                                                    onOpenModal={openModal}
+                                                                />
+                                                            ))}
+                                                    </div>
+                                                </SortableContext>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                                <DragOverlay>
+                                    {activeId ? (
+                                        <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
+                                            <span className="text-xs font-medium">
+                                                {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
+                                            </span>
+                                        </div>
+                                    ) : null}
+                                </DragOverlay>
+                            </DndContext>
+                        )}
+                    </div>
+                </div>
+            </div>
+
+            {/* Pte. Primera Revisión - Contenedor completo debajo */}
+            <div className="mt-4">
+                <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-blue-500 h-[400px] overflow-y-auto">
+                    <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
+                        <h3 className="text-sm font-bold text-blue-700 flex items-center gap-1">
+                            🔄 Pte. Primera Revisión
+                        </h3>
+                        <span className="text-xl font-black text-blue-700">{tareasPtePrimeraRevision.length}</span>
+                    </div>
+
+                    {tareasPtePrimeraRevision.length === 0 ? (
+                        <div className="text-center py-8 text-gray-400">
+                            <div className="text-3xl mb-2">✅</div>
+                            <p className="text-xs font-medium">¡Todas con primera revisión!</p>
+                        </div>
+                    ) : (
+                        <DndContext
+                            sensors={sensors}
+                            collisionDetection={closestCenter}
+                            onDragStart={handleDragStart}
+                            onDragEnd={handleDragEnd}
+                            onDragOver={handleDragOver}
+                        >
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2">
+                                {usuariosPtePrimeraRevision.map((usuario) => {
+                                    const tareasUsuario = ptePrimeraRevisionPorUsuario[usuario];
+                                    const itemIds = tareasUsuario.map((p) => p.id.toString());
+
+                                    return (
+                                        <div key={usuario} className="space-y-1">
+                                            {/* Header del usuario */}
+                                            <div
+                                                id={`user-${usuario}`}
+                                                className={`flex items-center justify-between px-2 py-1 rounded border ${getColorUsuario(
+                                                    usuario
+                                                )}`}
+                                            >
+                                                <span className="text-xs font-bold truncate">{usuario}</span>
+                                                <span className="text-sm font-black ml-2">{tareasUsuario.length}</span>
+                                            </div>
+
+                                            {/* Tareas */}
+                                            <SortableContext items={itemIds} strategy={verticalListSortingStrategy}>
+                                                <div className="space-y-0.5">
+                                                    {tareasUsuario
+                                                        .sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0))
+                                                        .map((pantalla) => (
+                                                            <SortableTaskItem
+                                                                key={pantalla.id}
+                                                                pantalla={pantalla}
+                                                                onUpdateFecha={onUpdateFecha}
+                                                                onDelete={onDelete}
+                                                                color="border-blue-500"
+                                                                onOpenModal={openModal}
+                                                            />
+                                                        ))}
+                                                </div>
+                                            </SortableContext>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+
+                            <DragOverlay>
+                                {activeId ? (
+                                    <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
+                                        <span className="text-xs font-medium">
+                                            {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
+                                        </span>
+                                    </div>
+                                ) : null}
+                            </DragOverlay>
+                        </DndContext>
+                    )}
+                </div>
             </div>
 
             {/* Overlay de transición */}
