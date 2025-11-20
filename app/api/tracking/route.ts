@@ -140,6 +140,7 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
             conErrores: item.conErrores,
             enDesarrollo: item.enDesarrollo,
             segundaRevision: item.segundaRevision || false,
+            revisor: item.revisor,
         };
     });
 }
@@ -241,6 +242,7 @@ function transformPantallasToRaw(pantallas: Pantalla[]): TrackingItemRaw[] {
             conErrores: pantalla.conErrores || false,
             enDesarrollo: pantalla.enDesarrollo || false,
             segundaRevision: pantalla.segundaRevision || false,
+            revisor: pantalla.revisor,
         };
     });
 }

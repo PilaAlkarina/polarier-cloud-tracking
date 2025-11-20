@@ -272,6 +272,12 @@ export function useTrackingData() {
         );
     };
 
+    const updateRevisor = (id: number, nuevoRevisor: string) => {
+        setPantallas((prev: Pantalla[]) =>
+            prev.map((p: Pantalla) => (p.id === id ? { ...p, revisor: nuevoRevisor } : p))
+        );
+    };
+
     const reorderPantallas = (startIndex: number, endIndex: number) => {
         setPantallas((prev: Pantalla[]) => {
             const result = Array.from(prev);
@@ -325,6 +331,7 @@ export function useTrackingData() {
         deletePantalla,
         updateFechaLimite,
         updateResponsable,
+        updateRevisor,
         reorderPantallas,
         updateEstado,
         updateConErrores,
