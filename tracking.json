@@ -9,7 +9,7 @@
     "porcentaje": 13,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Pedidos",
@@ -21,7 +21,7 @@
     "porcentaje": 10,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Repartos office",
@@ -33,7 +33,7 @@
     "porcentaje": 8,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Repartos",
@@ -45,7 +45,7 @@
     "porcentaje": 7,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Informe operativo",
@@ -81,7 +81,7 @@
     "porcentaje": 4,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Cuadrante personal",
@@ -117,7 +117,7 @@
     "porcentaje": 3,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Calendario laboral",
@@ -129,7 +129,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Control de kilos lavados",
@@ -141,7 +141,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Lectura de recursos",
@@ -153,7 +153,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Validar repartos",
@@ -165,7 +165,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Consumos de lencería",
@@ -182,9 +182,9 @@
   {
     "denominacion": "Gestión de almacenes",
     "prioridad": 16,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-19",
+    "estado": "REVISADO",
+    "usuario_prepara": "CARPIO",
+    "fechaLimite": "2025-11-20",
     "consultas": 5780,
     "porcentaje": 1,
     "conErrores": false,
@@ -213,7 +213,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Presupuesto venta",
@@ -273,7 +273,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Reposiciones general",
@@ -297,7 +297,7 @@
     "porcentaje": 100,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Monitor SAT",
@@ -477,7 +477,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Inventarios de lencería",
@@ -508,7 +508,7 @@
     "prioridad": 43,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "consultas": 1662,
     "porcentaje": 0,
     "conErrores": true,
@@ -525,7 +525,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Informe de recursos humanos",
@@ -609,7 +609,7 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": true,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Maquinaria",
@@ -628,7 +628,7 @@
     "prioridad": 54,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "consultas": 1131,
     "porcentaje": 0,
     "conErrores": false,
@@ -693,7 +693,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Informe cumplimiento pedidos",
@@ -734,13 +734,13 @@
   {
     "denominacion": "Órdenes de trabajo (MBC)",
     "prioridad": 63,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
     "consultas": 588,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": false
   },
   {
@@ -880,7 +880,7 @@
     "prioridad": 76,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "consultas": 306,
     "porcentaje": 0,
     "conErrores": true,
@@ -981,7 +981,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Prev. Ingresos y costes (Informe)",
@@ -1029,7 +1029,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Partes de trabajo",
@@ -1101,7 +1101,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Distribución CeCo",
@@ -1132,7 +1132,7 @@
     "prioridad": 98,
     "estado": "IMPORTADO",
     "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "consultas": 136,
     "porcentaje": 0,
     "conErrores": false,
@@ -1173,7 +1173,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Reuniones comerciales",
@@ -1185,7 +1185,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Vehículos",
@@ -1245,7 +1245,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Rutas de expedición",
@@ -1288,7 +1288,7 @@
     "prioridad": 112,
     "estado": "IMPORTADO",
     "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-19",
+    "fechaLimite": "2025-11-20",
     "consultas": 58,
     "porcentaje": 0,
     "conErrores": false,
