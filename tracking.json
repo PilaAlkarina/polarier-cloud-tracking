@@ -81,7 +81,7 @@
     "porcentaje": 4,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Cuadrante personal",
@@ -117,7 +117,7 @@
     "porcentaje": 3,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Calendario laboral",
@@ -129,7 +129,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Control de kilos lavados",
@@ -141,7 +141,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Lectura de recursos",
@@ -153,7 +153,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Validar repartos",
@@ -213,7 +213,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Presupuesto venta",
@@ -273,7 +273,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Reposiciones general",
@@ -297,7 +297,7 @@
     "porcentaje": 100,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Monitor SAT",
@@ -609,7 +609,7 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": true,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Maquinaria",
@@ -693,7 +693,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Informe cumplimiento pedidos",
@@ -1173,7 +1173,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Reuniones comerciales",
@@ -1185,7 +1185,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Vehículos",
