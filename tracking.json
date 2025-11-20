@@ -1391,19 +1391,6 @@
     "revisor": "DAVID"
   },
   {
-    "denominacion": "Proveedores (Recambios)",
-    "prioridad": 112,
-    "estado": "IMPORTADO",
-    "usuario_prepara": "JOAN",
-    "fechaLimite": "2025-11-20",
-    "consultas": 58,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false,
-    "segundaRevision": false,
-    "revisor": "DAVID"
-  },
-  {
     "denominacion": "Distribución Kg",
     "prioridad": 113,
     "estado": "REVISADO",
