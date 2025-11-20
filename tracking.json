@@ -609,7 +609,7 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": true,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Maquinaria",
@@ -1101,7 +1101,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Distribución CeCo",
