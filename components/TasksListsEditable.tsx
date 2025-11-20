@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Pantalla, Estado } from "@/types";
 import {
     DndContext,
@@ -209,6 +209,7 @@ export default function TasksListsEditable({
     const [modalUsuarioPrepara, setModalUsuarioPrepara] = useState("");
     const [modalSegundaRevision, setModalSegundaRevision] = useState(false);
     const [showTransition, setShowTransition] = useState(false);
+    const transitionCheckedRef = useRef(false);
 
     const openModal = (pantalla: Pantalla) => {
         setModalPantalla(pantalla);
@@ -262,13 +263,18 @@ export default function TasksListsEditable({
         if (
             porcentajeImportadas === 100 &&
             porcentajeVerificadas === 100 &&
-            !localStorage.getItem("segunda_revision_shown")
+            !localStorage.getItem("segunda_revision_shown") &&
+            !transitionCheckedRef.current
         ) {
-            setShowTransition(true);
+            transitionCheckedRef.current = true;
+            // Usar setTimeout para evitar setState sincrónico dentro del efecto
             setTimeout(() => {
-                setShowTransition(false);
-                localStorage.setItem("segunda_revision_shown", "true");
-            }, 5000);
+                setShowTransition(true);
+                setTimeout(() => {
+                    setShowTransition(false);
+                    localStorage.setItem("segunda_revision_shown", "true");
+                }, 5000);
+            }, 0);
         }
     }, [porcentajeImportadas, porcentajeVerificadas]);
 
