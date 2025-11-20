@@ -21,7 +21,7 @@
     "porcentaje": 10,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Repartos office",
@@ -33,7 +33,7 @@
     "porcentaje": 8,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Repartos",
@@ -45,7 +45,7 @@
     "porcentaje": 7,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Informe operativo",
@@ -81,7 +81,7 @@
     "porcentaje": 4,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Cuadrante personal",
@@ -117,7 +117,7 @@
     "porcentaje": 3,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Calendario laboral",
@@ -141,7 +141,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Lectura de recursos",
@@ -153,7 +153,7 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Validar repartos",
@@ -165,7 +165,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Consumos de lencería",
@@ -261,7 +261,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Calendario laboral RRHH",
@@ -273,7 +273,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Reposiciones general",
@@ -297,7 +297,7 @@
     "porcentaje": 100,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Monitor SAT",
@@ -741,7 +741,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Salidas Recambios",
@@ -981,7 +981,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Prev. Ingresos y costes (Informe)",
@@ -1029,7 +1029,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Partes de trabajo",
@@ -1245,7 +1245,7 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true
+    "segundaRevision": false
   },
   {
     "denominacion": "Rutas de expedición",
