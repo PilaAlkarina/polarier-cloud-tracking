@@ -21,7 +21,7 @@
     "porcentaje": 10,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Repartos office",
@@ -45,7 +45,7 @@
     "porcentaje": 7,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Informe operativo",
@@ -117,7 +117,7 @@
     "porcentaje": 3,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Calendario laboral",
@@ -165,7 +165,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Consumos de lencería",
@@ -261,7 +261,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Calendario laboral RRHH",
@@ -273,7 +273,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Reposiciones general",
@@ -297,7 +297,7 @@
     "porcentaje": 100,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false
+    "segundaRevision": true
   },
   {
     "denominacion": "Monitor SAT",
