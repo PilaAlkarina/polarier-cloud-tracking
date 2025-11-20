@@ -734,14 +734,14 @@
   {
     "denominacion": "Órdenes de trabajo (MBC)",
     "prioridad": 63,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-19",
     "consultas": 588,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true,
-    "segundaRevision": false
+    "enDesarrollo": false,
+    "segundaRevision": true
   },
   {
     "denominacion": "Salidas Recambios",
