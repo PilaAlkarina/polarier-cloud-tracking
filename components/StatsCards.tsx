@@ -10,9 +10,9 @@ export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
     const tareasSegundaRevision = pantallas.filter((p) => p.segundaRevision).length;
     // Calcular progreso por niveles
 
-    // Determinar estado del proyecto basado en progreso total
+    // Determinar estado del proyecto basado en segunda revisión
     const getEstadoProyecto = () => {
-        if (stats.porcentajeProgreso >= 80)
+        if (stats.porcentajeSegundaRevision >= 80)
             return {
                 emoji: "🎉",
                 text: "EXCELENTE PROGRESO",
@@ -20,13 +20,13 @@ export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
                 bg: "bg-green-100",
                 border: "border-green-300",
             };
-        if (stats.porcentajeProgreso >= 50)
+        if (stats.porcentajeSegundaRevision >= 50)
             return {
                 emoji: "🚀",
                 text: "EN BUEN CAMINO",
-                color: "text-blue-700",
-                bg: "bg-blue-100",
-                border: "border-blue-300",
+                color: "text-purple-700",
+                bg: "bg-purple-100",
+                border: "border-purple-300",
             };
         return {
             emoji: "⏳",
@@ -53,15 +53,15 @@ export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
                         <span className="text-2xl">{estado.emoji}</span>
                         <h2 className={`text-sm font-bold ${estado.color}`}>{estado.text}</h2>
                     </div>
-                    <span className={`text-2xl font-black ${estado.color}`}>{stats.porcentajeProgreso}%</span>
+                    <span className={`text-2xl font-black ${estado.color}`}>{stats.porcentajeSegundaRevision}%</span>
                 </div>
 
                 {/* Barra de progreso */}
                 <div className="mb-3">
                     <div className="bg-gray-200 rounded-full h-3 overflow-hidden">
                         <div
-                            className="bg-gradient-to-r from-blue-500 to-green-500 h-full rounded-full transition-all duration-700"
-                            style={{ width: `${stats.porcentajeProgreso}%` }}
+                            className="bg-gradient-to-r from-purple-500 to-green-500 h-full rounded-full transition-all duration-700"
+                            style={{ width: `${stats.porcentajeSegundaRevision}%` }}
                         />
                     </div>
                 </div>
