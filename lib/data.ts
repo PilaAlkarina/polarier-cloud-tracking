@@ -26,15 +26,15 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
     const pendientes = pantallas.filter((p) => !p.importada).length;
     const segundasRevisiones = pantallas.filter((p) => p.segundaRevision).length;
 
-    // Cálculo de progreso ponderado: Importada = 33.33%, Verificada = 66.67%, Segunda Revisión = 100%
+    // Cálculo de progreso ponderado: Importada = 50%, Verificada (1ª Rev.) = 30%, Segunda Revisión = 20%
     let progresoTotal = 0;
     pantallas.forEach((p) => {
         if (p.segundaRevision) {
-            progresoTotal += 100; // 100% completo
+            progresoTotal += 100; // 100% completo (50% + 30% + 20%)
         } else if (p.verificada) {
-            progresoTotal += 66.67; // 66.67% completo
+            progresoTotal += 80; // 80% completo (50% + 30%)
         } else if (p.importada) {
-            progresoTotal += 33.33; // 33.33% completo
+            progresoTotal += 50; // 50% completo
         }
         // Si no está importada = 0%
     });
