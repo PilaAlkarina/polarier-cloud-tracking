@@ -33,9 +33,9 @@
     "fechaLimite": "2025-11-12",
     "consultas": 33319,
     "porcentaje": 8,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "revisor": "DAVID"
   },
   {
