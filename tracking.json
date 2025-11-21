@@ -35,7 +35,7 @@
     "porcentaje": 8,
     "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "revisor": "DAVID"
   },
   {
@@ -48,7 +48,7 @@
     "porcentaje": 7,
     "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "revisor": "DAVID"
   },
   {
