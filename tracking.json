@@ -267,7 +267,7 @@
     "fechaLimite": "2025-11-14",
     "consultas": 4251,
     "porcentaje": 1,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "ISAAC"
@@ -358,7 +358,7 @@
     "fechaLimite": "2025-11-14",
     "consultas": 2538,
     "porcentaje": 1,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -930,7 +930,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 320,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "ISAAC"
