@@ -8,7 +8,7 @@
     "consultas": 53351,
     "porcentaje": 13,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
@@ -60,7 +60,7 @@
     "consultas": 20422,
     "porcentaje": 5,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
