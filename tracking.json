@@ -86,7 +86,7 @@
     "consultas": 18175,
     "porcentaje": 4,
     "conErrores": false,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "ISAAC"
   },
