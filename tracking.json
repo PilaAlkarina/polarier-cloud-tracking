@@ -34,8 +34,8 @@
     "consultas": 33319,
     "porcentaje": 8,
     "conErrores": false,
-    "enDesarrollo": false,
-    "segundaRevision": false,
+    "enDesarrollo": true,
+    "segundaRevision": true,
     "revisor": "DAVID"
   },
   {
