@@ -111,8 +111,8 @@
     "fechaLimite": "2025-11-12",
     "consultas": 14971,
     "porcentaje": 4,
-    "conErrores": false,
-    "enDesarrollo": true,
+    "conErrores": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
   },
@@ -1112,8 +1112,8 @@
     "fechaLimite": "2025-11-18",
     "consultas": 185,
     "porcentaje": 0,
-    "conErrores": true,
-    "enDesarrollo": false,
+    "conErrores": false,
+    "enDesarrollo": true,
     "segundaRevision": false,
     "revisor": "ISAAC"
   },
