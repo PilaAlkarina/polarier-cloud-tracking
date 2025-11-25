@@ -280,7 +280,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 4138,
     "porcentaje": 1,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
