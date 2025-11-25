@@ -423,8 +423,8 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2202,
     "porcentaje": 1,
-    "conErrores": false,
-    "enDesarrollo": true,
+    "conErrores": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "ISAAC"
   },
@@ -580,7 +580,7 @@
     "consultas": 1587,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
@@ -657,9 +657,9 @@
     "fechaLimite": "2025-11-14",
     "consultas": 1136,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "revisor": "ISAAC"
   },
   {
@@ -762,7 +762,7 @@
     "consultas": 389,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
@@ -840,7 +840,7 @@
     "consultas": 412,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
@@ -866,7 +866,7 @@
     "consultas": 402,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
@@ -880,7 +880,7 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "revisor": "ISAAC"
   },
   {
@@ -905,7 +905,7 @@
     "consultas": 328,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
@@ -931,7 +931,7 @@
     "consultas": 314,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": true,
     "revisor": "ISAAC"
   },
