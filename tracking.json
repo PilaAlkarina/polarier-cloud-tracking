@@ -255,7 +255,7 @@
     "consultas": 4833,
     "porcentaje": 1,
     "conErrores": true,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
   },
@@ -280,7 +280,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 4138,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -293,7 +293,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 3868,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -338,19 +338,6 @@
     "revisor": "DAVID"
   },
   {
-    "denominacion": "Repartos",
-    "prioridad": 27,
-    "estado": "REVISADO",
-    "usuario_prepara": "CARPIO",
-    "fechaLimite": "2025-11-13",
-    "consultas": 2877,
-    "porcentaje": 99.99,
-    "conErrores": true,
-    "enDesarrollo": false,
-    "segundaRevision": false,
-    "revisor": "DAVID"
-  },
-  {
     "denominacion": "Pedido proveedor",
     "prioridad": 28,
     "estado": "REVISADO",
@@ -371,7 +358,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2519,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -397,7 +384,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2248,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -462,7 +449,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2174,
     "porcentaje": 100,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -605,7 +592,7 @@
     "fechaLimite": "2025-11-14",
     "consultas": 1560,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -631,7 +618,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 1499,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -658,7 +645,7 @@
     "consultas": 1355,
     "porcentaje": 0,
     "conErrores": true,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
   },
@@ -813,7 +800,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 588,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -956,8 +943,8 @@
     "fechaLimite": "2025-11-20",
     "consultas": 306,
     "porcentaje": 0,
-    "conErrores": true,
-    "enDesarrollo": true,
+    "conErrores": false,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
   },
@@ -969,7 +956,7 @@
     "fechaLimite": "2025-11-14",
     "consultas": 294,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1008,7 +995,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 268,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1021,7 +1008,7 @@
     "fechaLimite": "2025-11-14",
     "consultas": 264,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1034,7 +1021,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 251,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1060,7 +1047,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 248,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1073,7 +1060,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 242,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1086,7 +1073,7 @@
     "fechaLimite": "2025-11-14",
     "consultas": 221,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1164,7 +1151,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 147,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1190,7 +1177,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 144,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1203,7 +1190,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 142,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1294,7 +1281,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 97,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1333,7 +1320,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 84,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1346,7 +1333,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 82,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1372,7 +1359,7 @@
     "fechaLimite": "2025-11-20",
     "consultas": 61,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1385,7 +1372,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 58,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1411,7 +1398,7 @@
     "fechaLimite": "2025-11-20",
     "consultas": 46,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1437,7 +1424,7 @@
     "fechaLimite": "2025-11-19",
     "consultas": 31,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
@@ -1489,7 +1476,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 17,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
