@@ -874,11 +874,11 @@
     "denominacion": "Laundry dashboard",
     "prioridad": 71,
     "estado": "REVISADO",
-    "usuario_prepara": "ISAAC",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-17",
     "consultas": 365,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "ISAAC"
