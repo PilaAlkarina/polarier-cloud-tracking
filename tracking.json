@@ -1257,7 +1257,7 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "revisor": "ISAAC"
   },
   {
