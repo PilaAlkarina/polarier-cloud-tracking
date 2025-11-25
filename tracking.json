@@ -185,11 +185,11 @@
     "denominacion": "Consumos de lencería",
     "prioridad": 15,
     "estado": "REVISADO",
-    "usuario_prepara": "CARPIO",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-12",
     "consultas": 6247,
     "porcentaje": 1,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
