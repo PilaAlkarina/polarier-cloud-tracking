@@ -47,7 +47,7 @@
     "consultas": 28638,
     "porcentaje": 7,
     "conErrores": false,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
   },
@@ -566,8 +566,8 @@
     "fechaLimite": "2025-11-14",
     "consultas": 1661,
     "porcentaje": 0,
-    "conErrores": true,
-    "enDesarrollo": false,
+    "conErrores": false,
+    "enDesarrollo": true,
     "segundaRevision": false,
     "revisor": "ISAAC"
   },
