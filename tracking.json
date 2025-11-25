@@ -1257,7 +1257,7 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "revisor": "ISAAC"
   },
   {
@@ -1337,19 +1337,6 @@
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
-  },
-  {
-    "denominacion": "Rutas de expedición",
-    "prioridad": 109,
-    "estado": "REVISADO",
-    "usuario_prepara": "ISAAC",
-    "fechaLimite": "2025-11-20",
-    "consultas": 75,
-    "porcentaje": 0,
-    "conErrores": false,
-    "enDesarrollo": false,
-    "segundaRevision": true,
-    "revisor": "ISAAC"
   },
   {
     "denominacion": "Asignación CeCo",
