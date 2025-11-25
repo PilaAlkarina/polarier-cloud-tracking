@@ -423,8 +423,8 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2202,
     "porcentaje": 1,
-    "conErrores": true,
-    "enDesarrollo": false,
+    "conErrores": false,
+    "enDesarrollo": true,
     "segundaRevision": false,
     "revisor": "ISAAC"
   },
