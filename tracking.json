@@ -21,8 +21,8 @@
     "consultas": 40542,
     "porcentaje": 10,
     "conErrores": false,
-    "enDesarrollo": false,
-    "segundaRevision": false,
+    "enDesarrollo": true,
+    "segundaRevision": true,
     "revisor": "DAVID"
   },
   {
