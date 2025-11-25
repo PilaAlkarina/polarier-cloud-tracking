@@ -159,11 +159,11 @@
     "denominacion": "Lectura de recursos",
     "prioridad": 13,
     "estado": "REVISADO",
-    "usuario_prepara": "CARPIO",
+    "usuario_prepara": "LUCIANO",
     "fechaLimite": "2025-11-12",
     "consultas": 8642,
     "porcentaje": 2,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
