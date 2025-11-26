@@ -54,9 +54,9 @@
     "porcentaje": 7,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": false,
-    "checkDavid": true,
+    "checkDavid": false,
     "revisor": "DAVID"
   },
   {
@@ -189,8 +189,8 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
-    "checkIsaac": true,
+    "segundaRevision": true,
+    "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID"
   },
@@ -204,7 +204,7 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID"
@@ -234,9 +234,9 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": false,
-    "checkDavid": true,
+    "checkDavid": false,
     "revisor": "DAVID"
   },
   {
@@ -324,9 +324,9 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": false,
-    "checkDavid": true,
+    "checkDavid": false,
     "revisor": "DAVID"
   },
   {
@@ -759,8 +759,8 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
-    "checkIsaac": true,
+    "segundaRevision": true,
+    "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC"
   },
@@ -1029,8 +1029,8 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
-    "checkIsaac": true,
+    "segundaRevision": true,
+    "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC"
   },
@@ -1583,10 +1583,10 @@
     "consultas": 50,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
+    "enDesarrollo": true,
     "segundaRevision": false,
-    "checkIsaac": true,
-    "checkDavid": false,
+    "checkIsaac": false,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
