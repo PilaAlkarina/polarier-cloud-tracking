@@ -758,10 +758,10 @@
     "consultas": 1136,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": false,
-    "segundaRevision": true,
+    "enDesarrollo": true,
+    "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
