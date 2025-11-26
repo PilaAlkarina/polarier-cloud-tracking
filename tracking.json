@@ -358,8 +358,8 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2519,
     "porcentaje": 1,
-    "conErrores": true,
-    "enDesarrollo": false,
+    "conErrores": false,
+    "enDesarrollo": true,
     "segundaRevision": false,
     "revisor": "DAVID"
   },
