@@ -97,32 +97,6 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, ...updates } : p)));
     };
 
-    const toggleImportada = (id: number) => {
-        setPantallas((prev: Pantalla[]) =>
-            prev.map((p: Pantalla) => {
-                if (p.id === id) {
-                    const newImportada = !p.importada;
-                    const newEstado = newImportada ? ("✓ Por Verificar" as const) : ("⏳ Pendiente" as const);
-                    return { ...p, importada: newImportada, estado: newEstado };
-                }
-                return p;
-            })
-        );
-    };
-
-    const toggleVerificada = (id: number) => {
-        setPantallas((prev: Pantalla[]) =>
-            prev.map((p: Pantalla) => {
-                if (p.id === id) {
-                    const newVerificada = !p.verificada;
-                    const newEstado = newVerificada ? ("✅ Completada" as const) : ("✓ Por Verificar" as const);
-                    return { ...p, verificada: newVerificada, estado: newEstado };
-                }
-                return p;
-            })
-        );
-    };
-
     const resetData = async () => {
         try {
             // Limpiar localStorage primero
@@ -146,17 +120,6 @@ export function useTrackingData() {
             console.error("❌ Error reseteando datos:", err);
             alert("Error al resetear los datos. Por favor, recarga la página.");
         }
-    };
-
-    const exportData = () => {
-        const dataStr = JSON.stringify(pantallas, null, 2);
-        const dataBlob = new Blob([dataStr], { type: "application/json" });
-        const url = URL.createObjectURL(dataBlob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = `mypolarier_tracking_${new Date().toISOString().split("T")[0]}.json`;
-        link.click();
-        URL.revokeObjectURL(url);
     };
 
     const saveToGitHub = async () => {
@@ -272,12 +235,6 @@ export function useTrackingData() {
         );
     };
 
-    const updateRevisor = (id: number, nuevoRevisor: string) => {
-        setPantallas((prev: Pantalla[]) =>
-            prev.map((p: Pantalla) => (p.id === id ? { ...p, revisor: nuevoRevisor } : p))
-        );
-    };
-
     const reorderPantallas = (startIndex: number, endIndex: number) => {
         setPantallas((prev: Pantalla[]) => {
             const result = Array.from(prev);
@@ -318,25 +275,51 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, segundaRevision } : p)));
     };
 
+    const updateCheckIsaac = (id: number, check: boolean) => {
+        setPantallas((prev: Pantalla[]) =>
+            prev.map((p: Pantalla) => {
+                if (p.id === id) {
+                    const newP = { ...p, checkIsaac: check };
+                    // Actualizar segundaRevision global si ambos están check
+                    newP.segundaRevision = !!(newP.checkIsaac && newP.checkDavid);
+                    return newP;
+                }
+                return p;
+            })
+        );
+    };
+
+    const updateCheckDavid = (id: number, check: boolean) => {
+        setPantallas((prev: Pantalla[]) =>
+            prev.map((p: Pantalla) => {
+                if (p.id === id) {
+                    const newP = { ...p, checkDavid: check };
+                    // Actualizar segundaRevision global si ambos están check
+                    newP.segundaRevision = !!(newP.checkIsaac && newP.checkDavid);
+                    return newP;
+                }
+                return p;
+            })
+        );
+    };
+
     return {
         pantallas,
         isLoading,
         error,
         updatePantalla,
-        toggleImportada,
-        toggleVerificada,
         resetData,
-        exportData,
         saveToGitHub,
         deletePantalla,
         updateFechaLimite,
         updateResponsable,
-        updateRevisor,
         reorderPantallas,
         updateEstado,
         updateConErrores,
         updateEnDesarrollo,
         updateSegundaRevision,
+        updateCheckIsaac,
+        updateCheckDavid,
         isSaving,
         saveStatus,
         nextResetTime,

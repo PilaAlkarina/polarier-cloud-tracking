@@ -26,6 +26,8 @@ export default function Dashboard() {
         updateConErrores,
         updateEnDesarrollo,
         updateSegundaRevision,
+        updateCheckIsaac,
+        updateCheckDavid,
         isSaving,
         saveStatus,
         nextResetTime,
@@ -171,7 +173,6 @@ export default function Dashboard() {
                     <ProgressChart pantallas={pantallas} />
                     <TasksListsEditable
                         pantallas={pantallas}
-                        onUpdateFecha={updateFechaLimite}
                         onUpdateResponsable={updateResponsable}
                         onDelete={deletePantalla}
                         onReorder={reorderPantallas}
@@ -180,6 +181,8 @@ export default function Dashboard() {
                         onUpdateEnDesarrollo={updateEnDesarrollo}
                         onUpdateUsuarioPrepara={updateResponsable}
                         onUpdateSegundaRevision={updateSegundaRevision}
+                        onUpdateCheckIsaac={updateCheckIsaac}
+                        onUpdateCheckDavid={updateCheckDavid}
                     />
                 </div>
             </main>{" "}

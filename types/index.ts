@@ -14,6 +14,8 @@ export interface TrackingItemRaw {
     conErrores: boolean;
     enDesarrollo: boolean;
     segundaRevision?: boolean;
+    checkIsaac?: boolean;
+    checkDavid?: boolean;
     revisor?: string;
 }
 
@@ -36,6 +38,8 @@ export interface Pantalla {
     conErrores?: boolean;
     enDesarrollo?: boolean;
     segundaRevision?: boolean;
+    checkIsaac?: boolean;
+    checkDavid?: boolean;
     revisor?: string;
 }
 

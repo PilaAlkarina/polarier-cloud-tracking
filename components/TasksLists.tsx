@@ -298,14 +298,6 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
                                                 )}
                                                 <span className="truncate text-gray-700">{pantalla.nombre}</span>
                                             </div>
-                                            <span className="text-red-600 font-semibold text-xs ml-1 shrink-0">
-                                                {pantalla.fechaLimite
-                                                    ? new Date(pantalla.fechaLimite).toLocaleDateString("es-ES", {
-                                                          day: "2-digit",
-                                                          month: "2-digit",
-                                                      })
-                                                    : ""}
-                                            </span>
                                         </div>
                                     ))}
                                 </div>
@@ -371,14 +363,6 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
                                                 )}
                                                 <span className="truncate text-gray-700">{pantalla.nombre}</span>
                                             </div>
-                                            <span className="text-green-600 font-semibold text-xs ml-1 shrink-0">
-                                                {pantalla.fechaLimite
-                                                    ? new Date(pantalla.fechaLimite).toLocaleDateString("es-ES", {
-                                                          day: "2-digit",
-                                                          month: "2-digit",
-                                                      })
-                                                    : ""}
-                                            </span>
                                         </div>
                                     ))}
                                 </div>
@@ -446,14 +430,6 @@ export default function TasksLists({ pantallas }: TasksListsProps) {
                                                 )}
                                                 <span className="truncate text-gray-700">{pantalla.nombre}</span>
                                             </div>
-                                            <span className="text-emerald-600 font-semibold text-xs ml-1 shrink-0">
-                                                {pantalla.fechaReal
-                                                    ? new Date(pantalla.fechaReal).toLocaleDateString("es-ES", {
-                                                          day: "2-digit",
-                                                          month: "2-digit",
-                                                      })
-                                                    : "✓"}
-                                            </span>
                                         </div>
                                     ))}
                                 </div>

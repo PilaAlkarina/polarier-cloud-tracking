@@ -65,31 +65,6 @@ export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
                         />
                     </div>
                 </div>
-
-                {/* Estadísticas en línea - COMENTADAS */}
-                {/* <div className="flex items-center justify-between text-xs">
-                    <div className="flex items-center gap-4">
-                        <div>
-                            <span className="font-bold text-green-600">{stats.verificadas}</span>
-                            <span className="text-gray-500 ml-1">Completadas</span>
-                        </div>
-                        <div>
-                            <span className="font-bold text-blue-600">{stats.importadas - stats.verificadas}</span>
-                            <span className="text-gray-500 ml-1">En Verificación</span>
-                        </div>
-                        <div>
-                            <span className="font-bold text-orange-600">{stats.pendientes}</span>
-                            <span className="text-gray-500 ml-1">Pendientes</span>
-                        </div>
-                        <div>
-                            <span className="font-bold text-purple-600">{tareasSegundaRevision}</span>
-                            <span className="text-gray-500 ml-1">✓✓ 2ª Rev.</span>
-                        </div>
-                    </div>
-                    <div className="text-gray-400 font-medium">
-                        {stats.verificadas} / {stats.totalPantallas}
-                    </div>
-                </div> */}
             </div>
 
             {/* Tarjeta: Pte. Revisión - flex-1 */}

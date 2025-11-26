@@ -1,22 +1,4 @@
 import { Pantalla, Prioridad } from "@/types";
-
-// DEPRECATED: Este dato ya no se usa. Los datos se obtienen desde tracking.json vía API
-// Se mantiene solo por compatibilidad temporal
-export const rawTrackingData = ``;
-
-export function parseTrackingData(): Pantalla[] {
-    console.warn("parseTrackingData() está deprecated. Usa el hook useTrackingData() en su lugar.");
-    return [];
-}
-
-// DEPRECATED: Este dato ya no se usa. El plan diario se genera dinámicamente desde tracking.json
-// Se mantiene solo por compatibilidad temporal
-export const tareasPorDia: unknown[] = [];
-
-// DEPRECATED: Este dato ya no se usa. Los bloqueadores se manejan desde tracking.json
-export const bloqueadoresConocidos: unknown[] = [];
-
-// Funciones de cálculo de estadísticas
 import type { EstadisticasGlobales, EstadisticasPorPrioridad } from "@/types";
 
 export function calcularEstadisticasGlobales(pantallas: Pantalla[]): EstadisticasGlobales {
