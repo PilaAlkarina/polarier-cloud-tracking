@@ -70,8 +70,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -85,8 +85,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -100,8 +100,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -160,8 +160,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -175,8 +175,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -280,8 +280,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -460,8 +460,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -580,8 +580,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -669,9 +669,9 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": true,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -880,8 +880,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -970,8 +970,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -999,9 +999,9 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": true,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1045,8 +1045,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1075,8 +1075,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1120,8 +1120,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1135,8 +1135,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1195,8 +1195,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1270,8 +1270,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1285,8 +1285,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1298,10 +1298,10 @@
     "consultas": 167,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1390,8 +1390,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1420,8 +1420,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1435,8 +1435,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
