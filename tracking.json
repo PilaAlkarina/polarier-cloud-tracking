@@ -294,7 +294,7 @@
     "consultas": 3868,
     "porcentaje": 1,
     "conErrores": false,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "revisor": "DAVID"
   },
