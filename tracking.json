@@ -10,8 +10,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -25,8 +25,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "DAVID"
   },
   {
@@ -40,8 +40,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "DAVID"
   },
   {
@@ -758,10 +758,10 @@
     "consultas": 1136,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true,
-    "segundaRevision": false,
+    "enDesarrollo": false,
+    "segundaRevision": true,
     "checkIsaac": false,
-    "checkDavid": true,
+    "checkDavid": false,
     "revisor": "ISAAC"
   },
   {
@@ -1583,8 +1583,8 @@
     "consultas": 50,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true,
-    "segundaRevision": false,
+    "enDesarrollo": false,
+    "segundaRevision": true,
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC"
