@@ -222,6 +222,66 @@ export default function TasksListsEditable({
         })
     );
 
+    const hoy = new Date();
+    hoy.setHours(0, 0, 0, 0);
+
+    // Calcular porcentajes para lógica condicional
+    const totalPantallas = pantallas.length;
+    const importadas = pantallas.filter((p) => p.importada).length;
+    const verificadas = pantallas.filter((p) => p.verificada).length;
+    const porcentajeImportadas = totalPantallas > 0 ? Math.round((importadas / totalPantallas) * 100) : 0;
+    const porcentajeVerificadas = totalPantallas > 0 ? Math.round((verificadas / totalPantallas) * 100) : 0;
+
+    // Calcular tareas por categoría
+    const tareasAtrasadas: Pantalla[] = [];
+    const tareasDeHoy: Pantalla[] = [];
+    const tareasFuturas: Pantalla[] = [];
+    const tareasCompletadas: Pantalla[] = [];
+
+    // Determinar si estamos en modo "Segunda Revisión"
+    const modoSegundaRevision = porcentajeImportadas === 100 && porcentajeVerificadas === 100;
+
+    pantallas.forEach((pantalla) => {
+        // En modo Segunda Revisión: completadas = segundaRevision
+        // En modo normal: completadas = verificadas
+        if (modoSegundaRevision) {
+            if (pantalla.segundaRevision) {
+                tareasCompletadas.push(pantalla);
+            } else if (pantalla.verificada) {
+                // Verificadas sin segunda revisión se muestran en contenedor "Segunda Revisión"
+            } else if (pantalla.fechaLimite) {
+                const fechaLimite = new Date(pantalla.fechaLimite);
+                fechaLimite.setHours(0, 0, 0, 0);
+                if (fechaLimite < hoy) {
+                    tareasAtrasadas.push(pantalla);
+                } else if (fechaLimite.getTime() === hoy.getTime()) {
+                    tareasDeHoy.push(pantalla);
+                } else {
+                    tareasFuturas.push(pantalla);
+                }
+            } else {
+                tareasAtrasadas.push(pantalla);
+            }
+        } else {
+            // Modo normal: completadas son las verificadas
+            if (pantalla.verificada) {
+                tareasCompletadas.push(pantalla);
+            } else if (pantalla.fechaLimite) {
+                const fechaLimite = new Date(pantalla.fechaLimite);
+                fechaLimite.setHours(0, 0, 0, 0);
+                if (fechaLimite < hoy) {
+                    tareasAtrasadas.push(pantalla);
+                } else if (fechaLimite.getTime() === hoy.getTime()) {
+                    tareasDeHoy.push(pantalla);
+                } else {
+                    tareasFuturas.push(pantalla);
+                }
+            } else {
+                tareasAtrasadas.push(pantalla);
+            }
+        }
+    });
+
     // Agrupar por usuario
     const agruparPorUsuario = (tareas: Pantalla[]): TareasPorUsuario => {
         const agrupadas: TareasPorUsuario = {};
