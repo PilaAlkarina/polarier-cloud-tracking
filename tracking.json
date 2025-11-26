@@ -1465,8 +1465,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1495,8 +1495,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
@@ -1510,8 +1510,8 @@
     "conErrores": false,
     "enDesarrollo": true,
     "segundaRevision": true,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "DAVID"
   },
   {
