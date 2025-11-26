@@ -202,10 +202,10 @@
     "fechaLimite": "2025-11-13",
     "consultas": 6326,
     "porcentaje": 1,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": false,
-    "checkIsaac": false,
+    "segundaRevision": true,
+    "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID"
   },
