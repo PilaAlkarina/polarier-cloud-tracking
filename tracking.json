@@ -189,8 +189,8 @@
     "porcentaje": 2,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true,
-    "checkIsaac": false,
+    "segundaRevision": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID"
   },
@@ -204,9 +204,9 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "DAVID"
   },
   {
@@ -234,9 +234,9 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "DAVID"
   },
   {
@@ -324,9 +324,9 @@
     "porcentaje": 1,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true,
+    "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "DAVID"
   },
   {
@@ -759,8 +759,8 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true,
-    "checkIsaac": false,
+    "segundaRevision": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "ISAAC"
   },
@@ -1029,8 +1029,8 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": true,
-    "checkIsaac": false,
+    "segundaRevision": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "ISAAC"
   },
