@@ -538,10 +538,10 @@
     "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Solicitudes de alta",
