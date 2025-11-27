@@ -28,6 +28,7 @@ export default function Dashboard() {
         updateSegundaRevision,
         updateCheckIsaac,
         updateCheckDavid,
+        updateIsInClickUP,
         isSaving,
         saveStatus,
         nextResetTime,
@@ -183,6 +184,7 @@ export default function Dashboard() {
                         onUpdateSegundaRevision={updateSegundaRevision}
                         onUpdateCheckIsaac={updateCheckIsaac}
                         onUpdateCheckDavid={updateCheckDavid}
+                        onUpdateIsInClickUP={updateIsInClickUP}
                     />
                 </div>
             </main>{" "}

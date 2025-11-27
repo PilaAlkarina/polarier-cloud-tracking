@@ -303,6 +303,10 @@ export function useTrackingData() {
         );
     };
 
+    const updateIsInClickUP = (id: number, isInClickUP: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, isInClickUP } : p)));
+    };
+
     return {
         pantallas,
         isLoading,
@@ -320,6 +324,7 @@ export function useTrackingData() {
         updateSegundaRevision,
         updateCheckIsaac,
         updateCheckDavid,
+        updateIsInClickUP,
         isSaving,
         saveStatus,
         nextResetTime,

@@ -29,6 +29,7 @@ interface TasksListsEditableProps {
     onUpdateSegundaRevision: (id: number, segundaRevision: boolean) => void;
     onUpdateCheckIsaac: (id: number, check: boolean) => void;
     onUpdateCheckDavid: (id: number, check: boolean) => void;
+    onUpdateIsInClickUP: (id: number, isInClickUP: boolean) => void;
 }
 
 interface TareasPorUsuario {
@@ -107,6 +108,14 @@ function SortableTaskItem({ pantalla, onDelete, color, onOpenModal }: SortableTa
                     </span>
                     {pantalla.conErrores && <span className="text-red-600 shrink-0">⚠️</span>}
                     {pantalla.enDesarrollo && <span className="text-amber-600 shrink-0">🚧</span>}
+                    {pantalla.isInClickUP && (
+                        <span
+                            className="text-[10px] bg-[#7B68EE] text-white px-1.5 rounded-md font-bold shadow-sm border border-[#5f48ea]"
+                            title="Gestionado en ClickUp"
+                        >
+                            ClickUp
+                        </span>
+                    )}
 
                     {/* Badges de revisión */}
                     {pantalla.checkIsaac && (
@@ -168,6 +177,7 @@ export default function TasksListsEditable({
     onUpdateSegundaRevision,
     onUpdateCheckIsaac,
     onUpdateCheckDavid,
+    onUpdateIsInClickUP,
 }: TasksListsEditableProps) {
     const [activeId, setActiveId] = useState<string | null>(null);
     const [modalPantalla, setModalPantalla] = useState<Pantalla | null>(null);
@@ -178,6 +188,7 @@ export default function TasksListsEditable({
     const [modalSegundaRevision, setModalSegundaRevision] = useState(false);
     const [modalCheckIsaac, setModalCheckIsaac] = useState(false);
     const [modalCheckDavid, setModalCheckDavid] = useState(false);
+    const [modalIsInClickUP, setModalIsInClickUP] = useState(false);
 
     const openModal = (pantalla: Pantalla) => {
         setModalPantalla(pantalla);
@@ -188,6 +199,7 @@ export default function TasksListsEditable({
         setModalSegundaRevision(pantalla.segundaRevision || false);
         setModalCheckIsaac(pantalla.checkIsaac || false);
         setModalCheckDavid(pantalla.checkDavid || false);
+        setModalIsInClickUP(pantalla.isInClickUP || false);
     };
 
     const closeModal = () => {
@@ -199,6 +211,7 @@ export default function TasksListsEditable({
             onUpdateEstado(modalPantalla.id, modalEstado);
             onUpdateConErrores(modalPantalla.id, modalConErrores);
             onUpdateEnDesarrollo(modalPantalla.id, modalEnDesarrollo);
+            onUpdateIsInClickUP(modalPantalla.id, modalIsInClickUP);
 
             // Actualizar checks individuales
             onUpdateCheckIsaac(modalPantalla.id, modalCheckIsaac);
@@ -694,6 +707,21 @@ export default function TasksListsEditable({
                                 <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
                                     <span className="text-lg">🚧</span>
                                     En Desarrollo
+                                </span>
+                            </label>
+
+                            <label className="flex items-center gap-3 cursor-pointer">
+                                <input
+                                    type="checkbox"
+                                    checked={modalIsInClickUP}
+                                    onChange={(e) => setModalIsInClickUP(e.target.checked)}
+                                    className="w-5 h-5 rounded border-gray-300 text-[#7B68EE] focus:ring-[#7B68EE]"
+                                />
+                                <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                    <span className="text-xs bg-[#7B68EE] text-white px-1.5 py-0.5 rounded font-bold">
+                                        ClickUp
+                                    </span>
+                                    Gestionado en ClickUp
                                 </span>
                             </label>
 

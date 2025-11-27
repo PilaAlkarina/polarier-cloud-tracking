@@ -41,6 +41,7 @@ export interface Pantalla {
     checkIsaac?: boolean;
     checkDavid?: boolean;
     revisor?: string;
+    isInClickUP?: boolean;
 }
 
 export interface TareaDiaria {
