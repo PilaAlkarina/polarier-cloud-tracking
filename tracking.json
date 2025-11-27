@@ -573,7 +573,7 @@
     "denominacion": "Inventarios de lencería",
     "prioridad": 41,
     "estado": "PENDIENTE",
-    "usuario_prepara": "ISAAC",
+    "usuario_prepara": "",
     "fechaLimite": "2025-11-14",
     "consultas": 1706,
     "porcentaje": 0,
