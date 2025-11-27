@@ -439,10 +439,10 @@
     "fechaLimite": "2025-11-13",
     "consultas": 2519,
     "porcentaje": 1,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID",
     "isInClickUP": false
