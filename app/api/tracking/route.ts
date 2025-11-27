@@ -143,6 +143,7 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
             checkIsaac: item.checkIsaac || false,
             checkDavid: item.checkDavid || false,
             revisor: item.revisor,
+            isInClickUP: item.isInClickUP || false,
         };
     });
 }
@@ -247,6 +248,7 @@ function transformPantallasToRaw(pantallas: Pantalla[]): TrackingItemRaw[] {
             checkIsaac: pantalla.checkIsaac || false,
             checkDavid: pantalla.checkDavid || false,
             revisor: pantalla.revisor,
+            isInClickUP: pantalla.isInClickUP || false,
         };
     });
 }

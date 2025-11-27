@@ -17,6 +17,7 @@ export interface TrackingItemRaw {
     checkIsaac?: boolean;
     checkDavid?: boolean;
     revisor?: string;
+    isInClickUP?: boolean;
 }
 
 export interface Pantalla {
