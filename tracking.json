@@ -266,7 +266,7 @@
     "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": true,
+    "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
     "isInClickUP": true
@@ -395,7 +395,7 @@
     "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": true
   },
