@@ -435,21 +435,6 @@
     "revisor": "ISAAC"
   },
   {
-    "denominacion": "Control presupuestario v2",
-    "prioridad": 31,
-    "estado": "REVISADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-13",
-    "consultas": 2248,
-    "porcentaje": 1,
-    "conErrores": true,
-    "enDesarrollo": false,
-    "segundaRevision": false,
-    "checkIsaac": false,
-    "checkDavid": false,
-    "revisor": "DAVID"
-  },
-  {
     "denominacion": "Calendario nóminas",
     "prioridad": 32,
     "estado": "REVISADO",
