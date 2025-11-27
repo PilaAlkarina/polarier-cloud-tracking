@@ -967,13 +967,13 @@
     "fechaLimite": "2025-11-19",
     "consultas": 588,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": true,
-    "checkIsaac": true,
-    "checkDavid": true,
+    "segundaRevision": false,
+    "checkIsaac": false,
+    "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Cierre de datos",
@@ -1383,13 +1383,13 @@
     "fechaLimite": "2025-11-19",
     "consultas": 153,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Rentabilidad por centro",
