@@ -624,9 +624,9 @@
     "porcentaje": 0,
     "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": false,
-    "checkIsaac": false,
-    "checkDavid": false,
+    "segundaRevision": true,
+    "checkIsaac": true,
+    "checkDavid": true,
     "revisor": "ISAAC"
   },
   {
