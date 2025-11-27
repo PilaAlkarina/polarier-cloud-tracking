@@ -969,9 +969,9 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": true,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": false
   },
@@ -1383,13 +1383,13 @@
     "fechaLimite": "2025-11-19",
     "consultas": 153,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": false
   },
   {
     "denominacion": "Rentabilidad por centro",
