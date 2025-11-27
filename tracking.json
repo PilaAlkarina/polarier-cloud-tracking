@@ -583,11 +583,11 @@
     "fechaLimite": "2025-11-14",
     "consultas": 1793,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": true,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": true
   },
@@ -1290,10 +1290,10 @@
     "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Informe clasificación sucio",
