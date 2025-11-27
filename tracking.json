@@ -391,7 +391,7 @@
     "fechaLimite": "2025-11-13",
     "consultas": 3134,
     "porcentaje": 100,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
