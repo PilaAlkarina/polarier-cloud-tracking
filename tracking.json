@@ -125,7 +125,7 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Facturación por cliente",
