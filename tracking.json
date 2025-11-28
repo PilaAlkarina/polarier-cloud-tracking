@@ -1063,7 +1063,7 @@
     "fechaLimite": "2025-11-17",
     "consultas": 365,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
