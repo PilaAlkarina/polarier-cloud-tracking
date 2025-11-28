@@ -999,10 +999,10 @@
     "fechaLimite": "2025-11-17",
     "consultas": 495,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID",
     "isInClickUP": false
