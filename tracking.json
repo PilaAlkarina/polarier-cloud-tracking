@@ -1067,7 +1067,7 @@
     "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": true
   },
