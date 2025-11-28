@@ -1421,7 +1421,7 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Revisiones",
