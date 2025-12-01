@@ -1730,8 +1730,8 @@
   {
     "denominacion": "Validación factura",
     "prioridad": 118,
-    "estado": "REVISADO",
-    "usuario_prepara": "ISAAC",
+    "estado": "PENDIENTE",
+    "usuario_prepara": "",
     "fechaLimite": "2025-11-19",
     "consultas": 30,
     "porcentaje": 0,
