@@ -1273,9 +1273,9 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": true,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true
   },
