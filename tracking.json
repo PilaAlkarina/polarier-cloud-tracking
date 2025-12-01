@@ -1479,10 +1479,10 @@
     "fechaLimite": "2025-11-20",
     "consultas": 136,
     "porcentaje": 0,
-    "conErrores": false,
+    "conErrores": true,
     "enDesarrollo": false,
-    "segundaRevision": true,
-    "checkIsaac": true,
+    "segundaRevision": false,
+    "checkIsaac": false,
     "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true
