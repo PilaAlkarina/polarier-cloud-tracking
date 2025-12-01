@@ -1719,10 +1719,10 @@
     "fechaLimite": "2025-11-19",
     "consultas": 31,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
-    "checkIsaac": false,
+    "segundaRevision": true,
+    "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true
