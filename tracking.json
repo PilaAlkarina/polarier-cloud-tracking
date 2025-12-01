@@ -1741,7 +1741,7 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Datos financieros",
