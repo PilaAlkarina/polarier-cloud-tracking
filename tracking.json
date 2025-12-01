@@ -823,10 +823,10 @@
     "fechaLimite": "2025-11-14",
     "consultas": 1060,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "ISAAC",
     "isInClickUP": true
