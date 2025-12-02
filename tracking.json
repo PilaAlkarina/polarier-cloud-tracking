@@ -826,7 +826,7 @@
     "conErrores": true,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": true,
+    "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
     "isInClickUP": true
