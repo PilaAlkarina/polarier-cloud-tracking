@@ -1146,7 +1146,7 @@
     "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": false,
-    "checkIsaac": false,
+    "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID",
     "isInClickUP": true
