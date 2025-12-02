@@ -376,7 +376,7 @@
     "consultas": 3665,
     "porcentaje": 1,
     "conErrores": true,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
     "checkDavid": false,
