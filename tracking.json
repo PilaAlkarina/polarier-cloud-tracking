@@ -1618,8 +1618,8 @@
   {
     "denominacion": "Control de uso",
     "prioridad": 107,
-    "estado": "REVISADO",
-    "usuario_prepara": "LUCIANO",
+    "estado": "IMPORTADO",
+    "usuario_prepara": "",
     "fechaLimite": "2025-11-19",
     "consultas": 82,
     "porcentaje": 0,
@@ -1730,8 +1730,8 @@
   {
     "denominacion": "Validación factura",
     "prioridad": 118,
-    "estado": "REVISADO",
-    "usuario_prepara": "DAVID",
+    "estado": "IMPORTADO",
+    "usuario_prepara": "",
     "fechaLimite": "2025-11-19",
     "consultas": 30,
     "porcentaje": 0,
@@ -1762,8 +1762,8 @@
   {
     "denominacion": "Validación nómina",
     "prioridad": 120,
-    "estado": "REVISADO",
-    "usuario_prepara": "ISAAC",
+    "estado": "IMPORTADO",
+    "usuario_prepara": "",
     "fechaLimite": "2025-11-20",
     "consultas": 18,
     "porcentaje": 0,
