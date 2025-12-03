@@ -1776,22 +1776,6 @@
     "isInClickUP": false
   },
   {
-    "denominacion": "Informe control de horas TI",
-    "prioridad": 121,
-    "estado": "REVISADO",
-    "usuario_prepara": "LUCIANO",
-    "fechaLimite": "2025-11-18",
-    "consultas": 17,
-    "porcentaje": 0,
-    "conErrores": true,
-    "enDesarrollo": true,
-    "segundaRevision": false,
-    "checkIsaac": false,
-    "checkDavid": false,
-    "revisor": "DAVID",
-    "isInClickUP": false
-  },
-  {
     "denominacion": "Config. Auditorias",
     "prioridad": 122,
     "estado": "REVISADO",
