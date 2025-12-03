@@ -317,7 +317,7 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": true
   },
   {
     "denominacion": "Factura venta",
@@ -1730,8 +1730,8 @@
   {
     "denominacion": "Validación factura",
     "prioridad": 118,
-    "estado": "PENDIENTE",
-    "usuario_prepara": "",
+    "estado": "REVISADO",
+    "usuario_prepara": "DAVID",
     "fechaLimite": "2025-11-19",
     "consultas": 30,
     "porcentaje": 0,
