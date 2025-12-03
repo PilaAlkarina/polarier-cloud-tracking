@@ -514,7 +514,7 @@
   {
     "denominacion": "Dashboard ejecutivo",
     "prioridad": 35,
-    "estado": "PENDIENTE",
+    "estado": "REVISADO",
     "usuario_prepara": "",
     "fechaLimite": "2025-11-17",
     "consultas": 4176,
