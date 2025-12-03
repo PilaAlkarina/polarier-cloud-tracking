@@ -7,6 +7,8 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
     const verificadas = pantallas.filter((p) => p.verificada).length;
     const pendientes = pantallas.filter((p) => !p.importada).length;
     const segundasRevisiones = pantallas.filter((p) => p.segundaRevision).length;
+    const revisionesEsteticas = pantallas.filter((p) => p.revisionEstetica).length;
+    const revisionesFluidez = pantallas.filter((p) => p.revisionFluidez).length;
 
     // Cálculo de progreso ponderado: Importada = 50%, Verificada (1ª Rev.) = 30%, Segunda Revisión = 20%
     let progresoTotal = 0;
@@ -33,6 +35,10 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
         porcentajePendientes: totalPantallas > 0 ? Math.round((pendientes / totalPantallas) * 100) : 0,
         segundasRevisiones,
         porcentajeSegundaRevision: totalPantallas > 0 ? Math.round((segundasRevisiones / totalPantallas) * 100) : 0,
+        revisionesEsteticas,
+        porcentajeRevisionEstetica: totalPantallas > 0 ? Math.round((revisionesEsteticas / totalPantallas) * 100) : 0,
+        revisionesFluidez,
+        porcentajeRevisionFluidez: totalPantallas > 0 ? Math.round((revisionesFluidez / totalPantallas) * 100) : 0,
         porcentajeProgreso,
     };
 }
@@ -80,5 +86,7 @@ export function getColorEstado(estado: string): string {
     if (estado.includes("Completada")) return "bg-green-50 text-green-700 border-green-500";
     if (estado.includes("Verificar")) return "bg-blue-50 text-blue-700 border-blue-500";
     if (estado.includes("Bloqueada")) return "bg-red-50 text-red-700 border-red-500";
+    if (estado.includes("estética")) return "bg-purple-50 text-purple-700 border-purple-500";
+    if (estado.includes("fluidez")) return "bg-indigo-50 text-indigo-700 border-indigo-500";
     return "bg-gray-50 text-gray-700 border-gray-500";
 }

@@ -26,10 +26,11 @@ interface TasksListsEditableProps {
     onUpdateConErrores: (id: number, conErrores: boolean) => void;
     onUpdateEnDesarrollo: (id: number, enDesarrollo: boolean) => void;
     onUpdateUsuarioPrepara?: (id: number, usuario: string) => void;
-    onUpdateSegundaRevision: (id: number, segundaRevision: boolean) => void;
+    onUpdateSegundaRevision: (id: number, check: boolean) => void;
     onUpdateCheckIsaac: (id: number, check: boolean) => void;
-    onUpdateCheckDavid: (id: number, check: boolean) => void;
     onUpdateIsInClickUP: (id: number, isInClickUP: boolean) => void;
+    onUpdateRevisionEstetica: (id: number, check: boolean) => void;
+    onUpdateRevisionFluidez: (id: number, check: boolean) => void;
 }
 
 interface TareasPorUsuario {
@@ -82,7 +83,7 @@ function SortableTaskItem({ pantalla, onDelete, color, onOpenModal }: SortableTa
                     <span className="text-gray-400 hover:text-gray-600">⋮⋮</span>
                 </div>
 
-                {/* Task info */}
+                {/* Task info - SIMPLIFICADO: Solo prioridad y nombre */}
                 <div
                     className="flex items-center gap-1 truncate flex-1 min-w-0 cursor-pointer"
                     onDoubleClick={handleDoubleClick}
@@ -91,56 +92,6 @@ function SortableTaskItem({ pantalla, onDelete, color, onOpenModal }: SortableTa
                     {pantalla.prioridadNum && (
                         <span className="text-[10px] font-bold text-gray-500 shrink-0 w-5">
                             #{pantalla.prioridadNum}
-                        </span>
-                    )}
-
-                    {/* Estado actual */}
-                    <span className="shrink-0 text-xs" title={`Estado: ${pantalla.estado}`}>
-                        {pantalla.estado === "⏳ Pendiente"
-                            ? "⭕"
-                            : pantalla.estado === "✓ Por Verificar"
-                            ? "🔍"
-                            : pantalla.estado === "✅ Completada"
-                            ? "✅"
-                            : pantalla.estado === "🚨 Bloqueada"
-                            ? "🚨"
-                            : "⭕"}
-                    </span>
-                    {pantalla.conErrores && <span className="text-red-600 shrink-0">⚠️</span>}
-                    {pantalla.enDesarrollo && <span className="text-amber-600 shrink-0">🚧</span>}
-                    {pantalla.isInClickUP && (
-                        <span
-                            className="text-[10px] bg-[#7B68EE] text-white px-1.5 rounded-md font-bold shadow-sm border border-[#5f48ea]"
-                            title="Gestionado en ClickUp"
-                        >
-                            ClickUp
-                        </span>
-                    )}
-
-                    {/* Badges de revisión */}
-                    {pantalla.checkIsaac && (
-                        <span
-                            className="text-[10px] bg-purple-100 text-purple-700 px-1 rounded border border-purple-200 font-bold"
-                            title="Revisado por Isaac"
-                        >
-                            I
-                        </span>
-                    )}
-                    {pantalla.checkDavid && (
-                        <span
-                            className="text-[10px] bg-indigo-100 text-indigo-700 px-1 rounded border border-indigo-200 font-bold"
-                            title="Revisado por David"
-                        >
-                            D
-                        </span>
-                    )}
-
-                    {pantalla.segundaRevision && (
-                        <span
-                            className="inline-flex items-center justify-center text-purple-600 shrink-0"
-                            title="Segunda revisión completada"
-                        >
-                            🥈
                         </span>
                     )}
                     <span className="truncate text-gray-700" title={pantalla.nombre}>
@@ -176,8 +127,9 @@ export default function TasksListsEditable({
     onUpdateUsuarioPrepara,
     onUpdateSegundaRevision,
     onUpdateCheckIsaac,
-    onUpdateCheckDavid,
     onUpdateIsInClickUP,
+    onUpdateRevisionEstetica,
+    onUpdateRevisionFluidez,
 }: TasksListsEditableProps) {
     const [activeId, setActiveId] = useState<string | null>(null);
     const [modalPantalla, setModalPantalla] = useState<Pantalla | null>(null);
@@ -187,8 +139,9 @@ export default function TasksListsEditable({
     const [modalUsuarioPrepara, setModalUsuarioPrepara] = useState("");
     const [modalSegundaRevision, setModalSegundaRevision] = useState(false);
     const [modalCheckIsaac, setModalCheckIsaac] = useState(false);
-    const [modalCheckDavid, setModalCheckDavid] = useState(false);
     const [modalIsInClickUP, setModalIsInClickUP] = useState(false);
+    const [modalRevisionEstetica, setModalRevisionEstetica] = useState(false);
+    const [modalRevisionFluidez, setModalRevisionFluidez] = useState(false);
 
     const openModal = (pantalla: Pantalla) => {
         setModalPantalla(pantalla);
@@ -198,8 +151,9 @@ export default function TasksListsEditable({
         setModalUsuarioPrepara(pantalla.responsable || "");
         setModalSegundaRevision(pantalla.segundaRevision || false);
         setModalCheckIsaac(pantalla.checkIsaac || false);
-        setModalCheckDavid(pantalla.checkDavid || false);
         setModalIsInClickUP(pantalla.isInClickUP || false);
+        setModalRevisionEstetica(pantalla.revisionEstetica || false);
+        setModalRevisionFluidez(pantalla.revisionFluidez || false);
     };
 
     const closeModal = () => {
@@ -215,7 +169,8 @@ export default function TasksListsEditable({
 
             // Actualizar checks individuales
             onUpdateCheckIsaac(modalPantalla.id, modalCheckIsaac);
-            onUpdateCheckDavid(modalPantalla.id, modalCheckDavid);
+            onUpdateRevisionEstetica(modalPantalla.id, modalRevisionEstetica);
+            onUpdateRevisionFluidez(modalPantalla.id, modalRevisionFluidez);
 
             if (onUpdateUsuarioPrepara && modalUsuarioPrepara !== modalPantalla.responsable) {
                 onUpdateUsuarioPrepara(modalPantalla.id, modalUsuarioPrepara);
@@ -368,18 +323,21 @@ export default function TasksListsEditable({
     // Nuevas agrupaciones basadas en doble revisión
 
     // Tareas que están listas para revisión (verificadas) pero no completadas (ambos checks)
-    const tareasEnRevision = pantallas.filter(
-        (p) => p.verificada && !((p.checkIsaac && p.checkDavid) || p.segundaRevision)
-    );
+    const tareasEnRevision = pantallas.filter((p) => p.verificada && !(p.checkIsaac || p.segundaRevision));
 
     // Completadas (ambos checks o legacy)
-    const tareasRevisadas = pantallas.filter((p) => (p.checkIsaac && p.checkDavid) || p.segundaRevision);
+    const tareasRevisadas = pantallas.filter((p) => p.checkIsaac || p.segundaRevision);
 
     // Columna Isaac: Tareas en revisión que NO tienen checkIsaac.
     const tareasPteRevisionIsaac = tareasEnRevision.filter((p) => !p.checkIsaac);
 
-    // Columna David: Tareas en revisión que NO tienen checkDavid.
-    const tareasPteRevisionDavid = tareasEnRevision.filter((p) => !p.checkDavid);
+    // Columnas de Revisión Estética
+    const tareasPteRevisionEstetica = pantallas.filter((p) => p.verificada && !p.revisionEstetica);
+    const tareasEsteticaRevisada = pantallas.filter((p) => p.revisionEstetica);
+
+    // Columnas de Revisión Fluidez
+    const tareasPteRevisionFluidez = pantallas.filter((p) => p.verificada && !p.revisionFluidez);
+    const tareasFluidezRevisada = pantallas.filter((p) => p.revisionFluidez);
 
     // Tareas pendientes de primera revisión (no verificadas)
     const tareasPtePrimeraRevision = pantallas.filter((p) => !p.verificada);
@@ -390,10 +348,10 @@ export default function TasksListsEditable({
 
     return (
         <>
-            {/* NUEVAS SECCIONES HORIZONTALES */}
-            <div className="flex flex-row gap-4">
+            {/* SECCIONES HORIZONTALES - 6 COLUMNAS */}
+            <div className="grid grid-cols-6 gap-4">
                 {/* Pte. Revisión - ISAAC */}
-                <div className="flex-1">
+                <div className="col-span-1">
                     <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-purple-500 h-[600px] overflow-y-auto">
                         <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
                             <h3 className="text-sm font-bold text-purple-700 flex items-center gap-1">
@@ -448,64 +406,8 @@ export default function TasksListsEditable({
                     </div>
                 </div>
 
-                {/* Pte. Revisión - DAVID */}
-                <div className="flex-1">
-                    <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-indigo-500 h-[600px] overflow-y-auto">
-                        <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
-                            <h3 className="text-sm font-bold text-indigo-700 flex items-center gap-1">
-                                📋 Pte. Revisión - DAVID
-                            </h3>
-                            <span className="text-xl font-black text-indigo-700">{tareasPteRevisionDavid.length}</span>
-                        </div>
-
-                        {tareasPteRevisionDavid.length === 0 ? (
-                            <div className="text-center py-4 text-gray-400">
-                                <div className="text-2xl mb-1">🎉</div>
-                                <p className="text-xs font-medium">¡Todas revisadas!</p>
-                            </div>
-                        ) : (
-                            <DndContext
-                                sensors={sensors}
-                                collisionDetection={closestCenter}
-                                onDragStart={handleDragStart}
-                                onDragEnd={handleDragEnd}
-                                onDragOver={handleDragOver}
-                            >
-                                <SortableContext
-                                    items={tareasPteRevisionDavid.map((p) => p.id.toString())}
-                                    strategy={verticalListSortingStrategy}
-                                >
-                                    <div className="space-y-0.5">
-                                        {tareasPteRevisionDavid
-                                            .sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0))
-                                            .map((pantalla) => (
-                                                <SortableTaskItem
-                                                    key={pantalla.id}
-                                                    pantalla={pantalla}
-                                                    onDelete={onDelete}
-                                                    color="border-indigo-500"
-                                                    onOpenModal={openModal}
-                                                />
-                                            ))}
-                                    </div>
-                                </SortableContext>
-
-                                <DragOverlay>
-                                    {activeId ? (
-                                        <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
-                                            <span className="text-xs font-medium">
-                                                {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
-                                            </span>
-                                        </div>
-                                    ) : null}
-                                </DragOverlay>
-                            </DndContext>
-                        )}
-                    </div>
-                </div>
-
                 {/* Revisados */}
-                <div className="flex-1">
+                <div className="col-span-1">
                     <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-green-500 h-[600px] overflow-y-auto">
                         <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
                             <h3 className="text-sm font-bold text-green-700 flex items-center gap-1">✅ Revisados</h3>
@@ -557,6 +459,232 @@ export default function TasksListsEditable({
                         )}
                     </div>
                 </div>
+
+                {/* Pte. Revisión Estética */}
+                <div className="col-span-1">
+                    <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-pink-500 h-[600px] overflow-y-auto">
+                        <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
+                            <h3 className="text-sm font-bold text-pink-700 flex items-center gap-1">
+                                🎨 Pte. Revisión Estética
+                            </h3>
+                            <span className="text-xl font-black text-pink-700">{tareasPteRevisionEstetica.length}</span>
+                        </div>
+
+                        {tareasPteRevisionEstetica.length === 0 ? (
+                            <div className="text-center py-8 text-gray-400">
+                                <div className="text-3xl mb-2">🎉</div>
+                                <p className="text-xs font-medium">¡Todas revisadas!</p>
+                            </div>
+                        ) : (
+                            <DndContext
+                                sensors={sensors}
+                                collisionDetection={closestCenter}
+                                onDragStart={handleDragStart}
+                                onDragEnd={handleDragEnd}
+                                onDragOver={handleDragOver}
+                            >
+                                <SortableContext
+                                    items={tareasPteRevisionEstetica.map((p) => p.id.toString())}
+                                    strategy={verticalListSortingStrategy}
+                                >
+                                    <div className="space-y-0.5">
+                                        {tareasPteRevisionEstetica
+                                            .sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0))
+                                            .map((pantalla) => (
+                                                <SortableTaskItem
+                                                    key={pantalla.id}
+                                                    pantalla={pantalla}
+                                                    onDelete={onDelete}
+                                                    color="border-pink-500"
+                                                    onOpenModal={openModal}
+                                                />
+                                            ))}
+                                    </div>
+                                </SortableContext>
+
+                                <DragOverlay>
+                                    {activeId ? (
+                                        <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
+                                            <span className="text-xs font-medium">
+                                                {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
+                                            </span>
+                                        </div>
+                                    ) : null}
+                                </DragOverlay>
+                            </DndContext>
+                        )}
+                    </div>
+                </div>
+
+                {/* Estética Revisada */}
+                <div className="col-span-1">
+                    <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-cyan-500 h-[600px] overflow-y-auto">
+                        <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
+                            <h3 className="text-sm font-bold text-cyan-700 flex items-center gap-1">
+                                ✨ Estética Revisada
+                            </h3>
+                            <span className="text-xl font-black text-cyan-700">{tareasEsteticaRevisada.length}</span>
+                        </div>
+
+                        {tareasEsteticaRevisada.length === 0 ? (
+                            <div className="text-center py-8 text-gray-400">
+                                <div className="text-3xl mb-2">📋</div>
+                                <p className="text-xs font-medium">Sin revisiones estéticas completadas</p>
+                            </div>
+                        ) : (
+                            <DndContext
+                                sensors={sensors}
+                                collisionDetection={closestCenter}
+                                onDragStart={handleDragStart}
+                                onDragEnd={handleDragEnd}
+                                onDragOver={handleDragOver}
+                            >
+                                <SortableContext
+                                    items={tareasEsteticaRevisada.map((p) => p.id.toString())}
+                                    strategy={verticalListSortingStrategy}
+                                >
+                                    <div className="space-y-0.5">
+                                        {tareasEsteticaRevisada
+                                            .sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0))
+                                            .map((pantalla) => (
+                                                <SortableTaskItem
+                                                    key={pantalla.id}
+                                                    pantalla={pantalla}
+                                                    onDelete={onDelete}
+                                                    color="border-cyan-500"
+                                                    onOpenModal={openModal}
+                                                />
+                                            ))}
+                                    </div>
+                                </SortableContext>
+
+                                <DragOverlay>
+                                    {activeId ? (
+                                        <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
+                                            <span className="text-xs font-medium">
+                                                {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
+                                            </span>
+                                        </div>
+                                    ) : null}
+                                </DragOverlay>
+                            </DndContext>
+                        )}
+                    </div>
+                </div>
+
+                {/* Pte. Revisión Fluidez */}
+                <div className="col-span-1">
+                    <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-indigo-500 h-[600px] overflow-y-auto">
+                        <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
+                            <h3 className="text-sm font-bold text-indigo-700 flex items-center gap-1">
+                                ⚡ Pte. Revisión Fluidez
+                            </h3>
+                            <span className="text-xl font-black text-indigo-700">
+                                {tareasPteRevisionFluidez.length}
+                            </span>
+                        </div>
+
+                        {tareasPteRevisionFluidez.length === 0 ? (
+                            <div className="text-center py-8 text-gray-400">
+                                <div className="text-3xl mb-2">🎉</div>
+                                <p className="text-xs font-medium">¡Todas revisadas!</p>
+                            </div>
+                        ) : (
+                            <DndContext
+                                sensors={sensors}
+                                collisionDetection={closestCenter}
+                                onDragStart={handleDragStart}
+                                onDragEnd={handleDragEnd}
+                                onDragOver={handleDragOver}
+                            >
+                                <SortableContext
+                                    items={tareasPteRevisionFluidez.map((p) => p.id.toString())}
+                                    strategy={verticalListSortingStrategy}
+                                >
+                                    <div className="space-y-0.5">
+                                        {tareasPteRevisionFluidez
+                                            .sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0))
+                                            .map((pantalla) => (
+                                                <SortableTaskItem
+                                                    key={pantalla.id}
+                                                    pantalla={pantalla}
+                                                    onDelete={onDelete}
+                                                    color="border-indigo-500"
+                                                    onOpenModal={openModal}
+                                                />
+                                            ))}
+                                    </div>
+                                </SortableContext>
+
+                                <DragOverlay>
+                                    {activeId ? (
+                                        <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
+                                            <span className="text-xs font-medium">
+                                                {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
+                                            </span>
+                                        </div>
+                                    ) : null}
+                                </DragOverlay>
+                            </DndContext>
+                        )}
+                    </div>
+                </div>
+
+                {/* Fluidez Revisada */}
+                <div className="col-span-1">
+                    <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-teal-500 h-[600px] overflow-y-auto">
+                        <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
+                            <h3 className="text-sm font-bold text-teal-700 flex items-center gap-1">
+                                💨 Fluidez Revisada
+                            </h3>
+                            <span className="text-xl font-black text-teal-700">{tareasFluidezRevisada.length}</span>
+                        </div>
+
+                        {tareasFluidezRevisada.length === 0 ? (
+                            <div className="text-center py-8 text-gray-400">
+                                <div className="text-3xl mb-2">📋</div>
+                                <p className="text-xs font-medium">Sin revisiones de fluidez completadas</p>
+                            </div>
+                        ) : (
+                            <DndContext
+                                sensors={sensors}
+                                collisionDetection={closestCenter}
+                                onDragStart={handleDragStart}
+                                onDragEnd={handleDragEnd}
+                                onDragOver={handleDragOver}
+                            >
+                                <SortableContext
+                                    items={tareasFluidezRevisada.map((p) => p.id.toString())}
+                                    strategy={verticalListSortingStrategy}
+                                >
+                                    <div className="space-y-0.5">
+                                        {tareasFluidezRevisada
+                                            .sort((a, b) => (a.prioridadNum || 0) - (b.prioridadNum || 0))
+                                            .map((pantalla) => (
+                                                <SortableTaskItem
+                                                    key={pantalla.id}
+                                                    pantalla={pantalla}
+                                                    onDelete={onDelete}
+                                                    color="border-teal-500"
+                                                    onOpenModal={openModal}
+                                                />
+                                            ))}
+                                    </div>
+                                </SortableContext>
+
+                                <DragOverlay>
+                                    {activeId ? (
+                                        <div className="bg-blue-100 border border-blue-300 rounded px-2 py-1 shadow-lg">
+                                            <span className="text-xs font-medium">
+                                                {pantallas.find((p) => p.id.toString() === activeId)?.nombre}
+                                            </span>
+                                        </div>
+                                    ) : null}
+                                </DragOverlay>
+                            </DndContext>
+                        )}
+                    </div>
+                </div>
             </div>
 
             {/* Pte. Primera Revisión - Contenedor completo debajo */}
@@ -564,7 +692,7 @@ export default function TasksListsEditable({
                 <div className="bg-white rounded-lg shadow-sm p-3 border-l-4 border-blue-500 h-[400px] overflow-y-auto">
                     <div className="flex items-center justify-between mb-2 sticky top-0 bg-white pb-2 border-b">
                         <h3 className="text-sm font-bold text-blue-700 flex items-center gap-1">
-                            🔄 Pte. Primera Revisión
+                            🔄 Pendiente Primera Revisión
                         </h3>
                         <span className="text-xl font-black text-blue-700">{tareasPtePrimeraRevision.length}</span>
                     </div>
@@ -667,7 +795,7 @@ export default function TasksListsEditable({
                         </div>
 
                         <div className="mb-4">
-                            <label className="block text-sm font-medium text-gray-700 mb-2">Usuario Prepara</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-2">Usuario que Prepara</label>
                             <select
                                 value={modalUsuarioPrepara}
                                 onChange={(e) => setModalUsuarioPrepara(e.target.value)}
@@ -727,7 +855,7 @@ export default function TasksListsEditable({
 
                             <div className="border-t pt-3 mt-3">
                                 <p className="text-sm font-medium text-gray-700 mb-2">Revisiones Finales</p>
-                                <div className="flex gap-4">
+                                <div className="space-y-2">
                                     <label className="flex items-center gap-3 cursor-pointer">
                                         <input
                                             type="checkbox"
@@ -738,21 +866,35 @@ export default function TasksListsEditable({
                                         />
                                         <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
                                             <span className="text-lg">👨‍💻</span>
-                                            OK Isaac
+                                            Revisado por Isaac
                                         </span>
                                     </label>
 
                                     <label className="flex items-center gap-3 cursor-pointer">
                                         <input
                                             type="checkbox"
-                                            checked={modalCheckDavid}
-                                            onChange={(e) => setModalCheckDavid(e.target.checked)}
+                                            checked={modalRevisionEstetica}
+                                            onChange={(e) => setModalRevisionEstetica(e.target.checked)}
+                                            disabled={!modalPantalla.verificada}
+                                            className="w-5 h-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                                        />
+                                        <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                            <span className="text-lg">🎨</span>
+                                            Revisión estética
+                                        </span>
+                                    </label>
+
+                                    <label className="flex items-center gap-3 cursor-pointer">
+                                        <input
+                                            type="checkbox"
+                                            checked={modalRevisionFluidez}
+                                            onChange={(e) => setModalRevisionFluidez(e.target.checked)}
                                             disabled={!modalPantalla.verificada}
                                             className="w-5 h-5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
                                         />
                                         <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                                            <span className="text-lg">👨‍🏫</span>
-                                            OK David
+                                            <span className="text-lg">⚡</span>
+                                            Revisión de fluidez
                                         </span>
                                     </label>
                                 </div>

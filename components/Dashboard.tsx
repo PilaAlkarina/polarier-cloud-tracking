@@ -27,8 +27,9 @@ export default function Dashboard() {
         updateEnDesarrollo,
         updateSegundaRevision,
         updateCheckIsaac,
-        updateCheckDavid,
         updateIsInClickUP,
+        updateRevisionEstetica,
+        updateRevisionFluidez,
         isSaving,
         saveStatus,
         nextResetTime,
@@ -55,7 +56,7 @@ export default function Dashboard() {
     if (error) {
         return (
             <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center">
-                <div className="bg-white rounded-lg shadow-lg p-8 max-w-md">
+                <div className="bg-danger rounded-lg shadow-lg p-8 max-w-md">
                     <div className="text-red-600 text-center mb-4">
                         <svg className="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path
@@ -168,7 +169,7 @@ export default function Dashboard() {
                 </div>
             </header>
             {/* Main Content */}
-            <main className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <main className="w-[90%] mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div className="space-y-4">
                     <StatsCards stats={statsGlobales} pantallas={pantallas} />
                     <ProgressChart pantallas={pantallas} />
@@ -183,11 +184,12 @@ export default function Dashboard() {
                         onUpdateUsuarioPrepara={updateResponsable}
                         onUpdateSegundaRevision={updateSegundaRevision}
                         onUpdateCheckIsaac={updateCheckIsaac}
-                        onUpdateCheckDavid={updateCheckDavid}
                         onUpdateIsInClickUP={updateIsInClickUP}
+                        onUpdateRevisionEstetica={updateRevisionEstetica}
+                        onUpdateRevisionFluidez={updateRevisionFluidez}
                     />
                 </div>
-            </main>{" "}
+            </main>
             {/* Footer */}
             <footer className="bg-white border-t border-gray-200 mt-6">
                 <div className="w-[80%] mx-auto px-4 sm:px-6 lg:px-8 py-3">

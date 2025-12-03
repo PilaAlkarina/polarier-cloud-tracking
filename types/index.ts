@@ -1,6 +1,6 @@
 export type Prioridad = "Crítico" | "Alto" | "Medio-Alto" | "Medio" | "Bajo" | "Media";
 
-export type Estado = "⏳ Pendiente" | "✓ Por Verificar" | "✅ Completada" | "🚨 Bloqueada";
+export type Estado = "⏳ Pendiente" | "✓ Por Verificar" | "✅ Completada" | "🚨 Bloqueada" | "🎨 Revisión estética" | "⚡ Revisión fluidez";
 
 // Estructura original del tracking.json
 export interface TrackingItemRaw {
@@ -18,6 +18,8 @@ export interface TrackingItemRaw {
     checkDavid?: boolean;
     revisor?: string;
     isInClickUP?: boolean;
+    revisionEstetica?: boolean;
+    revisionFluidez?: boolean;
 }
 
 export interface Pantalla {
@@ -43,6 +45,8 @@ export interface Pantalla {
     checkDavid?: boolean;
     revisor?: string;
     isInClickUP?: boolean;
+    revisionEstetica?: boolean;
+    revisionFluidez?: boolean;
 }
 
 export interface TareaDiaria {
@@ -64,6 +68,10 @@ export interface EstadisticasGlobales {
     porcentajePendientes: number;
     segundasRevisiones: number;
     porcentajeSegundaRevision: number;
+    revisionesEsteticas: number;
+    porcentajeRevisionEstetica: number;
+    revisionesFluidez: number;
+    porcentajeRevisionFluidez: number;
     porcentajeProgreso: number; // Progreso ponderado: importación (50%) + 1ª revisión (30%) + 2ª revisión (20%)
 }
 

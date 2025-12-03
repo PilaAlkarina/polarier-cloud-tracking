@@ -279,23 +279,8 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) =>
             prev.map((p: Pantalla) => {
                 if (p.id === id) {
-                    const newP = { ...p, checkIsaac: check };
-                    // Actualizar segundaRevision global si ambos están check
-                    newP.segundaRevision = !!(newP.checkIsaac && newP.checkDavid);
-                    return newP;
-                }
-                return p;
-            })
-        );
-    };
-
-    const updateCheckDavid = (id: number, check: boolean) => {
-        setPantallas((prev: Pantalla[]) =>
-            prev.map((p: Pantalla) => {
-                if (p.id === id) {
-                    const newP = { ...p, checkDavid: check };
-                    // Actualizar segundaRevision global si ambos están check
-                    newP.segundaRevision = !!(newP.checkIsaac && newP.checkDavid);
+                    // Cuando se marca checkIsaac, también se marca segundaRevision
+                    const newP = { ...p, checkIsaac: check, segundaRevision: check };
                     return newP;
                 }
                 return p;
@@ -305,6 +290,14 @@ export function useTrackingData() {
 
     const updateIsInClickUP = (id: number, isInClickUP: boolean) => {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, isInClickUP } : p)));
+    };
+
+    const updateRevisionEstetica = (id: number, revisionEstetica: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, revisionEstetica } : p)));
+    };
+
+    const updateRevisionFluidez = (id: number, revisionFluidez: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, revisionFluidez } : p)));
     };
 
     return {
@@ -323,8 +316,9 @@ export function useTrackingData() {
         updateEnDesarrollo,
         updateSegundaRevision,
         updateCheckIsaac,
-        updateCheckDavid,
         updateIsInClickUP,
+        updateRevisionEstetica,
+        updateRevisionFluidez,
         isSaving,
         saveStatus,
         nextResetTime,
