@@ -1815,11 +1815,11 @@
     "fechaLimite": "2025-11-18",
     "consultas": 6,
     "porcentaje": 0,
-    "conErrores": true,
-    "enDesarrollo": true,
+    "conErrores": false,
+    "enDesarrollo": false,
     "segundaRevision": false,
     "checkIsaac": false,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": false
   }
