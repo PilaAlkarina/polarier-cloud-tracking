@@ -514,7 +514,7 @@
   {
     "denominacion": "Dashboard ejecutivo",
     "prioridad": 35,
-    "estado": "REVISADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "",
     "fechaLimite": "2025-11-17",
     "consultas": 4176,
@@ -953,9 +953,9 @@
     "porcentaje": 0,
     "conErrores": false,
     "enDesarrollo": false,
-    "segundaRevision": false,
+    "segundaRevision": true,
     "checkIsaac": true,
-    "checkDavid": false,
+    "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": true
   },
