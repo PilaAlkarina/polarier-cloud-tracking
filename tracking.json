@@ -13,7 +13,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": true,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Pedidos",
@@ -29,7 +31,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Repartos office",
@@ -45,7 +49,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Repartos",
@@ -61,7 +67,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe operativo",
@@ -77,7 +85,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Entrada / Salida personal",
@@ -93,7 +103,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Producción",
@@ -109,7 +121,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Cuadrante personal",
@@ -125,7 +139,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Facturación por cliente",
@@ -141,7 +157,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Personal general",
@@ -157,7 +175,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Calendario laboral",
@@ -173,7 +193,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Control de kilos lavados",
@@ -189,7 +211,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Lectura de recursos",
@@ -205,7 +229,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Validar repartos",
@@ -221,7 +247,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Consumos de lencería",
@@ -237,7 +265,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Gestión de almacenes",
@@ -253,7 +283,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Comparativa procesados - entregados",
@@ -269,7 +301,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Smart View",
@@ -285,7 +319,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Presupuesto venta",
@@ -301,7 +337,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Estructura organizativa",
@@ -317,7 +355,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Factura venta",
@@ -333,7 +373,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Incidencias",
@@ -349,7 +391,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Calendario laboral RRHH",
@@ -365,7 +409,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Reposiciones general",
@@ -381,7 +427,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Personal (Caribe)",
@@ -397,7 +445,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Monitor SAT",
@@ -413,7 +463,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Pedido proveedor",
@@ -429,7 +481,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Reposiciones office",
@@ -445,7 +499,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Notificaciones",
@@ -461,7 +517,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Calendario nóminas",
@@ -477,7 +535,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Gestión de nóminas",
@@ -493,7 +553,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Estancias",
@@ -509,7 +571,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Dashboard ejecutivo",
@@ -525,7 +589,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Config. uniformidad",
@@ -541,7 +607,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Solicitudes de alta",
@@ -557,7 +625,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe de eventos persona",
@@ -573,7 +643,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Prev. ingresos y costes",
@@ -589,7 +661,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Solicitudes de abono",
@@ -605,7 +679,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Inventarios de lencería",
@@ -621,7 +697,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Asientos de nóminas",
@@ -637,7 +715,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Recambios",
@@ -653,7 +733,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Abonos",
@@ -669,7 +751,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe de recursos humanos",
@@ -685,7 +769,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Rutas de expedición",
@@ -701,7 +787,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Movimientos uniformidad",
@@ -717,7 +805,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe de inventarios",
@@ -733,7 +823,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Entradas Recambios",
@@ -749,7 +841,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Gestión de finiquitos",
@@ -765,7 +859,9 @@
     "checkIsaac": true,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Gestión de usuarios",
@@ -781,7 +877,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Maquinaria",
@@ -797,7 +895,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Traspasos Recambios",
@@ -813,7 +913,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Facturación uniformidad",
@@ -829,7 +931,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Control de envíos",
@@ -845,7 +949,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Albarán compra",
@@ -861,7 +967,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Mantenimiento preventivo",
@@ -877,7 +985,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe encuestas",
@@ -893,7 +1003,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe cumplimiento pedidos",
@@ -909,7 +1021,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Categorías laborales",
@@ -925,7 +1039,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Artículos",
@@ -941,7 +1057,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Órdenes de trabajo (MBC)",
@@ -957,7 +1075,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Salidas Recambios",
@@ -973,7 +1093,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Cierre de datos",
@@ -989,7 +1111,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Parametrización de prendas",
@@ -1005,7 +1129,9 @@
     "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Clientes",
@@ -1021,7 +1147,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe de auditorías",
@@ -1037,7 +1165,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Lavandería",
@@ -1053,7 +1183,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Laundry dashboard",
@@ -1069,7 +1201,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Recursos energéticos",
@@ -1085,7 +1219,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Definición de prendas",
@@ -1101,7 +1237,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Factura compra",
@@ -1117,7 +1255,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Turnos",
@@ -1133,7 +1273,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Almacenes Recambios",
@@ -1149,7 +1291,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe rechazo cliente",
@@ -1165,7 +1309,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Festivos y cierres",
@@ -1181,7 +1327,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Albarán venta",
@@ -1197,7 +1345,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Categorías de máquinas",
@@ -1213,7 +1363,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe control almacén cliente",
@@ -1229,7 +1381,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Kg. Presupuestados",
@@ -1245,7 +1399,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Gestión de mantenimiento",
@@ -1261,7 +1417,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "No conformidades",
@@ -1277,7 +1435,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Prev. Ingresos y costes (Informe)",
@@ -1293,7 +1453,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe clasificación sucio",
@@ -1309,7 +1471,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Dashboard mantenimiento",
@@ -1325,7 +1489,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Auditorías",
@@ -1341,7 +1507,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Partes de trabajo",
@@ -1357,7 +1525,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Estructura operativa",
@@ -1373,7 +1543,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Regularizaciones Recambios",
@@ -1389,7 +1561,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Rentabilidad por centro",
@@ -1405,7 +1579,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Balance pedidos / repartos",
@@ -1421,7 +1597,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Revisiones",
@@ -1437,7 +1615,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Distribución CeCo",
@@ -1453,7 +1633,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Proveedores",
@@ -1469,7 +1651,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Inventarios Recambios",
@@ -1485,7 +1669,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Plantilla mantenimiento prev.",
@@ -1501,7 +1687,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Control presupuestario",
@@ -1517,7 +1705,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Rutas de revisión",
@@ -1533,7 +1723,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Reuniones comerciales",
@@ -1549,7 +1741,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Vehículos",
@@ -1565,7 +1759,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informes costes estructura",
@@ -1581,7 +1777,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Pedido cliente",
@@ -1597,7 +1795,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Informe cumplimiento horario",
@@ -1613,7 +1813,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Control de uso",
@@ -1629,7 +1831,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Asignación CeCo",
@@ -1645,7 +1849,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Abonos Recambio",
@@ -1661,7 +1867,9 @@
     "checkIsaac": true,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Distribución Kg",
@@ -1677,7 +1885,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Agrupación PEP",
@@ -1693,7 +1903,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Dashboard financiero",
@@ -1709,7 +1921,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Kg. Lavados",
@@ -1725,7 +1939,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Validación factura",
@@ -1741,7 +1957,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Datos financieros",
@@ -1757,7 +1975,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": true
+    "isInClickUP": true,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Validación nómina",
@@ -1773,7 +1993,9 @@
     "checkIsaac": false,
     "checkDavid": false,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Config. Auditorias",
@@ -1789,7 +2011,9 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   },
   {
     "denominacion": "Distribución de recursos TI",
@@ -1805,6 +2029,8 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "DAVID",
-    "isInClickUP": false
+    "isInClickUP": false,
+    "revisionEstetica": false,
+    "revisionFluidez": false
   }
 ]
