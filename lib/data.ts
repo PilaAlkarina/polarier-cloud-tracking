@@ -36,7 +36,8 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
         porcentajeVerificadas: totalPantallas > 0 ? Math.round((verificadas / totalPantallas) * 100) : 0,
         porcentajePendientes: totalPantallas > 0 ? Math.round((pendientes / totalPantallas) * 100) : 0,
         segundasRevisiones,
-        porcentajeSegundaRevision: totalPantallasCompletadas > 0 ? Math.round((segundasRevisiones / totalPantallasCompletadas) * 100) : 0,
+        porcentajeSegundaRevision:
+            totalPantallasCompletadas > 0 ? Math.round((segundasRevisiones / totalPantallasCompletadas) * 100) : 0,
         revisionesEsteticas,
         porcentajeRevisionEstetica: totalPantallas > 0 ? Math.round((revisionesEsteticas / totalPantallas) * 100) : 0,
         revisionesFluidez,

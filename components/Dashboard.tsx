@@ -30,6 +30,8 @@ export default function Dashboard() {
         updateIsInClickUP,
         updateRevisionEstetica,
         updateRevisionFluidez,
+        updateErrorEstetica,
+        updateErrorFluidez,
         isSaving,
         saveStatus,
         nextResetTime,
@@ -187,6 +189,8 @@ export default function Dashboard() {
                         onUpdateIsInClickUP={updateIsInClickUP}
                         onUpdateRevisionEstetica={updateRevisionEstetica}
                         onUpdateRevisionFluidez={updateRevisionFluidez}
+                        onUpdateErrorEstetica={updateErrorEstetica}
+                        onUpdateErrorFluidez={updateErrorFluidez}
                     />
                 </div>
             </main>

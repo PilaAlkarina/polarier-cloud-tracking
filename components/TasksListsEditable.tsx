@@ -31,6 +31,8 @@ interface TasksListsEditableProps {
     onUpdateIsInClickUP: (id: number, isInClickUP: boolean) => void;
     onUpdateRevisionEstetica: (id: number, check: boolean) => void;
     onUpdateRevisionFluidez: (id: number, check: boolean) => void;
+    onUpdateErrorEstetica: (id: number, check: boolean) => void;
+    onUpdateErrorFluidez: (id: number, check: boolean) => void;
 }
 
 interface TareasPorUsuario {
@@ -130,6 +132,8 @@ export default function TasksListsEditable({
     onUpdateIsInClickUP,
     onUpdateRevisionEstetica,
     onUpdateRevisionFluidez,
+    onUpdateErrorEstetica,
+    onUpdateErrorFluidez,
 }: TasksListsEditableProps) {
     const [activeId, setActiveId] = useState<string | null>(null);
     const [modalPantalla, setModalPantalla] = useState<Pantalla | null>(null);
@@ -142,6 +146,8 @@ export default function TasksListsEditable({
     const [modalIsInClickUP, setModalIsInClickUP] = useState(false);
     const [modalRevisionEstetica, setModalRevisionEstetica] = useState(false);
     const [modalRevisionFluidez, setModalRevisionFluidez] = useState(false);
+    const [modalErrorEstetica, setModalErrorEstetica] = useState(false);
+    const [modalErrorFluidez, setModalErrorFluidez] = useState(false);
 
     const openModal = (pantalla: Pantalla) => {
         setModalPantalla(pantalla);
@@ -154,6 +160,8 @@ export default function TasksListsEditable({
         setModalIsInClickUP(pantalla.isInClickUP || false);
         setModalRevisionEstetica(pantalla.revisionEstetica || false);
         setModalRevisionFluidez(pantalla.revisionFluidez || false);
+        setModalErrorEstetica(pantalla.errorEstetica || false);
+        setModalErrorFluidez(pantalla.errorFluidez || false);
     };
 
     const closeModal = () => {
@@ -171,6 +179,8 @@ export default function TasksListsEditable({
             onUpdateCheckIsaac(modalPantalla.id, modalCheckIsaac);
             onUpdateRevisionEstetica(modalPantalla.id, modalRevisionEstetica);
             onUpdateRevisionFluidez(modalPantalla.id, modalRevisionFluidez);
+            onUpdateErrorEstetica(modalPantalla.id, modalErrorEstetica);
+            onUpdateErrorFluidez(modalPantalla.id, modalErrorFluidez);
 
             if (onUpdateUsuarioPrepara && modalUsuarioPrepara !== modalPantalla.responsable) {
                 onUpdateUsuarioPrepara(modalPantalla.id, modalUsuarioPrepara);
@@ -895,6 +905,34 @@ export default function TasksListsEditable({
                                         <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
                                             <span className="text-lg">⚡</span>
                                             Revisión de fluidez
+                                        </span>
+                                    </label>
+
+                                    <label className="flex items-center gap-3 cursor-pointer">
+                                        <input
+                                            type="checkbox"
+                                            checked={modalErrorEstetica}
+                                            onChange={(e) => setModalErrorEstetica(e.target.checked)}
+                                            disabled={!modalPantalla.verificada}
+                                            className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                                        />
+                                        <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                            <span className="text-lg">❌</span>
+                                            Error estética
+                                        </span>
+                                    </label>
+
+                                    <label className="flex items-center gap-3 cursor-pointer">
+                                        <input
+                                            type="checkbox"
+                                            checked={modalErrorFluidez}
+                                            onChange={(e) => setModalErrorFluidez(e.target.checked)}
+                                            disabled={!modalPantalla.verificada}
+                                            className="w-5 h-5 rounded border-gray-300 text-orange-600 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed"
+                                        />
+                                        <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                                            <span className="text-lg">⚠️</span>
+                                            Error fluidez
                                         </span>
                                     </label>
                                 </div>

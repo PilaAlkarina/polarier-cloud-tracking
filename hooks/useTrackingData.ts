@@ -300,6 +300,14 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, revisionFluidez } : p)));
     };
 
+    const updateErrorEstetica = (id: number, errorEstetica: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, errorEstetica } : p)));
+    };
+
+    const updateErrorFluidez = (id: number, errorFluidez: boolean) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, errorFluidez } : p)));
+    };
+
     return {
         pantallas,
         isLoading,
@@ -319,6 +327,8 @@ export function useTrackingData() {
         updateIsInClickUP,
         updateRevisionEstetica,
         updateRevisionFluidez,
+        updateErrorEstetica,
+        updateErrorFluidez,
         isSaving,
         saveStatus,
         nextResetTime,

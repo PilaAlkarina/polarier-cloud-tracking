@@ -1,6 +1,12 @@
 export type Prioridad = "Crítico" | "Alto" | "Medio-Alto" | "Medio" | "Bajo" | "Media";
 
-export type Estado = "⏳ Pendiente" | "✓ Por Verificar" | "✅ Completada" | "🚨 Bloqueada" | "🎨 Revisión estética" | "⚡ Revisión fluidez";
+export type Estado =
+    | "⏳ Pendiente"
+    | "✓ Por Verificar"
+    | "✅ Completada"
+    | "🚨 Bloqueada"
+    | "🎨 Revisión estética"
+    | "⚡ Revisión fluidez";
 
 // Estructura original del tracking.json
 export interface TrackingItemRaw {
@@ -20,6 +26,8 @@ export interface TrackingItemRaw {
     isInClickUP?: boolean;
     revisionEstetica?: boolean;
     revisionFluidez?: boolean;
+    errorEstetica?: boolean;
+    errorFluidez?: boolean;
 }
 
 export interface Pantalla {
@@ -47,6 +55,8 @@ export interface Pantalla {
     isInClickUP?: boolean;
     revisionEstetica?: boolean;
     revisionFluidez?: boolean;
+    errorEstetica?: boolean;
+    errorFluidez?: boolean;
 }
 
 export interface TareaDiaria {
