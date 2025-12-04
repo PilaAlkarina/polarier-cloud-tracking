@@ -144,6 +144,8 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
             checkDavid: item.checkDavid || false,
             revisor: item.revisor,
             isInClickUP: item.isInClickUP || false,
+            revisionEstetica: item.revisionEstetica || false,
+            revisionFluidez: item.revisionFluidez || false,
         };
     });
 }
@@ -249,6 +251,8 @@ function transformPantallasToRaw(pantallas: Pantalla[]): TrackingItemRaw[] {
             checkDavid: pantalla.checkDavid || false,
             revisor: pantalla.revisor,
             isInClickUP: pantalla.isInClickUP || false,
+            revisionEstetica: pantalla.revisionEstetica || false,
+            revisionFluidez: pantalla.revisionFluidez || false,
         };
     });
 }
