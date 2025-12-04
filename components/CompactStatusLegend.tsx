@@ -117,16 +117,16 @@ export default function CompactStatusLegend() {
                                     <span className="text-gray-700 text-xs">Revisión Fluidez Activa</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <span className="inline-flex items-center justify-center w-5 h-5 bg-rose-100 border border-rose-300 rounded text-xs">
+                                    <span className="inline-flex items-center justify-center w-5 h-5 bg-gradient-to-br from-red-100 to-pink-200 border border-pink-300 rounded text-xs shadow-sm">
                                         ❌
                                     </span>
-                                    <span className="text-gray-700 text-xs">Error Estético</span>
+                                    <span className="text-gray-700 text-xs">Error Estético (Visual)</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <span className="inline-flex items-center justify-center w-5 h-5 bg-orange-100 border border-orange-300 rounded text-xs">
+                                    <span className="inline-flex items-center justify-center w-5 h-5 bg-gradient-to-br from-red-100 to-orange-200 border border-orange-300 rounded text-xs shadow-sm">
                                         ❌
                                     </span>
-                                    <span className="text-gray-700 text-xs">Error Fluidez</span>
+                                    <span className="text-gray-700 text-xs">Error Fluidez (Funcional)</span>
                                 </div>
                             </div>
                         </div>

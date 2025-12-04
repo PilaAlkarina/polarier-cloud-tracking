@@ -63,24 +63,52 @@ function SortableTaskItem({ pantalla, onDelete, color, onOpenModal }: SortableTa
         onOpenModal(pantalla);
     };
 
+    // Determinar el estilo de la tarjeta basado en su estado con degradados semánticos
+    const getCardStyle = () => {
+        // Prioridad 1: Errores específicos con degradados distintivos (mayor prioridad visual)
+        if (pantalla.errorEstetica && pantalla.errorFluidez) {
+            // Ambos errores: Degradado rojo → rosa → naranja (crítico)
+            return "bg-gradient-to-r from-red-200 via-pink-200 to-orange-200 border-2 border-red-500 shadow-md";
+        }
+
+        if (pantalla.errorEstetica) {
+            // Error estético: Degradado rosa intenso → rosa claro (visual)
+            return "bg-gradient-to-r from-pink-200 to-pink-100 border-2 border-pink-500 shadow-sm";
+        }
+
+        if (pantalla.errorFluidez) {
+            // Error de fluidez: Degradado naranja → amarillo (funcional)
+            return "bg-gradient-to-r from-orange-200 to-amber-100 border-2 border-orange-500 shadow-sm";
+        }
+
+        // Prioridad 2: Error general - Rojo sólido intenso
+        if (pantalla.conErrores) {
+            return "bg-red-200 border-2 border-red-500 shadow-sm";
+        }
+
+        // Prioridad 3: Segunda Revisión - Morado con degradado suave
+        if (pantalla.segundaRevision) {
+            return "bg-gradient-to-r from-purple-100 to-purple-50 border border-purple-300 shadow-sm";
+        }
+
+        // Prioridad 4: En desarrollo - Ámbar cálido
+        if (pantalla.enDesarrollo) {
+            return "bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-300";
+        }
+
+        // Estados por defecto según categoría
+        if (color.includes("red")) return "bg-red-50 border border-red-200";
+        if (color.includes("blue")) return "bg-blue-50 border border-blue-200";
+        if (color.includes("green")) return "bg-green-50 border border-green-200";
+        return "bg-emerald-50 border border-emerald-200";
+    };
+
     return (
         <div ref={setNodeRef} style={style} className="group relative">
             <div
-                className={`text-xs rounded px-2 py-1 border-l-2 ${
-                    pantalla.segundaRevision
-                        ? "bg-purple-100 border border-purple-300"
-                        : pantalla.conErrores
-                        ? "bg-red-100 border border-red-300"
-                        : pantalla.enDesarrollo
-                        ? "bg-amber-100 border border-amber-300"
-                        : color.includes("red")
-                        ? "bg-red-50"
-                        : color.includes("blue")
-                        ? "bg-blue-50"
-                        : color.includes("green")
-                        ? "bg-green-50"
-                        : "bg-emerald-50"
-                } ${getEstadoBorderColor(pantalla.estado)}`}
+                className={`text-xs rounded px-2 py-1 border-l-2 transition-all duration-200 ${getCardStyle()} ${getEstadoBorderColor(
+                    pantalla.estado
+                )}`}
             >
                 <div className="flex items-center justify-between gap-1">
                     {/* Drag handle */}

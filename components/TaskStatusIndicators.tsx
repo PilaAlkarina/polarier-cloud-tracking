@@ -24,7 +24,7 @@ export default function TaskStatusIndicators({ pantalla }: TaskStatusIndicatorsP
         indicators.push(
             <span
                 key="error-estetica"
-                className="inline-flex items-center justify-center w-4 h-4 text-[10px] bg-pink-100 text-pink-700 rounded-full"
+                className="inline-flex items-center justify-center w-4 h-4 text-[10px] bg-gradient-to-br from-red-100 to-pink-200 text-pink-800 rounded-full border border-pink-300 shadow-sm"
                 title="Error estética"
             >
                 🎨
@@ -36,7 +36,7 @@ export default function TaskStatusIndicators({ pantalla }: TaskStatusIndicatorsP
         indicators.push(
             <span
                 key="error-fluidez"
-                className="inline-flex items-center justify-center w-4 h-4 text-[10px] bg-orange-100 text-orange-700 rounded-full"
+                className="inline-flex items-center justify-center w-4 h-4 text-[10px] bg-gradient-to-br from-red-100 to-orange-200 text-orange-800 rounded-full border border-orange-300 shadow-sm"
                 title="Error fluidez"
             >
                 ⚡
