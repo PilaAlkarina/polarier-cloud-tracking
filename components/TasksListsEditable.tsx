@@ -1,7 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Pantalla, Estado } from "@/types";
+import TaskStatusIndicators from "@/components/TaskStatusIndicators";
+import { getEstadoBorderColor, getEstadoIcon } from "@/lib/data";
 import {
     DndContext,
     closestCenter,
@@ -64,7 +66,7 @@ function SortableTaskItem({ pantalla, onDelete, color, onOpenModal }: SortableTa
     return (
         <div ref={setNodeRef} style={style} className="group relative">
             <div
-                className={`text-xs rounded px-2 py-1 flex items-center justify-between gap-1 ${
+                className={`text-xs rounded px-2 py-1 border-l-2 ${
                     pantalla.segundaRevision
                         ? "bg-purple-100 border border-purple-300"
                         : pantalla.conErrores
@@ -78,41 +80,57 @@ function SortableTaskItem({ pantalla, onDelete, color, onOpenModal }: SortableTa
                         : color.includes("green")
                         ? "bg-green-50"
                         : "bg-emerald-50"
-                }`}
+                } ${getEstadoBorderColor(pantalla.estado)}`}
             >
-                {/* Drag handle */}
-                <div {...attributes} {...listeners} className="cursor-grab active:cursor-grabbing shrink-0">
-                    <span className="text-gray-400 hover:text-gray-600">⋮⋮</span>
-                </div>
+                <div className="flex items-center justify-between gap-1">
+                    {/* Drag handle */}
+                    <div {...attributes} {...listeners} className="cursor-grab active:cursor-grabbing shrink-0">
+                        <span className="text-gray-400 hover:text-gray-600">⋮⋮</span>
+                    </div>
 
-                {/* Task info - SIMPLIFICADO: Solo prioridad y nombre */}
-                <div
-                    className="flex items-center gap-1 truncate flex-1 min-w-0 cursor-pointer"
-                    onDoubleClick={handleDoubleClick}
-                    title="Doble click para editar estado"
-                >
-                    {pantalla.prioridadNum && (
-                        <span className="text-[10px] font-bold text-gray-500 shrink-0 w-5">
-                            #{pantalla.prioridadNum}
+                    {/* Task info vertical */}
+                    <div
+                        className="flex flex-col gap-0.5 flex-1 min-w-0 cursor-pointer"
+                        onDoubleClick={handleDoubleClick}
+                        title="Doble click para editar estado"
+                    >
+                        {/* Nombre de la tarea (protagonista) */}
+                        <span className="truncate text-gray-700 font-medium" title={pantalla.nombre}>
+                            {pantalla.nombre}
                         </span>
-                    )}
-                    <span className="truncate text-gray-700" title={pantalla.nombre}>
-                        {pantalla.nombre}
-                    </span>
-                </div>
 
-                {/* Delete button */}
-                <button
-                    onClick={() => {
-                        if (confirm(`¿Eliminar tarea "${pantalla.nombre}"?`)) {
-                            onDelete(pantalla.id);
-                        }
-                    }}
-                    className="opacity-0 group-hover:opacity-100 text-red-600 hover:text-red-800 shrink-0 ml-1"
-                    title="Eliminar tarea"
-                >
-                    ✕
-                </button>
+                        {/* Indicadores discretos debajo */}
+                        <div className="flex items-center gap-1">
+                            {/* Prioridad */}
+                            {pantalla.prioridadNum && (
+                                <span className="text-[9px] font-bold text-gray-400 shrink-0">
+                                    #{pantalla.prioridadNum}
+                                </span>
+                            )}
+
+                            {/* Icono de estado */}
+                            <span className="text-[9px] shrink-0" title={pantalla.estado}>
+                                {getEstadoIcon(pantalla.estado)}
+                            </span>
+
+                            {/* Indicadores de propiedades */}
+                            <TaskStatusIndicators pantalla={pantalla} />
+                        </div>
+                    </div>
+
+                    {/* Delete button */}
+                    <button
+                        onClick={() => {
+                            if (confirm(`¿Eliminar tarea "${pantalla.nombre}"?`)) {
+                                onDelete(pantalla.id);
+                            }
+                        }}
+                        className="opacity-0 group-hover:opacity-100 text-red-600 hover:text-red-800 shrink-0 ml-1"
+                        title="Eliminar tarea"
+                    >
+                        ✕
+                    </button>
+                </div>
             </div>
         </div>
     );
@@ -203,26 +221,57 @@ export default function TasksListsEditable({
     const hoy = new Date();
     hoy.setHours(0, 0, 0, 0);
 
-    // Calcular porcentajes para lógica condicional
-    const totalPantallas = pantallas.length;
-    const importadas = pantallas.filter((p) => p.importada).length;
-    const verificadas = pantallas.filter((p) => p.verificada).length;
-    const porcentajeImportadas = totalPantallas > 0 ? Math.round((importadas / totalPantallas) * 100) : 0;
-    const porcentajeVerificadas = totalPantallas > 0 ? Math.round((verificadas / totalPantallas) * 100) : 0;
+    // Memoizar cálculos de agrupaciones y filtros
+    const agrupaciones = useMemo(() => {
+        // Calcular porcentajes para lógica condicional
+        const totalPantallas = pantallas.length;
+        const importadas = pantallas.filter((p) => p.importada).length;
+        const verificadas = pantallas.filter((p) => p.verificada).length;
+        const porcentajeImportadas = totalPantallas > 0 ? Math.round((importadas / totalPantallas) * 100) : 0;
+        const porcentajeVerificadas = totalPantallas > 0 ? Math.round((verificadas / totalPantallas) * 100) : 0;
 
-    // Calcular tareas por categoría
+        // Determinar si estamos en modo "Segunda Revisión"
+        const modoSegundaRevision = porcentajeImportadas === 100 && porcentajeVerificadas === 100;
+
+        // Nuevas agrupaciones basadas en doble revisión
+        const tareasEnRevision = pantallas.filter((p) => p.verificada && !(p.checkIsaac || p.segundaRevision));
+        const tareasRevisadas = pantallas.filter((p) => p.checkIsaac || p.segundaRevision);
+        const tareasPteRevisionIsaac = tareasEnRevision.filter((p) => !p.checkIsaac);
+
+        // Columnas de Revisión Estética
+        const tareasPteRevisionEstetica = pantallas.filter((p) => p.verificada && !p.revisionEstetica);
+        const tareasEsteticaRevisada = pantallas.filter((p) => p.revisionEstetica);
+
+        // Columnas de Revisión Fluidez
+        const tareasPteRevisionFluidez = pantallas.filter((p) => p.verificada && !p.revisionFluidez);
+        const tareasFluidezRevisada = pantallas.filter((p) => p.revisionFluidez);
+
+        // Tareas pendientes de primera revisión (no verificadas)
+        const tareasPtePrimeraRevision = pantallas.filter((p) => !p.verificada);
+
+        return {
+            modoSegundaRevision,
+            tareasEnRevision,
+            tareasRevisadas,
+            tareasPteRevisionIsaac,
+            tareasPteRevisionEstetica,
+            tareasEsteticaRevisada,
+            tareasPteRevisionFluidez,
+            tareasFluidezRevisada,
+            tareasPtePrimeraRevision,
+        };
+    }, [pantallas]);
+
+    // Calcular tareas por categoría (legacy - ahora sin uso)
     const tareasAtrasadas: Pantalla[] = [];
     const tareasDeHoy: Pantalla[] = [];
     const tareasFuturas: Pantalla[] = [];
     const tareasCompletadas: Pantalla[] = [];
 
-    // Determinar si estamos en modo "Segunda Revisión"
-    const modoSegundaRevision = porcentajeImportadas === 100 && porcentajeVerificadas === 100;
-
     pantallas.forEach((pantalla) => {
         // En modo Segunda Revisión: completadas = segundaRevision
         // En modo normal: completadas = verificadas
-        if (modoSegundaRevision) {
+        if (agrupaciones.modoSegundaRevision) {
             if (pantalla.segundaRevision) {
                 tareasCompletadas.push(pantalla);
             } else if (pantalla.verificada) {
@@ -330,27 +379,16 @@ export default function TasksListsEditable({
         }
     };
 
-    // Nuevas agrupaciones basadas en doble revisión
-
-    // Tareas que están listas para revisión (verificadas) pero no completadas (ambos checks)
-    const tareasEnRevision = pantallas.filter((p) => p.verificada && !(p.checkIsaac || p.segundaRevision));
-
-    // Completadas (ambos checks o legacy)
-    const tareasRevisadas = pantallas.filter((p) => p.checkIsaac || p.segundaRevision);
-
-    // Columna Isaac: Tareas en revisión que NO tienen checkIsaac.
-    const tareasPteRevisionIsaac = tareasEnRevision.filter((p) => !p.checkIsaac);
-
-    // Columnas de Revisión Estética
-    const tareasPteRevisionEstetica = pantallas.filter((p) => p.verificada && !p.revisionEstetica);
-    const tareasEsteticaRevisada = pantallas.filter((p) => p.revisionEstetica);
-
-    // Columnas de Revisión Fluidez
-    const tareasPteRevisionFluidez = pantallas.filter((p) => p.verificada && !p.revisionFluidez);
-    const tareasFluidezRevisada = pantallas.filter((p) => p.revisionFluidez);
-
-    // Tareas pendientes de primera revisión (no verificadas)
-    const tareasPtePrimeraRevision = pantallas.filter((p) => !p.verificada);
+    // Nuevas agrupaciones basadas en doble revisión - Usar datos del useMemo
+    const {
+        tareasPteRevisionIsaac,
+        tareasRevisadas,
+        tareasPteRevisionEstetica,
+        tareasEsteticaRevisada,
+        tareasPteRevisionFluidez,
+        tareasFluidezRevisada,
+        tareasPtePrimeraRevision,
+    } = agrupaciones;
 
     const ptePrimeraRevisionPorUsuario = agruparPorUsuario(tareasPtePrimeraRevision);
 

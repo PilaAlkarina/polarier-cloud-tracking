@@ -67,6 +67,11 @@ export function useTrackingData() {
         }
     }, [pantallas]);
 
+    // Función base para actualizar cualquier campo de una pantalla
+    const updatePantallaField = (id: number, updates: Partial<Pantalla>) => {
+        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, ...updates } : p)));
+    };
+
     // Auto-reset cada 5 minutos
     useEffect(() => {
         const RESET_INTERVAL = 5 * 60 * 1000; // 5 minutos
@@ -93,9 +98,7 @@ export function useTrackingData() {
         };
     }, []);
 
-    const updatePantalla = (id: number, updates: Partial<Pantalla>) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, ...updates } : p)));
-    };
+    const updatePantalla = updatePantallaField;
 
     const resetData = async () => {
         try {
@@ -224,15 +227,11 @@ export function useTrackingData() {
     };
 
     const updateFechaLimite = (id: number, nuevaFecha: string) => {
-        setPantallas((prev: Pantalla[]) =>
-            prev.map((p: Pantalla) => (p.id === id ? { ...p, fechaLimite: nuevaFecha } : p))
-        );
+        updatePantallaField(id, { fechaLimite: nuevaFecha });
     };
 
     const updateResponsable = (id: number, nuevoResponsable: string) => {
-        setPantallas((prev: Pantalla[]) =>
-            prev.map((p: Pantalla) => (p.id === id ? { ...p, responsable: nuevoResponsable } : p))
-        );
+        updatePantallaField(id, { responsable: nuevoResponsable });
     };
 
     const reorderPantallas = (startIndex: number, endIndex: number) => {
@@ -264,24 +263,28 @@ export function useTrackingData() {
     };
 
     const updateConErrores = (id: number, conErrores: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, conErrores } : p)));
+        updatePantallaField(id, { conErrores });
     };
 
     const updateEnDesarrollo = (id: number, enDesarrollo: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, enDesarrollo } : p)));
+        updatePantallaField(id, { enDesarrollo });
     };
 
     const updateSegundaRevision = (id: number, segundaRevision: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, segundaRevision } : p)));
+        updatePantallaField(id, { segundaRevision });
     };
 
     const updateCheckIsaac = (id: number, check: boolean) => {
         setPantallas((prev: Pantalla[]) =>
             prev.map((p: Pantalla) => {
                 if (p.id === id) {
+                    // Validación: Solo permitir si está verificada
+                    if (!p.verificada && check) {
+                        console.warn(`⚠️ No se puede marcar checkIsaac en pantalla ${p.nombre} sin verificar primero`);
+                        return p;
+                    }
                     // Cuando se marca checkIsaac, también se marca segundaRevision
-                    const newP = { ...p, checkIsaac: check, segundaRevision: check };
-                    return newP;
+                    return { ...p, checkIsaac: check, segundaRevision: check };
                 }
                 return p;
             })
@@ -289,23 +292,23 @@ export function useTrackingData() {
     };
 
     const updateIsInClickUP = (id: number, isInClickUP: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, isInClickUP } : p)));
+        updatePantallaField(id, { isInClickUP });
     };
 
     const updateRevisionEstetica = (id: number, revisionEstetica: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, revisionEstetica } : p)));
+        updatePantallaField(id, { revisionEstetica });
     };
 
     const updateRevisionFluidez = (id: number, revisionFluidez: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, revisionFluidez } : p)));
+        updatePantallaField(id, { revisionFluidez });
     };
 
     const updateErrorEstetica = (id: number, errorEstetica: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, errorEstetica } : p)));
+        updatePantallaField(id, { errorEstetica });
     };
 
     const updateErrorFluidez = (id: number, errorFluidez: boolean) => {
-        setPantallas((prev: Pantalla[]) => prev.map((p: Pantalla) => (p.id === id ? { ...p, errorFluidez } : p)));
+        updatePantallaField(id, { errorFluidez });
     };
 
     return {

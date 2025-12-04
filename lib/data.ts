@@ -93,3 +93,21 @@ export function getColorEstado(estado: string): string {
     if (estado.includes("fluidez")) return "bg-indigo-50 text-indigo-700 border-indigo-500";
     return "bg-gray-50 text-gray-700 border-gray-500";
 }
+
+export function getEstadoBorderColor(estado: string): string {
+    if (estado.includes("Completada")) return "border-green-500";
+    if (estado.includes("Verificar")) return "border-blue-500";
+    if (estado.includes("Bloqueada")) return "border-red-500";
+    if (estado.includes("estética")) return "border-purple-500";
+    if (estado.includes("fluidez")) return "border-indigo-500";
+    return "border-gray-300";
+}
+
+export function getEstadoIcon(estado: string): string {
+    if (estado.includes("Completada")) return "✅";
+    if (estado.includes("Verificar")) return "✓";
+    if (estado.includes("Bloqueada")) return "🚨";
+    if (estado.includes("estética")) return "🎨";
+    if (estado.includes("fluidez")) return "⚡";
+    return "⏳";
+}
