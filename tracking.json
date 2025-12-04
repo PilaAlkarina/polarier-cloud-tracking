@@ -15,7 +15,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": true,
+    "errorFluidez": false
   },
   {
     "denominacion": "Pedidos",
@@ -33,7 +35,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": true,
+    "errorFluidez": false
   },
   {
     "denominacion": "Repartos office",
@@ -51,7 +55,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Repartos",
@@ -69,7 +75,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe operativo",
@@ -87,7 +95,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Entrada / Salida personal",
@@ -105,7 +115,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Producción",
@@ -123,7 +135,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Cuadrante personal",
@@ -141,7 +155,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Facturación por cliente",
@@ -159,7 +175,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Personal general",
@@ -177,7 +195,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Calendario laboral",
@@ -195,7 +215,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Control de kilos lavados",
@@ -213,7 +235,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Lectura de recursos",
@@ -231,7 +255,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Validar repartos",
@@ -249,7 +275,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Consumos de lencería",
@@ -267,7 +295,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Gestión de almacenes",
@@ -285,7 +315,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Comparativa procesados - entregados",
@@ -303,7 +335,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Smart View",
@@ -321,7 +355,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Presupuesto venta",
@@ -339,7 +375,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Estructura organizativa",
@@ -357,7 +395,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Factura venta",
@@ -375,7 +415,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Incidencias",
@@ -393,7 +435,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Calendario laboral RRHH",
@@ -411,7 +455,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Reposiciones general",
@@ -429,7 +475,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Personal (Caribe)",
@@ -447,7 +495,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Monitor SAT",
@@ -465,7 +515,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Pedido proveedor",
@@ -483,7 +535,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Reposiciones office",
@@ -501,7 +555,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Notificaciones",
@@ -519,7 +575,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Calendario nóminas",
@@ -537,7 +595,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Gestión de nóminas",
@@ -555,7 +615,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Estancias",
@@ -573,7 +635,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Dashboard ejecutivo",
@@ -591,7 +655,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Config. uniformidad",
@@ -609,7 +675,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Solicitudes de alta",
@@ -627,7 +695,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe de eventos persona",
@@ -645,7 +715,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Prev. ingresos y costes",
@@ -663,7 +735,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Solicitudes de abono",
@@ -681,7 +755,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Inventarios de lencería",
@@ -699,7 +775,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Asientos de nóminas",
@@ -717,7 +795,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Recambios",
@@ -735,7 +815,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Abonos",
@@ -753,7 +835,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe de recursos humanos",
@@ -771,7 +855,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Rutas de expedición",
@@ -789,7 +875,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Movimientos uniformidad",
@@ -807,7 +895,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe de inventarios",
@@ -825,7 +915,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Entradas Recambios",
@@ -843,7 +935,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Gestión de finiquitos",
@@ -861,7 +955,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Gestión de usuarios",
@@ -879,7 +975,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Maquinaria",
@@ -897,7 +995,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Traspasos Recambios",
@@ -915,7 +1015,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Facturación uniformidad",
@@ -933,7 +1035,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Control de envíos",
@@ -951,7 +1055,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Albarán compra",
@@ -969,7 +1075,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Mantenimiento preventivo",
@@ -987,7 +1095,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe encuestas",
@@ -1005,7 +1115,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe cumplimiento pedidos",
@@ -1023,7 +1135,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Categorías laborales",
@@ -1041,7 +1155,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Artículos",
@@ -1059,7 +1175,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Órdenes de trabajo (MBC)",
@@ -1077,7 +1195,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Salidas Recambios",
@@ -1095,7 +1215,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Cierre de datos",
@@ -1113,7 +1235,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Parametrización de prendas",
@@ -1131,7 +1255,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Clientes",
@@ -1149,7 +1275,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe de auditorías",
@@ -1167,7 +1295,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Lavandería",
@@ -1185,7 +1315,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Laundry dashboard",
@@ -1203,7 +1335,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Recursos energéticos",
@@ -1221,7 +1355,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Definición de prendas",
@@ -1239,7 +1375,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Factura compra",
@@ -1257,7 +1395,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Turnos",
@@ -1275,7 +1415,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Almacenes Recambios",
@@ -1293,7 +1435,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe rechazo cliente",
@@ -1311,7 +1455,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Festivos y cierres",
@@ -1329,7 +1475,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Albarán venta",
@@ -1347,7 +1495,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Categorías de máquinas",
@@ -1365,7 +1515,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe control almacén cliente",
@@ -1383,7 +1535,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Kg. Presupuestados",
@@ -1401,7 +1555,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Gestión de mantenimiento",
@@ -1419,7 +1575,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "No conformidades",
@@ -1437,7 +1595,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Prev. Ingresos y costes (Informe)",
@@ -1455,7 +1615,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe clasificación sucio",
@@ -1473,7 +1635,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Dashboard mantenimiento",
@@ -1491,7 +1655,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Auditorías",
@@ -1509,7 +1675,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Partes de trabajo",
@@ -1527,7 +1695,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Estructura operativa",
@@ -1545,7 +1715,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Regularizaciones Recambios",
@@ -1563,7 +1735,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Rentabilidad por centro",
@@ -1581,7 +1755,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Balance pedidos / repartos",
@@ -1599,7 +1775,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Revisiones",
@@ -1617,7 +1795,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Distribución CeCo",
@@ -1635,7 +1815,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Proveedores",
@@ -1653,7 +1835,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Inventarios Recambios",
@@ -1671,7 +1855,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Plantilla mantenimiento prev.",
@@ -1689,7 +1875,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Control presupuestario",
@@ -1707,7 +1895,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Rutas de revisión",
@@ -1725,7 +1915,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Reuniones comerciales",
@@ -1743,7 +1935,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Vehículos",
@@ -1761,7 +1955,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informes costes estructura",
@@ -1779,7 +1975,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Pedido cliente",
@@ -1797,7 +1995,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Informe cumplimiento horario",
@@ -1815,7 +2015,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Control de uso",
@@ -1833,7 +2035,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Asignación CeCo",
@@ -1851,7 +2055,9 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Abonos Recambio",
@@ -1869,7 +2075,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Distribución Kg",
@@ -1887,7 +2095,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Agrupación PEP",
@@ -1905,7 +2115,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Dashboard financiero",
@@ -1923,7 +2135,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Kg. Lavados",
@@ -1941,7 +2155,9 @@
     "revisor": "DAVID",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Validación factura",
@@ -1959,7 +2175,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Datos financieros",
@@ -1977,7 +2195,9 @@
     "revisor": "ISAAC",
     "isInClickUP": true,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Validación nómina",
@@ -1995,7 +2215,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Config. Auditorias",
@@ -2013,7 +2235,9 @@
     "revisor": "ISAAC",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Distribución de recursos TI",
@@ -2031,6 +2255,8 @@
     "revisor": "DAVID",
     "isInClickUP": false,
     "revisionEstetica": false,
-    "revisionFluidez": false
+    "revisionFluidez": false,
+    "errorEstetica": false,
+    "errorFluidez": false
   }
 ]
