@@ -1682,7 +1682,7 @@
   {
     "denominacion": "Agrupación PEP",
     "prioridad": 115,
-    "estado": "REVISADO",
+    "estado": "IMPORTADO",
     "usuario_prepara": "CARRASCOSA",
     "fechaLimite": "2025-11-20",
     "consultas": 46,
