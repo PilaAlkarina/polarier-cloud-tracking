@@ -94,7 +94,7 @@
     "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": false,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
