@@ -1730,7 +1730,7 @@
   {
     "denominacion": "Validación factura",
     "prioridad": 118,
-    "estado": "IMPORTADO",
+    "estado": "REVISADO",
     "usuario_prepara": "",
     "fechaLimite": "2025-11-19",
     "consultas": 30,
