@@ -54,9 +54,9 @@
     "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "errorEstetica": true,
+    "errorEstetica": false,
     "errorFluidez": false
   },
   {
@@ -868,13 +868,13 @@
     "consultas": 1587,
     "porcentaje": 0,
     "conErrores": false,
-    "enDesarrollo": true,
+    "enDesarrollo": false,
     "segundaRevision": true,
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": false,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
