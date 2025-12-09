@@ -416,7 +416,7 @@
     "isInClickUP": true,
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": true,
+    "errorEstetica": false,
     "errorFluidez": false
   },
   {
