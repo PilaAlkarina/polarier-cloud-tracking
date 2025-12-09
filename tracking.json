@@ -213,10 +213,10 @@
     "checkIsaac": true,
     "checkDavid": true,
     "revisor": "ISAAC",
-    "isInClickUP": false,
+    "isInClickUP": true,
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": false,
+    "errorEstetica": true,
     "errorFluidez": false
   },
   {
@@ -256,7 +256,7 @@
     "isInClickUP": true,
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": false,
+    "errorEstetica": true,
     "errorFluidez": false
   },
   {
