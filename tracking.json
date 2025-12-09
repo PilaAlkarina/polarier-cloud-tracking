@@ -256,8 +256,8 @@
     "isInClickUP": true,
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": true,
-    "errorFluidez": true
+    "errorEstetica": false,
+    "errorFluidez": false
   },
   {
     "denominacion": "Validar repartos",
