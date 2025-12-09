@@ -14,9 +14,9 @@
     "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": false,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "errorEstetica": true,
+    "errorEstetica": false,
     "errorFluidez": false
   },
   {
