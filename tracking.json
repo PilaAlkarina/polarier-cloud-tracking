@@ -1254,7 +1254,7 @@
     "checkDavid": false,
     "revisor": "DAVID",
     "isInClickUP": false,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
