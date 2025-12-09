@@ -17,24 +17,7 @@ export default function ProgressChart({ pantallas }: ProgressChartProps) {
 
     return (
         <div className="bg-white rounded-xl shadow-md p-2">
-            <div className="grid grid-cols-3 gap-3">
-                {/* Progreso de Segunda Revisión */}
-                <div className="bg-purple-50 rounded-lg p-3 border-l-4 border-purple-500">
-                    <div className="flex items-center justify-between mb-1">
-                        <span className="text-xs font-bold text-purple-900">Implementado:</span>
-                        <span className="text-2xl font-black text-purple-700">{porcentajeSegundaRevision}%</span>
-                    </div>
-                    <div className="bg-purple-200 rounded-full h-2 overflow-hidden">
-                        <div
-                            className="bg-purple-600 h-3 rounded-full transition-all duration-500"
-                            style={{ width: `${porcentajeSegundaRevision}%` }}
-                        />
-                    </div>
-                    <p className="text-xs text-purple-700 font-medium mt-1">
-                        {segundasRevisiones}/{totalPantallas} pantallas con segunda revisión completada
-                    </p>
-                </div>
-
+            <div className="grid grid-cols-2 gap-3">
                 {/* Progreso de Revisión Estética */}
                 <div className="bg-purple-50 rounded-lg p-3 border-l-4 border-purple-500">
                     <div className="flex items-center justify-between mb-1">
