@@ -376,7 +376,7 @@
     "isInClickUP": false,
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": true,
+    "errorEstetica": false,
     "errorFluidez": false
   },
   {
@@ -416,7 +416,7 @@
     "isInClickUP": true,
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": true,
+    "errorEstetica": false,
     "errorFluidez": false
   },
   {
@@ -1387,7 +1387,7 @@
     "fechaLimite": "2025-11-18",
     "consultas": 320,
     "porcentaje": 0,
-    "conErrores": true,
+    "conErrores": false,
     "enDesarrollo": false,
     "segundaRevision": true,
     "checkIsaac": true,
