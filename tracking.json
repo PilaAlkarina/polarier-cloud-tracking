@@ -214,7 +214,7 @@
     "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": true,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
@@ -254,7 +254,7 @@
     "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
@@ -274,7 +274,7 @@
     "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
@@ -454,7 +454,7 @@
     "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
