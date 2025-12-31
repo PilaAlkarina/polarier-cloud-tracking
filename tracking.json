@@ -642,7 +642,7 @@
   {
     "denominacion": "Dashboard ejecutivo",
     "prioridad": 35,
-    "estado": "REVISADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "",
     "fechaLimite": "2025-11-17",
     "consultas": 4176,
@@ -762,7 +762,7 @@
   {
     "denominacion": "Inventarios de lencería",
     "prioridad": 41,
-    "estado": "IMPORTADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "",
     "fechaLimite": "2025-11-14",
     "consultas": 1706,
@@ -902,7 +902,7 @@
   {
     "denominacion": "Informe de inventarios",
     "prioridad": 48,
-    "estado": "REVISADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "",
     "fechaLimite": "2025-11-14",
     "consultas": 1548,
@@ -1642,7 +1642,7 @@
   {
     "denominacion": "Dashboard mantenimiento",
     "prioridad": 87,
-    "estado": "REVISADO",
+    "estado": "PENDIENTE",
     "usuario_prepara": "",
     "fechaLimite": "2025-11-17",
     "consultas": 214,
