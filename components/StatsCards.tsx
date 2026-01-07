@@ -1,11 +1,10 @@
-import { EstadisticasGlobales, Pantalla } from "@/types";
+import { EstadisticasGlobales } from "@/types";
 
 interface StatsCardsProps {
     stats: EstadisticasGlobales;
-    pantallas: Pantalla[];
 }
 
-export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
+export default function StatsCards({ stats }: StatsCardsProps) {
     return (
         <div className="flex gap-4">
             {/* Barra de progreso - flex-basis */}
@@ -14,9 +13,9 @@ export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
                 <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-3">
                         <span className="text-4xl">📊</span>
-                        <h2 className="text-4xl font-bold text-purple-700">Progreso total implementable</h2>
+                        <h2 className="text-4xl font-bold text-purple-700">Progreso</h2>
                     </div>
-                    <span className="text-5xl font-black text-purple-700">{stats.porcentajeSegundaRevision}%</span>
+                    <span className="text-5xl font-black text-purple-700">{stats.porcentajeVerificadas}%</span>
                 </div>
 
                 {/* Barra de progreso */}
@@ -24,7 +23,7 @@ export default function StatsCards({ stats, pantallas }: StatsCardsProps) {
                     <div className="bg-gray-200 rounded-full h-5 overflow-hidden">
                         <div
                             className="bg-gradient-to-r from-purple-500 to-green-500 h-full rounded-full transition-all duration-700"
-                            style={{ width: `${stats.porcentajeSegundaRevision}%` }}
+                            style={{ width: `${stats.porcentajeVerificadas}%` }}
                         />
                     </div>
                 </div>

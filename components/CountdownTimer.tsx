@@ -55,15 +55,6 @@ export default function CountdownTimer({ deadline }: CountdownTimerProps) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [deadline]);
 
-    if (timeRemaining.total <= 0) {
-        return (
-            <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">⏰ ¡DEADLINE ALCANZADO!</div>
-                <div className="text-white/80 text-sm">El plazo ha finalizado</div>
-            </div>
-        );
-    }
-
     return (
         <div className="flex items-center justify-center sm:justify-start gap-2">
             <TimeUnit value={timeRemaining.days} label="días" />

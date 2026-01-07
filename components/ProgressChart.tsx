@@ -6,8 +6,6 @@ interface ProgressChartProps {
 
 export default function ProgressChart({ pantallas }: ProgressChartProps) {
     const totalPantallas = pantallas.length;
-    const segundasRevisiones = pantallas.filter((p) => p.segundaRevision).length;
-    const porcentajeSegundaRevision = Math.round((segundasRevisiones / totalPantallas) * 100);
 
     const revisionesEsteticas = pantallas.filter((p) => p.revisionEstetica).length;
     const porcentajeRevisionEstetica = Math.round((revisionesEsteticas / totalPantallas) * 100);

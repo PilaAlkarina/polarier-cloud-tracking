@@ -11,23 +11,12 @@ export type Estado =
 // Estructura original del tracking.json
 export interface TrackingItemRaw {
     denominacion: string;
-    consultas: number;
-    porcentaje: number;
     prioridad: number;
     estado: "PENDIENTE" | "IMPORTADO" | "REVISADO";
-    usuario_prepara: string;
-    fechaLimite: string;
-    conErrores: boolean;
-    enDesarrollo: boolean;
-    segundaRevision?: boolean;
-    checkIsaac?: boolean;
-    checkDavid?: boolean;
-    revisor?: string;
-    isInClickUP?: boolean;
-    revisionEstetica?: boolean;
-    revisionFluidez?: boolean;
-    errorEstetica?: boolean;
-    errorFluidez?: boolean;
+    revisionEstetica: boolean;
+    revisionFluidez: boolean;
+    revisionEsteticaGrupal: boolean;
+    revisionFluidezGrupal: boolean;
 }
 
 export interface Pantalla {
@@ -39,24 +28,10 @@ export interface Pantalla {
     importada: boolean;
     verificada: boolean;
     estado: Estado;
-    responsable?: string;
-    fechaLimite?: string;
-    fechaReal?: string;
-    bloqueadores?: string;
-    notas?: string;
-    consultas?: number;
-    porcentaje?: number;
-    conErrores?: boolean;
-    enDesarrollo?: boolean;
-    segundaRevision?: boolean;
-    checkIsaac?: boolean;
-    checkDavid?: boolean;
-    revisor?: string;
-    isInClickUP?: boolean;
-    revisionEstetica?: boolean;
-    revisionFluidez?: boolean;
-    errorEstetica?: boolean;
-    errorFluidez?: boolean;
+    revisionEstetica: boolean;
+    revisionFluidez: boolean;
+    revisionEsteticaGrupal: boolean;
+    revisionFluidezGrupal: boolean;
 }
 
 export interface TareaDiaria {
@@ -76,13 +51,14 @@ export interface EstadisticasGlobales {
     porcentajeImportadas: number;
     porcentajeVerificadas: number;
     porcentajePendientes: number;
-    segundasRevisiones: number;
-    porcentajeSegundaRevision: number;
     revisionesEsteticas: number;
     porcentajeRevisionEstetica: number;
     revisionesFluidez: number;
     porcentajeRevisionFluidez: number;
-    porcentajeProgreso: number; // Progreso ponderado: importación (50%) + 1ª revisión (30%) + 2ª revisión (20%)
+    revisionesEsteticasGrupales: number;
+    porcentajeRevisionEsteticaGrupal: number;
+    revisionesFluidezGrupales: number;
+    porcentajeRevisionFluidezGrupal: number;
 }
 
 export interface EstadisticasPorPrioridad {

@@ -6,26 +6,10 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
     const importadas = pantallas.filter((p) => p.importada).length;
     const verificadas = pantallas.filter((p) => p.verificada).length;
     const pendientes = pantallas.filter((p) => !p.importada).length;
-    const segundasRevisiones = pantallas.filter((p) => p.segundaRevision && p.estado === "✅ Completada").length;
     const revisionesEsteticas = pantallas.filter((p) => p.revisionEstetica).length;
     const revisionesFluidez = pantallas.filter((p) => p.revisionFluidez).length;
-
-    // Cálculo de progreso ponderado: Importada = 50%, Verificada (1ª Rev.) = 30%, Segunda Revisión = 20%
-    let progresoTotal = 0;
-    pantallas.forEach((p) => {
-        if (p.segundaRevision) {
-            progresoTotal += 100; // 100% completo (50% + 30% + 20%)
-        } else if (p.verificada) {
-            progresoTotal += 80; // 80% completo (50% + 30%)
-        } else if (p.importada) {
-            progresoTotal += 50; // 50% completo
-        }
-        // Si no está importada = 0%
-    });
-
-    const totalPantallasCompletadas = pantallas.filter((p) => p.estado === "✅ Completada").length;
-    const porcentajeProgreso =
-        totalPantallasCompletadas > 0 ? Math.round(progresoTotal / totalPantallasCompletadas) : 0;
+    const revisionesEsteticasGrupales = pantallas.filter((p) => p.revisionEsteticaGrupal).length;
+    const revisionesFluidezGrupales = pantallas.filter((p) => p.revisionFluidezGrupal).length;
 
     return {
         totalPantallas,
@@ -35,14 +19,16 @@ export function calcularEstadisticasGlobales(pantallas: Pantalla[]): Estadistica
         porcentajeImportadas: totalPantallas > 0 ? Math.round((importadas / totalPantallas) * 100) : 0,
         porcentajeVerificadas: totalPantallas > 0 ? Math.round((verificadas / totalPantallas) * 100) : 0,
         porcentajePendientes: totalPantallas > 0 ? Math.round((pendientes / totalPantallas) * 100) : 0,
-        segundasRevisiones,
-        porcentajeSegundaRevision:
-            totalPantallasCompletadas > 0 ? Math.round((segundasRevisiones / totalPantallasCompletadas) * 100) : 0,
         revisionesEsteticas,
         porcentajeRevisionEstetica: totalPantallas > 0 ? Math.round((revisionesEsteticas / totalPantallas) * 100) : 0,
         revisionesFluidez,
         porcentajeRevisionFluidez: totalPantallas > 0 ? Math.round((revisionesFluidez / totalPantallas) * 100) : 0,
-        porcentajeProgreso,
+        revisionesEsteticasGrupales,
+        porcentajeRevisionEsteticaGrupal:
+            totalPantallas > 0 ? Math.round((revisionesEsteticasGrupales / totalPantallas) * 100) : 0,
+        revisionesFluidezGrupales,
+        porcentajeRevisionFluidezGrupal:
+            totalPantallas > 0 ? Math.round((revisionesFluidezGrupales / totalPantallas) * 100) : 0,
     };
 }
 

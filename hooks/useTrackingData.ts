@@ -5,6 +5,20 @@ import { Pantalla, Estado } from "@/types";
 
 const STORAGE_KEY = "mypolarier_tracking_data";
 
+function normalizePantallas(input: unknown): Pantalla[] {
+    if (!Array.isArray(input)) return [];
+
+    return input
+        .filter((p): p is Pantalla => !!p && typeof p === "object")
+        .map((p: any) => ({
+            ...p,
+            revisionEstetica: Boolean(p.revisionEstetica),
+            revisionFluidez: Boolean(p.revisionFluidez),
+            revisionEsteticaGrupal: Boolean(p.revisionEsteticaGrupal),
+            revisionFluidezGrupal: Boolean(p.revisionFluidezGrupal),
+        }));
+}
+
 export function useTrackingData() {
     const [pantallas, setPantallas] = useState<Pantalla[]>([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +38,7 @@ export function useTrackingData() {
                     // Solo usar localStorage si tiene datos válidos
                     if (parsed && Array.isArray(parsed) && parsed.length > 0) {
                         console.log("📦 Cargando desde localStorage:", parsed.length, "pantallas");
-                        setPantallas(parsed);
+                        setPantallas(normalizePantallas(parsed));
                         setIsLoading(false);
                         return;
                     } else {
@@ -44,8 +58,9 @@ export function useTrackingData() {
                 console.log("✅ Respuesta de API:", result);
                 if (result.success && result.data) {
                     console.log("📊 Datos recibidos:", result.data.length, "pantallas");
-                    setPantallas(result.data);
-                    localStorage.setItem(STORAGE_KEY, JSON.stringify(result.data));
+                    const normalized = normalizePantallas(result.data);
+                    setPantallas(normalized);
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
                 } else {
                     throw new Error(result.error || "Error al procesar los datos");
                 }
@@ -116,8 +131,9 @@ export function useTrackingData() {
             console.log("✅ Datos reseteados:", result);
             if (result.success && result.data) {
                 console.log("📊 Nuevos datos:", result.data.length, "pantallas");
-                setPantallas(result.data);
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(result.data));
+                const normalized = normalizePantallas(result.data);
+                setPantallas(normalized);
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(normalized));
             }
         } catch (err) {
             console.error("❌ Error reseteando datos:", err);
@@ -226,14 +242,6 @@ export function useTrackingData() {
         setPantallas((prev: Pantalla[]) => prev.filter((p: Pantalla) => p.id !== id));
     };
 
-    const updateFechaLimite = (id: number, nuevaFecha: string) => {
-        updatePantallaField(id, { fechaLimite: nuevaFecha });
-    };
-
-    const updateResponsable = (id: number, nuevoResponsable: string) => {
-        updatePantallaField(id, { responsable: nuevoResponsable });
-    };
-
     const reorderPantallas = (startIndex: number, endIndex: number) => {
         setPantallas((prev: Pantalla[]) => {
             const result = Array.from(prev);
@@ -262,39 +270,6 @@ export function useTrackingData() {
         );
     };
 
-    const updateConErrores = (id: number, conErrores: boolean) => {
-        updatePantallaField(id, { conErrores });
-    };
-
-    const updateEnDesarrollo = (id: number, enDesarrollo: boolean) => {
-        updatePantallaField(id, { enDesarrollo });
-    };
-
-    const updateSegundaRevision = (id: number, segundaRevision: boolean) => {
-        updatePantallaField(id, { segundaRevision });
-    };
-
-    const updateCheckIsaac = (id: number, check: boolean) => {
-        setPantallas((prev: Pantalla[]) =>
-            prev.map((p: Pantalla) => {
-                if (p.id === id) {
-                    // Validación: Solo permitir si está verificada
-                    if (!p.verificada && check) {
-                        console.warn(`⚠️ No se puede marcar checkIsaac en pantalla ${p.nombre} sin verificar primero`);
-                        return p;
-                    }
-                    // Cuando se marca checkIsaac, también se marca segundaRevision
-                    return { ...p, checkIsaac: check, segundaRevision: check };
-                }
-                return p;
-            })
-        );
-    };
-
-    const updateIsInClickUP = (id: number, isInClickUP: boolean) => {
-        updatePantallaField(id, { isInClickUP });
-    };
-
     const updateRevisionEstetica = (id: number, revisionEstetica: boolean) => {
         updatePantallaField(id, { revisionEstetica });
     };
@@ -303,12 +278,12 @@ export function useTrackingData() {
         updatePantallaField(id, { revisionFluidez });
     };
 
-    const updateErrorEstetica = (id: number, errorEstetica: boolean) => {
-        updatePantallaField(id, { errorEstetica });
+    const updateRevisionEsteticaGrupal = (id: number, revisionEsteticaGrupal: boolean) => {
+        updatePantallaField(id, { revisionEsteticaGrupal });
     };
 
-    const updateErrorFluidez = (id: number, errorFluidez: boolean) => {
-        updatePantallaField(id, { errorFluidez });
+    const updateRevisionFluidezGrupal = (id: number, revisionFluidezGrupal: boolean) => {
+        updatePantallaField(id, { revisionFluidezGrupal });
     };
 
     return {
@@ -319,19 +294,12 @@ export function useTrackingData() {
         resetData,
         saveToGitHub,
         deletePantalla,
-        updateFechaLimite,
-        updateResponsable,
         reorderPantallas,
         updateEstado,
-        updateConErrores,
-        updateEnDesarrollo,
-        updateSegundaRevision,
-        updateCheckIsaac,
-        updateIsInClickUP,
         updateRevisionEstetica,
         updateRevisionFluidez,
-        updateErrorEstetica,
-        updateErrorFluidez,
+        updateRevisionEsteticaGrupal,
+        updateRevisionFluidezGrupal,
         isSaving,
         saveStatus,
         nextResetTime,

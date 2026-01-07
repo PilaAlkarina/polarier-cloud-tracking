@@ -20,7 +20,6 @@ export async function GET() {
 
         const jsonContent = await response.text();
         const trackingData: TrackingItemRaw[] = JSON.parse(jsonContent);
-        console.log(trackingData.find((item) => item.denominacion === "Comparativa procesados - entregados"));
 
         // Transformar la estructura del JSON al formato esperado por la aplicación
         const pantallas = transformTrackingData(trackingData);
@@ -133,21 +132,10 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
             importada,
             verificada,
             estado: calcularEstado(importada, verificada),
-            responsable: item.usuario_prepara,
-            fechaLimite: item.fechaLimite,
-            consultas: item.consultas,
-            porcentaje: item.porcentaje,
-            conErrores: item.conErrores,
-            enDesarrollo: item.enDesarrollo,
-            segundaRevision: item.segundaRevision || false,
-            checkIsaac: item.checkIsaac || false,
-            checkDavid: item.checkDavid || false,
-            revisor: item.revisor,
-            isInClickUP: item.isInClickUP || false,
-            revisionEstetica: item.revisionEstetica || false,
-            revisionFluidez: item.revisionFluidez || false,
-            errorEstetica: item.errorEstetica || false,
-            errorFluidez: item.errorFluidez || false,
+            revisionEstetica: item.revisionEstetica,
+            revisionFluidez: item.revisionFluidez,
+            revisionEsteticaGrupal: item.revisionEsteticaGrupal || false,
+            revisionFluidezGrupal: item.revisionFluidezGrupal || false,
         };
     });
 }
@@ -242,21 +230,10 @@ function transformPantallasToRaw(pantallas: Pantalla[]): TrackingItemRaw[] {
             denominacion: pantalla.nombre,
             prioridad: pantalla.prioridadNum || 0,
             estado,
-            usuario_prepara: pantalla.responsable || "",
-            fechaLimite: pantalla.fechaLimite || "",
-            consultas: pantalla.consultas || 0,
-            porcentaje: pantalla.porcentaje || 0,
-            conErrores: pantalla.conErrores || false,
-            enDesarrollo: pantalla.enDesarrollo || false,
-            segundaRevision: pantalla.segundaRevision || false,
-            checkIsaac: pantalla.checkIsaac || false,
-            checkDavid: pantalla.checkDavid || false,
-            revisor: pantalla.revisor,
-            isInClickUP: pantalla.isInClickUP || false,
             revisionEstetica: pantalla.revisionEstetica || false,
             revisionFluidez: pantalla.revisionFluidez || false,
-            errorEstetica: pantalla.errorEstetica || false,
-            errorFluidez: pantalla.errorFluidez || false,
+            revisionEsteticaGrupal: pantalla.revisionEsteticaGrupal || false,
+            revisionFluidezGrupal: pantalla.revisionFluidezGrupal || false,
         };
     });
 }
