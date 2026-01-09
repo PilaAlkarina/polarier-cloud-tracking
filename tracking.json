@@ -854,7 +854,7 @@
     "checkDavid": true,
     "revisor": "ISAAC",
     "isInClickUP": true,
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "errorEstetica": false,
     "errorFluidez": false
