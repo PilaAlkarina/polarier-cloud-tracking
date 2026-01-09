@@ -836,7 +836,7 @@
     "isInClickUP": true,
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": false,
+    "errorEstetica": true,
     "errorFluidez": false
   },
   {
