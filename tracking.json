@@ -294,9 +294,9 @@
     "checkDavid": true,
     "revisor": "DAVID",
     "isInClickUP": true,
-    "revisionEstetica": true,
+    "revisionEstetica": false,
     "revisionFluidez": false,
-    "errorEstetica": false,
+    "errorEstetica": true,
     "errorFluidez": false
   },
   {
