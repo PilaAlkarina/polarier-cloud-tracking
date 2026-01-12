@@ -55,9 +55,6 @@ export default function TasksListsEditable({
                             <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Prioridad
                             </th>
-                            <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                Estado
-                            </th>
                             <th className="px-3 py-2 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 👥 🎨
                             </th>
@@ -95,26 +92,6 @@ export default function TasksListsEditable({
                                     >
                                         {pantalla.prioridad}
                                     </span>
-                                </td>
-                                <td className="px-3 py-2 whitespace-nowrap">
-                                    <div className="flex items-center gap-2">
-                                        <span
-                                            className={`px-2 py-1 text-xs font-semibold rounded-full ${getColorEstado(
-                                                pantalla.estado
-                                            )}`}
-                                        >
-                                            {pantalla.estado}
-                                        </span>
-                                        <select
-                                            value={pantalla.estado}
-                                            onChange={(e) => onUpdateEstado(pantalla.id, e.target.value as Estado)}
-                                            className="px-2 py-1 border border-gray-300 rounded-md text-xs bg-white"
-                                        >
-                                            <option value="⏳ Pendiente">⏳ Pendiente</option>
-                                            <option value="✓ Por Verificar">✓ Por Verificar</option>
-                                            <option value="✅ Completada">✅ Completada</option>
-                                        </select>
-                                    </div>
                                 </td>
                                 <td className="px-3 py-2 text-center">
                                     <input
