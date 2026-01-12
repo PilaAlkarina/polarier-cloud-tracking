@@ -9,19 +9,19 @@ export const ENTREGAS_CONFIG: Record<GrupoEntrega, InfoEntrega> = {
     },
     CONTROL_ECONOMICO: {
         grupo: "CONTROL_ECONOMICO",
-        fecha: "19/01/2026",
+        fecha: "22/01/2026",
         orden: 2,
         earlyAdopters: ["Laura", "Nerea", "Silverio", "Mateo (Compras)"],
     },
     MANTENIMIENTO: {
         grupo: "MANTENIMIENTO",
-        fecha: "22/01/2026",
+        fecha: "26/01/2026",
         orden: 3,
         earlyAdopters: ["Mateo Romaguera"],
     },
     PRODUCCION: {
         grupo: "PRODUCCION",
-        fecha: "Sin fecha",
+        fecha: "30/01/2026",
         orden: 4,
         earlyAdopters: ["Pau Oliver", "Zulema"],
     },
