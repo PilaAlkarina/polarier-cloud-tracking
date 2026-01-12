@@ -1,15 +1,14 @@
 "use client";
 
 import { useMemo } from "react";
-import type { Estado, Pantalla } from "@/types";
+import type { Pantalla } from "@/types";
 import TaskStatusIndicators from "./TaskStatusIndicators";
-import { getColorEstado, getColorPrioridad } from "@/lib/data";
+import { getColorPrioridad } from "@/lib/data";
 
 interface TasksListsEditableProps {
     pantallas: Pantalla[];
     onDelete: (id: number) => void;
     onReorder: (startIndex: number, endIndex: number) => void;
-    onUpdateEstado: (id: number, estado: Estado) => void;
     onUpdateRevisionEstetica: (id: number, value: boolean) => void;
     onUpdateRevisionFluidez: (id: number, value: boolean) => void;
     onUpdateRevisionEsteticaGrupal: (id: number, value: boolean) => void;
@@ -20,7 +19,6 @@ export default function TasksListsEditable({
     pantallas,
     onDelete,
     onReorder,
-    onUpdateEstado,
     onUpdateRevisionEstetica,
     onUpdateRevisionFluidez,
     onUpdateRevisionEsteticaGrupal,

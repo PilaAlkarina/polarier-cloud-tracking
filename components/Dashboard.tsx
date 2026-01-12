@@ -171,7 +171,6 @@ export default function Dashboard() {
                         pantallas={pantallas}
                         onDelete={deletePantalla}
                         onReorder={reorderPantallas}
-                        onUpdateEstado={updateEstado}
                         onUpdateRevisionEstetica={updateRevisionEstetica}
                         onUpdateRevisionFluidez={updateRevisionFluidez}
                         onUpdateRevisionEsteticaGrupal={updateRevisionEsteticaGrupal}
