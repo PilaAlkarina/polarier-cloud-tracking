@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Pantalla } from "@/types";
-import { getColorPrioridad, getColorEstado } from "@/lib/data";
+import { getColorPrioridad } from "@/lib/data";
 
 interface ScreensTableProps {
     pantallas: Pantalla[];
@@ -14,7 +14,6 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
     const [searchTerm, setSearchTerm] = useState("");
     const [filterModulo, setFilterModulo] = useState("all");
     const [filterPrioridad, setFilterPrioridad] = useState("all");
-    const [filterEstado, setFilterEstado] = useState("all");
 
     const modulos = Array.from(new Set(pantallas.map((p) => p.modulo))).sort();
     const prioridades = Array.from(new Set(pantallas.map((p) => p.prioridad))).sort();
@@ -25,13 +24,8 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
             pantalla.modulo.toLowerCase().includes(searchTerm.toLowerCase());
         const matchModulo = filterModulo === "all" || pantalla.modulo === filterModulo;
         const matchPrioridad = filterPrioridad === "all" || pantalla.prioridad === filterPrioridad;
-        const matchEstado =
-            filterEstado === "all" ||
-            (filterEstado === "pendiente" && pantalla.estado.includes("Pendiente")) ||
-            (filterEstado === "verificar" && pantalla.estado.includes("Verificar")) ||
-            (filterEstado === "completada" && pantalla.estado.includes("Completada"));
 
-        return matchSearch && matchModulo && matchPrioridad && matchEstado;
+        return matchSearch && matchModulo && matchPrioridad;
     });
 
     return (
@@ -41,7 +35,7 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
             </h2>
 
             {/* Filtros */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
                 <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">🔍 Buscar</label>
                     <input
@@ -84,20 +78,6 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
                         ))}
                     </select>
                 </div>
-
-                <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">📊 Estado</label>
-                    <select
-                        value={filterEstado}
-                        onChange={(e) => setFilterEstado(e.target.value)}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    >
-                        <option value="all">Todos los estados</option>
-                        <option value="pendiente">⏳ Pendiente</option>
-                        <option value="verificar">✓ Por Verificar</option>
-                        <option value="completada">✅ Completada</option>
-                    </select>
-                </div>
             </div>
 
             {/* Tabla */}
@@ -116,9 +96,6 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
                             </th>
                             <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Prioridad
-                            </th>
-                            <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                Estado
                             </th>
                             <th className="px-4 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 Importada
@@ -157,15 +134,6 @@ export default function ScreensTable({ pantallas, onToggleImportada, onToggleVer
                                         )}`}
                                     >
                                         {pantalla.prioridad}
-                                    </span>
-                                </td>
-                                <td className="px-4 py-3 whitespace-nowrap">
-                                    <span
-                                        className={`px-2 py-1 text-xs font-semibold rounded-full ${getColorEstado(
-                                            pantalla.estado
-                                        )}`}
-                                    >
-                                        {pantalla.estado}
                                     </span>
                                 </td>
                                 <td className="px-4 py-3 whitespace-nowrap text-center">

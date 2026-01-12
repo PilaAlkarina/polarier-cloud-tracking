@@ -32,6 +32,14 @@ export interface Pantalla {
     revisionFluidez: boolean;
     revisionEsteticaGrupal: boolean;
     revisionFluidezGrupal: boolean;
+    conErrores?: boolean;
+    enDesarrollo?: boolean;
+    segundaRevision?: boolean;
+    bloqueadores?: string;
+    notas?: string;
+    responsable?: string;
+    fechaLimite?: string;
+    fechaReal?: string;
 }
 
 export interface TareaDiaria {
