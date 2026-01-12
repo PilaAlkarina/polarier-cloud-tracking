@@ -8,6 +8,16 @@ export type Estado =
     | "🎨 Revisión estética"
     | "⚡ Revisión fluidez";
 
+// Grupos de entrega
+export type GrupoEntrega = "RRHH" | "CONTROL_ECONOMICO" | "MANTENIMIENTO" | "PRODUCCION";
+
+export interface InfoEntrega {
+    grupo: GrupoEntrega;
+    fecha: string; // "14/01/2026" o "Sin fecha"
+    orden: number; // 1, 2, 3, 4
+    earlyAdopters: string[];
+}
+
 // Estructura original del tracking.json
 export interface TrackingItemRaw {
     denominacion: string;
@@ -40,6 +50,11 @@ export interface Pantalla {
     responsable?: string;
     fechaLimite?: string;
     fechaReal?: string;
+    // Información de entrega
+    grupoEntrega?: GrupoEntrega;
+    fechaEntrega?: string;
+    ordenEntrega?: number;
+    earlyAdopters?: string[];
 }
 
 export interface TareaDiaria {

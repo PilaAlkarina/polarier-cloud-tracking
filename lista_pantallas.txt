@@ -1,0 +1,141 @@
+﻿1. Login
+2. Redirect
+3. ForgotPassword
+4. RecoveryPassword
+5. Dashboard Ejecutivo
+6. Dashboard Operativo
+7. Dashboard Financiero
+8. Dashboard Mantenimiento
+9. Dashboard EnergyHub
+10. LaundryDashboard
+11. Control de Uso
+12. Ingresos y Costes
+13. ProducciÃ³n Lavadoras
+14. Control de EnvÃ­os
+15. SmartView
+16. Visor de Rutas
+17. Home de Informes
+18. Informe Operativo
+19. Informe Operativo (Nueva versiÃ³n)
+20. Informe LencerÃ­a
+21. Informe AuditorÃ­as
+22. Informe Inventarios
+23. Informe GestiÃ³n Mantenimiento
+24. Informe ProducciÃ³n
+25. Informe Reposiciones General
+26. Informe Reposiciones Office
+27. Informe LogÃ­stica
+28. Informe Balance Pedidos/Repartos
+29. Informe FacturaciÃ³n Cliente
+30. Informe Partes de Trabajo
+31. Informe RRHH
+32. Informe Preventivo SAT
+33. Informe Rutas ExpediciÃ³n
+34. Informe Pedidos HuÃ©sped
+35. Informe Comparativa Proc/Entreg
+36. Informe Kg Lavados
+37. Informe FacturaciÃ³n Uniformidad
+38. Personal General
+39. Personal
+40. Cuadrante Personal
+41. GestiÃ³n NÃ³minas
+42. ValidaciÃ³n NÃ³mina
+43. Jornada Persona
+44. Informe Eventos Persona
+45. Calendario Laboral
+46. Calendario Laboral RRHH
+47. Calendario LavanderÃ­a
+48. Festivos y Cierres
+49. CategorÃ­as Laborales
+50. Notificaciones
+51. Solicitudes de Alta
+52. GestiÃ³n Finiquitos
+53. ProducciÃ³n
+54. Kg Lavados
+55. Lectura de Recursos
+56. Estancias
+57. Pedidos
+58. Repartos
+59. Repartos Office
+60. Validar Repartos
+61. Partes de Transporte
+62. Abonos
+63. Solicitud de Abono
+64. Revisiones
+65. Dashboard Financiero
+66. Datos Financieros
+67. Control Presupuestario
+68. Control Presupuestario V2
+69. Cierre de Datos
+70. Kg Presupuestados
+71. AgrupaciÃ³n PEP
+72. DistribuciÃ³n Kg
+73. AsignaciÃ³n CeCo
+74. DistribuciÃ³n CeCo
+75. Rentabilidad Centro
+76. Informes Coste Estructura
+77. Pedido Cliente
+78. AlbarÃ¡n Venta
+79. Presupuesto Venta
+80. Factura Venta
+81. Pedido Proveedor
+82. AlbarÃ¡n Compra
+83. Factura Compra
+84. ValidaciÃ³n Factura
+85. ArtÃ­culos
+86. Clientes
+87. Proveedores
+88. Monitor SAT
+89. Ã“rdenes de Trabajo
+90. Maquinaria
+91. Grupos de MÃ¡quinas
+92. CategorÃ­as MÃ¡quinas
+93. Mantenimiento Preventivo
+94. Plantilla Mantenimiento Preventivo
+95. GestiÃ³n Almacenes
+96. Recambios
+97. Almacenes
+98. Informe Recambios
+99. Entradas
+100. Traspasos
+101. Salidas
+102. Abonos (Assistant)
+103. Inventarios (Assistant)
+104. Regularizaciones
+105. AuditorÃ­as
+106. No Conformidades
+107. Incidencias
+108. Reuniones Comerciales
+109. Informe ClasificaciÃ³n Sucio
+110. Informe Cumplimiento Horario
+111. Informe Rechazo Cliente
+112. Informe Cumplimiento Pedidos
+113. Informe Control AlmacÃ©n Cliente
+114. Informe Encuestas
+115. Config AuditorÃ­a
+116. Inventarios
+117. Movimientos
+118. Prendas HuÃ©sped
+119. Pedidos HuÃ©sped
+120. Repartos HuÃ©sped
+121. Config Uniformidad
+122. Movimientos Uniformidad
+123. Estructura Organizativa
+124. LavanderÃ­a
+125. PrevisiÃ³n Ingresos/Costes
+126. Recursos EnergÃ©ticos
+127. Rutas ExpediciÃ³n
+128. Rutas RevisiÃ³n
+129. VehÃ­culos
+130. Turno
+131. Estructura Operativa
+132. ParametrizaciÃ³n Prendas
+133. Asientos NÃ³minas
+134. Solicitudes de Alta (GestorÃ­a)
+135. GestiÃ³n Finiquitos (GestorÃ­a)
+136. Usuarios
+137. Mi Cuenta
+138. Informe Control Horas TI
+139. DistribuciÃ³n Recursos TI
+140. Home/Main (PÃ¡gina principal)
+141. Not Found (404)

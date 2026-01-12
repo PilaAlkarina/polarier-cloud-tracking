@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { Pantalla, Prioridad, Estado, TrackingItemRaw } from "@/types";
+import { getInfoEntrega, ENTREGAS_CONFIG, NOMBRES_GRUPOS } from "@/lib/entregas";
 
 const GITHUB_API_URL = "https://api.github.com/repos/PilaAlkarina/polarier-cloud-tracking/contents/tracking.json";
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
@@ -122,9 +123,13 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
     return trackingData.map((item, index) => {
         const importada = item.estado === "IMPORTADO" || item.estado === "REVISADO";
         const verificada = item.estado === "REVISADO";
+        const pantallaId = index + 1;
+
+        // Obtener información de entrega para esta pantalla
+        const infoEntrega = getInfoEntrega(pantallaId);
 
         return {
-            id: index + 1,
+            id: pantallaId,
             nombre: item.denominacion,
             modulo: inferirModulo(item.denominacion),
             prioridad: mapearPrioridad(item.prioridad),
@@ -136,6 +141,11 @@ function transformTrackingData(trackingData: TrackingItemRaw[]): Pantalla[] {
             revisionFluidez: item.revisionFluidez,
             revisionEsteticaGrupal: item.revisionEsteticaGrupal || false,
             revisionFluidezGrupal: item.revisionFluidezGrupal || false,
+            // Información de entrega
+            grupoEntrega: infoEntrega?.grupo,
+            fechaEntrega: infoEntrega?.fecha,
+            ordenEntrega: infoEntrega?.orden,
+            earlyAdopters: infoEntrega?.earlyAdopters,
         };
     });
 }

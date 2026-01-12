@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useTrackingData } from "@/hooks/useTrackingData";
 import { calcularEstadisticasGlobales } from "@/lib/data";
 import { FECHA_DEADLINE } from "@/lib/planDeTrabajo";
@@ -10,8 +10,13 @@ import CountdownTimer from "@/components/CountdownTimer";
 import TasksListsEditable from "./TasksListsEditable";
 import CompactStatusLegend from "./CompactStatusLegend";
 import ResetCountdown from "./ResetCountdown";
+import PantallasPorEntrega from "./PantallasPorEntrega";
+import ResumenEntregas from "./ResumenEntregas";
+
+type VistaActiva = "general" | "entregas";
 
 export default function Dashboard() {
+    const [vistaActiva, setVistaActiva] = useState<VistaActiva>("general");
     const {
         pantallas,
         isLoading,
@@ -166,16 +171,52 @@ export default function Dashboard() {
             <main className="w-[90%] mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div className="space-y-4">
                     <StatsCards stats={statsGlobales} />
-                    <ProgressChart pantallas={pantallas} />
-                    <TasksListsEditable
-                        pantallas={pantallas}
-                        onDelete={deletePantalla}
-                        onReorder={reorderPantallas}
-                        onUpdateRevisionEstetica={updateRevisionEstetica}
-                        onUpdateRevisionFluidez={updateRevisionFluidez}
-                        onUpdateRevisionEsteticaGrupal={updateRevisionEsteticaGrupal}
-                        onUpdateRevisionFluidezGrupal={updateRevisionFluidezGrupal}
-                    />
+
+                    {/* Pestañas para cambiar de vista */}
+                    <div className="bg-white rounded-lg shadow-md p-1 flex gap-2">
+                        <button
+                            type="button"
+                            onClick={() => setVistaActiva("entregas")}
+                            className={`flex-1 px-6 py-3 rounded-md font-medium transition-all ${
+                                vistaActiva === "entregas"
+                                    ? "bg-blue-600 text-white shadow-md"
+                                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                            }`}
+                        >
+                            📦 Vista por Entregas
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => setVistaActiva("general")}
+                            className={`flex-1 px-6 py-3 rounded-md font-medium transition-all ${
+                                vistaActiva === "general"
+                                    ? "bg-blue-600 text-white shadow-md"
+                                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                            }`}
+                        >
+                            📊 Vista General
+                        </button>
+                    </div>
+
+                    {vistaActiva === "entregas" ? (
+                        <>
+                            <ResumenEntregas pantallas={pantallas} />
+                            <PantallasPorEntrega pantallas={pantallas} />
+                        </>
+                    ) : (
+                        <>
+                            <ProgressChart pantallas={pantallas} />
+                            <TasksListsEditable
+                                pantallas={pantallas}
+                                onDelete={deletePantalla}
+                                onReorder={reorderPantallas}
+                                onUpdateRevisionEstetica={updateRevisionEstetica}
+                                onUpdateRevisionFluidez={updateRevisionFluidez}
+                                onUpdateRevisionEsteticaGrupal={updateRevisionEsteticaGrupal}
+                                onUpdateRevisionFluidezGrupal={updateRevisionFluidezGrupal}
+                            />
+                        </>
+                    )}
                 </div>
             </main>
 
