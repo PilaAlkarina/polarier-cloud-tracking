@@ -273,7 +273,7 @@
     "denominacion": "Gestión de nóminas",
     "prioridad": 33,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
