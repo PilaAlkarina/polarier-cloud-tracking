@@ -59,7 +59,7 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     48: "RRHH", // Gestión de finiquitos
     43: "RRHH", // Informe de recursos humanos
     36: "RRHH", // Informe de eventos persona
-    101: "RRHH", // Informe cumplimiento horario
+    101: "CONTROL_ECONOMICO", // Informe cumplimiento horario
     58: "RRHH", // Categorías laborales
     74: "RRHH", // Festivos y cierres
     71: "RRHH", // Turnos
@@ -141,7 +141,7 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     13: "PRODUCCION", // Lectura de recursos
     68: "PRODUCCION", // Recursos energéticos
     102: "PRODUCCION", // Control de uso
-    32: "PRODUCCION", // Estancias
+    32: "CONTROL_ECONOMICO", // Estancias
     15: "PRODUCCION", // Consumos de lencería
     24: "PRODUCCION", // Reposiciones general
     28: "PRODUCCION", // Reposiciones office
@@ -151,8 +151,8 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     34: "PRODUCCION", // Config. uniformidad
     45: "PRODUCCION", // Movimientos uniformidad
     63: "PRODUCCION", // Parametrización de prendas
-    69: "PRODUCCION", // Definición de prendas
-    66: "PRODUCCION", // Lavandería
+    69: "CONTROL_ECONOMICO", // Definición de prendas
+    66: "CONTROL_ECONOMICO", // Lavandería
     84: "PRODUCCION", // Auditorías
     65: "PRODUCCION", // Informe de auditorías
     112: "PRODUCCION", // Config. Auditorias
