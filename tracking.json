@@ -264,7 +264,7 @@
     "denominacion": "Calendario nóminas",
     "prioridad": 32,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
