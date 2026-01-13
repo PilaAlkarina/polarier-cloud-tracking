@@ -183,7 +183,7 @@
     "denominacion": "Factura venta",
     "prioridad": 21,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
@@ -239,7 +239,7 @@
     "estado": "REVISADO",
     "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -482,7 +482,7 @@
     "estado": "REVISADO",
     "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -525,9 +525,9 @@
     "denominacion": "Artículos",
     "prioridad": 62,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -570,9 +570,9 @@
     "denominacion": "Clientes",
     "prioridad": 68,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -624,9 +624,9 @@
     "denominacion": "Factura compra",
     "prioridad": 74,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -669,9 +669,9 @@
     "denominacion": "Albarán venta",
     "prioridad": 79,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -822,9 +822,9 @@
     "denominacion": "Proveedores",
     "prioridad": 97,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -894,9 +894,9 @@
     "denominacion": "Pedido cliente",
     "prioridad": 105,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
