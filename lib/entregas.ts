@@ -1,28 +1,34 @@
 import { GrupoEntrega, InfoEntrega } from "@/types";
 
 export const ENTREGAS_CONFIG: Record<GrupoEntrega, InfoEntrega> = {
+    ADMINISTRACION: {
+        grupo: "ADMINISTRACIÓN",
+        fecha: "20/12/2025",
+        orden: 1,
+        earlyAdopters: ["Silverio"],
+    },
     RRHH: {
         grupo: "RRHH",
         fecha: "14/01/2026",
-        orden: 1,
+        orden: 2,
         earlyAdopters: ["Vanessa"],
     },
     CONTROL_ECONOMICO: {
         grupo: "CONTROL_ECONOMICO",
         fecha: "22/01/2026",
-        orden: 2,
+        orden: 3,
         earlyAdopters: ["Laura", "Nerea", "Silverio", "Mateo (Compras)"],
     },
     MANTENIMIENTO: {
         grupo: "MANTENIMIENTO",
         fecha: "26/01/2026",
-        orden: 3,
+        orden: 4,
         earlyAdopters: ["Mateo Romaguera"],
     },
     PRODUCCION: {
         grupo: "PRODUCCION",
         fecha: "30/01/2026",
-        orden: 4,
+        orden: 5,
         earlyAdopters: ["Pau Oliver", "Zulema"],
     },
 };
