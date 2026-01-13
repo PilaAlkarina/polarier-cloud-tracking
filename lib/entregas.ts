@@ -34,7 +34,7 @@ export const ENTREGAS_CONFIG: Record<GrupoEntrega, InfoEntrega> = {
 };
 
 export const NOMBRES_GRUPOS: Record<GrupoEntrega, string> = {
-    ADMINISTRACIÓN: "💱 Administración",
+    ADMINISTRACIoN: "💱 Administración",
     RRHH: "💼 Recursos Humanos",
     CONTROL_ECONOMICO: "💰 Control Económico y Gestión",
     MANTENIMIENTO: "🔧 Mantenimiento",
