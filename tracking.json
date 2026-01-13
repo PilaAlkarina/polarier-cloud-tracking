@@ -86,7 +86,7 @@
     "estado": "REVISADO",
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -219,7 +219,7 @@
     "denominacion": "Personal (Caribe)",
     "prioridad": 25,
     "estado": "REVISADO",
-    "revisionEstetica": true,
+    "revisionEstetica": false,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
@@ -255,7 +255,7 @@
     "denominacion": "Notificaciones",
     "prioridad": 30,
     "estado": "REVISADO",
-    "revisionEstetica": true,
+    "revisionEstetica": false,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
@@ -309,9 +309,9 @@
     "denominacion": "Solicitudes de alta",
     "prioridad": 37,
     "estado": "REVISADO",
-    "revisionEstetica": true,
+    "revisionEstetica": false,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": true,
+    "revisionEsteticaGrupal": false,
     "revisionFluidezGrupal": false
   },
   {
