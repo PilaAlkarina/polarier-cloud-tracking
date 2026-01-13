@@ -354,10 +354,10 @@
     "denominacion": "Asientos de nóminas",
     "prioridad": 42,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
-    "revisionFluidezGrupal": false
+    "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Recambios",
