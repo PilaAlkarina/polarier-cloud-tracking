@@ -9,7 +9,7 @@ export type Estado =
     | "⚡ Revisión fluidez";
 
 // Grupos de entrega
-export type GrupoEntrega = "RRHH" | "CONTROL_ECONOMICO" | "MANTENIMIENTO" | "PRODUCCION";
+export type GrupoEntrega = "ADMINISTRACION" | "RRHH" | "CONTROL_ECONOMICO" | "MANTENIMIENTO" | "PRODUCCION";
 
 export interface InfoEntrega {
     grupo: GrupoEntrega;
