@@ -103,7 +103,7 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     44: "CONTROL_ECONOMICO", // Rutas de expedición
     96: "CONTROL_ECONOMICO", // Rutas de revisión
     98: "PRODUCCION", // Vehículos
-    18: "CONTROL_ECONOMICO", // Smart View
+    18: "PRODUCCION", // Smart View
     59: "ADMINISTRACION", // Artículos
     64: "ADMINISTRACION", // Clientes
     92: "ADMINISTRACION", // Proveedores
