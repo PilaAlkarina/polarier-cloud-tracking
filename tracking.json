@@ -30,7 +30,7 @@
     "denominacion": "Repartos",
     "prioridad": 4,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
