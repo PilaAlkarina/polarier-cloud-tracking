@@ -11,6 +11,7 @@ interface PantallasPorEntregaProps {
 export default function PantallasPorEntrega({ pantallas }: PantallasPorEntregaProps) {
     // Agrupar pantallas por grupo de entrega
     const pantallasPorGrupo: Record<GrupoEntrega, Pantalla[]> = {
+        ADMINISTRACION: [],
         RRHH: [],
         CONTROL_ECONOMICO: [],
         MANTENIMIENTO: [],
