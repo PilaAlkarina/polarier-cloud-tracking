@@ -59,18 +59,18 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     49: "RRHH", // Gestión de usuarios
 
     // ENTREGA 2: CONTROL ECONÓMICO Y GESTIÓN - 19/01/2026
-    5: "CONTROL_ECONOMICO", // Informe operativo
+    5: "PRODUCCION", // Informe operativo
     33: "CONTROL_ECONOMICO", // Dashboard ejecutivo
     107: "CONTROL_ECONOMICO", // Dashboard financiero
     9: "CONTROL_ECONOMICO", // Facturación por cliente
-    21: "CONTROL_ECONOMICO", // Factura venta
-    70: "CONTROL_ECONOMICO", // Factura compra
-    75: "CONTROL_ECONOMICO", // Albarán venta
-    54: "CONTROL_ECONOMICO", // Albarán compra
-    19: "CONTROL_ECONOMICO", // Presupuesto venta
-    100: "CONTROL_ECONOMICO", // Pedido cliente
-    27: "CONTROL_ECONOMICO", // Pedido proveedor
-    109: "CONTROL_ECONOMICO", // Validación factura
+    21: "ADMINISTRACION", // Factura venta
+    70: "ADMINISTRACION", // Factura compra
+    75: "ADMINISTRACION", // Albarán venta
+    54: "ADMINISTRACION", // Albarán compra
+    19: "ADMINISTRACION", // Presupuesto venta
+    100: "ADMINISTRACION", // Pedido cliente
+    27: "ADMINISTRACION", // Pedido proveedor
+    109: "ADMINISTRACION", // Validación factura
     52: "CONTROL_ECONOMICO", // Facturación uniformidad
     95: "CONTROL_ECONOMICO", // Control presupuestario
     62: "CONTROL_ECONOMICO", // Cierre de datos
@@ -84,27 +84,27 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     91: "CONTROL_ECONOMICO", // Distribución CeCo
     88: "CONTROL_ECONOMICO", // Rentabilidad por centro
     99: "CONTROL_ECONOMICO", // Informes costes estructura
-    1: "CONTROL_ECONOMICO", // Dashboard operativo
+    1: "PRODUCCION", // Dashboard operativo
     2: "CONTROL_ECONOMICO", // Pedidos
     4: "CONTROL_ECONOMICO", // Repartos
     3: "CONTROL_ECONOMICO", // Repartos office
     14: "CONTROL_ECONOMICO", // Validar repartos
-    85: "CONTROL_ECONOMICO", // Partes de trabajo
+    85: "MANTENIMIENTO", // Partes de trabajo
     89: "CONTROL_ECONOMICO", // Balance pedidos / repartos
     17: "CONTROL_ECONOMICO", // Comparativa procesados - entregados
-    53: "CONTROL_ECONOMICO", // Control de envíos
+    53: "ADMINISTRACION", // Control de envíos
     44: "CONTROL_ECONOMICO", // Rutas de expedición
     96: "CONTROL_ECONOMICO", // Rutas de revisión
-    98: "CONTROL_ECONOMICO", // Vehículos
+    98: "PRODUCCION", // Vehículos
     18: "CONTROL_ECONOMICO", // Smart View
-    59: "CONTROL_ECONOMICO", // Artículos
-    64: "CONTROL_ECONOMICO", // Clientes
-    92: "CONTROL_ECONOMICO", // Proveedores
+    59: "ADMINISTRACION", // Artículos
+    64: "ADMINISTRACION", // Clientes
+    92: "ADMINISTRACION", // Proveedores
     42: "CONTROL_ECONOMICO", // Abonos
     38: "CONTROL_ECONOMICO", // Solicitudes de abono
     90: "CONTROL_ECONOMICO", // Revisiones
     97: "CONTROL_ECONOMICO", // Reuniones comerciales
-    20: "CONTROL_ECONOMICO", // Estructura organizativa
+    20: "PRODUCCION", // Estructura organizativa
     86: "CONTROL_ECONOMICO", // Estructura operativa
 
     // ENTREGA 3: MANTENIMIENTO - 22/01/2026
