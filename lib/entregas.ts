@@ -2,7 +2,7 @@ import { GrupoEntrega, InfoEntrega } from "@/types";
 
 export const ENTREGAS_CONFIG: Record<GrupoEntrega, InfoEntrega> = {
     ADMINISTRACION: {
-        grupo: "ADMINISTRACIÓN",
+        grupo: "ADMINISTRACION",
         fecha: "20/12/2025",
         orden: 1,
         earlyAdopters: ["Silverio"],
