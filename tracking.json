@@ -338,7 +338,7 @@
     "estado": "REVISADO",
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": true,
+    "revisionEsteticaGrupal": false,
     "revisionFluidezGrupal": false
   },
   {
@@ -786,9 +786,9 @@
     "denominacion": "Rentabilidad por centro",
     "prioridad": 93,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
