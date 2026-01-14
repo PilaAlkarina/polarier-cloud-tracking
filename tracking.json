@@ -462,9 +462,9 @@
     "denominacion": "Facturación uniformidad",
     "prioridad": 55,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
