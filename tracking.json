@@ -615,10 +615,10 @@
     "denominacion": "Definición de prendas",
     "prioridad": 73,
     "estado": "REVISADO",
-    "revisionEstetica": false,
-    "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
-    "revisionFluidezGrupal": false
+    "revisionEstetica": true,
+    "revisionFluidez": true,
+    "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Factura compra",
