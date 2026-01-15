@@ -327,7 +327,7 @@
     "denominacion": "Prev. ingresos y costes",
     "prioridad": 39,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
@@ -723,9 +723,9 @@
     "denominacion": "Prev. Ingresos y costes (Informe)",
     "prioridad": 85,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
