@@ -192,7 +192,7 @@
     "denominacion": "Incidencias",
     "prioridad": 22,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
