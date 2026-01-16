@@ -642,7 +642,7 @@
     "denominacion": "Almacenes Recambios",
     "prioridad": 76,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
