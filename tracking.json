@@ -543,7 +543,7 @@
     "denominacion": "Salidas Recambios",
     "prioridad": 64,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
