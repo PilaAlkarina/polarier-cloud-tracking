@@ -759,7 +759,7 @@
     "denominacion": "Partes de trabajo",
     "prioridad": 89,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
