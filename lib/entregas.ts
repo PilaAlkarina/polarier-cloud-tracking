@@ -111,8 +111,8 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     38: "CONTROL_ECONOMICO", // Solicitudes de abono
     90: "CONTROL_ECONOMICO", // Revisiones
     97: "CONTROL_ECONOMICO", // Reuniones comerciales
-    20: "PRODUCCION", // Estructura organizativa
-    86: "CONTROL_ECONOMICO", // Estructura operativa
+    20: "CONTROL_ECONOMICO", // Estructura organizativa
+    86: "PRODUCCION", // Estructura operativa
 
     // ENTREGA 3: MANTENIMIENTO - 22/01/2026
     83: "MANTENIMIENTO", // Dashboard mantenimiento
@@ -145,7 +145,7 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     15: "PRODUCCION", // Consumos de lencería
     24: "PRODUCCION", // Reposiciones general
     28: "PRODUCCION", // Reposiciones office
-    16: "PRODUCCION", // Gestión de almacenes
+    16: "MANTENIMIENTO", // Gestión de almacenes
     39: "PRODUCCION", // Inventarios de lencería
     46: "PRODUCCION", // Informe de inventarios
     34: "PRODUCCION", // Config. uniformidad
