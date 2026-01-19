@@ -840,7 +840,7 @@
     "denominacion": "Plantilla mantenimiento prev.",
     "prioridad": 99,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
