@@ -831,7 +831,7 @@
     "denominacion": "Inventarios Recambios",
     "prioridad": 98,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
