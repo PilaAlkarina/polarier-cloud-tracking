@@ -752,7 +752,7 @@
     "estado": "REVISADO",
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
