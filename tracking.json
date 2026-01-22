@@ -734,7 +734,7 @@
     "estado": "REVISADO",
     "revisionEstetica": false,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -957,9 +957,9 @@
     "denominacion": "Dashboard financiero",
     "prioridad": 116,
     "estado": "REVISADO",
-    "revisionEstetica": true,
+    "revisionEstetica": false,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": true,
+    "revisionEsteticaGrupal": false,
     "revisionFluidezGrupal": false
   },
   {
