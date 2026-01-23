@@ -651,7 +651,7 @@
     "denominacion": "Informe rechazo cliente",
     "prioridad": 77,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
