@@ -579,7 +579,7 @@
     "denominacion": "Informe de auditorías",
     "prioridad": 69,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
