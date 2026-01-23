@@ -129,7 +129,7 @@
     "denominacion": "Consumos de lencería",
     "prioridad": 15,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
