@@ -500,8 +500,8 @@
     "estado": "REVISADO",
     "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
-    "revisionFluidezGrupal": false
+    "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Informe cumplimiento pedidos",
