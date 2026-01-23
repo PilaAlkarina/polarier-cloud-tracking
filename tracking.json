@@ -68,7 +68,7 @@
     "estado": "REVISADO",
     "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
