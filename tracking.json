@@ -111,7 +111,7 @@
     "denominacion": "Lectura de recursos",
     "prioridad": 13,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
