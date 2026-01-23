@@ -39,7 +39,7 @@
     "denominacion": "Informe operativo",
     "prioridad": 5,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
