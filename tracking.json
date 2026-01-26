@@ -319,9 +319,9 @@
     "prioridad": 38,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Prev. ingresos y costes",
