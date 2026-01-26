@@ -52,7 +52,6 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     23: "RRHH", // Calendario laboral RRHH
     30: "RRHH", // Calendario nóminas
     31: "RRHH", // Gestión de nóminas
-    111: "RRHH", // Validación nómina
     40: "RRHH", // Asientos de nóminas
     29: "RRHH", // Notificaciones
     35: "RRHH", // Solicitudes de alta
@@ -67,7 +66,6 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
 
     // ENTREGA 2: CONTROL ECONÓMICO Y GESTIÓN - 19/01/2026
     5: "PRODUCCION", // Informe operativo
-    33: "CONTROL_ECONOMICO", // Dashboard ejecutivo
     107: "CONTROL_ECONOMICO", // Dashboard financiero
     9: "CONTROL_ECONOMICO", // Facturación por cliente
     21: "ADMINISTRACION", // Factura venta
@@ -115,7 +113,6 @@ export const PANTALLAS_POR_GRUPO: Record<number, GrupoEntrega> = {
     86: "PRODUCCION", // Estructura operativa
 
     // ENTREGA 3: MANTENIMIENTO - 22/01/2026
-    83: "MANTENIMIENTO", // Dashboard mantenimiento
     26: "MANTENIMIENTO", // Monitor SAT
     60: "MANTENIMIENTO", // Órdenes de trabajo (MBC)
     79: "MANTENIMIENTO", // Gestión de mantenimiento
