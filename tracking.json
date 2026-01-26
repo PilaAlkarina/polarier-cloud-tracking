@@ -714,8 +714,8 @@
     "denominacion": "No conformidades",
     "prioridad": 84,
     "estado": "REVISADO",
-    "revisionEstetica": false,
-    "revisionFluidez": false,
+    "revisionEstetica": true,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
   },
