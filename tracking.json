@@ -291,10 +291,10 @@
     "denominacion": "Dashboard ejecutivo",
     "prioridad": 35,
     "estado": "REVISADO",
-    "revisionEstetica": false,
-    "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
-    "revisionFluidezGrupal": false
+    "revisionEstetica": true,
+    "revisionFluidez": true,
+    "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Config. uniformidad",
@@ -741,10 +741,10 @@
     "denominacion": "Dashboard mantenimiento",
     "prioridad": 87,
     "estado": "REVISADO",
-    "revisionEstetica": false,
-    "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
-    "revisionFluidezGrupal": false
+    "revisionEstetica": true,
+    "revisionFluidez": true,
+    "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Auditorías",
@@ -993,10 +993,10 @@
     "denominacion": "Validación nómina",
     "prioridad": 120,
     "estado": "REVISADO",
-    "revisionEstetica": false,
-    "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
-    "revisionFluidezGrupal": false
+    "revisionEstetica": true,
+    "revisionFluidez": true,
+    "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Config. Auditorias",
