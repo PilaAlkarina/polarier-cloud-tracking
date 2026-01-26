@@ -288,6 +288,15 @@
     "revisionFluidezGrupal": false
   },
   {
+    "denominacion": "Dashboard ejecutivo",
+    "prioridad": 35,
+    "estado": "REVISADO",
+    "revisionEstetica": false,
+    "revisionFluidez": false,
+    "revisionEsteticaGrupal": false,
+    "revisionFluidezGrupal": false
+  },
+  {
     "denominacion": "Config. uniformidad",
     "prioridad": 36,
     "estado": "REVISADO",
@@ -729,6 +738,15 @@
     "revisionFluidezGrupal": false
   },
   {
+    "denominacion": "Dashboard mantenimiento",
+    "prioridad": 87,
+    "estado": "REVISADO",
+    "revisionEstetica": false,
+    "revisionFluidez": false,
+    "revisionEsteticaGrupal": false,
+    "revisionFluidezGrupal": false
+  },
+  {
     "denominacion": "Auditorías",
     "prioridad": 88,
     "estado": "REVISADO",
@@ -969,6 +987,15 @@
     "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": false
+  },
+  {
+    "denominacion": "Validación nómina",
+    "prioridad": 120,
+    "estado": "REVISADO",
+    "revisionEstetica": false,
+    "revisionFluidez": false,
+    "revisionEsteticaGrupal": false,
     "revisionFluidezGrupal": false
   },
   {
