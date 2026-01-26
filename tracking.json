@@ -912,9 +912,9 @@
     "denominacion": "Control de uso",
     "prioridad": 107,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
@@ -975,9 +975,9 @@
     "denominacion": "Validación factura",
     "prioridad": 118,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
+    "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
   {
