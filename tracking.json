@@ -877,9 +877,9 @@
     "prioridad": 103,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": true,
+    "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": true
+    "revisionFluidezGrupal": false
   },
   {
     "denominacion": "Informes costes estructura",
@@ -958,7 +958,7 @@
     "prioridad": 116,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
   },
