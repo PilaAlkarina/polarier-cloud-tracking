@@ -408,7 +408,7 @@
     "denominacion": "Informe de inventarios",
     "prioridad": 48,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
@@ -606,7 +606,7 @@
     "denominacion": "Recursos energéticos",
     "prioridad": 72,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
@@ -750,7 +750,7 @@
     "denominacion": "Auditorías",
     "prioridad": 88,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
@@ -876,7 +876,7 @@
     "denominacion": "Vehículos",
     "prioridad": 103,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
@@ -957,7 +957,7 @@
     "denominacion": "Dashboard financiero",
     "prioridad": 116,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
@@ -966,7 +966,7 @@
     "denominacion": "Kg. Lavados",
     "prioridad": 117,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
@@ -1002,7 +1002,7 @@
     "denominacion": "Config. Auditorias",
     "prioridad": 122,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
@@ -1011,7 +1011,7 @@
     "denominacion": "Distribución de recursos TI",
     "prioridad": 123,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
