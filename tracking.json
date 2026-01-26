@@ -732,7 +732,7 @@
     "denominacion": "Informe clasificación sucio",
     "prioridad": 86,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
