@@ -687,7 +687,7 @@
     "denominacion": "Informe control almacén cliente",
     "prioridad": 81,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
