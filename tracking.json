@@ -409,9 +409,9 @@
     "prioridad": 48,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Entradas Recambios",
@@ -454,9 +454,9 @@
     "prioridad": 54,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Facturación uniformidad",
@@ -544,9 +544,9 @@
     "prioridad": 64,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Cierre de datos",
