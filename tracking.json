@@ -510,7 +510,7 @@
     "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": true
+    "revisionFluidezGrupal": false
   },
   {
     "denominacion": "Categorías laborales",
@@ -814,9 +814,9 @@
     "prioridad": 96,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Proveedores",
@@ -877,9 +877,9 @@
     "prioridad": 103,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Informes costes estructura",
@@ -913,18 +913,18 @@
     "prioridad": 107,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Asignación CeCo",
     "prioridad": 110,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Abonos Recambio",
@@ -940,18 +940,18 @@
     "prioridad": 113,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Agrupación PEP",
     "prioridad": 115,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Dashboard financiero",
@@ -985,9 +985,9 @@
     "prioridad": 119,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Validación nómina",
