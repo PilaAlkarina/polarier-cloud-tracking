@@ -193,9 +193,9 @@
     "prioridad": 22,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Calendario laboral RRHH",
