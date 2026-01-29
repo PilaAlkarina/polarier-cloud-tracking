@@ -166,7 +166,7 @@
     "prioridad": 19,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": true,
+    "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
@@ -184,7 +184,7 @@
     "prioridad": 21,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": true,
+    "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
   },
