@@ -598,7 +598,7 @@
     "prioridad": 71,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": true
   },
