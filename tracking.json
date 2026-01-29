@@ -805,9 +805,9 @@
     "prioridad": 95,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Distribución CeCo",
@@ -859,9 +859,9 @@
     "prioridad": 101,
     "estado": "REVISADO",
     "revisionEstetica": true,
-    "revisionFluidez": false,
+    "revisionFluidez": true,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": false
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Reuniones comerciales",
