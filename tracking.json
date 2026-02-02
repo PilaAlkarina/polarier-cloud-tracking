@@ -345,10 +345,10 @@
     "denominacion": "Inventarios de lencería",
     "prioridad": 41,
     "estado": "REVISADO",
-    "revisionEstetica": false,
-    "revisionFluidez": false,
-    "revisionEsteticaGrupal": false,
-    "revisionFluidezGrupal": false
+    "revisionEstetica": true,
+    "revisionFluidez": true,
+    "revisionEsteticaGrupal": true,
+    "revisionFluidezGrupal": true
   },
   {
     "denominacion": "Asientos de nóminas",
