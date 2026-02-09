@@ -168,7 +168,7 @@
     "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
-    "revisionFluidezGrupal": true
+    "revisionFluidezGrupal": false
   },
   {
     "denominacion": "Estructura organizativa",
