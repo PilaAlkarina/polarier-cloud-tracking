@@ -84,7 +84,7 @@
     "denominacion": "Personal general",
     "prioridad": 10,
     "estado": "REVISADO",
-    "revisionEstetica": false,
+    "revisionEstetica": true,
     "revisionFluidez": false,
     "revisionEsteticaGrupal": true,
     "revisionFluidezGrupal": false
